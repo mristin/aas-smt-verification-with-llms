@@ -1,0 +1,6 @@
+fastapi==0.101.1
+requests==2.31.0
+openai==0.27.9
+PyYAML==6.0
+tqdm==4.66.1
+aas-core3==3.0.4
