@@ -1,0 +1,7 @@
+[
+  {
+    "path": "price",
+    "explanation": "The concept describes a monetary amount. Using xs:string allows arbitrary text and cannot enforce numeric precision or enable arithmetic; monetary values should be numeric.",
+    "suggestion": "xs:decimal"
+  }
+]

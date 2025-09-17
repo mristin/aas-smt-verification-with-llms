@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aas-smt-verification-with-llms"
+# NOTE (mristin):
+# Do not forget to sync with __init__.py!
+version = "0.0.1"
+
+description = "Verify AAS Submodel Templates using Large Language Models."
+readme = "README.rst"
+requires-python = ">=3.10"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+authors = [
+    { name = "Ina Steinmetz", email = "ina.steinmetz@iosb.fraunhofer.de" }
+]
+
+dependencies = [
+    "icontract>=2,<3",
+    # This version of requests must coincide with the type stubs below.
+    "requests==2.32.4",
+    "aas-core3.0>=1.1.2,<2",
+    # This version of tqdm must coincide with the type stubs below.
+    "tqdm==4.67.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black==25.1.0",
+    "mypy==1.18.1",
+    "pylint==3.3.8",
+    "types-requests==2.32.4.20250913",
+    "types-tqdm==4.67.0.20250809"
+]
+
+[project.scripts]
+aas-smt-verification-with-llms = "aas_smt_verification_with_llms.main:entry_point"
+
+[project.urls]
+repository = "https://github.com/mristin/aas-smt-verification-with-llms"
+
+[tool.setuptools.packages.find]
+include = ["aas_smt_verification_with_llms"]
+exclude = ["continuous_integration", "tests", "experiments"]
+
+# Development tooling
+[tool]
+[tool.black]
+line-length = 88
+
+[tool.pylint]
+disable = [
+    "unnecessary-lambda", "no-else-raise", "too-few-public-methods", "no-else-return",
+    "too-many-locals", "too-many-branches", "too-many-return-statements",
+    "duplicate-code", "broad-exception-caught", "unnecessary-comprehension",
+    "too-many-statements", "too-many-lines", "use-dict-literal", "invalid-name",
+    "too-many-arguments", "too-many-positional-arguments",
+    "too-many-instance-attributes", "unnecessary-negation",
+    "too-many-nested-blocks"
+]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "openai"
+]
+ignore_missing_imports = true
