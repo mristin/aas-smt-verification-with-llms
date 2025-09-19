@@ -81,4 +81,4 @@ def extract_llm_args(args: argparse.Namespace) -> Union[OpenAIArgs, OllamaArgs]:
         )
 
     else:
-        raise NotImplementedError(f"Unhandled --llm: {args.llm}")
+        raise NotImplementedError(f"Unhandled llm: {args.llm}")
