@@ -22,7 +22,7 @@ from aas_smt_verification_with_llms.common import assert_never
 
 
 class Path:
-    """Represent a value-only path."""
+    """Represent an ID-short path."""
 
     fragments: Final[Sequence[Union[str, int]]]
 
