@@ -5,7 +5,7 @@ import json
 import os
 import pathlib
 import uuid
-from typing import List, Final
+from typing import List, Final, Iterator
 
 from aas_core3 import (
     types as aas_types,
@@ -21,9 +21,9 @@ _REPO_ROOT = pathlib.Path(os.path.realpath(__file__)).parent.parent
 _EXPERIMENT_DATA_DIR = _REPO_ROOT / "experiment_data"
 
 
-class Outcome(enum.Enum):
+class Category(enum.Enum):
     """
-    Enumerate the anticipated outcomes of an experiment.
+    Enumerate the anticipated categories of experiment cases.
 
     The expected cases are expected to pass the linter.
 
@@ -35,10 +35,12 @@ class Outcome(enum.Enum):
 
 
 def load_model(
-    experiment: Filenameable, outcome: Outcome, case: Filenameable
+    experiment: Filenameable, category: Category, case: Filenameable
 ) -> aas_types.Environment:
     """Load the AAS model for the corresponding experiment case."""
-    model_path = _EXPERIMENT_DATA_DIR / experiment / outcome.value / case / "model.json"
+    model_path = (
+        _EXPERIMENT_DATA_DIR / experiment / category.value / case / "model.json"
+    )
 
     text = model_path.read_text(encoding="utf-8")
 
@@ -54,46 +56,54 @@ def load_model(
     return environment
 
 
-def list_cases_for_outcome(
+def list_cases_for_category(
     experiment: Filenameable,
-    outcome: Outcome,
+    category: Category,
 ) -> List[Filenameable]:
-    """List all the case names for the given experiment and outcome."""
+    """List all the case names for the given experiment and category."""
     return sorted(
         Filenameable(path.name)
-        for path in (_EXPERIMENT_DATA_DIR / experiment / outcome.value).iterdir()
+        for path in (_EXPERIMENT_DATA_DIR / experiment / category.value).iterdir()
         if path.is_dir()
     )
 
 
 def _experiment_output_dir(
-    experiment: Filenameable, outcome: Outcome, case: Filenameable, model: Filenameable
+    experiment: Filenameable,
+    category: Category,
+    case: Filenameable,
+    model: Filenameable,
 ) -> pathlib.Path:
-    return _REPO_ROOT / model / experiment / outcome.value / case
+    return _REPO_ROOT / model / experiment / category.value / case
 
 
-class ExperimentOutput:
+class OutputStore:
     """Handle the output data of an experiment."""
 
     experiment: Final[Filenameable]
-    outcome: Final[Outcome]
+    category: Final[Category]
     case: Final[Filenameable]
     model: Final[Filenameable]
 
     def __init__(
         self,
         experiment: Filenameable,
-        outcome: Outcome,
+        category: Category,
         case: Filenameable,
         model: Filenameable,
     ) -> None:
         self.experiment = experiment
-        self.outcome = outcome
+        self.category = category
         self.case = case
         self.model = model
 
         directory = (
-            _REPO_ROOT / "experiment_output" / model / experiment / outcome.value / case
+            _REPO_ROOT
+            / "experiment_output"
+            / model
+            / experiment
+            / category.value
+            / case
         )
 
         self._prompt_path = directory / "prompt.txt"
@@ -147,3 +157,47 @@ class ExperimentOutput:
     def load_response(self) -> str:
         """Load the response for the given experiment."""
         return self._response_path.read_text(encoding="utf-8")
+
+
+class Take:
+    """Capture all the ingredients for a take at an experiment."""
+
+    experiment: Final[Filenameable]
+    category: Final[Category]
+    case: Final[Filenameable]
+    model: Final[Filenameable]
+    output_store: Final[OutputStore]
+
+    def __init__(
+        self,
+        experiment: Filenameable,
+        category: Category,
+        case: Filenameable,
+        model: Filenameable,
+        output_store: OutputStore,
+    ) -> None:
+        self.experiment = experiment
+        self.category = category
+        self.case = case
+        self.model = model
+        self.output_store = output_store
+
+
+def over_takes(
+    experiment: Filenameable,
+    model: Filenameable,
+) -> Iterator[Take]:
+    """Go over all the possible experiment takes for the given model."""
+    for category in Category:
+        for case in list_cases_for_category(experiment, category):
+            output_store = OutputStore(
+                experiment=experiment, category=category, case=case, model=model
+            )
+
+            yield Take(
+                experiment=experiment,
+                category=category,
+                case=case,
+                model=model,
+                output_store=output_store,
+            )
