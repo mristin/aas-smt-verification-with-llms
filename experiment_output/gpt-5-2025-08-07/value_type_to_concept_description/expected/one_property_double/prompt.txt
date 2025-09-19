@@ -1,0 +1,8 @@
+For which of the following elements does the XSD value type DOES NOT correspond with its concept description?
+
+Output a JSON list of objects with properties 'path' and 'explanation'.
+
+# Elements
+Property at something with value type: DOUBLE and with concept description: someConcept
+# Concept descriptions
+someConcept means: Water pressure

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "something",
+    "explanation": "The concept 'Water pressure' represents a measurable physical quantity and should be numeric (e.g., kPa, bar). Using xs:string prevents numeric validation, range checks, and computations.",
+    "suggestion": "xs:double"
+  }
+]
