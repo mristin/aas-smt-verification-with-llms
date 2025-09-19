@@ -2,7 +2,7 @@
 Experiments
 ***********
 
-The test cases are stored in ``test_data/`` directory.
+The test cases are stored in ``experiment_data/`` directory.
 Here is the schema:
 ``experiment_data/{experiment}/{expected or unexpected}/{case name}/model.json``.
 
