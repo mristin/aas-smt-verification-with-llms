@@ -4,6 +4,9 @@ Output a JSON list of objects with properties 'path', 'explanation' and 'suggest
 The property 'suggestion' should only indicate the more appropriate XSD data type. If you suggest a numeric data type, determine the type with an appropriate precision (double for sensor data, decimal for financial/legally binding data).
 
 # Elements
-Property at path 'something' with value type: xs:string and with concept description: someConcept
+
+Property at path 'something' with ID-short 'something' with value type xs:string and with concept description 'someConcept'
+
 # Concept descriptions
-someConcept means: Water pressure
+
+Concept description 'someConcept' means: 'Water pressure'

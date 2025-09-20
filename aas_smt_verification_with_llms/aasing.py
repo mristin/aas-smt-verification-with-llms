@@ -5,14 +5,10 @@ from typing import (
     Sequence,
     Union,
     Final,
-    TypeVar,
-    Type,
     Iterator,
     Tuple,
     get_args,
     List,
-    Iterable,
-    MutableMapping,
     Optional,
 )
 
@@ -53,8 +49,6 @@ class Path:
         return "".join(parts)
 
 
-SubmodelElementT = TypeVar("SubmodelElementT", bound=aas_types.SubmodelElement)
-
 _Collection = Union[
     aas_types.Submodel,
     aas_types.SubmodelElementList,
@@ -70,56 +64,6 @@ _CollectionAsTuple = (
 assert _CollectionAsTuple == get_args(_Collection)
 
 
-def map_relevant_concept_descriptions_by_element(
-    environment: aas_types.Environment,
-    elements_paths: Iterable[Tuple[SubmodelElementT, Path]],
-) -> MutableMapping[SubmodelElementT, aas_types.ConceptDescription]:
-    """Go over the elements and extract the concept descriptions referenced by them."""
-    concept_description_map = {
-        concept_description.id: concept_description
-        for concept_description in environment.over_concept_descriptions_or_empty()
-    }
-
-    result: MutableMapping[SubmodelElementT, aas_types.ConceptDescription] = dict()
-
-    for element, _ in elements_paths:
-        if element.semantic_id is None:
-            continue
-
-        semantic_id = reference_as_text(element.semantic_id)
-
-        if semantic_id is None:
-            continue
-
-        concept_description = concept_description_map.get(semantic_id, None)
-
-        if concept_description is not None:
-            result[element] = concept_description
-
-    return result
-
-
-def filter_elements_with_semantic_id(
-    iterator: Iterator[Tuple[SubmodelElementT, Path]],
-) -> Iterator[Tuple[SubmodelElementT, Path]]:
-    """Filter the elements with defined semantic ID attribute."""
-    for element, path in iterator:
-        if element.semantic_id is None:
-            continue
-
-        yield element, path
-
-
-def filter_elements_of_type(
-    iterator: Iterator[Tuple[aas_types.SubmodelElement, Path]],
-    element_type: Type[SubmodelElementT],
-) -> Iterator[Tuple[SubmodelElementT, Path]]:
-    """Filter the elements with the given runtime types."""
-    for element, path in iterator:
-        if isinstance(element, element_type):
-            yield element, path
-
-
 def _over_elements(
     collection: _Collection, prefix: Path
 ) -> Iterator[Tuple[aas_types.SubmodelElement, Path]]:
@@ -127,7 +71,7 @@ def _over_elements(
         for element in collection.over_submodel_elements_or_empty():
             assert (
                 element.id_short is not None
-            ), "All submodel elements must have an ID-short."
+            ), "All elements of a Submodel must have an ID-short."
             path = Path(fragments=list(prefix.fragments) + [element.id_short])
 
             yield element, path
@@ -193,25 +137,120 @@ def reference_as_text(reference: aas_types.Reference) -> str:
         assert_never(reference.type)
 
 
-def concept_description_in_english(
-    concept_description: aas_types.ConceptDescription,
+def text_in_english(
+    lang_strings: Optional[Sequence[aas_types.AbstractLangString]],
 ) -> Optional[str]:
     """
-    Try to extract the contained description in English.
+    Try to extract the contained text in English.
 
-    If there are no descriptions, or no descriptions in English, return None.
+    If there is no language string at all or no text in English, return None.
     """
-    description = None  # type: Optional[str]
-    if (
-        concept_description.description is None
-        or len(concept_description.description) == 0
+    if lang_strings is None:
+        return None
+
+    for lang_string in lang_strings:
+        lang = lang_string.language.lower()
+        if lang == "en" or lang.startswith("en-"):
+            return lang_string.text
+
+    return None
+
+
+def relevant_details(environment: aas_types.Environment) -> Optional[str]:
+    """
+    Translate the elements and the concept descriptions into succinct text.
+
+    Return None if there is nothing relevant.
+    """
+    # fmt: off
+    elements_paths: Sequence[
+        Tuple[
+            Union[
+                aas_types.Property,
+                aas_types.Range
+            ],
+            Path
+        ]
+    ] = [
+        (element, path)
+        for element, path in over_elements(environment)
+        if isinstance(element, (aas_types.Property, aas_types.Range))
+    ]
+    # fmt: on
+
+    if len(elements_paths) == 0 and (
+        environment.concept_descriptions is None
+        or len(environment.concept_descriptions) == 0
     ):
         return None
 
-    for lang_string in concept_description.over_description_or_empty():
-        lang = lang_string.language.lower()
-        if lang == "en" or lang.startswith("en-"):
-            description = lang_string.text
-            break
+    blocks = []  # type: List[str]
 
-    return description
+    if len(elements_paths) > 0:
+        blocks.append("# Elements")
+
+        for element, path in elements_paths:
+            element_parts = [
+                f"{element.__class__.__name__} at path {str(path)!r}"
+            ]  # type: List[str]
+
+            if element.id_short is not None:
+                element_parts.append(f" with ID-short {element.id_short!r}")
+
+            description_in_en = text_in_english(element.description)
+            if description_in_en is not None:
+                element_parts.append(f" with description {description_in_en!r}")
+
+            display_name_in_en = text_in_english(element.display_name)
+            if display_name_in_en is not None:
+                element_parts.append(f" with display name {display_name_in_en!r}")
+
+            element_parts.append(f" with value type {element.value_type.value}")
+
+            if element.semantic_id is not None:
+                semantic_id_as_text = reference_as_text(element.semantic_id)
+
+                element_parts.append(
+                    f" and with concept description {semantic_id_as_text!r}"
+                )
+
+            block = "".join(element_parts)
+            blocks.append(block)
+
+    if (
+        environment.concept_descriptions is not None
+        and len(environment.concept_descriptions) > 0
+    ):
+        blocks.append("# Concept descriptions")
+        for concept_description in environment.over_concept_descriptions_or_empty():
+            concept_description_parts = [
+                f"Concept description {concept_description.id!r}"
+            ]
+
+            description_in_en = text_in_english(concept_description.description)
+            if description_in_en is not None:
+                concept_description_parts.append(f" means: {description_in_en!r}")
+
+            unit_parts = []  # type: List[str]
+            for (
+                data_specification
+            ) in concept_description.over_embedded_data_specifications_or_empty():
+                content = data_specification.data_specification_content
+
+                if isinstance(content, aas_types.DataSpecificationIEC61360):
+                    if content.unit is not None:
+                        unit_parts.append(content.unit)
+
+            if len(unit_parts) > 0:
+                units_str = ", ".join(unit_parts)
+
+                if len(unit_parts) == 1:
+                    concept_description_parts.append(f" with unit {units_str}")
+                else:
+                    concept_description_parts.append(f" with units {units_str}")
+
+            block = "".join(concept_description_parts)
+            blocks.append(block)
+
+    text = "\n\n".join(blocks)
+    return text
