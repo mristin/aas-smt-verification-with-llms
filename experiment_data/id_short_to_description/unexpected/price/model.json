@@ -1,0 +1,36 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "pressure",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "someConcept"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Price of a product"
+        }
+      ],
+      "id": "someConcept",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}
