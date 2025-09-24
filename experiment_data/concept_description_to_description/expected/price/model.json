@@ -1,0 +1,42 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "price",
+          "description": [
+            {
+              "language": "en",
+              "text": "The product price"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "someConcept"
+              }
+            ]
+          },
+          "valueType": "xs:decimal",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Price of the product"
+        }
+      ],
+      "id": "someConcept",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

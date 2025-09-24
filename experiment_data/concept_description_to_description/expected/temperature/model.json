@@ -1,0 +1,42 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "temperature",
+          "description": [
+            {
+              "language": "en",
+              "text": "Inside temperature (Celsius)"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "someConcept"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Internal temperature in Celsius"
+        }
+      ],
+      "id": "someConcept",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}
