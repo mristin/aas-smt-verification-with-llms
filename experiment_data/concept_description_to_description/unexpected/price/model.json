@@ -4,11 +4,11 @@
       "id": "someSubmodel",
       "submodelElements": [
         {
-          "idShort": "price",
+          "idShort": "pressureAtValve",
           "description": [
             {
               "language": "en",
-              "text": "Water pressure"
+              "text": "Pressure at valve"
             }
           ],
           "semanticId": {

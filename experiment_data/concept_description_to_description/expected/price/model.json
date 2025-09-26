@@ -4,11 +4,11 @@
       "id": "someSubmodel",
       "submodelElements": [
         {
-          "idShort": "price",
+          "idShort": "enginePrice",
           "description": [
             {
               "language": "en",
-              "text": "The product price"
+              "text": "Engine price"
             }
           ],
           "semanticId": {

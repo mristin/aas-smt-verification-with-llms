@@ -4,11 +4,11 @@
       "id": "someSubmodel",
       "submodelElements": [
         {
-          "idShort": "temperature",
+          "idShort": "enginePrice",
           "description": [
             {
               "language": "en",
-              "text": "Angular velocity in rad/s"
+              "text": "Engine price"
             }
           ],
           "semanticId": {

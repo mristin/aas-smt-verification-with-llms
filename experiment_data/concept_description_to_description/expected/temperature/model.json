@@ -8,7 +8,7 @@
           "description": [
             {
               "language": "en",
-              "text": "Inside temperature (Celsius)"
+              "text": "Temperature in the casing"
             }
           ],
           "semanticId": {
