@@ -1,0 +1,28 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "some_id_short",
+                    "displayName": [
+                        {
+                            "language": "en",
+                            "text": "Photosphere"
+                        }
+                    ],
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "The visible surface layer of the sun that emits most of its light."
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}
