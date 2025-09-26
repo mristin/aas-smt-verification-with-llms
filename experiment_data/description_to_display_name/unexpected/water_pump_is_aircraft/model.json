@@ -1,0 +1,28 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "some_id_short",
+                    "displayName": [
+                        {
+                            "language": "en",
+                            "text": "Water Pump"
+                        }
+                    ],
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "A modern passenger aircraft used for long-haul flights."
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

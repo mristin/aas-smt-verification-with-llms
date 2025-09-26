@@ -1,0 +1,28 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "some_id_short",
+                    "displayName": [
+                        {
+                            "language": "en",
+                            "text": "Keystone species"
+                        }
+                    ],
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "An organism that has a disproportionately large impact on its ecosystem relative to its abundance."
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

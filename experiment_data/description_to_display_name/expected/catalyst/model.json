@@ -1,0 +1,28 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "some_id_short",
+                    "displayName": [
+                        {
+                            "language": "en",
+                            "text": "Catalyst"
+                        }
+                    ],
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "A substance that speeds up a chemical reaction without being consumed in the process."
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}
