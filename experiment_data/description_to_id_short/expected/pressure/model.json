@@ -5,32 +5,17 @@
       "submodelElements": [
         {
           "idShort": "pressure",
-          "semanticId": {
-            "type": "ExternalReference",
-            "keys": [
-              {
-                "type": "GlobalReference",
-                "value": "someConcept"
-              }
-            ]
-          },
+          "description": [
+            {
+              "language": "en",
+              "text": "Water pressure"
+            }
+          ],
           "valueType": "xs:double",
           "modelType": "Property"
         }
       ],
       "modelType": "Submodel"
-    }
-  ],
-  "conceptDescriptions": [
-    {
-      "description": [
-        {
-          "language": "en",
-          "text": "Water pressure"
-        }
-      ],
-      "id": "someConcept",
-      "modelType": "ConceptDescription"
     }
   ]
 }
