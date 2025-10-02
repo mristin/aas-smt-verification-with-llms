@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "NotchImpactStrengthMean refers to the average value of the notch impact strength obtained from multiple tests conducted on samples using a notch impact test. This value is the total energy required per unit cross-sectional area."
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "J/cm\u00b2",
+            "definition": [
+              {
+                "language": "en",
+                "text": "NotchImpactStrengthMean refers to the average value of the notch impact strength obtained from multiple tests conducted on samples using a notch impact test. This value is the total energy required per unit cross-sectional area."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

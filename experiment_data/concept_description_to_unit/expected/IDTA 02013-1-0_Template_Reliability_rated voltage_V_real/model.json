@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "operating voltage of the device as defined by the manufacturer and to which certain device properties are referenced"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "V",
+            "definition": [
+              {
+                "language": "en",
+                "text": "operating voltage of the device as defined by the manufacturer and to which certain device properties are referenced"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

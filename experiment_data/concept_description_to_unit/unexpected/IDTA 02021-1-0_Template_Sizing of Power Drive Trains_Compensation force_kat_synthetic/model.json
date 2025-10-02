@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Force to compensate permanently acting forces"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "kat",
+            "definition": [
+              {
+                "language": "en",
+                "text": "Force to compensate permanently acting forces"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

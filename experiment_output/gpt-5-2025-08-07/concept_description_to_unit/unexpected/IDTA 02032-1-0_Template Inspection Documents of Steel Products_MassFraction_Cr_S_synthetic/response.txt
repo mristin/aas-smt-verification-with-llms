@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit S (siemens) measures electrical conductance, while mass fraction is dimensionless (mass of component divided by total mass).",
+    "suggestion": "1"
+  }
+]

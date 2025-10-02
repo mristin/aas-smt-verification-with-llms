@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "“Maximum torque utilization” is a dimensionless ratio (typically expressed as a percentage) of used torque relative to available/rated torque; Nm is a unit of torque, not utilization.",
+    "suggestion": "%"
+  }
+]

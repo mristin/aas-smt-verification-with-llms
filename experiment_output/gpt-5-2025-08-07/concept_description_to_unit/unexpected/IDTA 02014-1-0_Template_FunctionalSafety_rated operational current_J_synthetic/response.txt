@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The description refers to current combined with voltage (i.e., a power quantity). Joule (J) is a unit of energy, not power.",
+    "suggestion": "VA"
+  }
+]

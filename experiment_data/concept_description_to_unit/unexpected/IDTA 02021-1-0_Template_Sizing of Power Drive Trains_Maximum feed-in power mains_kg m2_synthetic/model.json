@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "The maximum power fed into the power grid within the motion profile"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "kg m2",
+            "definition": [
+              {
+                "language": "en",
+                "text": "The maximum power fed into the power grid within the motion profile"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

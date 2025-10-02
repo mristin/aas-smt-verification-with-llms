@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit V (volt) measures electric potential, but the concept describes a utilization ratio of torque relative to a permissible value, which is dimensionless.",
+    "suggestion": "%"
+  }
+]

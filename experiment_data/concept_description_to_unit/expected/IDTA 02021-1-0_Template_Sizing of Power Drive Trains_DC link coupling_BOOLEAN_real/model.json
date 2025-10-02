@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Statement whether there is a connection between the DC links or not"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "BOOLEAN",
+            "definition": [
+              {
+                "language": "en",
+                "text": "Statement whether there is a connection between the DC links or not"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

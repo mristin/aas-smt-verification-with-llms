@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "average value of the torque of a motor over the motion profile. This value takes into account both positive and negative fluctuations of the torque during a complete cycle and thus gives a more stable idea of the average torque output of the motor"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "Nm",
+            "definition": [
+              {
+                "language": "en",
+                "text": "average value of the torque of a motor over the motion profile. This value takes into account both positive and negative fluctuations of the torque during a complete cycle and thus gives a more stable idea of the average torque output of the motor"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

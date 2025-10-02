@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mass fraction is a dimensionless ratio (kg/kg). Using % corresponds to mass percent, not mass fraction.",
+    "suggestion": "1"
+  }
+]

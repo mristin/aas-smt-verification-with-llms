@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'cd' (candela) measures luminous intensity, whereas tensile strength is a mechanical stress and should be expressed in pressure units.",
+    "suggestion": "MPa"
+  }
+]

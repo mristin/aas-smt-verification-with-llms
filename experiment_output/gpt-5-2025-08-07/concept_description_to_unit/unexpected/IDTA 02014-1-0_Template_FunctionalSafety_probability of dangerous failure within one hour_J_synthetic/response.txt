@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "J (joule) is a unit of energy, whereas the concept describes a failure frequency, which is a rate (inverse time).",
+    "suggestion": "1/h"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes angular velocity (rate of change of angular position), which should have units of angle per time. kWh is a unit of energy, not angular velocity.",
+    "suggestion": "rad/s"
+  }
+]

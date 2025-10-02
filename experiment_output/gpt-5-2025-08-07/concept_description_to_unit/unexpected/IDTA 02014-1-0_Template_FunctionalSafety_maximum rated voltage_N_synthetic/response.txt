@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a voltage ('highest operating voltage'), but the unit provided is N (newton), which measures force, not voltage.",
+    "suggestion": "V"
+  }
+]

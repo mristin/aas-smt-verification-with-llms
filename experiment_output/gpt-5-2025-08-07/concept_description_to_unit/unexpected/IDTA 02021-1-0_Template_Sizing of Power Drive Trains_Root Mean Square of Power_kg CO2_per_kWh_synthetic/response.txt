@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to average power, which should be expressed in units of power. 'kg CO2/kWh' is an emissions intensity per unit energy, not a power unit.",
+    "suggestion": "W"
+  }
+]

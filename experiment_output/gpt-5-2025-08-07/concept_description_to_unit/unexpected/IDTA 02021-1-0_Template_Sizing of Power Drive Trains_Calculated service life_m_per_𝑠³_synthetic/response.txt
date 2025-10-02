@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a duration (service life), which is a time quantity. The unit m/s^3 is a unit of jerk (length per time cubed), not time.",
+    "suggestion": "s"
+  }
+]

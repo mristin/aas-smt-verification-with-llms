@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a voltage quantity; Tesla (T) measures magnetic flux density, not voltage.",
+    "suggestion": "V"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition suggests an isolation distance (e.g., clearance/creepage) dependent on operating conditions, which is a length quantity; unit V (volts) is for electrical potential, not distance.",
+    "suggestion": "mm"
+  }
+]

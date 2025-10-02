@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Elongation after fracture is a strain typically expressed as a percentage; 'S' denotes siemens (electrical conductance) and is not appropriate.",
+    "suggestion": "%"
+  }
+]

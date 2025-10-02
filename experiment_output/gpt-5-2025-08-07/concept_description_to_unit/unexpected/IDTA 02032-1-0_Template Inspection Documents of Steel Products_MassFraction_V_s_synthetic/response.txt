@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mass fraction is dimensionless (ratio of masses). The unit 's' is seconds (time), which does not match.",
+    "suggestion": "1"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a mass, but the unit 'S' is the siemens (unit of electrical conductance).",
+    "suggestion": "kg"
+  }
+]

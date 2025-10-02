@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Yield/proof strength is a stress (force per area) and should be expressed in pressure units (e.g., pascals). Kilogram is a unit of mass and is dimensionally incorrect for stress.",
+    "suggestion": "MPa"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mean time to dangerous failure is a duration; Hertz (Hz) is a frequency unit (1/s) suitable for failure rate, not time.",
+    "suggestion": "s"
+  }
+]

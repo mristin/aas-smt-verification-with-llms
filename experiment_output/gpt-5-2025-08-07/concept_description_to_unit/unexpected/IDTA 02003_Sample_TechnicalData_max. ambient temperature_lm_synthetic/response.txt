@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept is an upper limit of ambient temperature, which requires a temperature unit. 'lm' is lumen (luminous flux), not temperature.",
+    "suggestion": "°C"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes inertia (tendency to maintain state of motion), which is quantified by mass. The unit kg·m^2 corresponds to moment of inertia (rotational), not inertia.",
+    "suggestion": "kg"
+  }
+]

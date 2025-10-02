@@ -1,0 +1,8 @@
+For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
+
+Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
+The property 'suggestion' should only indicate the more appropriate unit.
+
+# Concept descriptions
+
+Concept description 'urn:someConceptDescription' means: 'Rate (in revolutions per minute per second) at which the speed of a rotating system is reduced when an emergency stop is activated. This parameter is important to describe the rate at which the system is brought to a stop after an emergency stop is triggered to ensure the safety of people and equipment' with unit Gy

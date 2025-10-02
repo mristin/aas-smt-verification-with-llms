@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition concerns operating temperature limits of surrounding air, which requires a temperature unit. 'Sv' (sievert) measures radiation dose, not temperature.",
+    "suggestion": "°C"
+  }
+]

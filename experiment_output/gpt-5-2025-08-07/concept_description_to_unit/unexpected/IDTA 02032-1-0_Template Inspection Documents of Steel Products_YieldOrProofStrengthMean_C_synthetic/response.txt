@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Yield or proof strength is a stress measure; unit 'C' denotes degrees Celsius (temperature), not stress.",
+    "suggestion": "MPa"
+  }
+]

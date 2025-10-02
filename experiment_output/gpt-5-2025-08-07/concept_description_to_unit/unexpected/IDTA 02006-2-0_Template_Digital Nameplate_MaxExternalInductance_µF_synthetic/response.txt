@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept refers to inductance, but the unit µF is for capacitance (farads). Inductance should be expressed in henries.",
+    "suggestion": "H"
+  }
+]

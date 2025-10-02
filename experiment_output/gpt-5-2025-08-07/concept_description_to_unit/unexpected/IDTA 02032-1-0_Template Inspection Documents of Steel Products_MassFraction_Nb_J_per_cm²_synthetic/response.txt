@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a mass fraction (mass of niobium divided by total mass), which is dimensionless. J/cm² is energy per area and does not apply.",
+    "suggestion": "kg/kg"
+  }
+]

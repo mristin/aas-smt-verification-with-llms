@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a manufacturer-specified insulation rating under given operating conditions, which is an electrical property. Newton (N) measures force and is not appropriate here.",
+    "suggestion": "V"
+  }
+]

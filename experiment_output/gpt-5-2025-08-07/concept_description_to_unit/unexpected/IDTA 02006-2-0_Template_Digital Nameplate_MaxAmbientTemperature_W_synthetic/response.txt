@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a temperature limit, but the unit provided (W, watt) measures power, not temperature.",
+    "suggestion": "°C"
+  }
+]

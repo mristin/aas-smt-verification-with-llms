@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The description is for moment of inertia, whose SI unit is kilogram meter squared (kg m^2). The provided unit N·m corresponds to torque or energy, not moment of inertia.",
+    "suggestion": "kg*m^2"
+  }
+]

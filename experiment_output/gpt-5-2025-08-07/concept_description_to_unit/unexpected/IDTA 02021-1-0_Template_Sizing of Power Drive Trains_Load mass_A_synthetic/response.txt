@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit 'A' stands for ampere (electric current), which does not match the concept describing mass.",
+    "suggestion": "kg"
+  }
+]

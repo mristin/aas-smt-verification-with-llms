@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit 'm' denotes length (meter), but the definition describes a time interval; a time unit is required.",
+    "suggestion": "s"
+  }
+]

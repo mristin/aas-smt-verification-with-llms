@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a capacitance quantity; the correct SI unit is farad (F). The provided unit 'K' represents kelvin (temperature), which does not match.",
+    "suggestion": "F"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription/unit",
+    "explanation": "The definition describes a time interval until failure rate becomes unacceptable, whereas lux (lx) measures illuminance, not time.",
+    "suggestion": "h"
+  }
+]

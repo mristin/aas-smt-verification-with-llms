@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a time interval, but 'cd' (candela) is a unit of luminous intensity, not time.",
+    "suggestion": "s"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The described quantity is a ratio/degree of utilization (dimensionless), whereas Wb (weber) is a unit of magnetic flux.",
+    "suggestion": "%"
+  }
+]

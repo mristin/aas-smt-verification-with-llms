@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "The properties of NotchImpactWorkIndividualValues refer to the specific measured values of notch impact work obtained from individual tests conducted on samples using a notch impact test. This value is the total energy required."
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "Pa",
+            "definition": [
+              {
+                "language": "en",
+                "text": "The properties of NotchImpactWorkIndividualValues refer to the specific measured values of notch impact work obtained from individual tests conducted on samples using a notch impact test. This value is the total energy required."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit of an x-coordinate depends on the coordinate reference system. Metre is only valid for projected CRSs; geographic CRSs use degrees, and other systems may be unitless. A fixed 'm' is therefore not generally correct.",
+    "suggestion": "unit of the coordinate reference system"
+  }
+]

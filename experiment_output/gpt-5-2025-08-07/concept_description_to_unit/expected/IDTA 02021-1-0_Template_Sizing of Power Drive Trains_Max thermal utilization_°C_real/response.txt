@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Thermal utilization is a dimensionless ratio/percentage, not an absolute temperature. Degrees Celsius measure temperature, not utilization.",
+    "suggestion": "%"
+  }
+]

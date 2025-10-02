@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription.unit",
+    "explanation": "Diameter is a length; 'mol' (mole) measures amount of substance, not length.",
+    "suggestion": "m"
+  }
+]

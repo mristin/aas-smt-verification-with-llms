@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'rad' measures angular displacement, but the description refers to displacement (movement) of components, which implies linear displacement.",
+    "suggestion": "m"
+  }
+]

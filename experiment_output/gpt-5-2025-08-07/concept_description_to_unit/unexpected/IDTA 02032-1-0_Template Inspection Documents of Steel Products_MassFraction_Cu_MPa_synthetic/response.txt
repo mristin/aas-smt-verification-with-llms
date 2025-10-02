@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mass fraction is dimensionless (mass of component divided by total mass), whereas MPa is a unit of pressure.",
+    "suggestion": "1"
+  }
+]

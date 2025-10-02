@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'lx' (lux) measures illuminance, whereas mass fraction is a dimensionless ratio (e.g., kg/kg).",
+    "suggestion": "1"
+  }
+]

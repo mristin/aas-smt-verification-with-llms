@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept describes a force (friction), but the unit given is meters per revolution (m/rev), which is distance per rotation, not a force.",
+    "suggestion": "N"
+  }
+]

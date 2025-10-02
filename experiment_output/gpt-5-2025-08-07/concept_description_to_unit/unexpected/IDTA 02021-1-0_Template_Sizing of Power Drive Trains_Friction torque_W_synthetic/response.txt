@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a torque (restraining torque between contacting objects). Torque is measured in newton metres, while W (watt) is a unit of power.",
+    "suggestion": "N m"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes the temporal rate of change of angular velocity (angular acceleration). The unit 'STRING' is not a physical unit and does not match the described quantity.",
+    "suggestion": "rad/s^2"
+  }
+]

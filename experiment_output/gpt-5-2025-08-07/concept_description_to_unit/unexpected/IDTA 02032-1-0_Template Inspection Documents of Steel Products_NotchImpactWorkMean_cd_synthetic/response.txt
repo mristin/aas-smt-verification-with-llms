@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept describes average notch impact work (total energy) from impact tests, which is an energy quantity. The unit 'cd' (candela) measures luminous intensity, not energy.",
+    "suggestion": "J"
+  }
+]

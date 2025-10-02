@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Inductance is measured in henry (H), whereas kat (katal) measures catalytic activity (mol/s).",
+    "suggestion": "H"
+  }
+]
