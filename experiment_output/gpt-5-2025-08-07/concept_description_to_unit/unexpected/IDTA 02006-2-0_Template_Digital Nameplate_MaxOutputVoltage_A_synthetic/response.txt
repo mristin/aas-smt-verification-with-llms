@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to maximum voltage; 'A' (ampere) measures electric current, not voltage.",
+    "suggestion": "V"
+  }
+]

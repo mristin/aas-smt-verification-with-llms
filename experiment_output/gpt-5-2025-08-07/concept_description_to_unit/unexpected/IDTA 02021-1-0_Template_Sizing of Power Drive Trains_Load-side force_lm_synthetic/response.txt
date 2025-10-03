@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'lm' (lumen) measures luminous flux, while the concept describes a force; force is measured in newtons.",
+    "suggestion": "N"
+  }
+]

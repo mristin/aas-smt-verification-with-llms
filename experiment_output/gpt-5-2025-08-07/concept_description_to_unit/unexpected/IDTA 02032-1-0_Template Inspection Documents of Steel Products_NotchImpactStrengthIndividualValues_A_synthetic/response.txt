@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'A' denotes ampere (electric current), but the definition refers to energy per unit cross-sectional area (impact strength).",
+    "suggestion": "J/m^2"
+  }
+]

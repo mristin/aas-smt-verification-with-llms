@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit 'W' denotes watt (power), but the concept describes a heading direction, which is an angle.",
+    "suggestion": "deg"
+  }
+]

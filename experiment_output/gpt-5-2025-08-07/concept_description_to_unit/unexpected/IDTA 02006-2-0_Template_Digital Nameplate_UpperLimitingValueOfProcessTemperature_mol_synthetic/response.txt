@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription.unit",
+    "explanation": "The concept describes a temperature limit, but the unit provided is mol (amount of substance), which is not a temperature unit.",
+    "suggestion": "K"
+  }
+]

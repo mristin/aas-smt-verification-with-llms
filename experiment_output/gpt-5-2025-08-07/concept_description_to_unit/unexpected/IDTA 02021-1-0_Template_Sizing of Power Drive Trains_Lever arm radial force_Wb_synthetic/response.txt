@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The description refers to a distance (length) between the point of application of the radial force and the flange. 'Wb' (weber) is a unit of magnetic flux, not length.",
+    "suggestion": "m"
+  }
+]

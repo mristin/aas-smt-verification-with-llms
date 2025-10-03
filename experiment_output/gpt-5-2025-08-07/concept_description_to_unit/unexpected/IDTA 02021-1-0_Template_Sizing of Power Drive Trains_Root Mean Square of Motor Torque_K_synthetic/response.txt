@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit K denotes kelvin (temperature), but the concept describes average torque, which is measured in newton–meters.",
+    "suggestion": "N·m"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to 'weight' (a force), but the unit provided is kilograms, which measures mass. In SI, weight should be expressed in newtons.",
+    "suggestion": "N"
+  }
+]

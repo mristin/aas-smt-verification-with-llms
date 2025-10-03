@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit 'Pa' denotes pressure (pascal), but the definition refers to electrical power. Electrical power is measured in watts.",
+    "suggestion": "W"
+  }
+]

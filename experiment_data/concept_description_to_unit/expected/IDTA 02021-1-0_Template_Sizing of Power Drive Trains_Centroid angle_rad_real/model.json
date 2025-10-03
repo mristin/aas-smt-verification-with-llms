@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "The center angle refers to the angle describing the center of a circle. In the context of a rotary table, the center angle refers to the angle by which a rotary table has been rotated relative to a reference position. It is used to determine the exact position of the table. (Positive angle to start movement)"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "rad",
+            "definition": [
+              {
+                "language": "en",
+                "text": "The center angle refers to the angle describing the center of a circle. In the context of a rotary table, the center angle refers to the angle by which a rotary table has been rotated relative to a reference position. It is used to determine the exact position of the table. (Positive angle to start movement)"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

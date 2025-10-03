@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a total amount of greenhouse gas emissions, which requires a mass unit of CO2 equivalent. 'CO2eq' alone is not a unit of measure.",
+    "suggestion": "kg CO2eq"
+  }
+]

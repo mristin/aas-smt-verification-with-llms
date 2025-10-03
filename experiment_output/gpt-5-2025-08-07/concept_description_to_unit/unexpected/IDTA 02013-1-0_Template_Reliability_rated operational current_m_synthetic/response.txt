@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'm' (meter) measures length, but the definition describes a combination of current and voltage, which corresponds to power.",
+    "suggestion": "W"
+  }
+]

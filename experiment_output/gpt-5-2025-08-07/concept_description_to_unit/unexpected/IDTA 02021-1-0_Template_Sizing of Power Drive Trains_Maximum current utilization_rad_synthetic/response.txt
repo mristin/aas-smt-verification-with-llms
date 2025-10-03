@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to an electric current, while 'rad' is a unit of angle.",
+    "suggestion": "A"
+  }
+]

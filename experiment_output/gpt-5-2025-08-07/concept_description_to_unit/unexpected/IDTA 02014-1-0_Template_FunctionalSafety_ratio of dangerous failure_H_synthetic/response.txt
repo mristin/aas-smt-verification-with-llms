@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription.unit",
+    "explanation": "The definition is a ratio of failure rates; ratios are dimensionless. 'H' (hour/henry) is not appropriate.",
+    "suggestion": "1"
+  }
+]

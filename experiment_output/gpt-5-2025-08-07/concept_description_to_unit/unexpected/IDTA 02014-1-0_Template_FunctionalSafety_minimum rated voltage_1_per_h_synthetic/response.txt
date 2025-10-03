@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a voltage quantity, whereas the unit 1/h denotes reciprocal time (rate) and does not apply to electrical potential difference.",
+    "suggestion": "V"
+  }
+]

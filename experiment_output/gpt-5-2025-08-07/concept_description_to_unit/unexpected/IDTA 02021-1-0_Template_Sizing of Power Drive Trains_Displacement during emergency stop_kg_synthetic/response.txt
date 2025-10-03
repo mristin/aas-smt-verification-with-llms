@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'kg' measures mass, but the definition concerns displacement (distance moved), which is a length quantity.",
+    "suggestion": "m"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes an angle of inclination, while N (newton) is a unit of force, not angle.",
+    "suggestion": "deg"
+  }
+]

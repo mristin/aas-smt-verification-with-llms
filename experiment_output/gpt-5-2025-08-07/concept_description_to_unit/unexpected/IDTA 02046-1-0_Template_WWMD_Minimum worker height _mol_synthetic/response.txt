@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'mol' is for amount of substance, while the concept describes a height (a length quantity).",
+    "suggestion": "m"
+  }
+]

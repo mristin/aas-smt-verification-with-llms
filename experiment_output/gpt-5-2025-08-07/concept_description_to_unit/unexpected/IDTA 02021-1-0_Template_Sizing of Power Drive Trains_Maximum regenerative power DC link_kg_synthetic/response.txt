@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a maximum power value, but the unit provided is kilograms (mass). Power should be expressed in watts.",
+    "suggestion": "W"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a length (diameter across a wheel), but the unit 'F' denotes farad (capacitance) or Fahrenheit, not a length unit.",
+    "suggestion": "mm"
+  }
+]

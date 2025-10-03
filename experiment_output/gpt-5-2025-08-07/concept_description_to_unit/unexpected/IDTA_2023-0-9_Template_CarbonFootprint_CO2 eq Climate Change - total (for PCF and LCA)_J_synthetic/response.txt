@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept describes total greenhouse gas emissions (mass of CO2-equivalents), while joule (J) is a unit of energy and does not measure emissions.",
+    "suggestion": "kg CO2e"
+  }
+]

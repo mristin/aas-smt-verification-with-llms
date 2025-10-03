@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The description refers to mean time between failures (an expected duration). Lux (lx) measures illuminance, not time.",
+    "suggestion": "h"
+  }
+]

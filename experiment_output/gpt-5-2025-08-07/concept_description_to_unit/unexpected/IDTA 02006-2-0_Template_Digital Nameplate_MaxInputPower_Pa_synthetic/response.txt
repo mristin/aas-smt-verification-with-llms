@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a maximum power, but the unit Pa (pascal) measures pressure, not power.",
+    "suggestion": "W"
+  }
+]

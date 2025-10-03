@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "m/s² is a unit of acceleration, but the concept describes emissions per unit of energy. The appropriate dimension is mass of CO2 per kilowatt-hour.",
+    "suggestion": "kg CO2/kWh"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes rotational deceleration (change in revolutions per minute per second). Gy (gray) is a radiation dose unit (J/kg) and does not apply to rotational speed changes.",
+    "suggestion": "rpm/s"
+  }
+]

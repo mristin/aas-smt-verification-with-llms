@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes an average power quantity; BOOLEAN is a truth value and not a unit of power.",
+    "suggestion": "W"
+  }
+]

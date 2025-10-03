@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes an electrical current (maximum current, peak AC or DC). The SI unit for current is ampere (A), while joule (J) measures energy.",
+    "suggestion": "A"
+  }
+]

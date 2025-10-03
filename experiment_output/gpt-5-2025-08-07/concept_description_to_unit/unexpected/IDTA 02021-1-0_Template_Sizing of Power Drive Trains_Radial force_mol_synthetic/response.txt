@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The description refers to a force component (tangential force) in a rotating system. Force is measured in newtons (N), whereas mol (mole) is a unit of amount of substance.",
+    "suggestion": "N"
+  }
+]

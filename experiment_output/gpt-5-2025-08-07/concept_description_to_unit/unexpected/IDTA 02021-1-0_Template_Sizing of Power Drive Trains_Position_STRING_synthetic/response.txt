@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition denotes a numeric spatial coordinate/offset relative to the origin, which is a length quantity. 'STRING' is textual and not suitable for measurable length values.",
+    "suggestion": "m"
+  }
+]

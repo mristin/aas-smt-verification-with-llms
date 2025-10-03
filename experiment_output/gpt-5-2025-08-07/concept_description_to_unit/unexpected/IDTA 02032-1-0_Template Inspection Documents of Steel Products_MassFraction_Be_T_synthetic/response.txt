@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mass fraction is dimensionless (mass per mass). The unit 'T' denotes tesla and does not correspond to a mass fraction.",
+    "suggestion": "kg/kg"
+  }
+]

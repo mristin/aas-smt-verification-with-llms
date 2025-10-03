@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to the temporal rate of change of acceleration (jerk), which has SI unit m s^-3. The provided unit 'kg m2' corresponds to moment of inertia, not jerk.",
+    "suggestion": "m s^-3"
+  }
+]

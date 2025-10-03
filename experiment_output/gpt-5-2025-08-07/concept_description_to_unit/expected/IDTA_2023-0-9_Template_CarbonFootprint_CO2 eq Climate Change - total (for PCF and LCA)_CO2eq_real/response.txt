@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition is a total amount of greenhouse gas emissions, which requires a mass-based unit; 'CO2eq' alone lacks a mass dimension and is not a valid unit by itself.",
+    "suggestion": "kg CO2eq"
+  }
+]

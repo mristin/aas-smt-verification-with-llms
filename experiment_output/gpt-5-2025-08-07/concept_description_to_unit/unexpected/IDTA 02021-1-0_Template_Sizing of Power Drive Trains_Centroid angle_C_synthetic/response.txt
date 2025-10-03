@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The described quantity is an angle, but the unit 'C' denotes Coulomb (electric charge) or Celsius (temperature), not an angular unit.",
+    "suggestion": "deg"
+  }
+]

@@ -14,7 +14,7 @@ class NonEmptyStr(str):
         return cast(NonEmptyStr, value)
 
 
-FILENAMEABLE_RE = re.compile("[a-zA-Z0-9._-]+")
+FILENAMEABLE_RE = re.compile("[^/;:]+")
 
 
 class Filenameable(str):

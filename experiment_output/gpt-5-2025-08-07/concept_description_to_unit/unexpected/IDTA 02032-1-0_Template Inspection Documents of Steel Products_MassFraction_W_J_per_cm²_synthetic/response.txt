@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mass fraction is a dimensionless ratio (e.g., kg/kg) typically reported as percent, whereas J/cm² is energy per area; the unit does not match the definition.",
+    "suggestion": "%"
+  }
+]

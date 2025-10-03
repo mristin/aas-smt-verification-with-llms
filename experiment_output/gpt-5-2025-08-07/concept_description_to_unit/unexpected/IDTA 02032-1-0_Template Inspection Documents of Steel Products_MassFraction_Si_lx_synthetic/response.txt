@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Mass fraction is a dimensionless ratio (kg/kg). Lux (lx) is a unit of illuminance, so it does not match the definition.",
+    "suggestion": "1"
+  }
+]

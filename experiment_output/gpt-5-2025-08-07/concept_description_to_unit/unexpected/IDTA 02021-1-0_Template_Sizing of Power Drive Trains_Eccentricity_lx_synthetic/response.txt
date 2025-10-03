@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept describes a distance (radius from the center of rotation to the payload point), but 'lx' (lux) is a unit of illuminance, not length.",
+    "suggestion": "m"
+  }
+]

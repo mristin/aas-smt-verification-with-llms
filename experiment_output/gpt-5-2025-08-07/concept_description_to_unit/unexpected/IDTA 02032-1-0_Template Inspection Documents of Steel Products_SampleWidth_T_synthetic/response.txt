@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Width is a length dimension, but 'T' is tesla (magnetic flux density), not a length unit.",
+    "suggestion": "m"
+  }
+]

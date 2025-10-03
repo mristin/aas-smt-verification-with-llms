@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept describes a voltage, which should be measured in volts. Hertz (Hz) measures frequency, not voltage.",
+    "suggestion": "V"
+  }
+]

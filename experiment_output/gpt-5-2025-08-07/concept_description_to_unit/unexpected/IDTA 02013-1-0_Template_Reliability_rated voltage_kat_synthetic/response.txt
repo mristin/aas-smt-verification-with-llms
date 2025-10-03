@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'kat' (katal) measures catalytic activity (mol/s), not electrical voltage. The concept describes operating voltage, which should use volts.",
+    "suggestion": "V"
+  }
+]

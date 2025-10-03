@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The concept refers to a time point measured in seconds, but the unit provided is Pa (pascal), which measures pressure.",
+    "suggestion": "s"
+  }
+]

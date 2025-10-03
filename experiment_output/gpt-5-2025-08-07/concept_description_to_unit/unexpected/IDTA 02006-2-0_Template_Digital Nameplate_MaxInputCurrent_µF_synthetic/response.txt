@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to maximum current, but µF (microfarad) is a unit of capacitance, not current.",
+    "suggestion": "A"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to a temperature (lower limit of operating ambient temperature), but the unit 'A' denotes electric current (ampere).",
+    "suggestion": "°C"
+  }
+]

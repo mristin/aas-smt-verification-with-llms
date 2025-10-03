@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit 'H' denotes henry (inductance), which is not appropriate for a Y-coordinate value. Coordinates are typically expressed in units of length.",
+    "suggestion": "m"
+  }
+]

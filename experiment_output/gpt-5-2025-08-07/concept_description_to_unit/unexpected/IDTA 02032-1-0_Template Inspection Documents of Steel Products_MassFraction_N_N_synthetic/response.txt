@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Unit 'N' denotes Newton (force), but the concept is a mass fraction, which is dimensionless.",
+    "suggestion": "1"
+  }
+]

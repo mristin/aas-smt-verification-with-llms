@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition describes a rated operational current (current to be switched at a rated operational voltage). The appropriate unit is ampere; using milliampere is atypical and may misrepresent typical device ratings.",
+    "suggestion": "A"
+  }
+]

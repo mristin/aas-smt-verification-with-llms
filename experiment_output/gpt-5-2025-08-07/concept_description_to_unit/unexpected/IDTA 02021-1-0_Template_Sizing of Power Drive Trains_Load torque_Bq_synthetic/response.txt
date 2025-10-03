@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "Bq (becquerel) is the SI unit of radioactivity (s^-1), but the concept describes torque, which is a moment of force.",
+    "suggestion": "N m"
+  }
+]

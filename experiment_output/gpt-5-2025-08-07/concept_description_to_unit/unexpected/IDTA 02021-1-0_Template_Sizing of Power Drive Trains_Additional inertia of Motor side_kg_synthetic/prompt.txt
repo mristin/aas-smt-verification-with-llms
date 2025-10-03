@@ -1,0 +1,8 @@
+For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
+
+Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
+The property 'suggestion' should only indicate the more appropriate unit.
+
+# Concept descriptions
+
+Concept description 'urn:someConceptDescription' means: 'additional mass or inertia added on the side of a drive system or motor. This additional mass can be caused by various factors, such as the own rotor inertia (including pinion), heavier gears or mechanical loads added to the drive system' with unit kg

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The unit 'lm' (lumen) measures luminous flux, but the definition describes a diameter—i.e., a length measurement.",
+    "suggestion": "m"
+  }
+]

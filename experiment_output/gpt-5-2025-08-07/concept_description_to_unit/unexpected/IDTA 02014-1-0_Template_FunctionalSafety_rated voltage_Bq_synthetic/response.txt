@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition refers to an electrical operating voltage, which should be measured in volts. Bq (becquerel) is a unit of radioactive decay and does not apply to voltage.",
+    "suggestion": "V"
+  }
+]

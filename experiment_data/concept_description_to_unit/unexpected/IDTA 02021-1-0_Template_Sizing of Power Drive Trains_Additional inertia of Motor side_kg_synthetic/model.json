@@ -1,0 +1,43 @@
+{
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "additional mass or inertia added on the side of a drive system or motor. This additional mass can be caused by various factors, such as the own rotor inertia (including pinion), heavier gears or mechanical loads added to the drive system"
+        }
+      ],
+      "id": "urn:someConceptDescription",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "something"
+              }
+            ],
+            "unit": "kg",
+            "definition": [
+              {
+                "language": "en",
+                "text": "additional mass or inertia added on the side of a drive system or motor. This additional mass can be caused by various factors, such as the own rotor inertia (including pinion), heavier gears or mechanical loads added to the drive system"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

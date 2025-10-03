@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The description refers to a force component along the rotation axis (axial force). Force has unit newton (kg·m·s^-2), while kg·m² is the unit of moment of inertia.",
+    "suggestion": "N"
+  }
+]

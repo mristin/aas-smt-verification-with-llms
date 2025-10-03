@@ -1,0 +1,8 @@
+For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
+
+Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
+The property 'suggestion' should only indicate the more appropriate unit.
+
+# Concept descriptions
+
+Concept description 'urn:someConceptDescription' means: 'The maximum calculated effective peak current within the motion profile based on the technical specification of the component' with unit rad

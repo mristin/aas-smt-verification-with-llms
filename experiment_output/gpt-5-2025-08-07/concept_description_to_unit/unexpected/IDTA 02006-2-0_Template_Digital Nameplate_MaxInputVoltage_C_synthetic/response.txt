@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:someConceptDescription",
+    "explanation": "The definition concerns maximum voltage; 'C' (coulomb) measures electric charge, not voltage.",
+    "suggestion": "V"
+  }
+]
