@@ -1,0 +1,36 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "something",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "installationDate"
+              }
+            ]
+          },
+          "valueType": "xs:date",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "The installation date of the component."
+        }
+      ],
+      "id": "installationDate",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

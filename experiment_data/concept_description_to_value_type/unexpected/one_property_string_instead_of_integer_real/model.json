@@ -1,0 +1,44 @@
+{
+  "submodels": [
+    {
+      "id": "https://admin-shell.io/idta/aas/AIDataset/1/0",
+      "submodelElements": [
+        {
+          "category": "PARAMETER",
+          "idShort": "NumberLables",
+          "description": [
+            {
+              "language": "en",
+              "text": "Number of the different labels in the dataset"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/AIDataset/labeled/Classification/NumberLabels/1/0"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "idShort": "NumberLables",
+      "description": [
+        {
+          "language": "en",
+          "text": "Number of the different labels in the dataset."
+        }
+      ],
+      "id": "https://admin-shell.io/idta/AIDataset/labeled/Classification/NumberLabels/1/0",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

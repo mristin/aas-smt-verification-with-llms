@@ -1,0 +1,36 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "AccelerationLimit",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/ControlConfig/Axes/AccelerationLimit/1/0"
+              }
+            ]
+          },
+          "valueType": "xs:long",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Acceleration limit of the axis"
+        }
+      ],
+      "id": "https://admin-shell.io/idta/ControlConfig/Axes/AccelerationLimit/1/00",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}
