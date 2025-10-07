@@ -1,0 +1,36 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "operatingTemperatur",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "someConcept"
+              }
+            ]
+          },
+          "valueType": "xs:integer",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "The operating temperature."
+        }
+      ],
+      "id": "someConcept",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

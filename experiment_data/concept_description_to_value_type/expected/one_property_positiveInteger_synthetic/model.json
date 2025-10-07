@@ -1,0 +1,36 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "something",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "isPumpRunning"
+              }
+            ]
+          },
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Pump running state"
+        }
+      ],
+      "id": "isPumpRunning",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

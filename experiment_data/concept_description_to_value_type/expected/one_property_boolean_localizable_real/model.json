@@ -1,0 +1,42 @@
+{
+  "submodels": [
+    {
+      "id": "someSubmodel",
+      "submodelElements": [
+        {
+          "idShort": "Localizable",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "localizable"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/prop/localizable/1/0"
+              }
+            ]
+          },
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "id": "https://admin-shell.io/idta/prop/localizable/1/0",
+      "description": [
+              {
+                "language": "en",
+                "text": "Information wether the position can be currently updated with the correct position"
+              }
+          ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

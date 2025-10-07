@@ -1,0 +1,1 @@
+src: https://github.com/admin-shell-io/submodel-templates/blob/6b89b6b1a4719e54ca36957393b144e2fc02509c/published/Artificial%20Intelligence%20Dataset/1/0/IDTA%2002058-1-0_Template_AIDataset.json

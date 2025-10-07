@@ -1,0 +1,1 @@
+src: https://github.com/admin-shell-io/submodel-templates/blob/6b89b6b1a4719e54ca36957393b144e2fc02509c/published/Plant%20Asset%20Management%20Specification%20Sheet/1/0/IDTA%2002019-1-0_Template_PlantAssetManagement.json
