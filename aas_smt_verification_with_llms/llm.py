@@ -75,7 +75,7 @@ class Ollama(Client):
     def generate(self, prompt: str) -> str:
         url = f"{self.host}/api/generate"
 
-        payload = {"model": self.model, "prompt": prompt}
+        payload = {"model": self.model, "prompt": prompt, "stream": False}
 
         resp = requests.post(url, json=payload, stream=False, timeout=self.timeout)
         resp.raise_for_status()
