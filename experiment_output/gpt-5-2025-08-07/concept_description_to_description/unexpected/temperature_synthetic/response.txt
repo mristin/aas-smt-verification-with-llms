@@ -1,0 +1,7 @@
+[
+  {
+    "path": "enginePrice",
+    "explanation": "Element description 'Engine price' conflicts with concept description 'Internal temperature in Celsius'; they refer to different quantities (price vs temperature).",
+    "suggestion": "Internal temperature in Celsius"
+  }
+]
