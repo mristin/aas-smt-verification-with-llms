@@ -1,0 +1,12 @@
+For which of the following elements does the description DOES NOT correspond with its concept description?
+
+Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
+The property 'suggestion' should only indicate the more appropriate description. 
+
+# Elements
+
+Property at path 'temperature' with ID-short 'temperature' with description 'Temperature in the casing' with value type xs:double and with concept description 'someConcept'
+
+# Concept descriptions
+
+Concept description 'someConcept' means: 'Internal temperature in Celsius'

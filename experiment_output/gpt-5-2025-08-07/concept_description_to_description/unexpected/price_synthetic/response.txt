@@ -1,0 +1,7 @@
+[
+  {
+    "path": "pressureAtValve",
+    "explanation": "The element describes a physical pressure at a valve, while its concept description refers to the product's price; these are unrelated concepts.",
+    "suggestion": "Pressure at the valve"
+  }
+]

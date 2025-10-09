@@ -1,0 +1,7 @@
+[
+  {
+    "path": "enginePrice",
+    "explanation": "Element describes a monetary value ('Engine price') but is linked to a concept description meaning 'Water pressure', which is unrelated.",
+    "suggestion": "Engine price"
+  }
+]
