@@ -1,7 +1,1 @@
-[
-  {
-    "path": "something",
-    "explanation": "The element description 'Pressure at the valve' does not specify the medium, while the concept description is 'Water pressure', making it too generic relative to the concept.",
-    "suggestion": "Water pressure at the valve"
-  }
-]
+[]

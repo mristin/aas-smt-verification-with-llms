@@ -1,7 +1,7 @@
 [
   {
     "path": "enginePrice",
-    "explanation": "Element describes a monetary value ('Engine price') but is linked to a concept description meaning 'Water pressure', which is unrelated.",
+    "explanation": "The element describes the monetary cost of an engine, while the linked concept description is 'Water pressure', a physical pressure property. These are semantically unrelated.",
     "suggestion": "Engine price"
   }
 ]

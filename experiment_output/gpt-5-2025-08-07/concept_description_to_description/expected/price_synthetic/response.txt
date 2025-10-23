@@ -1,7 +1,1 @@
-[
-  {
-    "path": "enginePrice",
-    "explanation": "The element description 'Engine price' is component-specific, while the concept description 'Price of the product' refers to the overall product.",
-    "suggestion": "Price of the product"
-  }
-]
+[]
