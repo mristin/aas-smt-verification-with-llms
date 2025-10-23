@@ -1,7 +1,1 @@
-[
-  {
-    "path": "temperature",
-    "explanation": "The description 'Temperature in the casing' omits the unit specified by the concept ('in Celsius') and is less precise than 'internal' regarding measurement location.",
-    "suggestion": "Internal temperature in Celsius"
-  }
-]
+[]

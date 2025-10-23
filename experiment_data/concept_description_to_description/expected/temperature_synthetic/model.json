@@ -8,7 +8,7 @@
           "description": [
             {
               "language": "en",
-              "text": "Temperature in the casing"
+              "text": "Temperature inside the casing"
             }
           ],
           "semanticId": {
@@ -32,7 +32,7 @@
       "description": [
         {
           "language": "en",
-          "text": "Internal temperature in Celsius"
+          "text": "Internal temperature"
         }
       ],
       "id": "someConcept",

@@ -53,7 +53,11 @@ def main() -> int:
 
         prompt = (
             f"For which of the following elements does the description "
-            f"DOES NOT correspond with its concept description?\n\n"
+            f"DOES NOT correspond with its concept description? "
+            f"(Consider the fact that the description can include more "
+            f"specific information about a particular instance "
+            f"that the concept description "
+            f"should be able to capture semantically.)\n\n"
             f"Output a JSON list of objects with properties 'path', "
             f"'explanation' and 'suggestion' corresponding to the mismatches.\n"
             f"The property 'suggestion' should only indicate "
