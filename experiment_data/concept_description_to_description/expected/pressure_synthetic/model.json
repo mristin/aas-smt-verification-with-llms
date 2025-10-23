@@ -8,7 +8,7 @@
           "description": [
             {
               "language": "en",
-              "text": "Pressure at the valve"
+              "text": "The pressure of water in the valve"
             }
           ],
           "semanticId": {
