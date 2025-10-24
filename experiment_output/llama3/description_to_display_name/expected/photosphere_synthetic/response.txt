@@ -1,0 +1,6 @@
+Based on the given information, it appears that there is no mismatch between the description and the display name for this element. Therefore, the output will be an empty JSON list.
+
+Here is the JSON output:
+```
+[]
+```
