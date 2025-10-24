@@ -32,6 +32,7 @@ dependencies = [
     "aas-core3.0>=1.1.2,<2",
     # This version of tqdm must coincide with the type stubs below.
     "tqdm==4.67.0",
+    "openai>=2.3",
 ]
 
 [project.optional-dependencies]
