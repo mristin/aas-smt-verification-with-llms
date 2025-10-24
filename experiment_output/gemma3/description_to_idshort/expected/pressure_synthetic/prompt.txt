@@ -1,0 +1,9 @@
+For which of the following elements does the ID-short DOES NOT correspond with its description?
+
+Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
+The property 'suggestion' should contain a better description.
+Note, that there are cases where there is no mismatch and return this as well.
+
+# Elements
+
+Property at path 'pressure' with ID-short 'pressure' with description 'Water pressure' with value type xs:double

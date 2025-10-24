@@ -11,7 +11,7 @@
               "text": "Price of a product"
             }
           ],
-          "valueType": "xs:string",
+          "valueType": "xs:decimal",
           "modelType": "Property"
         }
       ],
