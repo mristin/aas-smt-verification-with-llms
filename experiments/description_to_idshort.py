@@ -12,6 +12,7 @@ import experiments.storage
 from aas_smt_verification_with_llms import argparsing, llm, aasing
 from aas_smt_verification_with_llms.common import Filenameable
 
+
 def main() -> int:
     """Execute the main routine."""
     parser = argparsing.build()
