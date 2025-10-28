@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Bandwidth"
+                            "text": "For outdoor environments"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "The maximum rate at which data can be transmitted over a network or communication channel."
+                            "text": "Suitable for indoor use"
                         }
                     ],
                     "modelType": "Property",

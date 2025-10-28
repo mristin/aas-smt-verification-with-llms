@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Keystone species"
+                            "text": "Axle length"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "An organism that has a disproportionately large impact on its ecosystem relative to its abundance."
+                            "text": "Shaft diameter"
                         }
                     ],
                     "modelType": "Property",

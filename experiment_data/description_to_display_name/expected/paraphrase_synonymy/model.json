@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Mount Everest"
+                            "text": "Beginning time"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "A handheld video game console released in the early 2000s."
+                            "text": "Start time"
                         }
                     ],
                     "modelType": "Property",

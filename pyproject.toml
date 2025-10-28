@@ -41,7 +41,8 @@ dev = [
     "mypy==1.18.1",
     "pylint==3.3.8",
     "types-requests==2.32.4.20250913",
-    "types-tqdm==4.67.0.20250809"
+    "types-tqdm==4.67.0.20250809",
+    "basyx-python-sdk==1.2.1",
 ]
 
 [project.scripts]

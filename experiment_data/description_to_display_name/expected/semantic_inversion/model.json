@@ -1,0 +1,28 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "some_id_short",
+                    "displayName": [
+                        {
+                            "language": "en",
+                            "text": "Allowed voltage"
+                        }
+                    ],
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Permitted voltage"
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

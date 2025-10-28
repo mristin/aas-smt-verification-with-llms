@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Water Pump"
+                            "text": "Maximum voltage"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "A modern passenger aircraft used for long-haul flights."
+                            "text": "Permitted voltage"
                         }
                     ],
                     "modelType": "Property",

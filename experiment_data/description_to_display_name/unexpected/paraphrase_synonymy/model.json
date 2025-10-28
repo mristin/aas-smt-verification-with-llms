@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Photosphere"
+                            "text": "End time"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "The visible surface layer of the sun that emits most of its light."
+                            "text": "Start time"
                         }
                     ],
                     "modelType": "Property",
