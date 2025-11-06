@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     # Paraphrase / Synonymy
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/paraphrase_synonymy",
+        path=f"{BASE_PATH}/expected/no_paraphrase_synonymy",
         description="Start time",
         display_name="Beginning time",
     )
@@ -95,7 +95,7 @@ if __name__ == "__main__":
 
     # Partial overlap
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/partial_overlap",
+        path=f"{BASE_PATH}/expected/no_partial_overlap",
         description="Material (steel alloy)",
         display_name="Material",
     )
@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
     # Contradiction / factual inconsistency
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/contradiction",
+        path=f"{BASE_PATH}/expected/no_contradiction",
         description="Suitable for indoor use",
         display_name="For indoor environments",
     )
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
     # Ambiguity
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/ambiguity",
+        path=f"{BASE_PATH}/expected/no_ambiguity",
         description="Electrical input power",
         display_name="Power consumption",
     )
@@ -138,7 +138,7 @@ if __name__ == "__main__":
 
     # Omission / missing info
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/omission",
+        path=f"{BASE_PATH}/expected/no_omission",
         description="Operating temperature range",
         display_name="Operating temperature",
     )
@@ -152,13 +152,13 @@ if __name__ == "__main__":
 
     # Context-dependent interpretation / words sense disambiguation (WSD)
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/context_wsd",
+        path=f"{BASE_PATH}/expected/context_words_sense_disambiguation",
         description="Mechanical output power",
         display_name="Mechanical power",
     )
     #   Semantically still the same
     write_experiment_file(
-        path=f"{BASE_PATH}/unexpected/context_wsd",
+        path=f"{BASE_PATH}/unexpected/context_words_sense_disambiguation",
         description="Mechanical Power",
         display_name="Power",
     )
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 
     # Terminology mismatch
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/terminology_mismatch",
+        path=f"{BASE_PATH}/expected/no_terminology_mismatch",
         description="Shaft diameter",
         display_name="Shaft diameter",
     )
@@ -194,7 +194,7 @@ if __name__ == "__main__":
 
     # Negation mismatch
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/negation_mismatch",
+        path=f"{BASE_PATH}/expected/no_negation_mismatch",
         description="Suitable for wet environments",
         display_name="Compatible with wet environments",
     )
@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
     # Uncommon phrasing / language quality
     write_experiment_file(
-        path=f"{BASE_PATH}/expected/uncommon_phrasing",
+        path=f"{BASE_PATH}/expected/no_uncommon_phrasing",
         description="Weight",
         display_name="Weight",
     )
