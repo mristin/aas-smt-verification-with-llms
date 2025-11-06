@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Eiffel Tower"
+                            "text": "Nominal shaft speed"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "A freshwater fish species found in North America."
+                            "text": "Nominal shaft speed"
                         }
                     ],
                     "modelType": "Property",

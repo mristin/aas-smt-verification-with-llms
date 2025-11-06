@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Water Pump"
+                            "text": "Heaviness"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "A device that moves water from one place to another, often used in engines or plumbing systems."
+                            "text": "Weight heavy"
                         }
                     ],
                     "modelType": "Property",

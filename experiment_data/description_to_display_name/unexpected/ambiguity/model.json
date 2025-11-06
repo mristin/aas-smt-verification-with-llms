@@ -9,13 +9,13 @@
                     "displayName": [
                         {
                             "language": "en",
-                            "text": "Catalyst"
+                            "text": "Rated power"
                         }
                     ],
                     "description": [
                         {
                             "language": "en",
-                            "text": "A substance that speeds up a chemical reaction without being consumed in the process."
+                            "text": "Power"
                         }
                     ],
                     "modelType": "Property",
