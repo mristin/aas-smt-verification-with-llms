@@ -262,6 +262,7 @@ def main() -> int:
             value_type=aas_types.DataTypeDefXSD.HEX_BINARY,
             identifier="hex_binary_match",
         ),
+        # Numeric precision mismatch
         Case(
             category="unexpected",
             concept_description=(
