@@ -1,9 +1,0 @@
-```json
-[
-  {
-    "path": "price",
-    "explanation": "The ID-short 'price' describes 'Water pressure', which is a physical property, not a monetary value.",
-    "suggestion": "Water Pressure"
-  }
-]
-```

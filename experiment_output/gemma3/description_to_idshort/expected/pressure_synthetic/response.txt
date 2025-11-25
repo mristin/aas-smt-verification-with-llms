@@ -1,9 +1,0 @@
-```json
-[
-  {
-    "path": "pressure",
-    "explanation": "The ID-short 'pressure' and the description 'Water pressure' accurately describe the element's property.",
-    "suggestion": "No mismatch."
-  }
-]
-```

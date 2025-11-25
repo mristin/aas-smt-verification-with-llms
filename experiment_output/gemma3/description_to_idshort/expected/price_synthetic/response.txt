@@ -1,9 +1,0 @@
-```json
-[
-  {
-    "path": "price",
-    "explanation": "The ID-short 'price' is a standard term referring to the cost of an item, and the description 'Price of a product' accurately reflects this. It's a common and expected element name.",
-    "suggestion": "Price of a product"
-  }
-]
-```

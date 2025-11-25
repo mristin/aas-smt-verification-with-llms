@@ -1,9 +1,0 @@
-```json
-[
-  {
-    "path": "pressure",
-    "explanation": "The ID-short 'pressure' corresponds to 'Price of a product', which is a misleading term. 'Pressure' usually refers to a force exerted over an area, not a financial term.",
-    "suggestion": "Price of a product"
-  }
-]
-```
