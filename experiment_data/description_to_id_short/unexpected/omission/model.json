@@ -1,0 +1,22 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "temperature",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Operating temperature"
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

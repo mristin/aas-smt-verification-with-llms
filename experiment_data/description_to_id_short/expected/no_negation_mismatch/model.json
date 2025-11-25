@@ -1,0 +1,22 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "compatible_with_wet_environments",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Suitable for wet environments"
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

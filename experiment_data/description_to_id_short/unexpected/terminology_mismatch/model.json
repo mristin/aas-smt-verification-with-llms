@@ -1,0 +1,22 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "axle_length",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Shaft diameter"
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "weight",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Weight"
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

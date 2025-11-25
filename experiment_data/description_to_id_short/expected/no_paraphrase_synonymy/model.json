@@ -1,0 +1,22 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "beginning_time",
+                    "description": [
+                        {
+                            "language": "en",
+                            "text": "Start time"
+                        }
+                    ],
+                    "modelType": "Property",
+                    "value": "someString",
+                    "valueType": "xs:string"
+                }
+            ]
+        }
+    ]
+}

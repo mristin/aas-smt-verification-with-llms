@@ -7,7 +7,7 @@ To run, you need the Eclipse BaSyx-Python SDK (`pip3 install basyx-python-sdk`)
 import os
 import pathlib
 import sys
-from typing import Sequence
+from typing import Sequence, Optional
 import dataclasses
 
 from basyx.aas import model
@@ -26,25 +26,32 @@ class Case:
     identifier: str
 
 
-def _generate_submodel(description: str, display_name: str) -> model.Submodel:
+def _generate_submodel(description: str, display_name: Optional[str], id_short: str) -> model.Submodel:
     """
     Generate a minimal `Submodel` containing a `Property` with the given `description` and
     `display_name` inside its respective `MultiLanguage` objects.
 
     Note, that `Identifier` of the `Submodel` and `id_short` of the `Property` are fixed.
     """
+    if display_name is None:
+        display_name_mlp = None
+    else:
+        display_name_mlp = model.MultiLanguageNameType({"en": display_name})
     return model.Submodel(
         id_="https://example.org/some_submodel",
         submodel_element=[
             model.Property(
-                id_short="some_id_short",
+                id_short=id_short,
                 value_type=model.datatypes.String,
                 value="someString",
-                display_name=model.MultiLanguageNameType({"en": display_name}),
+                display_name=display_name_mlp,
                 description=model.MultiLanguageTextType({"en": description}),
             )
         ],
     )
+
+def _to_snake_case(s: str) -> str:
+    return s.replace(" ", "_").lower()
 
 
 def main() -> int:
@@ -229,6 +236,7 @@ def main() -> int:
         # Kind of intelligible by a human, but weird
     ]
 
+    print("Generating test data for 'description to display name'")
     for case in case_specs:
         path = (
             experiment_data_dir
@@ -239,7 +247,30 @@ def main() -> int:
         )
 
         # Create the experiment data
-        submodel = _generate_submodel(case.description, case.display_name)
+        submodel = _generate_submodel(case.description, case.display_name, "some_id_short")
+
+        # Ensure directory exists
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Write the AAS JSON file
+        with open(path, "w", encoding="utf-8") as file:
+            json_serialization.write_aas_json_file(
+                file, model.DictObjectStore([submodel]), indent=4
+            )
+        print(f"Saved to: {path}")
+
+    print("Generating test data for 'description to idShort'")
+    for case in case_specs:
+        path = (
+            experiment_data_dir
+            / "description_to_id_short"
+            / case.category
+            / case.identifier
+            / "model.json"
+        )
+
+        # Create the experiment data
+        submodel = _generate_submodel(case.description, None, _to_snake_case(case.display_name))
 
         # Ensure directory exists
         path.parent.mkdir(parents=True, exist_ok=True)
