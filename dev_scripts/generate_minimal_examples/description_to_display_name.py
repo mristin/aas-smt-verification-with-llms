@@ -26,7 +26,9 @@ class Case:
     identifier: str
 
 
-def _generate_submodel(description: str, display_name: Optional[str], id_short: str) -> model.Submodel:
+def _generate_submodel(
+    description: str, display_name: Optional[str], id_short: str
+) -> model.Submodel:
     """
     Generate a minimal `Submodel` containing a `Property` with the given `description` and
     `display_name` inside its respective `MultiLanguage` objects.
@@ -49,6 +51,7 @@ def _generate_submodel(description: str, display_name: Optional[str], id_short: 
             )
         ],
     )
+
 
 def _to_snake_case(s: str) -> str:
     return s.replace(" ", "_").lower()
@@ -247,7 +250,9 @@ def main() -> int:
         )
 
         # Create the experiment data
-        submodel = _generate_submodel(case.description, case.display_name, "some_id_short")
+        submodel = _generate_submodel(
+            case.description, case.display_name, "some_id_short"
+        )
 
         # Ensure directory exists
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -270,7 +275,9 @@ def main() -> int:
         )
 
         # Create the experiment data
-        submodel = _generate_submodel(case.description, None, _to_snake_case(case.display_name))
+        submodel = _generate_submodel(
+            case.description, None, _to_snake_case(case.display_name)
+        )
 
         # Ensure directory exists
         path.parent.mkdir(parents=True, exist_ok=True)
