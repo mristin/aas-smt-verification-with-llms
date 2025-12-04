@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept describes a day of month (1–31), which is an integer value, but the value type is xs:string.",
+    "suggestion": "xs:integer"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a timestamp ('Last maintenance timestamp'), but the value type is xs:long (integer). Timestamps should use a temporal XSD type, not an integer.",
+    "suggestion": "xs:dateTime"
+  }
+]

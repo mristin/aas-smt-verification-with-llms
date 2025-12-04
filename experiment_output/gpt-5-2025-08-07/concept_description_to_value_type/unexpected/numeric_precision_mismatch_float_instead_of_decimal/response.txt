@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a precise monetary value requiring exact decimal representation, but the value type is xs:float, which is an approximate binary floating-point type and unsuitable for financial data.",
+    "suggestion": "xs:decimal"
+  }
+]

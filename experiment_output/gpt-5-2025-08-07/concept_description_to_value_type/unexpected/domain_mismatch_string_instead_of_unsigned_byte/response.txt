@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a status register byte value, which is a numeric 8-bit value. Using xs:string does not reflect the intended numeric semantics.",
+    "suggestion": "xs:unsignedByte"
+  }
+]

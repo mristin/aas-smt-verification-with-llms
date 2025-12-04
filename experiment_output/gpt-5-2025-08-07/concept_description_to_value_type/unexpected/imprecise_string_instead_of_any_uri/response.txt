@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept description denotes a URL (Technical documentation URL), but the value type is xs:string. URLs should use the specific XML Schema type for URIs.",
+    "suggestion": "xs:anyURI"
+  }
+]

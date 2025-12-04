@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept 'Service life remaining in years' is a quantitative measure and should be numeric; xs:string cannot represent numeric values.",
+    "suggestion": "xs:double"
+  }
+]

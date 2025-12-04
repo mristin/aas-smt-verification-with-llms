@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept describes a quantitative temperature difference relative to a reference, which should be numeric. Using xs:string prevents numeric comparisons and calculations.",
+    "suggestion": "xs:double"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a temporal duration (Service interval duration). Using xs:string loses semantic meaning and validation for durations.",
+    "suggestion": "xs:duration"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a device fingerprint as hexadecimal data, which is binary/hex-encoded content. Using xs:long implies a signed integer and would discard hex formatting and leading zeros.",
+    "suggestion": "xs:hexBinary"
+  }
+]

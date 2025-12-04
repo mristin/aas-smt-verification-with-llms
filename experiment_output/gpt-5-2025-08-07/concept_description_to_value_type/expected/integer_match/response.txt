@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes an extremely large, typically measured quantity (order ~1e23). xs:integer implies exact counts and disallows scientific notation, making it impractical for such magnitudes and typical measurement uncertainty.",
+    "suggestion": "xs:double"
+  }
+]

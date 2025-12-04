@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a temporal value (quarter and year) while the element is typed as xs:string. A date-related XSD type better captures the semantics; quarter can be represented via the month at the quarter boundary.",
+    "suggestion": "xs:gYearMonth"
+  }
+]

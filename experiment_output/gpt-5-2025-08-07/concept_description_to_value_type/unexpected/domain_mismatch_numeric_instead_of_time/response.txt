@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The value type xs:long is an integer, but the concept 'Maintenance start time of day' represents a time-of-day and should use a time datatype.",
+    "suggestion": "xs:time"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a high-frequency temperature sensor measurement. Sensor readings are continuous, real‑valued data typically represented with floating‑point types; xs:decimal is intended for exact base‑10 values (e.g., financial).",
+    "suggestion": "xs:double"
+  }
+]

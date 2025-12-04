@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The value type is xs:long (integer), but the concept describes a cryptographic certificate encoded in base64, which should be represented as binary data (base64) rather than a number.",
+    "suggestion": "xs:base64Binary"
+  }
+]

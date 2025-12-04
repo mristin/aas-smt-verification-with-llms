@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept describes equipment age in years counted from 1, which is a numeric, whole, positive value. Using xs:string does not reflect this discrete numeric nature.",
+    "suggestion": "xs:positiveInteger"
+  }
+]

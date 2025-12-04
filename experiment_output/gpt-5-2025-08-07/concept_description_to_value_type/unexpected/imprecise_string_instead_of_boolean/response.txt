@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept describes an operational status indicator, which is inherently boolean (true/false); using xs:string is semantically mismatched.",
+    "suggestion": "xs:boolean"
+  }
+]

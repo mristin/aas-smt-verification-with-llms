@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept describes a temperature measurement in degrees Celsius, which is numeric sensor data. The current XSD type is xs:string, which does not represent numeric values.",
+    "suggestion": "xs:double"
+  }
+]
