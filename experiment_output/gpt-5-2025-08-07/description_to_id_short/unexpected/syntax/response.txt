@@ -1,0 +1,12 @@
+[
+  {
+    "path": "nominal_shaft_speed",
+    "explanation": "ID-short and description refer to the same concept (nominal shaft speed); there is no mismatch between them. However, the value type is xs:string, which is not appropriate for a speed quantity.",
+    "suggestion": "Use a numeric type (e.g., xs:double) and assign a unit such as 1/min (rpm) or rad/s."
+  },
+  {
+    "path": "nominal_shaft_speed",
+    "explanation": "The description 'Nominalshaftspeed' is poorly formatted (missing spaces), which may reduce readability though it is semantically correct.",
+    "suggestion": "Replace the description with 'Nominal shaft speed'."
+  }
+]

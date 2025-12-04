@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Display name 'Temperature' is broader than the description 'Operating temperature'; the qualifier 'Operating' is missing.",
+    "suggestion": "Operating temperature"
+  }
+]

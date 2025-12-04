@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Description states 'Operating temperature range' (implies a min–max range), whereas the display name is 'Operating temperature' (implies a single value).",
+    "suggestion": "Operating temperature range"
+  }
+]

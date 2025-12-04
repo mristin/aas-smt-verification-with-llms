@@ -1,0 +1,7 @@
+[
+  {
+    "path": "operating_temperature",
+    "explanation": "ID-short 'operating_temperature' suggests a single temperature, but the description says 'Operating temperature range'. Additionally, using value type xs:string for a temperature range is semantically weak for a numeric quantity.",
+    "suggestion": "Either (a) rename the element to 'operating_temperature_range' and model it as a numeric range, or (b) split into 'operating_temperature_min' and 'operating_temperature_max' with value type xs:double and unit 'Cel' instead of xs:string."
+  }
+]

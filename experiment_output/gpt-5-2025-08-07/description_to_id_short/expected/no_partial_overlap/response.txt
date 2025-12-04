@@ -1,0 +1,7 @@
+[
+  {
+    "path": "material",
+    "explanation": "No mismatch: the ID-short 'material' aligns with the description. However, the description narrows the scope to steel alloys, which is more specific than the generic ID-short.",
+    "suggestion": "Either generalize the description to 'Material' or, if only steel alloys are allowed, rename the ID-short to 'steelAlloy' and constrain values to a controlled vocabulary (e.g., EN 10027 or AISI)."
+  }
+]

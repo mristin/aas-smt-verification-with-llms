@@ -1,0 +1,12 @@
+[
+  {
+    "path": "maximum_voltage",
+    "explanation": "ID-short 'maximum_voltage' implies a single maximum value, while description 'Permitted voltage' suggests an allowed/permissaible range; they are not semantically equivalent.",
+    "suggestion": "Change description to 'Maximum permitted voltage'."
+  },
+  {
+    "path": "maximum_voltage",
+    "explanation": "Voltage is a quantitative property; using xs:string for the value type is semantically inappropriate and prevents numeric validation and comparisons.",
+    "suggestion": "xs:double"
+  }
+]

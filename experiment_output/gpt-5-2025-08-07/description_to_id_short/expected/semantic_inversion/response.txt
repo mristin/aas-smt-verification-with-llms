@@ -1,0 +1,7 @@
+[
+  {
+    "path": "allowed_voltage",
+    "explanation": "No mismatch between ID-short 'allowed_voltage' and description 'Permitted voltage'; both refer to the same concept. However, the value type is xs:string, which is unsuitable for a voltage quantity that should be numeric and carry a unit.",
+    "suggestion": "Change valueType to xs:decimal (or xs:double) and associate the unit V (volt); if this represents a limit or range, model min/max values explicitly."
+  }
+]

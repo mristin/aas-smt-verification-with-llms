@@ -1,0 +1,7 @@
+[
+  {
+    "path": "nominal_shaft_speed",
+    "explanation": "No mismatch between ID-short and description. However, there is a semantic mismatch: shaft speed is a numeric quantity and should not be typed as xs:string.",
+    "suggestion": "Use a numeric type such as xs:double (or xs:decimal) and assign an appropriate unit, e.g., 1/min (rpm) or rad/s."
+  }
+]

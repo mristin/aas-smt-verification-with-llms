@@ -1,0 +1,7 @@
+[
+  {
+    "path": "compatible_with_wet_environments",
+    "explanation": "The ID-short and description are aligned. However, the property represents a binary condition (compatible or not), while the declared value type is xs:string, which is semantically imprecise and allows inconsistent values.",
+    "suggestion": "xs:boolean"
+  }
+]

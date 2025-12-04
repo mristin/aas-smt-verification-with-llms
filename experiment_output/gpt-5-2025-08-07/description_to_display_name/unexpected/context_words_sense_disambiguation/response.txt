@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Display name 'Power' is broader than the description 'Mechanical Power'; they do not correspond.",
+    "suggestion": "Mechanical Power"
+  }
+]

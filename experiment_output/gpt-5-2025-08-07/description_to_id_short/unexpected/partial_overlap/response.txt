@@ -1,0 +1,7 @@
+[
+  {
+    "path": "material",
+    "explanation": "The ID-short 'material' suggests the general/base material, while the description refers to a surface coating; moreover, 'steel alloy' is typically a base material, not a coating.",
+    "suggestion": "surfaceCoatingMaterial"
+  }
+]

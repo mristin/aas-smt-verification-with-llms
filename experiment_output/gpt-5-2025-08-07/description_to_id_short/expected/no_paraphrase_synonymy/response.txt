@@ -1,0 +1,12 @@
+[
+  {
+    "path": "beginning_time",
+    "explanation": "No mismatch between ID-short ('beginning_time') and description ('Start time'). However, the value type xs:string is too generic for a time value.",
+    "suggestion": "xs:dateTime"
+  },
+  {
+    "path": "beginning_time",
+    "explanation": "Minor lexical inconsistency: ID-short uses 'beginning' while the description uses 'Start'. They are semantically equivalent, but aligning terminology improves consistency.",
+    "suggestion": "start_time"
+  }
+]
