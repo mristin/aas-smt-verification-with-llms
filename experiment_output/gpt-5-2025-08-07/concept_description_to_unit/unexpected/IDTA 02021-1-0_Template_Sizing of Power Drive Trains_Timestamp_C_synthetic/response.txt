@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'C' denotes degrees Celsius (temperature), but the definition describes a time instant measured from a start time (time offset).",
-    "suggestion": "s"
-  }
-]

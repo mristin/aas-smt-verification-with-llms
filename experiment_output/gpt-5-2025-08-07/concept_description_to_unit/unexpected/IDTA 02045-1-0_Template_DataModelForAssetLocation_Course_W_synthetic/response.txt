@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'W' (watt) measures power, but the concept describes a compass direction (an angle).",
-    "suggestion": "deg"
-  }
-]

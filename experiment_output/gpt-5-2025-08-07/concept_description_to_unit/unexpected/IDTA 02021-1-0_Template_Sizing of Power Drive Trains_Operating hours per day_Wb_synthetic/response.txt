@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Definition describes hours of operation (time), but the unit provided is Wb (weber, magnetic flux).",
-    "suggestion": "h"
-  }
-]

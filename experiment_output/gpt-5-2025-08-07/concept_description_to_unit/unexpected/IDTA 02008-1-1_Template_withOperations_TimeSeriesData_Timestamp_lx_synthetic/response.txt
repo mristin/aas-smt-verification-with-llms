@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Definition states the value is a point in time expressed in seconds, but the unit provided is 'lx' (lux), which measures illuminance, not time.",
-    "suggestion": "s"
-  }
-]

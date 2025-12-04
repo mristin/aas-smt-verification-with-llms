@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The description refers to power, whose SI unit is the watt (W). The given unit 'kg m2' represents moment of inertia, not power.",
-    "suggestion": "W"
-  }
-]

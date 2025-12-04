@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'lm' (lumen) measures luminous flux, whereas the concept describes electrical energy consumption.",
-    "suggestion": "J"
-  }
-]

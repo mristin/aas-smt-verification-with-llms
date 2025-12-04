@@ -9,9 +9,11 @@ from typing import Optional
 import tqdm
 from aas_core3 import types as aas_types
 
-import experiments.storage
 from aas_smt_verification_with_llms import argparsing, llm, aasing
 from aas_smt_verification_with_llms.common import Filenameable
+
+import experiments.common
+import experiments.storage
 
 
 def main() -> int:
@@ -55,10 +57,9 @@ def main() -> int:
         prompt = (
             f"For which of the following concept descriptions does the unit "
             f"DOES NOT correspond with its definition?\n\n"
-            f"Output a JSON list of objects with properties 'path', "
-            f"'explanation' and 'suggestion' corresponding to the mismatches.\n"
-            f"The property 'suggestion' should only indicate "
-            f"the more appropriate unit.\n\n"
+            f"Output any possible semantic improvement following the JSON schema:\n"
+            f"{experiments.common.JSONSCHEMA}\n\n"
+            f"Here is the data to be analyzed:\n"
             f"{relevant_details}"
         )
 

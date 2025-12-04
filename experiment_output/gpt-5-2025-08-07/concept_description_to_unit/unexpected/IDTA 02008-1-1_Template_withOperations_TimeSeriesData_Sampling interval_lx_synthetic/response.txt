@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes a time interval (cycle length), but the unit 'lx' (lux) measures illuminance, not time.",
-    "suggestion": "s"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes acceleration (rate of change of velocity with respect to time). Joule (J) is a unit of energy, not acceleration.",
-    "suggestion": "m/s^2"
-  }
-]

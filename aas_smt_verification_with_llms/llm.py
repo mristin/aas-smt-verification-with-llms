@@ -97,7 +97,7 @@ def create(
 ) -> Client:
     """Produce a client with dispatch based on the supplied arguments."""
     if isinstance(args, argparsing.OpenAIArgs):
-        api_key = args.api_key_file.read_text(encoding="utf-8")
+        api_key = args.api_key_file.read_text(encoding="utf-8").strip()
         return OpenAI(api_key=api_key, model=args.model)
 
     elif isinstance(args, argparsing.OllamaArgs):

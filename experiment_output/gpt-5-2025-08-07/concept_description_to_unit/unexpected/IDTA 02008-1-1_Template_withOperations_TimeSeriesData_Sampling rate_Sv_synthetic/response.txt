@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The description refers to sampling rate (frequency) in hertz, but the unit provided is Sv (sievert), which measures radiation dose and is unrelated to frequency.",
-    "suggestion": "Hz"
-  }
-]

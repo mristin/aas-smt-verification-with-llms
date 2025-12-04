@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to electrical power (watts), but the unit provided is Wb (weber), which measures magnetic flux, not power.",
-    "suggestion": "W"
-  }
-]

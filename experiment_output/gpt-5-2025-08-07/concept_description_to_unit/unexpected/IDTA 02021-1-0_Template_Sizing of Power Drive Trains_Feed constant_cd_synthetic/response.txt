@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'cd' (candela) measures luminous intensity and is unrelated to a parameter that expresses linear displacement per rotation. The described parameter is a lead/feed per revolution with dimensions of length per revolution.",
-    "suggestion": "mm/rev"
-  }
-]

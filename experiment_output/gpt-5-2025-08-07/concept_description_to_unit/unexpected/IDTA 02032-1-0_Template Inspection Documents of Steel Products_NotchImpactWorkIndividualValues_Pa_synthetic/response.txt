@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The concept describes notch impact work, which is a total energy quantity; Pascal (Pa) is a unit of pressure, not energy.",
-    "suggestion": "J"
-  }
-]

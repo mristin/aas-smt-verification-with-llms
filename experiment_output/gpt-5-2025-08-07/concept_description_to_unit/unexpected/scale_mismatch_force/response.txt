@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Semantic mismatch between the unit and definition: 'MN' denotes meganewtons, while the definition specifies millinewtons. The SI symbol for millinewton is 'mN'.",
+    "suggestion": "mN"
+  }
+]

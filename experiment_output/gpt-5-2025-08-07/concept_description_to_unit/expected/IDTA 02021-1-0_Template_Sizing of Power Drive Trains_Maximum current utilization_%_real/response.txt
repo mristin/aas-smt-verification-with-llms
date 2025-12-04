@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes a current value ('effective peak current'), which is measured in amperes. Using percent would require a specified reference current, which is not provided.",
-    "suggestion": "A"
-  }
-]

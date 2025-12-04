@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Mass fraction is a dimensionless quantity (mass of component divided by total mass). 'kg' is a unit of mass, not a fraction.",
-    "suggestion": "1"
-  }
-]

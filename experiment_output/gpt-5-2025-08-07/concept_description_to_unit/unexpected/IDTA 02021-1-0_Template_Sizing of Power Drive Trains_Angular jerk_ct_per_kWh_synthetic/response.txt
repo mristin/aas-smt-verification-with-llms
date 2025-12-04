@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to the time derivative of angular acceleration (angular jerk), whose SI unit is radians per second cubed. The provided unit 'ct/kWh' is a monetary cost per energy and does not relate to angular kinematics.",
-    "suggestion": "rad/s^3"
-  }
-]

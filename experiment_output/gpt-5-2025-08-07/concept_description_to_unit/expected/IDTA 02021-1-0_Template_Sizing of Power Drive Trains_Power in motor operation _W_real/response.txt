@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit W (watt) measures power (energy per unit time), but the description refers to electrical energy used; energy should be expressed in an energy unit.",
-    "suggestion": "J"
-  }
-]

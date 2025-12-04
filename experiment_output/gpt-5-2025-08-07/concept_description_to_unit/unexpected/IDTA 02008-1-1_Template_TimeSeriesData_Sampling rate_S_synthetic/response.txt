@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition specifies frequency (samples per second) measured in hertz. The provided unit 'S' denotes siemens (electrical conductance), not frequency.",
-    "suggestion": "Hz"
-  }
-]

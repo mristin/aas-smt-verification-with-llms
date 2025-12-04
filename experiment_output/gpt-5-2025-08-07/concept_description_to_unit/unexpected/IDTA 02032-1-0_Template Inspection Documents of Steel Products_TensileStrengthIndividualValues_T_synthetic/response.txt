@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'T' denotes tesla (magnetic flux density) and does not measure tensile strength. Tensile strength is a stress (force per area) and should be expressed in pressure units.",
-    "suggestion": "MPa"
-  }
-]

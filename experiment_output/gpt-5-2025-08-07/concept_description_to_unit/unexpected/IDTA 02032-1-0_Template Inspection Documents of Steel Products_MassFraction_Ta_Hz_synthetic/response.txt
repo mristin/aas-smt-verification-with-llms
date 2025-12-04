@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Mass fraction is dimensionless (ratio of masses) and typically uses unit 1 (kg/kg) or %, whereas Hz measures frequency (s^-1).",
-    "suggestion": "1"
-  }
-]

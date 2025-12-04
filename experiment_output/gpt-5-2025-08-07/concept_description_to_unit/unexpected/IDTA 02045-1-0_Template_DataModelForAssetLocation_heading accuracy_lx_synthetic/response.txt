@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'lx' (lux) measures illuminance, but the concept describes an angular deviation between magnetic and true headings.",
-    "suggestion": "deg"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Diameter is a length/linear dimension, while 'mol' is a unit of amount of substance.",
-    "suggestion": "m"
-  }
-]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Semantic mismatch: the unit is Wh (watt-hour) while the definition states the value is in J (joule).",
+    "suggestion": "J"
+  }
+]

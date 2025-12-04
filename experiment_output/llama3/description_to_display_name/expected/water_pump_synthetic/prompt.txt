@@ -1,9 +1,0 @@
-For which of the following elements does its description DOES NOT correspond with its display name?
-
-Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
-The property 'suggestion' should only indicate the more appropriate description. Only compare the description with the display name and ignore the ID-short!
-Note, that there are cases where there is no mismatch and return this as well.
-
-# Elements
-
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'A device that moves water from one place to another, often used in engines or plumbing systems.' with display name 'Water Pump' with value type xs:string

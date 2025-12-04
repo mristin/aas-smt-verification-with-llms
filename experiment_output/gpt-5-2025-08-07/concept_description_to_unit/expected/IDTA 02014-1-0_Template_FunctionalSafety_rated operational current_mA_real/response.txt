@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes a combined load parameter (current together with a rated operational voltage), not a pure current. A unit of mA only covers current and omits the voltage aspect.",
-    "suggestion": "VA"
-  }
-]

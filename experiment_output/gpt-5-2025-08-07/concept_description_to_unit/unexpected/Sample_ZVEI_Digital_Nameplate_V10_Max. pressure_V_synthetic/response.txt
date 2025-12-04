@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition concerns maximum pressure, but the unit 'V' (volt) measures electric potential, not pressure.",
-    "suggestion": "Pa"
-  }
-]

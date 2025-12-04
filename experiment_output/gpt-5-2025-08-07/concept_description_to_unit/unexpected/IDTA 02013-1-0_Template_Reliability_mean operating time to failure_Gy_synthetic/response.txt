@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Gy (gray) is a unit of absorbed radiation dose (J/kg), not time; an expected time to failure requires a time unit.",
-    "suggestion": "h"
-  }
-]

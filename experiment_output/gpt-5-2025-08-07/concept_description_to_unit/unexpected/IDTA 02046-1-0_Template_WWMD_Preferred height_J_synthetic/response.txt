@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Height is a length; J (joule) is a unit of energy, not length.",
-    "suggestion": "m"
-  }
-]

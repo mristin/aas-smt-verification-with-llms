@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The described quantity is moment of inertia, whose SI unit is kg·m². The provided unit 'h' (hour) measures time and does not correspond to this mechanical quantity.",
-    "suggestion": "kg·m²"
-  }
-]

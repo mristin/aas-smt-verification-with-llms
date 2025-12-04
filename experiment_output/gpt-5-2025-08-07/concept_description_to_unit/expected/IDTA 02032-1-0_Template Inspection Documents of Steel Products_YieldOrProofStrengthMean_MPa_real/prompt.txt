@@ -1,8 +1,0 @@
-For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
-
-Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
-The property 'suggestion' should only indicate the more appropriate unit.
-
-# Concept descriptions
-
-Concept description 'urn:someConceptDescription' means: 'The YieldOrProofStrengthMean refers to the average yield of proof strength of a steel product, which describes the stress at which a steel product begins to deform plastically.' with unit MPa

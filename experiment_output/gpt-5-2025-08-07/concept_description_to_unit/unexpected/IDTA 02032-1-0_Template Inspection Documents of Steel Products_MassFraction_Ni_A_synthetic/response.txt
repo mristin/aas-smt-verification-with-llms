@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'A' is ampere (electric current), which does not match a mass fraction. Mass fraction is dimensionless.",
-    "suggestion": "1"
-  }
-]

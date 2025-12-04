@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Pa (pascal) is a unit of pressure, while the concept describes a maximum weight to be lifted, which should be expressed as mass or force.",
-    "suggestion": "kg"
-  }
-]

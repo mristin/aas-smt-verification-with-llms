@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to electrical energy. Energy should be measured in joules (kg·m²·s⁻²). The provided unit 'kg m²' lacks the s⁻² factor and corresponds to moment of inertia, not energy.",
-    "suggestion": "J"
-  }
-]

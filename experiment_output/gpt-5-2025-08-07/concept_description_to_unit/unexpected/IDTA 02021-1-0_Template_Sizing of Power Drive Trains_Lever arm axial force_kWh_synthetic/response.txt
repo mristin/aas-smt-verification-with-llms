@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription.unit",
-    "explanation": "The definition describes a distance (length), while 'kWh' is a unit of energy. Length should not be expressed in energy units.",
-    "suggestion": "m"
-  }
-]

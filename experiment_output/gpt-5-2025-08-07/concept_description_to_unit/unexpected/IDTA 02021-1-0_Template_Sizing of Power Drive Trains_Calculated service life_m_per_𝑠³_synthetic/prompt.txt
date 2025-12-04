@@ -1,8 +1,0 @@
-For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
-
-Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
-The property 'suggestion' should only indicate the more appropriate unit.
-
-# Concept descriptions
-
-Concept description 'urn:someConceptDescription' means: 'Time in which a technical system, device or object can be used without the replacement of core components or complete failure under the operating conditions which were calculated in the engineering' with unit m/𝑠³

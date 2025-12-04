@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit '%' denotes percentage, but the concept describes a temperature, which should use a temperature unit.",
-    "suggestion": "°C"
-  }
-]

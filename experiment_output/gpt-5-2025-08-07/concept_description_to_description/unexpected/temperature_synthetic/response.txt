@@ -1,7 +1,0 @@
-[
-  {
-    "path": "enginePrice",
-    "explanation": "The element describes the engine's price, but the assigned concept description denotes internal temperature; these are semantically unrelated.",
-    "suggestion": "Engine price"
-  }
-]

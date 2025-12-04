@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "J (joule) measures energy, but torque utilization is a dimensionless ratio typically expressed as a percentage.",
-    "suggestion": "%"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The description refers to a height/elevation (base height at Z=0.00 m), which is a length quantity. Lux (lx) is a unit of illuminance and does not apply.",
-    "suggestion": "m"
-  }
-]

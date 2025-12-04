@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition expresses the helix angle in degrees (e.g., 0°, >0°), but the unit is set to radians.",
-    "suggestion": "deg"
-  }
-]

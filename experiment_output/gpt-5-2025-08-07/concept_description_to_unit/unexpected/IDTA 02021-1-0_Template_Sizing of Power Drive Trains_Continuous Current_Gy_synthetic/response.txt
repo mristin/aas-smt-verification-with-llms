@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Gy (gray) is a unit of absorbed radiation dose (J/kg), not electric current. The definition describes a current rating.",
-    "suggestion": "A"
-  }
-]
