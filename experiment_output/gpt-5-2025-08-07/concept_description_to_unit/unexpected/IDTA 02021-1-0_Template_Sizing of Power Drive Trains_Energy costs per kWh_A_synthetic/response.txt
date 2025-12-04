@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'A' is ampere (electric current) and does not represent monetary cost per energy.",
-    "suggestion": "currency/kWh"
-  }
-]

@@ -232,6 +232,9 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
                 concept_description_parts.append(f" means: {description_in_en!r}")
 
             unit_parts = []  # type: List[str]
+
+            definition_parts = []  # type: List[str]
+
             for (
                 data_specification
             ) in concept_description.over_embedded_data_specifications_or_empty():
@@ -241,6 +244,12 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
                     if content.unit is not None:
                         unit_parts.append(content.unit)
 
+                    if content.definition is not None:
+                        definition_in_en = text_in_english(content.definition)
+
+                        if definition_in_en is not None:
+                            definition_parts.append(definition_in_en)
+
             if len(unit_parts) > 0:
                 units_str = ", ".join(unit_parts)
 
@@ -248,6 +257,17 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
                     concept_description_parts.append(f" with unit {units_str}")
                 else:
                     concept_description_parts.append(f" with units {units_str}")
+
+            if len(definition_parts) > 0:
+                definitions_str = ", ".join(f"'{part}'" for part in definition_parts)
+                if len(definition_parts) == 1:
+                    concept_description_parts.append(
+                        f" with definition {definitions_str}"
+                    )
+                else:
+                    concept_description_parts.append(
+                        f" with definitions {definitions_str}"
+                    )
 
             block = "".join(concept_description_parts)
             blocks.append(block)

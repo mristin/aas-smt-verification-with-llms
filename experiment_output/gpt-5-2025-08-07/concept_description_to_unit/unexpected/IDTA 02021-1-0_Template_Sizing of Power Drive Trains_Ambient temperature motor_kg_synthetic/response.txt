@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The concept describes a temperature, but 'kg' is a unit of mass, not temperature.",
-    "suggestion": "°C"
-  }
-]

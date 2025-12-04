@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to added rotational inertia (e.g., rotor inertia, gears), which is a moment of inertia, not mass. Using kg does not capture inertia.",
-    "suggestion": "kg*m^2"
-  }
-]

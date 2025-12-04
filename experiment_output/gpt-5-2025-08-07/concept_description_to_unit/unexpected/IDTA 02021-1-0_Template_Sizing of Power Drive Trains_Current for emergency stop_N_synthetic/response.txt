@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to electrical current, but the unit N (newton) measures force. Electrical current should be expressed in amperes.",
-    "suggestion": "A"
-  }
-]

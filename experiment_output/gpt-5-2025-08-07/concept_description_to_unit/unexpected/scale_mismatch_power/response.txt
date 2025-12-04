@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Unit 'MW' denotes megawatts, but the definition states 'Electrical power consumption in milliwatts'; this is a mismatch of 10^9.",
+    "suggestion": "mW"
+  }
+]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to electrical energy, but watt (W) is a unit of power (energy per unit time). Energy should not be expressed in watts.",
-    "suggestion": "J"
-  }
-]

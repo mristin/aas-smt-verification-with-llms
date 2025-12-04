@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes an object's tendency to maintain its state of motion (inertia). The appropriate quantitative measure for this in linear motion is mass (kg). The given unit kg·m² corresponds to moment of inertia (rotational), which the definition does not specify.",
-    "suggestion": "kg"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'V' (volt) measures electric potential, but the concept is a mass fraction, which is dimensionless.",
-    "suggestion": "%"
-  }
-]

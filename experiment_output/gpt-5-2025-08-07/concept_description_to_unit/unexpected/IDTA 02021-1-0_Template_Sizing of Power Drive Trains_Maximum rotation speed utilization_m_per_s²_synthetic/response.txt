@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes speed utilization, which is a dimensionless quantity (often expressed as a percentage). The unit m/s² denotes acceleration, not utilization.",
-    "suggestion": "%"
-  }
-]

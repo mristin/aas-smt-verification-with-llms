@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The concept describes a temperature, but the unit 's' (seconds) measures time, not temperature.",
-    "suggestion": "°C"
-  }
-]

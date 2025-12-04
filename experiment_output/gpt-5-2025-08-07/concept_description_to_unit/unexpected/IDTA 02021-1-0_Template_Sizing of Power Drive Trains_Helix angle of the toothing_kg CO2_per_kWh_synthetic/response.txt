@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Helix angle is an angular quantity, but the provided unit (kg CO2/kWh) measures emissions intensity and is unrelated.",
-    "suggestion": "deg"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The description refers to rotational frequency (complete rotations per second), but the unit rad/s^3 corresponds to angular jerk (third derivative of angle) and is incompatible.",
-    "suggestion": "Hz"
-  }
-]

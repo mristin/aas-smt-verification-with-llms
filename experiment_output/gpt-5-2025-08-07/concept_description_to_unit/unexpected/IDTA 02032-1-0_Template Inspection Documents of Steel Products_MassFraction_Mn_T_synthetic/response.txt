@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Mass fraction is dimensionless; 'T' denotes tesla (magnetic flux density) and is not applicable.",
-    "suggestion": "1"
-  }
-]

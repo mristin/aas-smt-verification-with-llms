@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'T' represents tesla (magnetic flux density), while greenhouse gas emissions are measured by mass.",
-    "suggestion": "t"
-  }
-]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Semantic mismatch: The definition states 'System operating pressure in kilopascals', but the unit is GPa (gigapascal).",
+    "suggestion": "kPa"
+  }
+]

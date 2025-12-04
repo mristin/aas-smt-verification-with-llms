@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "This concept is categorical (type of fixation) and should not have a physical unit. 'T' is tesla (magnetic flux density), which is unrelated.",
-    "suggestion": "1"
-  }
-]

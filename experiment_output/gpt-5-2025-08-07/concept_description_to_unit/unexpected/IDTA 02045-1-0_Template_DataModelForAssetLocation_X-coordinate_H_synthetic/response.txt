@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "An X-coordinate is a spatial position (length), while 'H' denotes henry, a unit of inductance.",
-    "suggestion": "m"
-  }
-]

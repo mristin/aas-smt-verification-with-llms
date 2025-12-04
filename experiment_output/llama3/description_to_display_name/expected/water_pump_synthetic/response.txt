@@ -1,6 +1,0 @@
-Based on the provided information, there is no mismatch between the description and the display name for this element. Therefore, the output will be an empty JSON list.
-
-Here's the output:
-```
-[]
-```

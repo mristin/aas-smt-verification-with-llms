@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'N' is Newton (force), while magnetic heading is an angular direction.",
-    "suggestion": "deg"
-  }
-]

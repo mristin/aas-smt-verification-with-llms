@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The concept describes a minimum temperature threshold for equipment wetted parts, but the unit provided is electric current (mA), which does not measure temperature.",
-    "suggestion": "°C"
-  }
-]

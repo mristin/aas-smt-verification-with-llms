@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription.unit",
-    "explanation": "The concept describes elongation/strain at break, which is a dimensionless quantity typically reported as a percentage. The unit 'F' is the SI unit for capacitance (farad) and is unrelated to elongation or strain.",
-    "suggestion": "%"
-  }
-]

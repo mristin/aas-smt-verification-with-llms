@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Sv (sievert) is a unit of ionizing radiation dose, not suitable for a mass fraction, which is a dimensionless ratio.",
-    "suggestion": "1"
-  }
-]

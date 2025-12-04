@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The description refers to torque, which is measured in newton-meters (N·m). The provided unit m/s^2 is for acceleration, not torque.",
-    "suggestion": "N·m"
-  }
-]

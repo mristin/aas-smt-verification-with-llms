@@ -1,7 +1,0 @@
-[
-  {
-    "path": "price",
-    "explanation": "The element represents a monetary price, which should be a numeric monetary amount. Using xs:string allows arbitrary text and prevents numeric validation and calculations. Monetary values should use a precise decimal type to avoid rounding issues.",
-    "suggestion": "xs:decimal"
-  }
-]

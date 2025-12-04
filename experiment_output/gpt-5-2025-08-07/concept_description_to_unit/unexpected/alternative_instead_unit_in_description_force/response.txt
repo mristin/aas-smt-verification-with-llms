@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Semantic mismatch between the definition (force specified in newtons, N) and the unit provided (lbf, pound-force).",
+    "suggestion": "N"
+  }
+]

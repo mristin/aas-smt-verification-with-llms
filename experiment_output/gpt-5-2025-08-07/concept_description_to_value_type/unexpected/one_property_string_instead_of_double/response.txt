@@ -1,7 +1,0 @@
-[
-  {
-    "path": "something",
-    "explanation": "Concept 'Water pressure' denotes a quantitative physical measurement, but the value type is xs:string, which is unsuitable for numeric operations and ranges.",
-    "suggestion": "xs:double"
-  }
-]

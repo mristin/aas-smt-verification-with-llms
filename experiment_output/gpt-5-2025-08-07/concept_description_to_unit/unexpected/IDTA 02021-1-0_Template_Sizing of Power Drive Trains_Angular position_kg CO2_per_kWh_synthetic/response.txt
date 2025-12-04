@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to an angular displacement relative to an origin, whereas kg CO2/kWh is an emissions intensity unit unrelated to angles.",
-    "suggestion": "rad"
-  }
-]

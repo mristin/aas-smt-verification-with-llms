@@ -1,8 +1,0 @@
-For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
-
-Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
-The property 'suggestion' should only indicate the more appropriate unit.
-
-# Concept descriptions
-
-Concept description 'urn:someConceptDescription' means: 'The ElongationAfterFractureMean refers to the average percentage of elongation or strain a steel product undergoes until the point of fracture during a tensile test.' with unit %

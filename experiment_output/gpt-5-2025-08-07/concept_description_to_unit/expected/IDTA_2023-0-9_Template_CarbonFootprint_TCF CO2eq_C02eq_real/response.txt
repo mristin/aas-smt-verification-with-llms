@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'C02eq' is not a proper physical unit; total greenhouse gas emissions should be expressed as a mass of CO2-equivalent (e.g., kilograms). The description refers to a total amount, not an intensity.",
-    "suggestion": "kg CO2e"
-  }
-]

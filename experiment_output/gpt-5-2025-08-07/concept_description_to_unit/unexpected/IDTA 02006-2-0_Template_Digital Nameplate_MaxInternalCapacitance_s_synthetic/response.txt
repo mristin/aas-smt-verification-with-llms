@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The concept describes capacitance, whose SI unit is farad (F), not second (s).",
-    "suggestion": "F"
-  }
-]

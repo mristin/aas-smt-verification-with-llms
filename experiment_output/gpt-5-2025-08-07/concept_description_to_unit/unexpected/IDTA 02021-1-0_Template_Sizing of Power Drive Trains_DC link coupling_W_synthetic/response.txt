@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The description indicates a boolean state (connected/not connected), which is dimensionless. Watt (W) measures power and is not applicable.",
-    "suggestion": "1"
-  }
-]

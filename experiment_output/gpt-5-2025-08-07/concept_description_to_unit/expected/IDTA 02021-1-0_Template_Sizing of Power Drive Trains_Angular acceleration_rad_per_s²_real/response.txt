@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit rad/s² corresponds to the temporal rate of change of angular velocity (angular acceleration, dω/dt). The definition, however, refers to change in angular velocity with increasing angular position (dω/dθ), which is not a time derivative.",
-    "suggestion": "s^-1"
-  }
-]

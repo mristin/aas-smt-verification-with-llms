@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes a utilization (dimensionless ratio/percentage), not an actual speed. rpm measures rotational speed, not utilization.",
-    "suggestion": "%"
-  }
-]

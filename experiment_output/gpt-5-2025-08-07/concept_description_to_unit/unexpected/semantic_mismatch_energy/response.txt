@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Unit 'm' (meter) represents length, but the definition describes energy consumption, which should use an energy unit.",
+    "suggestion": "kWh"
+  }
+]

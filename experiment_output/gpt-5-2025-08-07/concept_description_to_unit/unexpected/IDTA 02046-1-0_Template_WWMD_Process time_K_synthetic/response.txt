@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'K' denotes Kelvin (temperature), which does not match a measure of time for planned manual work.",
-    "suggestion": "h"
-  }
-]

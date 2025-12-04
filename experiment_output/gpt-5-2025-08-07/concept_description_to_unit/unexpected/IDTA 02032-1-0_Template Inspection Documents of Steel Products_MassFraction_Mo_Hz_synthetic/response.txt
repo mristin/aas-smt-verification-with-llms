@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes a mass fraction (a dimensionless ratio of mass, e.g., kg/kg), whereas Hz (hertz) is a unit of frequency (s^-1).",
-    "suggestion": "kg/kg"
-  }
-]

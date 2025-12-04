@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'C' is not a mass unit (commonly degree Celsius for temperature or coulomb for electric charge), while the concept describes a theoretical mass.",
-    "suggestion": "kg"
-  }
-]

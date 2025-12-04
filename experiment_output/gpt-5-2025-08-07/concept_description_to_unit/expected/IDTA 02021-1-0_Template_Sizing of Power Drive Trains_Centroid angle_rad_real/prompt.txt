@@ -1,8 +1,0 @@
-For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
-
-Output a JSON list of objects with properties 'path', 'explanation' and 'suggestion' corresponding to the mismatches.
-The property 'suggestion' should only indicate the more appropriate unit.
-
-# Concept descriptions
-
-Concept description 'urn:someConceptDescription' means: 'The center angle refers to the angle describing the center of a circle. In the context of a rotary table, the center angle refers to the angle by which a rotary table has been rotated relative to a reference position. It is used to determine the exact position of the table. (Positive angle to start movement)' with unit rad

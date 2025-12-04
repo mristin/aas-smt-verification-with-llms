@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Altitude above sea level is a quantitative length measurement, not a true/false value. BOOLEAN represents true/false and cannot express altitude.",
-    "suggestion": "METER"
-  }
-]

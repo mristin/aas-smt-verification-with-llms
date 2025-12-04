@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'lm' (lumen) measures luminous flux and does not relate to thermal utilization, which is typically a dimensionless ratio or percentage.",
-    "suggestion": "%"
-  }
-]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Semantic mismatch: the unit 'Hz' (Hertz, frequency) does not match the definition 'System operating pressure', which is a pressure quantity.",
+    "suggestion": "Pa"
+  }
+]

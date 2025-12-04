@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Greenhouse gas emissions totals are typically expressed as mass of CO2 equivalent, not in amount of substance. 'mol' does not reflect aggregated climate impact.",
-    "suggestion": "kg CO2e"
-  }
-]

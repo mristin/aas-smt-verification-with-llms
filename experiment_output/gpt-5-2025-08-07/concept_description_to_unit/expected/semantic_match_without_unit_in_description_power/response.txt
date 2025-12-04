@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Semantic mismatch: the definition says 'Electrical power consumption', which refers to energy consumed over time, while the unit 'W' measures instantaneous power.",
+    "suggestion": "kWh"
+  }
+]

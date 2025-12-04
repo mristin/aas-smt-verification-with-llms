@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'T' (tesla) is for magnetic flux density, not mass fraction. Mass fraction is dimensionless (kg/kg) and is typically expressed as 1 or as a percentage.",
-    "suggestion": "1"
-  }
-]

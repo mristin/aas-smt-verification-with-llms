@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The unit 'kg m^2' represents moment of inertia, while 'maximum speed utilization' is a dimensionless ratio/percentage.",
-    "suggestion": "%"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription/unit",
-    "explanation": "The description defines a power quantity (average power flowing to the DC link), which should be measured in watts, not seconds.",
-    "suggestion": "W"
-  }
-]

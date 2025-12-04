@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition describes a temporal rate of change of position (velocity), which should have units of length per time. Degrees Celsius is a temperature unit and does not match a rate of positional change.",
-    "suggestion": "m/s"
-  }
-]

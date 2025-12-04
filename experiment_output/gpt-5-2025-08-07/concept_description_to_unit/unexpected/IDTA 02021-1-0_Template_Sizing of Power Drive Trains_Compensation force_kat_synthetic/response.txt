@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Unit 'kat' (katal) measures catalytic activity (mol/s), not force. Force should use newtons.",
-    "suggestion": "N"
-  }
-]

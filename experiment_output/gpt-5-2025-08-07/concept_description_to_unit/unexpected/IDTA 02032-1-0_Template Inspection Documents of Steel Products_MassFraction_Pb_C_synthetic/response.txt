@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Mass fraction is dimensionless (ratio of masses). The unit 'C' denotes coulomb (electric charge), which does not match.",
-    "suggestion": "1"
-  }
-]

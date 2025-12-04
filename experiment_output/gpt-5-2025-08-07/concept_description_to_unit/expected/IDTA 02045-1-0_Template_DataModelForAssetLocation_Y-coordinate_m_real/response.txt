@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition is generic ('Y-coordinate value within a coordinate system') and does not imply a specific CRS. Assigning meters assumes a projected metric CRS; coordinates are typically unitless unless the CRS is specified.",
-    "suggestion": "1"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Z-coordinate (height) is a length; the unit 'C' denotes coulomb (electric charge), not a length unit.",
-    "suggestion": "m"
-  }
-]

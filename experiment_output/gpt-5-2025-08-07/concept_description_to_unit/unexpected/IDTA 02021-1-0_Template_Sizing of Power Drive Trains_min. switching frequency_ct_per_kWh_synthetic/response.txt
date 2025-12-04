@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to a frequency ('lowest switching frequency'), which should use a frequency unit. 'ct/kWh' is a cost per energy unit and does not measure frequency.",
-    "suggestion": "Hz"
-  }
-]

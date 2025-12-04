@@ -1,7 +1,0 @@
-[
-  {
-    "path": "pressureAtValve",
-    "explanation": "Element describes a physical pressure at a valve, while the concept description refers to product price; semantics do not align.",
-    "suggestion": "Pressure at valve"
-  }
-]

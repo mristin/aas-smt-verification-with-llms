@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "The definition refers to an electric current ('effective peak current'), but the unit provided is watt (W), which measures power, not current.",
-    "suggestion": "A"
-  }
-]

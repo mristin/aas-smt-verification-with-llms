@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:someConceptDescription",
-    "explanation": "Bq (becquerel) measures radioactivity (decays per second), while horizontal positional accuracy is a length/distance measure.",
-    "suggestion": "m"
-  }
-]
