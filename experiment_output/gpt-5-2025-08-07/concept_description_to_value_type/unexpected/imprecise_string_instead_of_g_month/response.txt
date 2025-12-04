@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a calendar month for an annual inspection, but xs:string allows arbitrary text and does not constrain values to valid months.",
+    "suggestion": "xs:gMonth"
+  }
+]

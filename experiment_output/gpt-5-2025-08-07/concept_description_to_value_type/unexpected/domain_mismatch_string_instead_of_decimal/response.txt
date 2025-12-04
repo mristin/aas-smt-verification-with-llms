@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The property is typed as xs:string, but the concept indicates a financial amount with decimal precision, which requires a numeric decimal type.",
+    "suggestion": "xs:decimal"
+  }
+]

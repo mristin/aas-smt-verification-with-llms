@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: xs:nonPositiveInteger restricts altitude to integer values ≤ 0 (including 0), while 'Altitude below sea level' is a physical measurement that typically needs fractional precision and implies negative values. A floating-point numeric type is more appropriate for sensor data; inequality constraints (e.g., maxExclusive 0) should be handled via facets or validation rules.",
+    "suggestion": "xs:double"
+  }
+]

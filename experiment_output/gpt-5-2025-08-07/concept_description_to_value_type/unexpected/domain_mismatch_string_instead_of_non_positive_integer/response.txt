@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a physical measurement (depth below sea level), which is numeric. Using xs:string does not reflect a quantitative value.",
+    "suggestion": "xs:double"
+  }
+]

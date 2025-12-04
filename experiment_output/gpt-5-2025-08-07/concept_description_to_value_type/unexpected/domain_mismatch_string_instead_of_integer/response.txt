@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept is a molecular count, which is a non-negative integer. Using xs:string allows arbitrary text and does not enforce numeric count semantics.",
+    "suggestion": "xs:nonNegativeInteger"
+  }
+]

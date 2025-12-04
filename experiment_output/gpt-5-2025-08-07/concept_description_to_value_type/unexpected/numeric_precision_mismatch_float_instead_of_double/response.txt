@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept description states a high-precision scientific measurement requiring double precision, but the value type is xs:float (single precision), which may be insufficient.",
+    "suggestion": "xs:double"
+  }
+]

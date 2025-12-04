@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: the concept requires an error code between 0 and 255, but xs:byte is signed (-128..127) and cannot represent 128..255.",
+    "suggestion": "xs:unsignedByte"
+  }
+]

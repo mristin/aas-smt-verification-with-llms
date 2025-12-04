@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The value type is xs:string, but the concept describes a numeric duration measured in milliseconds. A numeric type is required to represent measured quantities, not a string.",
+    "suggestion": "xs:double"
+  }
+]

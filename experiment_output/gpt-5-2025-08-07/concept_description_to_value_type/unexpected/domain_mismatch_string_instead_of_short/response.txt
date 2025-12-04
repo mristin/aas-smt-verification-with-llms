@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept describes a count of components in a batch (a non-negative integer), but the element uses xs:string.",
+    "suggestion": "xs:nonNegativeInteger"
+  }
+]

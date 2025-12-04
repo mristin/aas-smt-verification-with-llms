@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Temperature readings in degrees Celsius typically require fractional values. Using xs:int restricts values to whole numbers, leading to loss of precision.",
+    "suggestion": "xs:double"
+  }
+]

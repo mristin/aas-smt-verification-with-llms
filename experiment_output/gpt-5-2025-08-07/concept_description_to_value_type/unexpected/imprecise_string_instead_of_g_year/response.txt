@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: 'Year of commissioning' denotes a calendar year, but the value type is xs:string, which does not enforce year semantics.",
+    "suggestion": "xs:gYear"
+  }
+]

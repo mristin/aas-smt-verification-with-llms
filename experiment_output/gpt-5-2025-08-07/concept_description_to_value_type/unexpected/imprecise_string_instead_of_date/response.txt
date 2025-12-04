@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The value type is xs:string, but the concept describes a manufacturing date, which should be represented as a date type.",
+    "suggestion": "xs:date"
+  }
+]
