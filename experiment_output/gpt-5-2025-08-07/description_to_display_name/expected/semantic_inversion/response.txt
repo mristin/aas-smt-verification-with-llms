@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No mismatch detected: the description 'Permitted voltage' corresponds to the display name 'Allowed voltage' (they are synonyms).",
+    "suggestion": "No change needed."
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Display name 'Material' is generic and typically refers to the base material, while the description specifies a 'Surface coating', which is a different concept. They do not correspond.",
+    "suggestion": "Surface coating"
+  }
+]

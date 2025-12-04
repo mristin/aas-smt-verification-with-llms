@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The display name 'Material' is more generic than the description 'Material (steel alloy)', which specifies a particular material type. This inconsistency can confuse whether the property is generic or specifically about steel alloys.",
+    "suggestion": "Material (steel alloy)"
+  }
+]

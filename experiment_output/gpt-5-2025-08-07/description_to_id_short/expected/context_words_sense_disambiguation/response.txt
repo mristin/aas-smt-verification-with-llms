@@ -1,0 +1,12 @@
+[
+  {
+    "path": "mechanical_power",
+    "explanation": "No mismatch between ID-short 'mechanical_power' and description 'Mechanical output power'.",
+    "suggestion": "No change"
+  },
+  {
+    "path": "mechanical_power",
+    "explanation": "Semantic mismatch between the concept (power) and value type. Power is a quantitative value but the type is xs:string.",
+    "suggestion": "Use xs:double with unit 'W' (watt)"
+  }
+]

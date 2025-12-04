@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Description says 'Do not operate in wet conditions' (not suitable), while display name says 'Suitable for wet environments'; they express opposite meanings.",
+    "suggestion": "Change display name to 'Not suitable for wet environments' to align with the description."
+  }
+]

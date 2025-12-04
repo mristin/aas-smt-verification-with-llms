@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No mismatch: the display name 'Power consumption' aligns with the description 'Electrical input power'. However, 'Power consumption' can be misread as energy consumption; a more precise wording would reduce ambiguity.",
+    "suggestion": "Electrical input power"
+  }
+]
