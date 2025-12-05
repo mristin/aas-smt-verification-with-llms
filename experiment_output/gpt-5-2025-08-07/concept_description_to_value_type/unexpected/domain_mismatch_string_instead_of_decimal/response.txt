@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The property is typed as xs:string, but the concept indicates a financial amount with decimal precision, which requires a numeric decimal type.",
+    "explanation": "The concept describes a financial amount with decimal precision. Using xs:string does not capture numeric semantics and prevents precise numeric validation and operations.",
     "suggestion": "xs:decimal"
   }
 ]

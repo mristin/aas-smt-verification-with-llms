@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Concept description indicates a numeric timestamp in nanoseconds, but the value type is xs:string (text). Nanoseconds are an integer count of time units.",
+    "explanation": "Concept describes a numeric timestamp measured in nanoseconds, but the value type is xs:string. This should be a whole-number type to represent nanosecond counts.",
     "suggestion": "xs:long"
   }
 ]

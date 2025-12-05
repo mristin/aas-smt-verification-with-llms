@@ -52,15 +52,23 @@ def main() -> int:
                 f"{take.category=}, {take.case=}"
             )
 
+        available_xsd_types = [
+            data_type.value for data_type in aas_types.DataTypeDefXSD
+        ]
+        available_xsd_types_joined = ", ".join(available_xsd_types)
+
         prompt = (
             f"For which of the following elements does the XSD value type "
             f"DOES NOT correspond with its concept description?\n\n"
+            f"The available XSD value types are: {available_xsd_types_joined}.\n\n"
             f"Output any possible semantic improvement following the JSON schema:\n"
             f"{experiments.common.JSONSCHEMA}\n\n"
             f"The property 'suggestion' should only indicate "
             f"the more appropriate XSD data type. If you suggest a numeric data type, "
             f"determine the type with an appropriate precision "
-            f"(double for sensor data, decimal for financial/legally binding data).\n\n"
+            f"(double for sensor data, decimal for financial/legally binding data). "
+            f"Also consider value types such as xs:gMonth and ilks for recurrent "
+            f"events.\n\n"
             f"Here is the data to be analyzed:\n"
             f"{relevant_details}"
         )

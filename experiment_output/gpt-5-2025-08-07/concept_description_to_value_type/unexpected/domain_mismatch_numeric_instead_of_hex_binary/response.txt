@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept describes a device fingerprint as hexadecimal data, which is binary/hex-encoded content. Using xs:long implies a signed integer and would discard hex formatting and leading zeros.",
+    "explanation": "Semantic mismatch: xs:long is a 64-bit signed integer, while the concept describes a device fingerprint as hexadecimal data. Hexadecimal fingerprints are binary data and may exceed 64 bits and require preservation of leading zeros.",
     "suggestion": "xs:hexBinary"
   }
 ]

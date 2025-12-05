@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The value type is xs:string, but the concept 'Monthly inspection day' denotes a day number within a month (1–31), which should be represented as an integer rather than free text.",
-    "suggestion": "xs:positiveInteger"
+    "explanation": "The concept 'Monthly inspection day' denotes a recurring day-of-month value; xs:string is too generic and does not enforce the ---DD lexical form required for such recurring dates.",
+    "suggestion": "xs:gDay"
   }
 ]

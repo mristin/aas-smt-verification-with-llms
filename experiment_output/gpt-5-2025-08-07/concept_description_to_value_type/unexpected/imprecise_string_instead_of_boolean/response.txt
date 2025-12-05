@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Concept describes an operational status indicator, which is inherently boolean (true/false); using xs:string is semantically mismatched.",
+    "explanation": "The concept 'Machine is operational status indicator' denotes a binary state (true/false). Using xs:string allows arbitrary text and does not enforce boolean semantics.",
     "suggestion": "xs:boolean"
   }
 ]

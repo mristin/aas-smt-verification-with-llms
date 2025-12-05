@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept describes a Base64 encoded certificate. Using xs:string does not enforce Base64 encoding, while xs:base64Binary is intended for Base64-encoded data.",
+    "explanation": "The concept description states the value is a Base64 encoded certificate. The current type xs:string does not enforce Base64 encoding semantics, while xs:base64Binary is designed for Base64-encoded binary data.",
     "suggestion": "xs:base64Binary"
   }
 ]

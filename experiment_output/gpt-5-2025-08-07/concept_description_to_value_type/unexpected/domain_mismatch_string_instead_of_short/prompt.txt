@@ -1,5 +1,7 @@
 For which of the following elements does the XSD value type DOES NOT correspond with its concept description?
 
+The available XSD value types are: xs:anyURI, xs:base64Binary, xs:boolean, xs:byte, xs:date, xs:dateTime, xs:decimal, xs:double, xs:duration, xs:float, xs:gDay, xs:gMonth, xs:gMonthDay, xs:gYear, xs:gYearMonth, xs:hexBinary, xs:int, xs:integer, xs:long, xs:negativeInteger, xs:nonNegativeInteger, xs:nonPositiveInteger, xs:positiveInteger, xs:short, xs:string, xs:time, xs:unsignedByte, xs:unsignedInt, xs:unsignedLong, xs:unsignedShort.
+
 Output any possible semantic improvement following the JSON schema:
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -35,7 +37,7 @@ Output any possible semantic improvement following the JSON schema:
 }
 
 
-The property 'suggestion' should only indicate the more appropriate XSD data type. If you suggest a numeric data type, determine the type with an appropriate precision (double for sensor data, decimal for financial/legally binding data).
+The property 'suggestion' should only indicate the more appropriate XSD data type. If you suggest a numeric data type, determine the type with an appropriate precision (double for sensor data, decimal for financial/legally binding data). Also consider value types such as xs:gMonth and ilks for recurrent events.
 
 Here is the data to be analyzed:
 # Elements
@@ -44,4 +46,4 @@ Property at path 'some_id_short' with ID-short 'some_id_short' with value type x
 
 # Concept descriptions
 
-Concept description 'urn:exampl.com:someConceptDescription' means: 'Component count in batch'
+Concept description 'urn:exampl.com:someConceptDescription' means: 'Component count in batch; the number can be negative if there are too many defects. There are not more than 100 components in a batch.'

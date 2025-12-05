@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept describes a physical measurement (depth below sea level), which is numeric. Using xs:string does not reflect a quantitative value.",
+    "explanation": "The concept describes a depth measurement (a numeric physical quantity). Using xs:string prevents numeric validation and computations.",
     "suggestion": "xs:double"
   }
 ]

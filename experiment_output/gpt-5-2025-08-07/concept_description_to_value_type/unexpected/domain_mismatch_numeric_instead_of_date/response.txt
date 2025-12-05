@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Value type xs:long (integer) does not match the concept 'Manufacturing date of component', which represents a calendar date.",
+    "explanation": "Value type xs:long is numeric, but the concept describes a calendar date (manufacturing date).",
     "suggestion": "xs:date"
   }
 ]

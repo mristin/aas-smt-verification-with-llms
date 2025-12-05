@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept 'Remaining service life in years' represents a duration that can be fractional (e.g., 2.5 years). Using xs:nonNegativeInteger restricts values to whole years and misrepresents the quantity.",
-    "suggestion": "xs:double"
+    "explanation": "The concept describes a duration (remaining service life) expressed in years. Using xs:nonNegativeInteger restricts values to whole years and cannot represent fractional years or finer granularity (months/days), which are common for remaining life.",
+    "suggestion": "xs:duration"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The value type is xs:string, but the concept description specifies an error code in the numeric range 0–255.",
+    "explanation": "The concept description specifies an error code between 0 and 255, which is a non-negative integer within the range of an unsigned byte, whereas the current value type xs:string allows arbitrary text.",
     "suggestion": "xs:unsignedByte"
   }
 ]

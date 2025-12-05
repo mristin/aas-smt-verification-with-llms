@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Concept describes a Product name (text), but the value type is xs:long (integer). Names can contain letters and symbols and should be represented as text.",
+    "explanation": "Concept description 'Product name' denotes textual data, but the element is typed as xs:long (an integer).",
     "suggestion": "xs:string"
   }
 ]

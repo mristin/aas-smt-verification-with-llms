@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept describes a time duration (countdown in milliseconds, always negative). Using xs:negativeInteger encodes a numeric count but not the temporal semantics. xs:duration directly represents durations and supports negative values.",
+    "suggestion": "xs:duration"
+  }
+]

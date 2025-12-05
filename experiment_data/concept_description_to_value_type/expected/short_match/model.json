@@ -26,7 +26,7 @@
       "description": [
         {
           "language": "en",
-          "text": "Component count in assembly"
+          "text": "Component count in assembly; if there are too many defects, the number can be negative. There are not more than 1000 components."
         }
       ],
       "id": "urn:exampl.com:someConceptDescription",

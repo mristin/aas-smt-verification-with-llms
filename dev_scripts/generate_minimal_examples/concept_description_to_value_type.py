@@ -102,7 +102,10 @@ def main() -> int:
         ),
         Case(
             category="expected",
-            concept_description="Extremely large number of molecules in sample",
+            concept_description=(
+                "Extremely large number of molecules in sample relative to "
+                "expected value; the number can be negative."
+            ),
             value_type=aas_types.DataTypeDefXSD.INTEGER,
             identifier="integer_match",
         ),
@@ -114,13 +117,16 @@ def main() -> int:
         ),
         Case(
             category="expected",
-            concept_description="Component count in assembly",
+            concept_description=(
+                "Component count in assembly; if there are too many defects, "
+                "the number can be negative. There are not more than 1000 components."
+            ),
             value_type=aas_types.DataTypeDefXSD.SHORT,
             identifier="short_match",
         ),
         Case(
             category="expected",
-            concept_description="Error code value between 0 and 255",
+            concept_description="Error code value between -128 and 127",
             value_type=aas_types.DataTypeDefXSD.BYTE,
             identifier="byte_match",
         ),
