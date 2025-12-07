@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Concept describes a count of components in a batch (a non-negative integer), but the element uses xs:string.",
-    "suggestion": "xs:nonNegativeInteger"
+    "explanation": "The concept describes a count of components that may be negative. Counts are integers, not free-text strings. The current value type xs:string does not represent signed integers.",
+    "suggestion": "xs:int"
   }
 ]

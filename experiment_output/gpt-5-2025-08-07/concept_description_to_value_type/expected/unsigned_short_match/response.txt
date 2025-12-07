@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept 'Protocol version number' typically requires formats like '1.1', '2.0', or '1.2.3'. The current type xs:unsignedShort only allows whole numbers (0–65535) and cannot represent dotted versioning.",
+    "explanation": "Protocol version numbers often use dot-separated segments and/or qualifiers (e.g., 1.2, 2.0.1, 1.0-beta). The type xs:unsignedShort restricts values to whole numbers (0–65535) and cannot represent common version formats.",
     "suggestion": "xs:string"
   }
 ]

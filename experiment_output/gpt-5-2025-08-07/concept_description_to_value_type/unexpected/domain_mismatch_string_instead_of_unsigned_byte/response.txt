@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept describes a status register byte value, which is a numeric 8-bit value. Using xs:string does not reflect the intended numeric semantics.",
+    "explanation": "The concept describes a status register byte value (an 8-bit numeric value), but the element is typed as xs:string. A byte-sized unsigned integer is more appropriate.",
     "suggestion": "xs:unsignedByte"
   }
 ]

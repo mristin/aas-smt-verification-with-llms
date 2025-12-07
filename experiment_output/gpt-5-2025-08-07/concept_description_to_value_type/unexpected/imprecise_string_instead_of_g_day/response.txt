@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Concept describes a day of month (1–31), which is an integer value, but the value type is xs:string.",
-    "suggestion": "xs:integer"
+    "explanation": "The value represents a recurring day of the month (1–31). Using xs:string loses semantics and does not constrain the format; xs:gDay is intended for day-of-month values.",
+    "suggestion": "xs:gDay"
   }
 ]

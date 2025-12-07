@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Concept describes a quantitative temperature difference relative to a reference, which should be numeric. Using xs:string prevents numeric comparisons and calculations.",
+    "explanation": "The concept describes a quantitative temperature drop relative to a reference (a measurable sensor value). Using xs:string prevents numeric comparisons and thresholds. A numeric type with fractional precision is appropriate.",
     "suggestion": "xs:double"
   }
 ]

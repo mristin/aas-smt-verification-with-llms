@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Nanoseconds since epoch are an integer count that can exceed 64-bit signed range around the year 2262; xs:long imposes an artificial bound not implied by the concept.",
+    "suggestion": "xs:integer"
+  }
+]

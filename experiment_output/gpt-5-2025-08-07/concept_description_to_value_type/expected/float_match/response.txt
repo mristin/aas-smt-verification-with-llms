@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Temperature measurements are sensor data and can require higher precision; xs:float may introduce rounding errors. A double-precision numeric type better matches the concept.",
+    "explanation": "The concept describes a temperature measurement (sensor data). xs:float may be insufficient in precision and range for sensor readings, potentially causing rounding errors. A more precise numeric type is appropriate.",
     "suggestion": "xs:double"
   }
 ]

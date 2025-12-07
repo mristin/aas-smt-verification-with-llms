@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Semantic mismatch: a high-precision financial transaction amount requires exact decimal representation, while xs:double is a binary floating-point type that introduces rounding errors.",
+    "explanation": "The value type is xs:double, which is a floating-point type unsuitable for precise financial amounts. The concept describes a high-precision financial transaction amount with arbitrary decimal places, which requires an exact decimal representation.",
     "suggestion": "xs:decimal"
   }
 ]

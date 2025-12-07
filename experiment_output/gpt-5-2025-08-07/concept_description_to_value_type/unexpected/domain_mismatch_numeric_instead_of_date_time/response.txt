@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept describes a timestamp ('Last maintenance timestamp'), but the value type is xs:long (integer). Timestamps should use a temporal XSD type, not an integer.",
+    "explanation": "The value type is xs:long (an integer), but the concept 'Last maintenance timestamp' denotes a point in time. A temporal instant should use a date/time datatype, not a numeric integer.",
     "suggestion": "xs:dateTime"
   }
 ]

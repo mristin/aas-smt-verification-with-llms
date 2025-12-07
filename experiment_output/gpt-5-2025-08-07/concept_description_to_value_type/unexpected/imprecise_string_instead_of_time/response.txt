@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "Semantic mismatch: the concept describes a time of day (Daily operation start time), but the value type is xs:string.",
+    "explanation": "Concept describes a daily operation start time (a recurrent time of day). Using xs:string loses semantics and validation.",
     "suggestion": "xs:time"
   }
 ]

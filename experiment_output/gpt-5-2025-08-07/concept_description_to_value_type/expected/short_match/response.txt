@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a component count, which cannot be negative. xs:short permits negative values, so it does not semantically match a count.",
-    "suggestion": "xs:nonNegativeInteger"
-  }
-]
+[]

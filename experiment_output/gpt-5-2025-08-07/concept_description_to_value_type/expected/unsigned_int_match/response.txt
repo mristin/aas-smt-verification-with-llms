@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept describes a firmware revision, which is typically a version identifier (e.g., 1.2.3, v1.2-beta) rather than a single non-negative integer. xs:unsignedInt cannot represent dotted or alphanumeric versions.",
+    "explanation": "Firmware 'revision number' is commonly a version identifier (e.g., 1.2.3, 2024.11, A10) rather than a single non-negative integer; xs:unsignedInt would reject many valid revisions.",
     "suggestion": "xs:string"
   }
 ]

@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The concept 'Monthly inspection day' refers to a day-of-month (1–31) recurring every month. The current type xs:gMonthDay encodes a month+day pair (an annual recurrence), which is semantically broader than intended.",
+    "explanation": "xs:gMonthDay represents a specific month-and-day recurring annually (e.g., --12-25), while 'Monthly inspection day' denotes a day-of-month recurring every month, independent of month.",
     "suggestion": "xs:gDay"
   }
 ]

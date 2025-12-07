@@ -1,7 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The value type is xs:string, but the concept 'Last maintenance timestamp' denotes a timestamp; a temporal XSD type should be used.",
+    "explanation": "The concept 'Last maintenance timestamp' denotes a specific date and time, but the current value type is xs:string, which allows arbitrary text and lacks temporal validation.",
     "suggestion": "xs:dateTime"
   }
 ]
