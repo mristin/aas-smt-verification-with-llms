@@ -1,0 +1,42 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Max Corrosion rate (rates less than or equal 0.10 mm/year are allowed)"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum allowable corrosion rate; corrosion rate should be \u2264 0.10 mm/year"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

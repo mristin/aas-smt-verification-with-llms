@@ -1,0 +1,42 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Lower water pressure limit"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Upper water pressure limit"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

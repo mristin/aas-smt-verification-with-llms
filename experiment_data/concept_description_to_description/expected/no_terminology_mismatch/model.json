@@ -1,0 +1,42 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "EMF of the battery at 100 percent SOC (25\u00b0C)"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25\u00b0C"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}
