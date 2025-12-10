@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The concept description specifies the unit (mm/year) for the corrosion rate, but the property only declares a value type (xs:double) without an explicit unit. A numeric value without a unit can be misinterpreted.",
+    "suggestion": "mm/year"
+  }
+]

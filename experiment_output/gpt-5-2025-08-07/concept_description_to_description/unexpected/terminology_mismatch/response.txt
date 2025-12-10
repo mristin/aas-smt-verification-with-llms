@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The property describes measured terminal voltage under rated load, whereas the concept description refers to EMF (open-circuit) at 100% SOC and 25°C. EMF excludes load and differs from loaded terminal voltage.",
+    "suggestion": "urn:example.com:cd:batteryTerminalVoltage.ratedLoad.SOC100.25C"
+  }
+]

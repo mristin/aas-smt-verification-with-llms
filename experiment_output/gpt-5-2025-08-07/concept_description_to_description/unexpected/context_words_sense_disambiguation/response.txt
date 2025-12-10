@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The element's description \"Flow rate\" is broader than the concept description \"Hydraulic flow rate\". It does not indicate the hydraulic domain, leading to a semantic mismatch.",
+    "suggestion": "Hydraulic flow rate"
+  }
+]

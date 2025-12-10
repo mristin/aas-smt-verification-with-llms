@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The property's description states 'Product activation end time...', while the assigned concept description means 'Product activation start time...'. Start and end times are different concepts, so the element's semantics do not match the concept description.",
+    "suggestion": "Use a concept description that means 'Product activation end time in seconds since 1970-01-01 UTC' (or update the current concept's meaning to that), so it aligns with the property's description."
+  }
+]

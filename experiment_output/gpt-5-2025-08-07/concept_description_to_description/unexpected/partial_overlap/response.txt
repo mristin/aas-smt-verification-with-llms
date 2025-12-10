@@ -1,0 +1,12 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The property's description refers to an epoxy coating grade applied to a steel alloy, whereas the assigned concept description denotes 'Steel grade'. A coating grade is not semantically the same as a steel grade.",
+    "suggestion": "Reassign to a concept representing 'Epoxy coating grade' (e.g., urn:exampl.com:EpoxyCoatingGrade)."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "The value type xs:double may be unsuitable for grade identifiers, which are often categorical or alphanumeric rather than purely numeric.",
+    "suggestion": "xs:string"
+  }
+]
