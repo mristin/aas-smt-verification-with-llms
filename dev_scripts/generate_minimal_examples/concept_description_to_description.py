@@ -135,7 +135,8 @@ def main() -> int:
             description="Steel alloy epoxy coating grade",
             identifier="partial_overlap",
         ),
-        # `description` is a not just a specific instance (not fully overlapping) of the `concept description`, Paint type and steel grade are different attributes
+        # `description` is a not just a specific instance (not fully overlapping) of
+        # the `concept description`, Paint type and steel grade are different attributes
         # ---
         # Contradiction / factual inconsistency
         Case(
@@ -144,7 +145,8 @@ def main() -> int:
             description="Water-resistant housing length",
             identifier="no_contradiction",
         ),
-        # No contradiction, consistent meaning; `description` does not contradict `concept_description`
+        # No contradiction, consistent meaning; `description` does not
+        # contradict `concept_description`
         Case(
             category="unexpected",
             concept_description="Waterproof enclosure length",
@@ -220,15 +222,22 @@ def main() -> int:
         # Terminology mismatch
         Case(
             category="expected",
-            concept_description="Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25°C",
+            concept_description=(
+                "Battery electromotive force (EMF) at 100 percent "
+                "state of charge (SOC) at 25°C"
+            ),
             description="EMF of the battery at 100 percent SOC (25°C)",
             identifier="no_terminology_mismatch",
         ),
         # Consistent terminology
         Case(
             category="unexpected",
-            concept_description="Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25°C",
-            description="Measured voltage of the battery with the rated load at 100 percent SOC (25°C)",
+            concept_description=(
+                "Battery electromotive force (EMF) at 100 percent "
+                "state of charge (SOC) at 25°C"),
+            description=(
+                "Measured voltage of the battery with the "
+                "rated load at 100 percent SOC (25°C)"),
             identifier="terminology_mismatch",
         ),
         # Mismatch: EMF vs Measured voltage (rated load voltage)
@@ -236,14 +245,20 @@ def main() -> int:
         # Negation mismatch
         Case(
             category="expected",
-            concept_description="Maximum allowable corrosion rate; corrosion rate should be ≤ 0.10 mm/year",
-            description="Max Corrosion rate (rates less than or equal 0.10 mm/year are allowed)",
+            concept_description=(
+                "Maximum allowable corrosion rate; corrosion rate "
+                "should be ≤ 0.10 mm/year"),
+            description=(
+                "Max Corrosion rate (rates less than or "
+                "equal 0.10 mm/year are allowed)"),
             identifier="no_negation_mismatch",
         ),
         # No negation mismatch
         Case(
             category="unexpected",
-            concept_description="Maximum allowable corrosion rate; corrosion rate should be ≤ 0.10 mm/year",
+            concept_description=(
+                "Maximum allowable corrosion rate; corrosion rate "
+                "should be ≤ 0.10 mm/year"),
             description="Max Corrosion rate (> 0.10 mm/year is also allowed)",
             identifier="negation_mismatch",
         ),
