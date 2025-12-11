@@ -234,10 +234,12 @@ def main() -> int:
             category="unexpected",
             concept_description=(
                 "Battery electromotive force (EMF) at 100 percent "
-                "state of charge (SOC) at 25°C"),
+                "state of charge (SOC) at 25°C"
+            ),
             description=(
                 "Measured voltage of the battery with the "
-                "rated load at 100 percent SOC (25°C)"),
+                "rated load at 100 percent SOC (25°C)"
+            ),
             identifier="terminology_mismatch",
         ),
         # Mismatch: EMF vs Measured voltage (rated load voltage)
@@ -247,10 +249,12 @@ def main() -> int:
             category="expected",
             concept_description=(
                 "Maximum allowable corrosion rate; corrosion rate "
-                "should be ≤ 0.10 mm/year"),
+                "should be ≤ 0.10 mm/year"
+            ),
             description=(
                 "Max Corrosion rate (rates less than or "
-                "equal 0.10 mm/year are allowed)"),
+                "equal 0.10 mm/year are allowed)"
+            ),
             identifier="no_negation_mismatch",
         ),
         # No negation mismatch
@@ -258,7 +262,8 @@ def main() -> int:
             category="unexpected",
             concept_description=(
                 "Maximum allowable corrosion rate; corrosion rate "
-                "should be ≤ 0.10 mm/year"),
+                "should be ≤ 0.10 mm/year"
+            ),
             description="Max Corrosion rate (> 0.10 mm/year is also allowed)",
             identifier="negation_mismatch",
         ),
