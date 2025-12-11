@@ -1,0 +1,12 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The property's description says 'Water-resistant housing length', but the linked concept means 'Waterproof enclosure length'. 'Water-resistant' is weaker than 'waterproof', so the instance is not a permissible specialization of the concept.",
+    "suggestion": "Change the property description to 'Waterproof housing length'."
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "The concept description is overly specific ('Waterproof') and cannot cover instances that are only 'water-resistant'.",
+    "suggestion": "Generalize the concept description to 'Enclosure (housing) length'."
+  }
+]

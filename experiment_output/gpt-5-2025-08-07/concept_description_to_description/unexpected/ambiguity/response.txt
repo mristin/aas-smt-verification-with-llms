@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The element description 'Voltage' is too generic and does not correspond to the assigned concept description 'Rated DC input voltage', which specifies the rating, current type (DC), and context (input).",
+    "suggestion": "Rated DC input voltage"
+  }
+]

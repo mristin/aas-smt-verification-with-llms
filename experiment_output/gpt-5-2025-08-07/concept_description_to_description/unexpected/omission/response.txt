@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The description 'Max humidity' is too generic and does not align with the concept description 'Maximum ambient relative humidity at 25°C'. It omits that the humidity is relative and the 25°C condition, which could lead to misinterpretation (e.g., absolute humidity or unspecified conditions).",
+    "suggestion": "Update the description to 'Maximum ambient relative humidity at 25°C'."
+  }
+]

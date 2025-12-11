@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The property's description says 'Lower water pressure limit' while the linked concept description means 'Upper water pressure limit'; these are semantically opposite constraints.",
+    "suggestion": "Change the property's description to 'Upper water pressure limit' to align with the concept description."
+  }
+]
