@@ -1,0 +1,7 @@
+[
+  {
+    "path": "for_indoor_environments",
+    "explanation": "No semantic mismatch detected; the ID-short corresponds to the description. However, for a boolean property, the ID-short could more clearly convey a true/false predicate.",
+    "suggestion": "is_suitable_for_indoor_use"
+  }
+]

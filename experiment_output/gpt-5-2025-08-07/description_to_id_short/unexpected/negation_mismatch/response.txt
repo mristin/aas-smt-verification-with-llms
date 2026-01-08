@@ -1,0 +1,7 @@
+[
+  {
+    "path": "suitable_for_wet_environments",
+    "explanation": "The ID-short suggests the property indicates suitability for wet environments, while the description states a prohibition ('Do not operate in wet conditions'), which contradicts the implied meaning of a true value.",
+    "suggestion": "Update the description to: 'Indicates whether the product is suitable for operation in wet environments (true = suitable, false = not suitable)'."
+  }
+]

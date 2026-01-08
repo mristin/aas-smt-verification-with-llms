@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "The description 'Permitted voltage' suggests an allowed/permissible value, while the display name 'Maximum voltage' denotes an upper limit. These are not equivalent and may lead to different interpretations.",
+    "suggestion": "Maximum voltage"
+  }
+]

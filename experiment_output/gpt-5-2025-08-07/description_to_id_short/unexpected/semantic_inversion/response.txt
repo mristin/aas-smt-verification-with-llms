@@ -1,0 +1,7 @@
+[
+  {
+    "path": "maximum_voltage",
+    "explanation": "The ID-short 'maximum_voltage' indicates a maximum allowable value, while the description 'Permitted voltage' is ambiguous and could be interpreted as a general allowed value or range rather than the upper bound.",
+    "suggestion": "Maximum permitted voltage"
+  }
+]

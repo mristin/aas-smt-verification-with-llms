@@ -1,0 +1,7 @@
+[
+  {
+    "path": "axle_length",
+    "explanation": "ID-short 'axle_length' implies the length of an axle, while the description says 'Shaft diameter', which refers to a different dimension.",
+    "suggestion": "Change the description to 'Axle length' to match the ID-short; or, if diameter is intended, rename the ID-short to 'shaft_diameter'."
+  }
+]
