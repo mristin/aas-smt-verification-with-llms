@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No semantic mismatch: the description 'Start time' and the display name 'Beginning time' are synonymous.",
+    "suggestion": "Optional consistency improvement: set the display name to 'Start time' to match the description."
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No semantic mismatch: the description 'Suitable for indoor use' and the display name 'For indoor environments' are equivalent in meaning.",
+    "suggestion": "Optionally align wording by changing the display name to 'Suitable for indoor use' for an exact match with the description."
+  }
+]

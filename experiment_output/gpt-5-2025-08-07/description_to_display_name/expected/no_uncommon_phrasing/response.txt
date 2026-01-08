@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No mismatch: description and display name are identical ('Weight').",
+    "suggestion": "No change required."
+  }
+]

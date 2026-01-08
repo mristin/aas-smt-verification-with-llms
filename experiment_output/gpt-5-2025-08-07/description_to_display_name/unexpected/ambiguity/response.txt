@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Description 'Power' is broader and does not correspond to the display name 'Rated power', which refers specifically to nominal power under rated conditions.",
+    "suggestion": "Change the description to 'Rated power' to align with the display name."
+  }
+]

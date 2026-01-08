@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Description is 'Start time' but the display name is 'End time'; they refer to different temporal endpoints.",
+    "suggestion": "Start time"
+  }
+]

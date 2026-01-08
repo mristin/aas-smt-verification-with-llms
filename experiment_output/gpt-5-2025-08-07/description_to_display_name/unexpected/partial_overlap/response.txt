@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Display name 'Material' is generic, while the description 'Surface coating (steel alloy)' refers specifically to a surface coating, which is a different concept than the base material.",
+    "suggestion": "Surface coating"
+  }
+]

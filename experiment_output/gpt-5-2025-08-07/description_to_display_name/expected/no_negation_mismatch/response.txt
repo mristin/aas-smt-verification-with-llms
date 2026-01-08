@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No semantic mismatch detected: 'Suitable for wet environments' and 'Compatible with wet environments' are equivalent; only the wording differs.",
+    "suggestion": "Set the display name to 'Suitable for wet environments' to align wording with the description."
+  }
+]

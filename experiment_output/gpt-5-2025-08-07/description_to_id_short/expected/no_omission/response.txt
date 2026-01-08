@@ -1,0 +1,7 @@
+[
+  {
+    "path": "operating_temperature",
+    "explanation": "ID-short 'operating_temperature' suggests a single value, but the description states 'Operating temperature range', which implies a min–max interval. Additionally, the value type xs:double represents a single scalar, not a range.",
+    "suggestion": "If a range is intended, rename the ID-short to 'operating_temperature_range' and model it as two properties 'operating_temperature_min' and 'operating_temperature_max' (both xs:double). Otherwise, keep the ID-short and change the description to 'Operating temperature'."
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "for_outdoor_environments",
+    "explanation": "The ID-short indicates suitability for outdoor environments, while the description states 'Suitable for indoor use'.",
+    "suggestion": "Change the description to 'Suitable for outdoor use'."
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "No mismatch: description and display name are identical ('Shaft diameter').",
+    "suggestion": "No change required."
+  }
+]
