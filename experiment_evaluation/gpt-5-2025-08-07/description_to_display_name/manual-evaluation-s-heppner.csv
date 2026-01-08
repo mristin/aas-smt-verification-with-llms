@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM suggests to put a more precise name, 'Mechanical Power' instead of 'Power'."
+expected,no ambiguity,no_ambiguity,yes,"The LLM warns against the misreading -- 'Power consumption' is vague, better 'Electrical input power'."
+expected,no contradiction,no_contradiction,yes,"The LLM suggests that the description and display name should be harmonized for consistency."
+expected,no negation mismatch,no_negation_mismatch,yes,
+expected,no omission,no_omission,yes,"The LLM suggests that the display name is too vague, and should include 'range' -- 'Operating temperature range'."
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,
+expected,no partial overlap,no_partial_overlap,yes,"The LLM suggests that the kind of material should be included for precision, 'Material (steel allow)'."
+expected,no terminology mismatch,no_terminology_mismatch,no,"The LLM gave a void suggestion (suggestion: 'no change needed')."
+expected,no uncommon phrasing,no_uncommon_phrasing,yes,
+expected,semantic inversion,semantic_inversion,no,"The LLM gave a void suggestion (suggestion: 'no change needed')."
+expected,syntax,syntax,no,"The LLM gave a void suggestion (suggestion: 'no change needed')."
+unexpected,ambiguity,ambiguity,yes,"The LLM suggests more specific name ('rated power') instead of generic ('power')."
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM complains that the name 'power' is too broad, and suggests more specific 'Mechanical power'."
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,
+unexpected,semantic inversion,semantic_inversion,yes,"The LLM suggests that the display name is vague ('maximum voltage' implies a limit, better 'permitted voltage')."
+unexpected,syntax,syntax,yes,"The LLM detects the missing whitespace correctly."
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,no,"The LLM failed to detect the problem, and made no suggestion."
