@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Description indicates indoor use ('Suitable for indoor use') while the display name indicates outdoor use ('For outdoor environments').",
-    "suggestion": "Change display name to 'For indoor environments' to align with the description."
-  }
-]

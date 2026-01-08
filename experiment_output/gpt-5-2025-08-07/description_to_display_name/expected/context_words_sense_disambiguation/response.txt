@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Display name 'Mechanical power' is broader than the description 'Mechanical output power'; the missing qualifier 'output' changes the semantics.",
-    "suggestion": "Mechanical output power"
-  }
-]

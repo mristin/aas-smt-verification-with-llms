@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Description is 'Power' (generic) while display name is 'Rated power' (specific nominal power). These concepts are not identical.",
-    "suggestion": "Rated power"
-  }
-]

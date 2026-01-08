@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "No semantic mismatch: description and display name are identical ('Nominal shaft speed').",
-    "suggestion": "No change needed."
-  }
-]

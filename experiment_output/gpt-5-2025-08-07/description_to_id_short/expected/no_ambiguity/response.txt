@@ -1,7 +1,0 @@
-[
-  {
-    "path": "power_consumption",
-    "explanation": "The ID-short 'power_consumption' corresponds to the description 'Electrical input power' (no mismatch). However, there is a semantic mismatch between the described quantity (power) and the value type: xs:string is not suitable for a quantitative power value.",
-    "suggestion": "Use a numeric value type such as xs:decimal or xs:double and specify an appropriate unit, e.g., W or kW."
-  }
-]
