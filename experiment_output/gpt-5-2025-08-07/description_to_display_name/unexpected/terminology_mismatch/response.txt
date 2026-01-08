@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Description states 'Shaft diameter' (diameter of a shaft) while the display name is 'Axle length' (length of an axle). This mismatches both the measured quantity (diameter vs. length) and the component (shaft vs. axle).",
-    "suggestion": "Shaft diameter"
-  }
-]

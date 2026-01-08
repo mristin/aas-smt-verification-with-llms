@@ -1,7 +1,0 @@
-[
-  {
-    "path": "heaviness",
-    "explanation": "ID-short 'heaviness' and description 'Weight heavy' are ambiguous and inconsistent with value type xs:string. If the intent is physical weight, it should be numeric with a unit; if the intent is a qualitative category (light/medium/heavy), the description and ID-short should reflect that.",
-    "suggestion": "Clarify intent. Option A (quantitative): rename idShort to 'weight', set valueType to 'xs:double', and specify a unit (e.g., 'kg' or 'N'); description: 'Weight of the item'. Option B (qualitative): keep valueType 'xs:string' but rename idShort to 'heavinessCategory' and change description to 'Qualitative heaviness category (e.g., light, medium, heavy)'."
-  }
-]

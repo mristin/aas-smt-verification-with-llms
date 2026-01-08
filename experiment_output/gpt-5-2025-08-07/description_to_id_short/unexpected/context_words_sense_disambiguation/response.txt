@@ -1,7 +1,0 @@
-[
-  {
-    "path": "power",
-    "explanation": "ID-short 'power' corresponds to description 'Mechanical Power' (no mismatch). However, the value type is xs:string, which is semantically inappropriate for power; it should be numeric with a unit (e.g., Watt).",
-    "suggestion": "Use a numeric value type (e.g., xs:double or xs:decimal) and assign the unit 'W'."
-  }
-]

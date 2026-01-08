@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Description 'Nominalshaftspeed' does not correspond to display name 'Nominal shaft speed' (missing spaces).",
-    "suggestion": "Nominal shaft speed"
-  }
-]

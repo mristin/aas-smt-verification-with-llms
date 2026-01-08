@@ -1,7 +1,0 @@
-[
-  {
-    "path": "weight",
-    "explanation": "ID-short and description both indicate 'weight', so they match. However, the value type is xs:string, which is semantically inappropriate for weight; weight should be a numeric quantity with a unit.",
-    "suggestion": "Change value type to a numeric type (e.g., xs:decimal or xs:double) and specify a unit, e.g., kg."
-  }
-]

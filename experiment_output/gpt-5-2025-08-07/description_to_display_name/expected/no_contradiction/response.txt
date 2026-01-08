@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "No mismatch: the description 'Suitable for indoor use' conveys the same meaning as the display name 'For indoor environments'.",
-    "suggestion": "No change needed. Optionally, harmonize phrasing to 'Suitable for indoor environments' in both fields for consistency."
-  }
-]

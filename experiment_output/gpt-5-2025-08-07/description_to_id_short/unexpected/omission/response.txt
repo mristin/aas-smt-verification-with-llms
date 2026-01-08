@@ -1,7 +1,0 @@
-[
-  {
-    "path": "temperature",
-    "explanation": "ID-short 'temperature' corresponds with description 'Operating temperature'. However, the value type is xs:string; temperatures should be numeric and carry a unit.",
-    "suggestion": "Use valueType xs:double (or xs:decimal) and define a unit such as °C or K."
-  }
-]
