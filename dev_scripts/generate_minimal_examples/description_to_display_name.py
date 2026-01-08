@@ -24,10 +24,11 @@ class Case:
     description: str
     display_name: str
     identifier: str
+    value_type: model.DataTypeDefXsd
 
 
 def _generate_submodel(
-    description: str, display_name: Optional[str], id_short: str
+    description: str, display_name: Optional[str], id_short: str, value_type: model.DataTypeDefXsd
 ) -> model.Submodel:
     """
     Generate a minimal `Submodel` containing a `Property` with the given `description` and
@@ -44,8 +45,7 @@ def _generate_submodel(
         submodel_element=[
             model.Property(
                 id_short=id_short,
-                value_type=model.datatypes.String,
-                value="someString",
+                value_type=value_type,
                 display_name=display_name_mlp,
                 description=model.MultiLanguageTextType({"en": description}),
             )
@@ -75,6 +75,7 @@ def main() -> int:
             description="Permitted voltage",
             display_name="Allowed voltage",
             identifier="semantic_inversion",
+            value_type=model.datatypes.Double,
         ),
         # Similar wording, same meaning
         Case(
@@ -82,6 +83,7 @@ def main() -> int:
             description="Permitted voltage",
             display_name="Maximum voltage",
             identifier="semantic_inversion",
+            value_type=model.datatypes.Double,
         ),
         # Similar wording, but "permitted" = normal operating vs
         # "maximum" = absolute upper safety limit => not the same meaning.
@@ -91,6 +93,7 @@ def main() -> int:
             description="Start time",
             display_name="Beginning time",
             identifier="no_paraphrase_synonymy",
+            value_type=model.datatypes.DateTime,
         ),
         # Different wording, same meaning
         Case(
@@ -98,6 +101,7 @@ def main() -> int:
             description="Start time",
             display_name="End time",
             identifier="paraphrase_synonymy",
+            value_type=model.datatypes.DateTime,
         ),
         # Different wording, different meaning
         # Partial overlap
@@ -106,6 +110,7 @@ def main() -> int:
             description="Material (steel alloy)",
             display_name="Material",
             identifier="no_partial_overlap",
+            value_type=model.datatypes.String,
         ),
         # `description` is a more specific instance of the `display_name`
         # => Correct, but different level of detail
@@ -114,6 +119,7 @@ def main() -> int:
             description="Surface coating (steel alloy)",
             display_name="Material",
             identifier="partial_overlap",
+            value_type=model.datatypes.String,
         ),
         # `description` is not just a more detailed version of the `display_name`.
         # Contradiction / factual inconsistency
@@ -122,6 +128,7 @@ def main() -> int:
             description="Suitable for indoor use",
             display_name="For indoor environments",
             identifier="no_contradiction",
+            value_type=model.datatypes.Boolean,
         ),
         # `description` does not contradict `display_name`
         Case(
@@ -129,6 +136,7 @@ def main() -> int:
             description="Suitable for indoor use",
             display_name="For outdoor environments",
             identifier="contradiction",
+            value_type=model.datatypes.Boolean,
         ),
         # `description` contradicts `display_name`
         # Ambiguity
@@ -137,6 +145,7 @@ def main() -> int:
             description="Electrical input power",
             display_name="Power consumption",
             identifier="no_ambiguity",
+            value_type=model.datatypes.Double,
         ),
         # No ambiguity
         Case(
@@ -144,6 +153,7 @@ def main() -> int:
             description="Power",
             display_name="Rated power",
             identifier="ambiguity",
+            value_type=model.datatypes.Double,
         ),
         # Could be electrical? mechanical? thermal? -> not enough context to know
         # Omission / missing info
@@ -152,6 +162,7 @@ def main() -> int:
             description="Operating temperature range",
             display_name="Operating temperature",
             identifier="no_omission",
+            value_type=model.datatypes.Double,
         ),
         # Semantically still the same
         Case(
@@ -159,6 +170,7 @@ def main() -> int:
             description="Operating temperature",
             display_name="Temperature",
             identifier="omission",
+            value_type=model.datatypes.Double,
         ),
         # `display_name` "Temperature" is too vague, could be anything
         # Context-dependent interpretation / words sense disambiguation (WSD)
@@ -167,6 +179,7 @@ def main() -> int:
             description="Mechanical output power",
             display_name="Mechanical power",
             identifier="context_words_sense_disambiguation",
+            value_type=model.datatypes.Double,
         ),
         # Semantically still the same
         Case(
@@ -174,6 +187,7 @@ def main() -> int:
             description="Mechanical Power",
             display_name="Power",
             identifier="context_words_sense_disambiguation",
+            value_type=model.datatypes.Double,
         ),
         # `display_name` can only be interpreted in context (could be electrical,
         # thermal, hydraulic)
@@ -183,6 +197,7 @@ def main() -> int:
             description="Nominal shaft speed",
             display_name="Nominal shaft speed",
             identifier="syntax",
+            value_type=model.datatypes.Double,
         ),
         # No syntax error
         Case(
@@ -190,6 +205,7 @@ def main() -> int:
             description="Nominalshaftspeed",
             display_name="Nominal shaft speed",
             identifier="syntax",
+            value_type=model.datatypes.Double,
         ),
         # No spaces in `description`
         # Terminology mismatch
@@ -198,6 +214,7 @@ def main() -> int:
             description="Shaft diameter",
             display_name="Shaft diameter",
             identifier="no_terminology_mismatch",
+            value_type=model.datatypes.Double,
         ),
         # No mismatch
         Case(
@@ -205,6 +222,7 @@ def main() -> int:
             description="Shaft diameter",
             display_name="Axle length",
             identifier="terminology_mismatch",
+            value_type=model.datatypes.Double,
         ),
         # Sounds related, but diameter != length
         # Negation mismatch
@@ -213,6 +231,7 @@ def main() -> int:
             description="Suitable for wet environments",
             display_name="Compatible with wet environments",
             identifier="no_negation_mismatch",
+            value_type=model.datatypes.Boolean,
         ),
         # No mismatch
         Case(
@@ -220,6 +239,7 @@ def main() -> int:
             description="Do not operate in wet conditions",
             display_name="Suitable for wet environments",
             identifier="negation_mismatch",
+            value_type=model.datatypes.Boolean,
         ),
         # `display_name` is negation of `description`
         # Uncommon phrasing / language quality
@@ -228,6 +248,7 @@ def main() -> int:
             description="Weight",
             display_name="Weight",
             identifier="no_uncommon_phrasing",
+            value_type=model.datatypes.Double,
         ),
         # Normal terms used
         Case(
@@ -235,6 +256,7 @@ def main() -> int:
             description="Weight heavy",
             display_name="Heaviness",
             identifier="uncommon_phrasing",
+            value_type=model.datatypes.Double,
         ),
         # Kind of intelligible by a human, but weird
     ]
@@ -251,7 +273,7 @@ def main() -> int:
 
         # Create the experiment data
         submodel = _generate_submodel(
-            case.description, case.display_name, "some_id_short"
+            case.description, case.display_name, "some_id_short", case.value_type
         )
 
         # Ensure directory exists
@@ -276,7 +298,7 @@ def main() -> int:
 
         # Create the experiment data
         submodel = _generate_submodel(
-            case.description, None, _to_snake_case(case.display_name)
+            case.description, None, _to_snake_case(case.display_name), case.value_type
         )
 
         # Ensure directory exists

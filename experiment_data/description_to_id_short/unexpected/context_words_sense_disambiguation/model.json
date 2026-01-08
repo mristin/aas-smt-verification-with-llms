@@ -13,8 +13,7 @@
                         }
                     ],
                     "modelType": "Property",
-                    "value": "someString",
-                    "valueType": "xs:string"
+                    "valueType": "xs:double"
                 }
             ]
         }

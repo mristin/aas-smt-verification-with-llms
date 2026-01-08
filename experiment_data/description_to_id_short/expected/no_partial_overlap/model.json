@@ -13,7 +13,6 @@
                         }
                     ],
                     "modelType": "Property",
-                    "value": "someString",
                     "valueType": "xs:string"
                 }
             ]
