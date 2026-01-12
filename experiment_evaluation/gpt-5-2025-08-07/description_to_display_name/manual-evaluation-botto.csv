@@ -1,0 +1,23 @@
+Expectation,Case name,Correct,Remark
+expected,context_words_sense_disambiguation,no,LLM is overspecific as the description is more concrete than the display name
+expected,no_ambiguity,yes,
+expected,no_contradiction,yes,
+expected,no_negation_mismatch,yes,
+expected,no_omission,no,LLM is overspecific
+expected,no_paraphrase_synonymy,yes,
+expected,no_partial_overlap,no,LLM is overspecific
+expected,no_terminology_mismatch,yes,
+expected,no_uncommon_phrasing,yes,
+expected,semantic_inversion,yes,
+expected,syntax,yes,
+unexpected,ambiguity,yes,
+unexpected,context_words_sense_disambiguation,yes,
+unexpected,contradiction,yes,
+unexpected,negation_mismatch,yes,
+unexpected,omission,yes,
+unexpected,paraphrase_synonymy,yes,
+unexpected,partial_overlap,yes,
+unexpected,semantic_inversion,yes,
+unexpected,syntax,yes,
+unexpected,terminology_mismatch,yes,
+unexpected,uncommon_phrasing,yes,
