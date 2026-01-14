@@ -26,7 +26,7 @@
       "description": [
         {
           "language": "en",
-          "text": "Error code between 0 and 255"
+          "text": "Error code between -128 and 127"
         }
       ],
       "id": "urn:exampl.com:someConceptDescription",

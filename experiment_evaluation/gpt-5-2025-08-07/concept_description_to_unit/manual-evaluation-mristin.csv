@@ -1,7 +1,7 @@
 Expectation,Category,Case name,Correct,Remark
 expected,semantic match,semantic_match_energy_alternative,yes,
 expected,semantic match,semantic_match_force_alternative,yes,
-expected,semantic match,semantic_match_power_alternative,yes,"The LLM correctly detected that the unit 'hp' (horsepower) is uncommon, and Watt would be better for electrical power consumption."
+expected,semantic match,semantic_match_power_alternative,yes,"The LLM recognizes that hp (horsepower) is non-SI and suggests correctly Watt."
 expected,semantic match,semantic_match_pressure_alternative,yes,
 expected,semantic match scale-invariant,semantic_match_scale_invariant_energy_kilo,yes,
 expected,semantic match scale-invariant,semantic_match_scale_invariant_energy_milli,yes,
