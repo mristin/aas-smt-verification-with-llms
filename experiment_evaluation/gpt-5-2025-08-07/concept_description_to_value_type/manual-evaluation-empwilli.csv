@@ -1,0 +1,73 @@
+Expectation,Category,Case name,Correct,Remark
+expected,match,any_uri_match,yes,
+expected,match,base_64_binary_match,yes,
+expected,match,boolean_match,yes,
+expected,match,byte_match,yes,
+expected,match,date_match,yes,
+expected,match,date_time_match,yes,
+expected,match,decimal_match,yes,
+expected,match,double_match,yes,
+expected,match,duration_match,yes,
+expected,match,float_match,yes,"Suggests use of xs:double to mitigate rounding errors."
+expected,match,g_day_match,yes,
+expected,match,g_month_day_match,yes,"Suggests the use of xs:gDay, as xs:gMonthDay describes a day with a specific month. The suggested solution lines up with the description in the concept description."
+expected,match,g_month_match,yes,
+expected,match,g_year_match,yes,
+expected,match,g_year_month_match,yes,
+expected,match,hex_binary_match,yes,
+expected,match,int_match,yes,"Suggests the use of xs:double, as temperatures are non-integer values. The suggested solution lines up with the description in the concept description."
+expected,match,integer_match,no,"Suggests the use of xs:double, as it falsly interprets a integer value (number of molecules) as a potentially fractional number (by the description 'relative value')"
+expected,match,long_match,no,"Suggests the use of xs:integer to prevent overruns. This precision is too high for most use cases."
+expected,match,negative_integer_match,no,"Suggests the use of xs:duration."
+expected,match,non_negative_integer_match,no,"Suggests the use of xs:duration. The model interprets a higher precision for the remaining service life, eventhough the description states that this value is specified in years only."
+expected,match,non_positive_integer_match,yes,"Suggests the use of xs:double as the described value is a fractual value."
+expected,match,positive_integer_match,yes,
+expected,match,short_match,yes,
+expected,match,string_match,yes,
+expected,match,time_match,yes,
+expected,match,unsigned_byte_match,yes,
+expected,match,unsigned_int_match,yes,"Suggests the use of xs:string, as revision numbers often contain non-digits."
+expected,match,unsigned_long_match,yes,"Suggests the use of xs:duration, as a more suitable representation for time intervals."
+expected,match,unsigned_short_match,yes,"Suggests the use of xs:string, as version numbers often contain non-digits."
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_any_uri,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_base_64_binary,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_boolean,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_date,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_date_time,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_duration,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_hex_binary,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_string,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_time,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_byte,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_decimal,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_double,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_float,yes,"Suggests the use of xs:double. This lines up with the description."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_int,yes,"Suggests the use of xs:double. This lines up with the description."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_integer,yes,"Suggests the use of xs:nonNegativeInteger. This lines up with the description."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_long,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_negative_integer,yes,"Suggests the use of xs:double. This lines up with the description."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_negative_integer,yes,"Suggests the use of xs:duration. This is overly precise, as it also supports fractionals, eventhough, the description requires years only."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_positive_integer,yes,"Suggests the use of xs:double. This lines up with the description."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_positive_integer,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_short,yes,"Suggests the use of xs:int. This lines up with the description."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_byte,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_int,yes,"Suggests no change. This is consistent with unsigned_int_match, where the LLM interprets versions/revisions as strings that contain non-numeric characters."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_long,no,"Suggests the use of xs:double. However, milliseconds is an integer value."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_short,yes,"Suggests no change. This is consistent with unsigned_int_match, where the LLM interprets versions/revisions as strings that contain non-numeric characters."
+unexpected,imprecise string,imprecise_string_instead_of_any_uri,yes,
+unexpected,imprecise string,imprecise_string_instead_of_base_64_binary,yes,
+unexpected,imprecise string,imprecise_string_instead_of_boolean,yes,
+unexpected,imprecise string,imprecise_string_instead_of_date,yes,
+unexpected,imprecise string,imprecise_string_instead_of_date_time,yes,
+unexpected,imprecise string,imprecise_string_instead_of_duration,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_day,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_month,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_month_day,yes,"Suggests the use of xs:day. This lines up with the description and is consistent with g_month_day_match"
+unexpected,imprecise string,imprecise_string_instead_of_g_year,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_year_month,yes,
+unexpected,imprecise string,imprecise_string_instead_of_hex_binary,yes,
+unexpected,imprecise string,imprecise_string_instead_of_time,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_decimal_instead_of_double,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_double_instead_of_decimal,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_float_instead_of_decimal,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_float_instead_of_double,yes,
