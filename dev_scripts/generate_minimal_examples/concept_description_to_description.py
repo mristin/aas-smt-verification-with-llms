@@ -123,16 +123,16 @@ def main() -> int:
         # Partial overlap
         Case(
             category="expected",
-            concept_description="Steel grade",
-            description="Steel grade (304 stainless)",
+            concept_description="Steel grade European Norm (EN) number",
+            description="Steel grade (martensitic) European Norm (EN) number",
             identifier="no_partial_overlap",
         ),
         # `description` is a more specific instance of the `concept description`
         # `concept description` is a generalization => acceptable
         Case(
             category="unexpected",
-            concept_description="Steel grade",
-            description="Steel alloy epoxy coating grade",
+            concept_description="Steel grade European Norm (EN) number",
+            description="Steel alloy epoxy coating grade European Norm (EN) number",
             identifier="partial_overlap",
         ),
         # `description` is a not just a specific instance (not fully overlapping) of
