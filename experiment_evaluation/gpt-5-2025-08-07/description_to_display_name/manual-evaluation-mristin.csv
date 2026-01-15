@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM suggests to include 'output' in the display name for more accuracy ('Mechanical output power' instead of just 'Mechanical power')"
+expected,no ambiguity,no_ambiguity,yes,"The LLM suggests an optional harmonization to make the display name the same as the description."
+expected,no contradiction,no_contradiction,yes,"The LLM suggests an optional harmonization to make the display name the same as the description."
+expected,no negation mismatch,no_negation_mismatch,yes,"The LLM suggests an optional harmonization to make the display name the same as the description."
+expected,no omission,no_omission,yes,"The LLM complains about the semantic difference -- range versus value -- 'operating temperature' versus 'operating temperature range'."
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,"The LLM suggests an optional harmonization to make the display name the same as the description."
+expected,no partial overlap,no_partial_overlap,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+expected,no terminology mismatch,no_terminology_mismatch,no,"The LLM outputs 'no change required' instead of empty suggestion."
+expected,no uncommon phrasing,no_uncommon_phrasing,no,"The LLM outputs 'no change required' instead of empty suggestion."
+expected,semantic inversion,semantic_inversion,yes,"The LLM suggests an optional harmonization to make the display name the same as the description."
+expected,syntax,syntax,no,"The LLM outputs 'no change required' instead of empty suggestion."
+unexpected,ambiguity,ambiguity,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax,syntax,yes,
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,yes,

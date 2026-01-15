@@ -28,7 +28,10 @@ class Case:
 
 
 def _generate_submodel(
-    description: str, display_name: Optional[str], id_short: str, value_type: model.DataTypeDefXsd
+    description: str,
+    display_name: Optional[str],
+    id_short: str,
+    value_type: model.DataTypeDefXsd,
 ) -> model.Submodel:
     """
     Generate a minimal `Submodel` containing a `Property` with the given `description` and

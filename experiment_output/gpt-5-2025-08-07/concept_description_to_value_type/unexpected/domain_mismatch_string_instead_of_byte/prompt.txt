@@ -46,4 +46,4 @@ Property at path 'some_id_short' with ID-short 'some_id_short' with value type x
 
 # Concept descriptions
 
-Concept description 'urn:exampl.com:someConceptDescription' means: 'Error code between 0 and 255'
+Concept description 'urn:exampl.com:someConceptDescription' means: 'Error code between -128 and 127'

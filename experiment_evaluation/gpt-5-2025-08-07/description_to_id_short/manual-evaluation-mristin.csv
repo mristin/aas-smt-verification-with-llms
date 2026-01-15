@@ -1,0 +1,21 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM mentions that the ID-short is too vague, and correctly suggests to add '_output_'."
+expected,no ambiguity,no_ambiguity,yes,
+expected,no contradiction,no_contradiction,yes,"The LLM suggests prefix 'is_' to signal that it is a boolean."
+expected,no negation mismatch,no_negation_mismatch,yes,"The LLM notices that the property is described as a range ('operating temperature range'), but the ID-short is simply 'operating_temperature'."
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,"The LLM complains that the ID-short is too vague, and should be renamed to be more precise."
+expected,no terminology mismatch,no_terminology_mismatch,yes,"The LLM complains about the casing and suggests camelCase."
+expected,no uncommon phrasing,no_uncommon_phrasing,yes,
+expected,semantic inversion,semantic_inversion,yes,"The LLM nitpicks about the subtle difference between 'permitted' and 'allowed'."
+expected,syntax,syntax,yes,
+unexpected,ambiguity,ambiguity,yes,"The LLM complains about the description being too vague."
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,no,"The LLM just replies: 'No change needed' -- not an empty array!"
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,"The LLM complains that the ID-short is too broad."
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax,syntax,yes,
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,yes,"The LLM complains that both the description and the ID-short are ambiguous."

@@ -8,27 +8,27 @@ expected,match,date_time_match,yes,
 expected,match,decimal_match,yes,
 expected,match,double_match,yes,
 expected,match,duration_match,yes,
-expected,match,float_match,yes,"The LLM suggests xs:double instead of xs:float for loss of precision -- legit."
+expected,match,float_match,yes,"The LLM notices that xs:float might lack precision."
 expected,match,g_day_match,yes,
-expected,match,g_month_day_match,yes,"The LLM suggests xs:gDay which also seems OK; the concept description was ambiguous."
+expected,match,g_month_day_match,yes,"The LLM notices that xs:gDay might be a viable alternative since the description is not precise enough."
 expected,match,g_month_match,yes,
 expected,match,g_year_match,yes,
 expected,match,g_year_month_match,yes,
 expected,match,hex_binary_match,yes,
-expected,match,integer_match,no,"The LLM suggests xs:double assuming fractional values, but the concept description is explicit that it is a number of molecules."
-expected,match,int_match,yes,"The LLM suggests xs:double as we are modelling a continuous physical quantity."
-expected,match,long_match,yes,"The LLM correctly suggests xs:integer to avoid bugs related to nanoseconds since epoch after year 2262."
-expected,match,negative_integer_match,yes,"The LLM suggests xs:duration as we are modelling a countdown -- this is indeed better than our negative integer if fractions of seconds are important."
-expected,match,non_negative_integer_match,yes,"The LLM suggests xs:duration as we are modelling remaining service life -- this is indeed better than our non-negative integer."
-expected,match,non_positive_integer_match,yes,"The LLM suggests xs:double as we are modelling a continuous physical quantity."
+expected,match,int_match,yes,"The LLM notices correctly that the temperature readings might be fractional, and suggests correctly xs:double."
+expected,match,integer_match,no,"The LLM did not notices that we are talking about the count of molecules, and wrongly suggests a fractional number as xs:double."
+expected,match,long_match,yes,"The LLM notices that nanoseconds since epoch as xs:long work only till year 2262."
+expected,match,negative_integer_match,yes,"The LLM suggests xs:duration since we describe countdown in milliseconds, but neglects the part of the description saying 'always negative'."
+expected,match,non_negative_integer_match,yes,"The LLM suggests xs:duration since we are talking about non-negative years of remaining service life -- but neglects the 'non-negative' in the description."
+expected,match,non_positive_integer_match,yes,"The LLM suggests that the value can be fractional and thus xs:double."
 expected,match,positive_integer_match,yes,
 expected,match,short_match,yes,
 expected,match,string_match,yes,
 expected,match,time_match,yes,
 expected,match,unsigned_byte_match,yes,
-expected,match,unsigned_int_match,yes,"The LLM suggests a xs:string as we are modelling the revision number -- the concept description was too ambiguous."
-expected,match,unsigned_long_match,yes,"The LLM suggests xs:duration as we model temporal duration -- this allows fractions of milliseconds, so it makes sense; the concept description was too ambiguous."
-expected,match,unsigned_short_match,yes,"The LLM suggests a xs:string as we are modelling the version number -- the concept description was too ambiguous."
+expected,match,unsigned_int_match,yes,"The LLM suggests correctly that the revision number should be a string to allow for different identifiers."
+expected,match,unsigned_long_match,yes,"The LLM notices that the value is a duration (millisecond count), so correctly suggests xs:duration."
+expected,match,unsigned_short_match,yes,"The LLM suggests correctly that the revision number should be a string to allow for different identifiers."
 unexpected,domain mismatch,domain_mismatch_numeric_instead_of_any_uri,yes,
 unexpected,domain mismatch,domain_mismatch_numeric_instead_of_base_64_binary,yes,
 unexpected,domain mismatch,domain_mismatch_numeric_instead_of_boolean,yes,
@@ -41,32 +41,32 @@ unexpected,domain mismatch,domain_mismatch_numeric_instead_of_time,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_byte,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_decimal,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_double,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_float,yes,"The LLM suggests xs:double which is OK. The concept description did not mention 32-bit."
-unexpected,domain mismatch,domain_mismatch_string_instead_of_int,yes,"The LLM suggests xs:double which is OK -- the sensor data can be numeric and fractional."
-unexpected,domain mismatch,domain_mismatch_string_instead_of_integer,yes,"The LLM is even more precise and suggests xs:nonNegativeInteger."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_float,yes,"The LLM suggests xs:double to capture fractional values as well."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_int,yes,"The LLM suggests xs:double to capture fractional values as well."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_integer,yes,"The LLM is even more precise, xs:nonNegativeInteger."
 unexpected,domain mismatch,domain_mismatch_string_instead_of_long,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_negative_integer,yes,"The LLM suggests xs:double which is OK -- the temperature drop can be numeric and fractional."
-unexpected,domain mismatch,domain_mismatch_string_instead_of_non_negative_integer,no,"The LLM suggests xs:duration which is too imprecise since we explicitly model years, and the xs:duration can be below a year."
-unexpected,domain mismatch,domain_mismatch_string_instead_of_non_positive_integer,yes,"The LLM suggests xs:double which is OK -- the depth can be numeric and fractional."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_negative_integer,yes,"The LLM suggests xs:double to capture fractional values as well."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_negative_integer,yes,"The LLM suggests xs:duration since we are talking about a duration in years. This might or might not be correct."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_positive_integer,yes,"The LLM suggests xs:double to capture fractional values."
 unexpected,domain mismatch,domain_mismatch_string_instead_of_positive_integer,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_short,yes,"The LLM is too imprecise and suggests xs:int instead of xs:short even though the concept description states the maximum of 100 components. However, 32-bit int is a valid value used on many platforms."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_short,yes,"The LLM suggests xs:int even thought xs:short would be better, but not catastrophic -- we need to capture only up to 100 components."
 unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_byte,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_int,no,"The LLM detected no problem at all."
-unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_long,yes,"The LLM suggests xs:double, while we expected xs:long -- the concept description is indeed not clear enough, as we represent milliseconds."
-unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_short,no,"The LLM detected no problem at all."
-unexpected,imprecise,imprecise_string_instead_of_any_uri,yes,
-unexpected,imprecise,imprecise_string_instead_of_base_64_binary,yes,
-unexpected,imprecise,imprecise_string_instead_of_boolean,yes,
-unexpected,imprecise,imprecise_string_instead_of_date,yes,
-unexpected,imprecise,imprecise_string_instead_of_date_time,yes,
-unexpected,imprecise,imprecise_string_instead_of_duration,yes,
-unexpected,imprecise,imprecise_string_instead_of_g_day,yes,
-unexpected,imprecise,imprecise_string_instead_of_g_month,yes,
-unexpected,imprecise,imprecise_string_instead_of_g_month_day,yes,"The LLM suggests xs:gDay instead of gMonthDay. The concept description is indeed ambiguous: 'Monthly inspection day'."
-unexpected,imprecise,imprecise_string_instead_of_g_year,yes,
-unexpected,imprecise,imprecise_string_instead_of_g_year_month,yes,
-unexpected,imprecise,imprecise_string_instead_of_hex_binary,yes,
-unexpected,imprecise,imprecise_string_instead_of_time,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_int,no,"Empty remark by the LLM."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_long,yes,"The LLM suggests xs:double for a numeric duration, but the description is about milliseconds; this is an edge case."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_short,yes,"The LLM makes no note, but the description states a protocol version. This is an edge case."
+unexpected,imprecise string,imprecise_string_instead_of_any_uri,yes,
+unexpected,imprecise string,imprecise_string_instead_of_base_64_binary,yes,
+unexpected,imprecise string,imprecise_string_instead_of_boolean,yes,
+unexpected,imprecise string,imprecise_string_instead_of_date,yes,
+unexpected,imprecise string,imprecise_string_instead_of_date_time,yes,
+unexpected,imprecise string,imprecise_string_instead_of_duration,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_day,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_month,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_month_day,yes,"The LLM suggests xs:gDay. The description is not explicit enough."
+unexpected,imprecise string,imprecise_string_instead_of_g_year,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_year_month,yes,
+unexpected,imprecise string,imprecise_string_instead_of_hex_binary,yes,
+unexpected,imprecise string,imprecise_string_instead_of_time,yes,
 unexpected,numeric precision mismatch,numeric_precision_mismatch_decimal_instead_of_double,yes,
 unexpected,numeric precision mismatch,numeric_precision_mismatch_double_instead_of_decimal,yes,
 unexpected,numeric precision mismatch,numeric_precision_mismatch_float_instead_of_decimal,yes,
