@@ -3,19 +3,21 @@
 import argparse
 import os
 import pathlib
-from typing import Final, Union
+from typing import Final, Union, Optional
 
 from aas_smt_verification_with_llms.common import Filenameable
 
 
-def build() -> argparse.ArgumentParser:
+def build(
+    prog: Optional[str] = None, description: Optional[str] = None
+) -> argparse.ArgumentParser:
     """
     Construct the basic command-line argument parser.
 
     The parser includes the arguments shared across different experiments. Each
     experiment script is expected to add more arguments if necessary.
     """
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(prog=prog, description=description)
     sub = parser.add_subparsers(
         dest="llm", required=True, help="Choose the LLM backend"
     )
