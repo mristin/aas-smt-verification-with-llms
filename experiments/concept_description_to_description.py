@@ -16,7 +16,7 @@ from aas_smt_verification_with_llms.common import Filenameable
 
 def main() -> int:
     """Execute the main routine."""
-    parser = argparsing.build()
+    parser = argparsing.build(description=__doc__)
     args = parser.parse_args()
 
     llm_args = argparsing.extract_llm_args(args)
