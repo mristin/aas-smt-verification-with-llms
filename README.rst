@@ -44,13 +44,22 @@ You can now run ``aas-smt-verification-with-llms`` (see ``--help`` section below
 .. Help starts: aas-smt-verification-with-llms --help
 .. code-block::
 
-    usage: aas-smt-verification-with-llms [-h] [--version]
+    usage: aas-smt-verification-with-llms [-h] --aas_environment_path
+                                          AAS_ENVIRONMENT_PATH [--version]
+                                          {openai,ollama} ...
 
     Verify AAS Submodel Templates using Large Language Models.
 
+    positional arguments:
+      {openai,ollama}       Choose the LLM backend
+        openai              Use OpenAI (ChatGPT) models
+        ollama              Use a local Ollama model
+
     options:
-      -h, --help  show this help message and exit
-      --version   show the current version and exit
+      -h, --help            show this help message and exit
+      --aas_environment_path AAS_ENVIRONMENT_PATH
+                            Path to the AAS environment which should be verified
+      --version             show the current version and exit
 
 .. Help ends: aas-smt-verification-with-llms --help
 
