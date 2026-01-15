@@ -123,16 +123,25 @@ def main() -> int:
         # Partial overlap
         Case(
             category="expected",
-            concept_description="Steel grade European Norm (EN) number",
-            description="Steel grade (martensitic) European Norm (EN) number",
+            concept_description=(
+                "Fluid pressure sensor measurement in kilopascals (kPa)"
+            ),
+            description=(
+                "Hydraulic oil line fluid pressure sensor measurement "
+                "in kilopascals (kPa)"
+            ),
             identifier="no_partial_overlap",
         ),
         # `description` is a more specific instance of the `concept description`
         # `concept description` is a generalization => acceptable
         Case(
             category="unexpected",
-            concept_description="Steel grade European Norm (EN) number",
-            description="Steel alloy epoxy coating grade European Norm (EN) number",
+            concept_description=(
+                "Atmospheric pressure sensor measurement in hectopascals (hPa)"
+            ),
+            description=(
+                "Tire pressure sensor measurement in pounds per square inch (PSI)"
+            ),
             identifier="partial_overlap",
         ),
         # `description` is a not just a specific instance (not fully overlapping) of

@@ -38,8 +38,8 @@ Output any possible semantic improvement following the JSON schema:
 Here is the data to be analyzed:
 # Elements
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Steel alloy epoxy coating grade' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription'
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Tire pressure sensor measurement in pounds per square inch (PSI)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription'
 
 # Concept descriptions
 
-Concept description 'urn:exampl.com:someConceptDescription' means: 'Steel grade'
+Concept description 'urn:exampl.com:someConceptDescription' means: 'Atmospheric pressure sensor measurement in hectopascals (hPa)'
