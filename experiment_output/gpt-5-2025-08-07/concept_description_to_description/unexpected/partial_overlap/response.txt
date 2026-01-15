@@ -1,12 +1,7 @@
 [
   {
     "path": "some_id_short",
-    "explanation": "The property's description refers to an epoxy coating grade applied to a steel alloy, whereas the assigned concept description denotes 'Steel grade'. A coating grade is not semantically the same as a steel grade.",
-    "suggestion": "Reassign to a concept representing 'Epoxy coating grade' (e.g., urn:exampl.com:EpoxyCoatingGrade)."
-  },
-  {
-    "path": "some_id_short",
-    "explanation": "The value type xs:double may be unsuitable for grade identifiers, which are often categorical or alphanumeric rather than purely numeric.",
-    "suggestion": "xs:string"
+    "explanation": "The property describes a tire pressure measurement in PSI, but the attached concept description specifies atmospheric pressure in hPa. The measured phenomenon and the unit both differ.",
+    "suggestion": "Assign a concept description for 'Tire pressure sensor measurement in pounds per square inch (PSI)' to this property; alternatively, change the property's description and unit to 'Atmospheric pressure sensor measurement in hectopascals (hPa)' to match the current concept."
   }
 ]

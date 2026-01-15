@@ -1,12 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch between the concept 'Steel grade' (a categorical designation like 'AISI 304') and the value type 'xs:double', which implies a numeric quantity.",
-    "suggestion": "xs:string"
-  },
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "The concept description label 'Steel grade' is vague and does not make explicit that the value is a designation string rather than a numeric value.",
-    "suggestion": "Steel grade designation"
-  }
-]
+[]
