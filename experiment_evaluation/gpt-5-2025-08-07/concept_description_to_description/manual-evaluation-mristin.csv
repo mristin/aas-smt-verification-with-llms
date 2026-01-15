@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,no ambiguity,no_ambiguity,yes,
+expected,no context words sense disambiguation,no_context_words_sense_disambiguation,yes,
+expected,no contradiction,no_contradiction,yes,"The LLM complains about subtle distinction between waterproof and water-resistant."
+expected,no negation mismatch,no_negation_mismatch,yes,"The LLM suggests a unit to the concept description."
+expected,no omission,no_omission,yes,
+expected,no partial overlap,no_partial_overlap,yes,
+expected,no semantic inversion,no_semantic_inversion,yes,
+expected,no syntax error,no_syntax_error,yes,
+expected,no terminology mismatch,no_terminology_mismatch,yes,
+expected,no uncommon phrasing,no_uncommon_phrasing,yes,
+expected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,ambiguity,ambiguity,yes,"The LLM correctly complains that the element description is too generic compared to the concept description."
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM complains that the element description is much broader ('flow rate') that the concept description ('hydraulic flow rate')."
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,no paraphrase synonymy,no_paraphrase_synonymy,yes,
+unexpected,omission,omission,yes,"The LLM correctly complains that the description is too generic compared to the concept description."
+unexpected,partial overlap,partial_overlap,yes,"The LLM correctly complains that the concept and element description are similar, but also conceptually mismatch."
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax error,syntax_error,no,"The LLM gives back empty suggestions."
+unexpected,terminology mismatch,terminology_mismatch,no,"The suggestion is meaningless -- it indicates the IRI of the concept description."
+unexpected,uncommon phrasing,uncommon_phrasing,no,"The LLM gives back empty suggestions."
