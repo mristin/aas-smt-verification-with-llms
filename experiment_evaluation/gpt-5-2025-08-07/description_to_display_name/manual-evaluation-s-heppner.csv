@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,Optional improvement suggested
+expected,no ambiguity,no_ambiguity,yes,Optional improvement suggested
+expected,no contradiction,no_contradiction,yes,Optional improvement suggested
+expected,no negation mismatch,no_negation_mismatch,yes,Optional improvement suggested
+expected,no omission,no_omission,yes,"Semantic difference (range vs value) detected, fair enough imo"
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,Optional improvement suggested
+expected,no partial overlap,no_partial_overlap,yes,Description is too vague
+expected,no terminology mismatch,no_terminology_mismatch,no,'no change required' instead of empty suggestion.
+expected,no uncommon phrasing,no_uncommon_phrasing,no,'no change required' instead of empty suggestion.
+expected,semantic inversion,semantic_inversion,yes,Optional improvement suggested
+expected,syntax,syntax,no,'no change required' instead of empty suggestion.
+unexpected,ambiguity,ambiguity,yes,Description is too vague
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,yes,Description is too vague
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,Description is too vague
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,Description is too vague
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax,syntax,yes,
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,yes,

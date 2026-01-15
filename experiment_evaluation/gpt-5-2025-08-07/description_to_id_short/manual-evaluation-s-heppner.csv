@@ -1,0 +1,22 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,Complains that the ID-Short is too vague (fairly imo)
+expected,no ambiguity,no_ambiguity,yes,
+expected,no contradiction,no_contradiction,yes,Optional improvement suggested
+expected,no omission,no_omission,yes,Range vs. value problem again
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,
+expected,no partial overlap,no_partial_overlap,yes,Optional improvement suggested
+expected,no terminology mismatch,no_terminology_mismatch,yes,Optional improvement suggested
+expected,no uncommon phrasing,no_uncommon_phrasing,yes,
+expected,semantic inversion,semantic_inversion,yes,Optional improvement suggested
+expected,syntax,syntax,yes,
+unexpected,ambiguity,ambiguity,yes,
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,no,"The LLM just replies: 'No change needed' -- not an empty array!"
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,"The LLM complains that the ID-short is too broad."
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax,syntax,yes,
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,yes,
