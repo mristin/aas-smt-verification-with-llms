@@ -1,0 +1,37 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_16d2b44e describes a monthly recurring day-of-month. xs:gMonthDay encodes a month+day pair (annual recurrence), not a monthly day-of-month.",
+    "suggestion": "xs:gDay"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_c01d29f1 is a temperature reading that can be fractional. xs:int restricts to whole numbers.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_10aea8e4 expresses a duration (remaining service life) in years. xs:nonNegativeInteger is a plain count and lacks temporal semantics.",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_e80af9f6 is altitude below sea level, which can be fractional. xs:nonPositiveInteger disallows fractional values.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_d65abc11 is a duration expressed in milliseconds. xs:unsignedLong is a plain number and does not convey temporal semantics (nor allow sign if needed).",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_ebe9db0e is a countdown duration in milliseconds (always negative). xs:negativeInteger is a plain number; xs:duration better represents (including negative) durations.",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Possible precision improvement: Concept urn:exampl.com:someConceptDescription_99bfb9fe is sensor temperature data; xs:float may be insufficient for precise measurements.",
+    "suggestion": "xs:double"
+  }
+]

@@ -1,0 +1,71 @@
+For which of the following concept descriptions does the unit DOES NOT correspond with its definition?
+
+Output any possible semantic improvement following the JSON schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Improvement Suggestion",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["path", "explanation", "suggestion"],
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "ID-short path to the offending element",
+        "examples": [
+          "https://example.com/something",
+          "urn:example.com:something"
+        ]
+      },
+      "explanation": {
+        "type": "string",
+        "description": "Explanation of the semantic mismatch",
+        "examples": [
+          "Semantic mismatch between the concept description and unit. Length should be given in meters, while J (Joule) was indicated."
+        ]
+      },
+      "suggestion": {
+        "type": "string",
+        "description": "How the semantic mismatch can be fixed",
+        "examples": ["m"]
+      }
+    },
+    "additionalProperties": false
+  }
+}
+
+
+Here is the data to be analyzed:
+# Elements
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_ed4abbcf'
+
+# Concept descriptions
+
+Concept description 'urn:exampl.com:someConceptDescription_ed4abbcf' with unit Wh with definition 'Energy consumption during operation in J'
+
+Concept description 'urn:exampl.com:someConceptDescription_f72dd1df' with unit lbf with definition 'Applied force on the mechanical component in N'
+
+Concept description 'urn:exampl.com:someConceptDescription_c1ba300e' with unit hp with definition 'Electrical power consumption in W'
+
+Concept description 'urn:exampl.com:someConceptDescription_9fd0dbe3' with unit psi with definition 'System operating pressure in Pa'
+
+Concept description 'urn:exampl.com:someConceptDescription_1d100505' with unit °F with definition 'Operating temperature of the motor in °C'
+
+Concept description 'urn:exampl.com:someConceptDescription_bea48664' with unit MJ with definition 'Energy consumption during operation in millijoules'
+
+Concept description 'urn:exampl.com:someConceptDescription_0df78698' with unit MN with definition 'Applied force on the mechanical component in millinewtons'
+
+Concept description 'urn:exampl.com:someConceptDescription_410777f3' with unit MW with definition 'Electrical power consumption in milliwatts'
+
+Concept description 'urn:exampl.com:someConceptDescription_e92c60b5' with unit GPa with definition 'System operating pressure in kilopascals'
+
+Concept description 'urn:exampl.com:someConceptDescription_495b764d' with unit m with definition 'Energy consumption during operation'
+
+Concept description 'urn:exampl.com:someConceptDescription_e5270466' with unit °C with definition 'Applied force on the mechanical component'
+
+Concept description 'urn:exampl.com:someConceptDescription_27344ddb' with unit V with definition 'Electrical power consumption'
+
+Concept description 'urn:exampl.com:someConceptDescription_a66bdea5' with unit Hz with definition 'System operating pressure'
+
+Concept description 'urn:exampl.com:someConceptDescription_1baa2a12' with unit kg with definition 'Operating temperature of the motor'

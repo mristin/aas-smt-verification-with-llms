@@ -1,0 +1,12 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription_4b6098cc",
+    "explanation": "Property description states 'Water-resistant housing length' but the concept describes 'Waterproof enclosure length'. 'Water-resistant' and 'waterproof' are not equivalent, so the concept does not semantically match the property.",
+    "suggestion": "Water-resistant housing length"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_546749ce",
+    "explanation": "The concept defines a timestamp in seconds since 1970-01-01 UTC, which is typically an integer count of seconds. Using xs:double allows fractional seconds and may cause precision/rounding issues.",
+    "suggestion": "xs:integer"
+  }
+]

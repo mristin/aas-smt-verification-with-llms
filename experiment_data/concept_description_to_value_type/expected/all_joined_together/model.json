@@ -1,0 +1,906 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel_9ac9f5ce",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_11f48ebf"
+              }
+            ]
+          },
+          "valueType": "xs:anyURI",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_3bb75207",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_f51c2f2c"
+              }
+            ]
+          },
+          "valueType": "xs:base64Binary",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_2daeb7df",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_53a24c1d"
+              }
+            ]
+          },
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_efd3fd5a",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_389c2a7b"
+              }
+            ]
+          },
+          "valueType": "xs:byte",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_0620210a",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_5de419fe"
+              }
+            ]
+          },
+          "valueType": "xs:date",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_f31ae107",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_8848603b"
+              }
+            ]
+          },
+          "valueType": "xs:dateTime",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_4862baf2",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_c2984606"
+              }
+            ]
+          },
+          "valueType": "xs:decimal",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_815f1db9",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_7f7db0e2"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_7a2c10f2",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_98d29bf3"
+              }
+            ]
+          },
+          "valueType": "xs:duration",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_38aa352f",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_99bfb9fe"
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_75108eea",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_378b7a54"
+              }
+            ]
+          },
+          "valueType": "xs:gDay",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_d1e85e20",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_16d2b44e"
+              }
+            ]
+          },
+          "valueType": "xs:gMonthDay",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_ee7ba807",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_489d6425"
+              }
+            ]
+          },
+          "valueType": "xs:gMonth",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_ba5b2584",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_479a33e8"
+              }
+            ]
+          },
+          "valueType": "xs:gYear",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_3c14a1f7",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_6869bdb7"
+              }
+            ]
+          },
+          "valueType": "xs:gYearMonth",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_0ad333d4",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_aa68e65f"
+              }
+            ]
+          },
+          "valueType": "xs:hexBinary",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_2567b74e",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_c01d29f1"
+              }
+            ]
+          },
+          "valueType": "xs:int",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_fa9ebea3",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_61e879db"
+              }
+            ]
+          },
+          "valueType": "xs:integer",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_e1ef9be7",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_8e3715f4"
+              }
+            ]
+          },
+          "valueType": "xs:long",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_92d59899",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_ebe9db0e"
+              }
+            ]
+          },
+          "valueType": "xs:negativeInteger",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_d99be554",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_10aea8e4"
+              }
+            ]
+          },
+          "valueType": "xs:nonNegativeInteger",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_024eb732",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_e80af9f6"
+              }
+            ]
+          },
+          "valueType": "xs:nonPositiveInteger",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_46aed7b6",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_6f6d5127"
+              }
+            ]
+          },
+          "valueType": "xs:positiveInteger",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_b2bc5fce",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_fb33c6c2"
+              }
+            ]
+          },
+          "valueType": "xs:short",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_bac43590",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_e1e38a4d"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_bfe041aa",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_8e5fde13"
+              }
+            ]
+          },
+          "valueType": "xs:time",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_8dc10522",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_8ad3d908"
+              }
+            ]
+          },
+          "valueType": "xs:unsignedByte",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_00a54857",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_4284db87"
+              }
+            ]
+          },
+          "valueType": "xs:unsignedInt",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_b56647a7",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_d65abc11"
+              }
+            ]
+          },
+          "valueType": "xs:unsignedLong",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_1b5ef14f",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_ed4a913a"
+              }
+            ]
+          },
+          "valueType": "xs:unsignedShort",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Reference URL to technical documentation"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_11f48ebf",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Cryptographic certificate in base64 format"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_f51c2f2c",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Machine is operational status indicator"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_53a24c1d",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Error code value between -128 and 127"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_389c2a7b",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturing date of the component"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_5de419fe",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Last maintenance timestamp"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8848603b",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "High-precision financial value with arbitrary decimal places"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_c2984606",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Precision measurement of pressure in Pascal"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_7f7db0e2",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Service interval duration"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_98d29bf3",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Temperature measurement in degrees Celsius"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_99bfb9fe",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Day of month for scheduled maintenance"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_378b7a54",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Monthly inspection day"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_16d2b44e",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Month of annual inspection"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_489d6425",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Year of initial commissioning"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_479a33e8",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Month and year of warranty expiration"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_6869bdb7",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Device fingerprint as hexadecimal data"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_aa68e65f",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Temperature reading in degrees Celsius"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_c01d29f1",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Extremely large number of molecules in sample relative to expected value; the number can be negative."
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_61e879db",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Nanoseconds since epoch timestamp"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8e3715f4",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Count down in milliseconds, always negative"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_ebe9db0e",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Remaining service life in years"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_10aea8e4",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Altitude below sea level"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_e80af9f6",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Age of equipment in years, starting from one"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_6f6d5127",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Component count in assembly; if there are too many defects, the number can be negative. There are not more than 1000 components."
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_fb33c6c2",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Name of the product"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_e1e38a4d",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Daily operation start time"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8e5fde13",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Status register byte"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8ad3d908",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Revision number of firmware"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_4284db87",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Duration in milliseconds"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_d65abc11",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Protocol version number"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_ed4a913a",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

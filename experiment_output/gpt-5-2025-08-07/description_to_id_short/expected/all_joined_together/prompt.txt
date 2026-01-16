@@ -1,0 +1,63 @@
+For which of the following elements does the ID-short DOES NOT correspond with its description?
+
+Note, that there are cases where there is no mismatch and return this as well.
+
+Output any possible semantic improvement following the JSON schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Improvement Suggestion",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["path", "explanation", "suggestion"],
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "ID-short path to the offending element",
+        "examples": [
+          "https://example.com/something",
+          "urn:example.com:something"
+        ]
+      },
+      "explanation": {
+        "type": "string",
+        "description": "Explanation of the semantic mismatch",
+        "examples": [
+          "Semantic mismatch between the concept description and unit. Length should be given in meters, while J (Joule) was indicated."
+        ]
+      },
+      "suggestion": {
+        "type": "string",
+        "description": "How the semantic mismatch can be fixed",
+        "examples": ["m"]
+      }
+    },
+    "additionalProperties": false
+  }
+}
+
+
+Here is the data to be analyzed:
+# Elements
+
+Property at path 'mechanical_power' with ID-short 'mechanical_power' with description 'Mechanical output power' with value type xs:double
+
+Property at path 'power_consumption' with ID-short 'power_consumption' with description 'Electrical input power' with value type xs:double
+
+Property at path 'for_indoor_environments' with ID-short 'for_indoor_environments' with description 'Suitable for indoor use' with value type xs:boolean
+
+Property at path 'compatible_with_wet_environments' with ID-short 'compatible_with_wet_environments' with description 'Suitable for wet environments' with value type xs:boolean
+
+Property at path 'operating_temperature' with ID-short 'operating_temperature' with description 'Operating temperature range' with value type xs:double
+
+Property at path 'beginning_time' with ID-short 'beginning_time' with description 'Start time' with value type xs:dateTime
+
+Property at path 'material' with ID-short 'material' with description 'Material (steel alloy)' with value type xs:string
+
+Property at path 'shaft_diameter' with ID-short 'shaft_diameter' with description 'Shaft diameter' with value type xs:double
+
+Property at path 'weight' with ID-short 'weight' with description 'Weight' with value type xs:double
+
+Property at path 'allowed_voltage' with ID-short 'allowed_voltage' with description 'Permitted voltage' with value type xs:double
+
+Property at path 'nominal_shaft_speed' with ID-short 'nominal_shaft_speed' with description 'Nominal shaft speed' with value type xs:double

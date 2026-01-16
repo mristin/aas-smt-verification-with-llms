@@ -1,0 +1,57 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Display name says 'Rated power' while description says 'Power'; 'rated' is a specific condition of power, so they are not aligned.",
+    "suggestion": "Use 'Rated power' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description specifies 'Mechanical Power' but display name is the broader 'Power'.",
+    "suggestion": "Use 'Mechanical power' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description says 'Suitable for indoor use' while display name says 'For outdoor environments'; these are contradictory contexts.",
+    "suggestion": "Use 'Suitable for indoor use' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description states 'Do not operate in wet conditions' but display name says 'Suitable for wet environments'; opposite meanings.",
+    "suggestion": "Use 'Not suitable for wet environments' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description 'Operating temperature' is specific to operation; display name 'Temperature' is generic.",
+    "suggestion": "Use 'Operating temperature' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description is 'Start time' while display name is 'End time'; these are mutually exclusive.",
+    "suggestion": "Use 'Start time' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description addresses 'Surface coating (steel alloy)' but display name is 'Material', which refers to the base material; different concepts.",
+    "suggestion": "Use 'Surface coating' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description 'Permitted voltage' implies an allowed range, while display name 'Maximum voltage' refers to a single upper limit.",
+    "suggestion": "Use 'Maximum permitted voltage' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "No mismatch: both description ('Nominalshaftspeed') and display name ('Nominal shaft speed') refer to the same concept.",
+    "suggestion": "No change."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description 'Shaft diameter' conflicts with display name 'Axle length'; different measure and component.",
+    "suggestion": "Use 'Shaft diameter' for both description and display name."
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Description 'Weight heavy' and display name 'Heaviness' are unclear; the standard term is 'Weight'.",
+    "suggestion": "Use 'Weight' for both description and display name."
+  }
+]

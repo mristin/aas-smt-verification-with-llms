@@ -1,0 +1,85 @@
+For which of the following elements does the description DOES NOT correspond with its concept description? Consider the fact that the description can include more specific information about a particular instance that the concept description should be able to capture semantically.
+
+Output any possible semantic improvement following the JSON schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Improvement Suggestion",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["path", "explanation", "suggestion"],
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "ID-short path to the offending element",
+        "examples": [
+          "https://example.com/something",
+          "urn:example.com:something"
+        ]
+      },
+      "explanation": {
+        "type": "string",
+        "description": "Explanation of the semantic mismatch",
+        "examples": [
+          "Semantic mismatch between the concept description and unit. Length should be given in meters, while J (Joule) was indicated."
+        ]
+      },
+      "suggestion": {
+        "type": "string",
+        "description": "How the semantic mismatch can be fixed",
+        "examples": ["m"]
+      }
+    },
+    "additionalProperties": false
+  }
+}
+
+
+Here is the data to be analyzed:
+# Elements
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Voltage' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_f23cb0e3'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Flow rate' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_060c37c2'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Non watertight casing length' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_4b6098cc'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Max Corrosion rate (> 0.10 mm/year is also allowed)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_781cc011'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Product activation end time in seconds since 1970-01-01 UTC' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_546749ce'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Max humidity' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_a991168f'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Tire pressure sensor measurement in pounds per square inch (PSI)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_5a43beaf'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Lower water pressure limit' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_b3746d3d'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Peaktorquedelivered' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_7b028dfb'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Measured voltage of the battery with the rated load at 100 percent SOC (25°C)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_6531af5e'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Current electric nominal amps' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_fb86eea8'
+
+# Concept descriptions
+
+Concept description 'urn:exampl.com:someConceptDescription_f23cb0e3' means: 'Rated DC input voltage'
+
+Concept description 'urn:exampl.com:someConceptDescription_060c37c2' means: 'Hydraulic flow rate'
+
+Concept description 'urn:exampl.com:someConceptDescription_4b6098cc' means: 'Waterproof enclosure length'
+
+Concept description 'urn:exampl.com:someConceptDescription_781cc011' means: 'Maximum allowable corrosion rate; corrosion rate should be ≤ 0.10 mm/year'
+
+Concept description 'urn:exampl.com:someConceptDescription_546749ce' means: 'Product activation start time in seconds since 1970-01-01 UTC'
+
+Concept description 'urn:exampl.com:someConceptDescription_a991168f' means: 'Maximum ambient relative humidity at 25°C'
+
+Concept description 'urn:exampl.com:someConceptDescription_5a43beaf' means: 'Atmospheric pressure sensor measurement in hectopascals (hPa)'
+
+Concept description 'urn:exampl.com:someConceptDescription_b3746d3d' means: 'Upper water pressure limit'
+
+Concept description 'urn:exampl.com:someConceptDescription_7b028dfb' means: 'Maximum Torque Output'
+
+Concept description 'urn:exampl.com:someConceptDescription_6531af5e' means: 'Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25°C'
+
+Concept description 'urn:exampl.com:someConceptDescription_fb86eea8' means: 'Nominal electric current'

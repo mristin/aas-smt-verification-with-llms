@@ -1,0 +1,257 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel_83b10de9",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Rated power"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Power"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_a5542cfd",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Power"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Mechanical Power"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_3659162c",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "For outdoor environments"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Suitable for indoor use"
+            }
+          ],
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_c674704d",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Suitable for wet environments"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Do not operate in wet conditions"
+            }
+          ],
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_2416443a",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Temperature"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Operating temperature"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_b460055f",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "End time"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Start time"
+            }
+          ],
+          "valueType": "xs:dateTime",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_18ea2cc3",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Material"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Surface coating (steel alloy)"
+            }
+          ],
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_48fbdd8b",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Maximum voltage"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Permitted voltage"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_5da0d946",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Nominal shaft speed"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Nominalshaftspeed"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_a181e7c0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Axle length"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Shaft diameter"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_0678b13d",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Heaviness"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Weight heavy"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

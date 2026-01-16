@@ -1,0 +1,165 @@
+For which of the following elements does the XSD value type DOES NOT correspond with its concept description?
+
+The available XSD value types are: xs:anyURI, xs:base64Binary, xs:boolean, xs:byte, xs:date, xs:dateTime, xs:decimal, xs:double, xs:duration, xs:float, xs:gDay, xs:gMonth, xs:gMonthDay, xs:gYear, xs:gYearMonth, xs:hexBinary, xs:int, xs:integer, xs:long, xs:negativeInteger, xs:nonNegativeInteger, xs:nonPositiveInteger, xs:positiveInteger, xs:short, xs:string, xs:time, xs:unsignedByte, xs:unsignedInt, xs:unsignedLong, xs:unsignedShort.
+
+Output any possible semantic improvement following the JSON schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Improvement Suggestion",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["path", "explanation", "suggestion"],
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "ID-short path to the offending element",
+        "examples": [
+          "https://example.com/something",
+          "urn:example.com:something"
+        ]
+      },
+      "explanation": {
+        "type": "string",
+        "description": "Explanation of the semantic mismatch",
+        "examples": [
+          "Semantic mismatch between the concept description and unit. Length should be given in meters, while J (Joule) was indicated."
+        ]
+      },
+      "suggestion": {
+        "type": "string",
+        "description": "How the semantic mismatch can be fixed",
+        "examples": ["m"]
+      }
+    },
+    "additionalProperties": false
+  }
+}
+
+
+The property 'suggestion' should only indicate the more appropriate XSD data type. If you suggest a numeric data type, determine the type with an appropriate precision (double for sensor data, decimal for financial/legally binding data). Also consider value types such as xs:gMonth and ilks for recurrent events.
+
+Here is the data to be analyzed:
+# Elements
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:anyURI and with concept description 'urn:exampl.com:someConceptDescription_11f48ebf'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:base64Binary and with concept description 'urn:exampl.com:someConceptDescription_f51c2f2c'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:boolean and with concept description 'urn:exampl.com:someConceptDescription_53a24c1d'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:byte and with concept description 'urn:exampl.com:someConceptDescription_389c2a7b'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:date and with concept description 'urn:exampl.com:someConceptDescription_5de419fe'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:dateTime and with concept description 'urn:exampl.com:someConceptDescription_8848603b'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:decimal and with concept description 'urn:exampl.com:someConceptDescription_c2984606'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_7f7db0e2'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:duration and with concept description 'urn:exampl.com:someConceptDescription_98d29bf3'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:float and with concept description 'urn:exampl.com:someConceptDescription_99bfb9fe'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:gDay and with concept description 'urn:exampl.com:someConceptDescription_378b7a54'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:gMonthDay and with concept description 'urn:exampl.com:someConceptDescription_16d2b44e'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:gMonth and with concept description 'urn:exampl.com:someConceptDescription_489d6425'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:gYear and with concept description 'urn:exampl.com:someConceptDescription_479a33e8'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:gYearMonth and with concept description 'urn:exampl.com:someConceptDescription_6869bdb7'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:hexBinary and with concept description 'urn:exampl.com:someConceptDescription_aa68e65f'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:int and with concept description 'urn:exampl.com:someConceptDescription_c01d29f1'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:integer and with concept description 'urn:exampl.com:someConceptDescription_61e879db'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:exampl.com:someConceptDescription_8e3715f4'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:negativeInteger and with concept description 'urn:exampl.com:someConceptDescription_ebe9db0e'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:nonNegativeInteger and with concept description 'urn:exampl.com:someConceptDescription_10aea8e4'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:nonPositiveInteger and with concept description 'urn:exampl.com:someConceptDescription_e80af9f6'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:positiveInteger and with concept description 'urn:exampl.com:someConceptDescription_6f6d5127'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:short and with concept description 'urn:exampl.com:someConceptDescription_fb33c6c2'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:exampl.com:someConceptDescription_e1e38a4d'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:time and with concept description 'urn:exampl.com:someConceptDescription_8e5fde13'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:unsignedByte and with concept description 'urn:exampl.com:someConceptDescription_8ad3d908'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:unsignedInt and with concept description 'urn:exampl.com:someConceptDescription_4284db87'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:unsignedLong and with concept description 'urn:exampl.com:someConceptDescription_d65abc11'
+
+Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:unsignedShort and with concept description 'urn:exampl.com:someConceptDescription_ed4a913a'
+
+# Concept descriptions
+
+Concept description 'urn:exampl.com:someConceptDescription_11f48ebf' means: 'Reference URL to technical documentation'
+
+Concept description 'urn:exampl.com:someConceptDescription_f51c2f2c' means: 'Cryptographic certificate in base64 format'
+
+Concept description 'urn:exampl.com:someConceptDescription_53a24c1d' means: 'Machine is operational status indicator'
+
+Concept description 'urn:exampl.com:someConceptDescription_389c2a7b' means: 'Error code value between -128 and 127'
+
+Concept description 'urn:exampl.com:someConceptDescription_5de419fe' means: 'Manufacturing date of the component'
+
+Concept description 'urn:exampl.com:someConceptDescription_8848603b' means: 'Last maintenance timestamp'
+
+Concept description 'urn:exampl.com:someConceptDescription_c2984606' means: 'High-precision financial value with arbitrary decimal places'
+
+Concept description 'urn:exampl.com:someConceptDescription_7f7db0e2' means: 'Precision measurement of pressure in Pascal'
+
+Concept description 'urn:exampl.com:someConceptDescription_98d29bf3' means: 'Service interval duration'
+
+Concept description 'urn:exampl.com:someConceptDescription_99bfb9fe' means: 'Temperature measurement in degrees Celsius'
+
+Concept description 'urn:exampl.com:someConceptDescription_378b7a54' means: 'Day of month for scheduled maintenance'
+
+Concept description 'urn:exampl.com:someConceptDescription_16d2b44e' means: 'Monthly inspection day'
+
+Concept description 'urn:exampl.com:someConceptDescription_489d6425' means: 'Month of annual inspection'
+
+Concept description 'urn:exampl.com:someConceptDescription_479a33e8' means: 'Year of initial commissioning'
+
+Concept description 'urn:exampl.com:someConceptDescription_6869bdb7' means: 'Month and year of warranty expiration'
+
+Concept description 'urn:exampl.com:someConceptDescription_aa68e65f' means: 'Device fingerprint as hexadecimal data'
+
+Concept description 'urn:exampl.com:someConceptDescription_c01d29f1' means: 'Temperature reading in degrees Celsius'
+
+Concept description 'urn:exampl.com:someConceptDescription_61e879db' means: 'Extremely large number of molecules in sample relative to expected value; the number can be negative.'
+
+Concept description 'urn:exampl.com:someConceptDescription_8e3715f4' means: 'Nanoseconds since epoch timestamp'
+
+Concept description 'urn:exampl.com:someConceptDescription_ebe9db0e' means: 'Count down in milliseconds, always negative'
+
+Concept description 'urn:exampl.com:someConceptDescription_10aea8e4' means: 'Remaining service life in years'
+
+Concept description 'urn:exampl.com:someConceptDescription_e80af9f6' means: 'Altitude below sea level'
+
+Concept description 'urn:exampl.com:someConceptDescription_6f6d5127' means: 'Age of equipment in years, starting from one'
+
+Concept description 'urn:exampl.com:someConceptDescription_fb33c6c2' means: 'Component count in assembly; if there are too many defects, the number can be negative. There are not more than 1000 components.'
+
+Concept description 'urn:exampl.com:someConceptDescription_e1e38a4d' means: 'Name of the product'
+
+Concept description 'urn:exampl.com:someConceptDescription_8e5fde13' means: 'Daily operation start time'
+
+Concept description 'urn:exampl.com:someConceptDescription_8ad3d908' means: 'Status register byte'
+
+Concept description 'urn:exampl.com:someConceptDescription_4284db87' means: 'Revision number of firmware'
+
+Concept description 'urn:exampl.com:someConceptDescription_d65abc11' means: 'Duration in milliseconds'
+
+Concept description 'urn:exampl.com:someConceptDescription_ed4a913a' means: 'Protocol version number'
