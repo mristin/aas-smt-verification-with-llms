@@ -1,0 +1,57 @@
+[
+  {
+    "path": "mechanical_power",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "power_consumption",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "for_indoor_environments",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "compatible_with_wet_environments",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "operating_temperature",
+    "explanation": "Description states 'Operating temperature range' but the value type is a single xs:double; a single scalar cannot represent a range, and the ID-short does not indicate a range.",
+    "suggestion": "Use two properties: operating_temperature_min and operating_temperature_max"
+  },
+  {
+    "path": "beginning_time",
+    "explanation": "No semantic mismatch; minor naming inconsistency between ID-short ('beginning_time') and description ('Start time').",
+    "suggestion": "start_time"
+  },
+  {
+    "path": "material",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "shaft_diameter",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "weight",
+    "explanation": "Potential semantic mismatch: 'Weight' is a force (N), but specifications often provide mass (kg). The ID-short/description may be misleading if the value is mass.",
+    "suggestion": "mass"
+  },
+  {
+    "path": "allowed_voltage",
+    "explanation": "No definite mismatch; however, 'Permitted voltage' often implies a range rather than a single value.",
+    "suggestion": "allowed_voltage_min and allowed_voltage_max"
+  },
+  {
+    "path": "nominal_shaft_speed",
+    "explanation": "No mismatch detected between ID-short and description.",
+    "suggestion": "keep"
+  }
+]

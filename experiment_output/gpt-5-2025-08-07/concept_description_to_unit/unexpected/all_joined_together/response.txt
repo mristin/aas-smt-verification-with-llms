@@ -1,0 +1,72 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription_ed4abbcf",
+    "explanation": "Semantic mismatch: definition specifies energy in joules (J), but the unit is watt-hour (Wh).",
+    "suggestion": "J"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_f72dd1df",
+    "explanation": "Semantic mismatch: definition specifies force in newtons (N), but the unit is pound-force (lbf).",
+    "suggestion": "N"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_c1ba300e",
+    "explanation": "Semantic mismatch: definition specifies power in watts (W), but the unit is horsepower (hp).",
+    "suggestion": "W"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_9fd0dbe3",
+    "explanation": "Semantic mismatch: definition specifies pressure in pascals (Pa), but the unit is pounds per square inch (psi).",
+    "suggestion": "Pa"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_1d100505",
+    "explanation": "Semantic mismatch: definition specifies temperature in degrees Celsius (°C), but the unit is degrees Fahrenheit (°F).",
+    "suggestion": "°C"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_bea48664",
+    "explanation": "Semantic mismatch: definition specifies energy in millijoules, but the unit is megajoules (MJ).",
+    "suggestion": "mJ"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_0df78698",
+    "explanation": "Semantic mismatch: definition specifies force in millinewtons, but the unit is meganewtons (MN).",
+    "suggestion": "mN"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_410777f3",
+    "explanation": "Semantic mismatch: definition specifies power in milliwatts, but the unit is megawatts (MW).",
+    "suggestion": "mW"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_e92c60b5",
+    "explanation": "Semantic mismatch: definition specifies pressure in kilopascals, but the unit is gigapascals (GPa).",
+    "suggestion": "kPa"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_495b764d",
+    "explanation": "Semantic mismatch: definition refers to energy consumption, but the unit is meters (m), which is a length unit.",
+    "suggestion": "J"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_e5270466",
+    "explanation": "Semantic mismatch: definition refers to applied force, but the unit is degrees Celsius (°C), a temperature unit.",
+    "suggestion": "N"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_27344ddb",
+    "explanation": "Semantic mismatch: definition refers to electrical power, but the unit is volts (V), an electrical potential unit.",
+    "suggestion": "W"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_a66bdea5",
+    "explanation": "Semantic mismatch: definition refers to pressure, but the unit is hertz (Hz), a frequency unit.",
+    "suggestion": "Pa"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription_1baa2a12",
+    "explanation": "Semantic mismatch: definition refers to temperature, but the unit is kilograms (kg), a mass unit.",
+    "suggestion": "°C"
+  }
+]

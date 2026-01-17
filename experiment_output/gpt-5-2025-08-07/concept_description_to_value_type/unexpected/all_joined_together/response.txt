@@ -1,0 +1,27 @@
+[
+  {
+    "path": "some_id_short",
+    "explanation": "Concept is a documentation reference URL, but value type is xs:long (integer). URLs should use a URI type.",
+    "suggestion": "xs:anyURI"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Concept is an error code constrained to -128..127, but value type is xs:string. The range matches a signed byte.",
+    "suggestion": "xs:byte"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Concept is a high-frequency temperature sensor measurement, but value type is xs:decimal. Sensor data should use floating-point with sufficient precision.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Concept is a high-precision financial transaction amount, but value type is xs:double. Financial amounts require exact decimal representation.",
+    "suggestion": "xs:decimal"
+  },
+  {
+    "path": "some_id_short",
+    "explanation": "Concept is a precise monetary value for accounting, but value type is xs:float. Monetary values require exact decimal representation.",
+    "suggestion": "xs:decimal"
+  }
+]

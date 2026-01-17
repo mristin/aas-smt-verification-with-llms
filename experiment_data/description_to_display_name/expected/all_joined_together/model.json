@@ -1,0 +1,257 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel_a175cc6e",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Mechanical power"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Mechanical output power"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_bf025f72",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Power consumption"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Electrical input power"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_faba31d7",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "For indoor environments"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Suitable for indoor use"
+            }
+          ],
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_df552712",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Compatible with wet environments"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Suitable for wet environments"
+            }
+          ],
+          "valueType": "xs:boolean",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_52ee4cec",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Operating temperature"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Operating temperature range"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_80e7aeb5",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Beginning time"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Start time"
+            }
+          ],
+          "valueType": "xs:dateTime",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_98402a4b",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Material"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Material (steel alloy)"
+            }
+          ],
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_02fdacdc",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Shaft diameter"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Shaft diameter"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_da5a7d7e",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Weight"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Weight"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_785d87ed",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Allowed voltage"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Permitted voltage"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_03fb453a",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Nominal shaft speed"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Nominal shaft speed"
+            }
+          ],
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

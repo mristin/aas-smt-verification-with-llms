@@ -1,0 +1,402 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel_2d23f66e",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Voltage"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_f23cb0e3"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_83908290",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Flow rate"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_060c37c2"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_d70de134",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Non watertight casing length"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_4b6098cc"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_782c7d4e",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Max Corrosion rate (> 0.10 mm/year is also allowed)"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_781cc011"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_12ed9b7f",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Product activation end time in seconds since 1970-01-01 UTC"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_546749ce"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_3fd29f3b",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Max humidity"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_a991168f"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_01bd7dae",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Tire pressure sensor measurement in pounds per square inch (PSI)"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_5a43beaf"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_79870fba",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Lower water pressure limit"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_b3746d3d"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_fcdf2095",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Peaktorquedelivered"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_7b028dfb"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_07029275",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Measured voltage of the battery with the rated load at 100 percent SOC (25\u00b0C)"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_6531af5e"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_38f7a7ca",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "description": [
+            {
+              "language": "en",
+              "text": "Current electric nominal amps"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_fb86eea8"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Rated DC input voltage"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_f23cb0e3",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Hydraulic flow rate"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_060c37c2",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Waterproof enclosure length"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_4b6098cc",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum allowable corrosion rate; corrosion rate should be \u2264 0.10 mm/year"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_781cc011",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Product activation start time in seconds since 1970-01-01 UTC"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_546749ce",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum ambient relative humidity at 25\u00b0C"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_a991168f",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Atmospheric pressure sensor measurement in hectopascals (hPa)"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_5a43beaf",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Upper water pressure limit"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_b3746d3d",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum Torque Output"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_7b028dfb",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25\u00b0C"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_6531af5e",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Nominal electric current"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_fb86eea8",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

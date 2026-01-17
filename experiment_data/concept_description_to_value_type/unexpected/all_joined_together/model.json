@@ -1,0 +1,506 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel_e1ef9be7",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_c8d9a5a1"
+              }
+            ]
+          },
+          "valueType": "xs:long",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_bac43590",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_11db621e"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_4862baf2",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_bfa7e198"
+              }
+            ]
+          },
+          "valueType": "xs:decimal",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_815f1db9",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_5e5132aa"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "https://example.org/some_submodel_38aa352f",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription_0058a4c4"
+              }
+            ]
+          },
+          "valueType": "xs:float",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Documentation reference URL"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_c8d9a5a1",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Cryptographic certificate in base64 format"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_f51c2f2c",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "System operational status indicator"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_138be5ad",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturing date of component"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_05138bdb",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Last maintenance timestamp"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8848603b",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Service interval duration"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_98d29bf3",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Device fingerprint as hexadecimal data"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_aa68e65f",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Product name"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_425d4f48",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Maintenance start time of day"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_68943b54",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Error code between -128 and 127"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_11db621e",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Financial amount with decimal precision"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_0aa5dc68",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Precision pressure measurement in Pascal"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_85503145",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Temperature reading in Celsius"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_0bf91063",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Temperature measurement in degrees Celcius"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_4be0374c",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Large molecular count value"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_914cb907",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Timestamp in nanoseconds"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_a0d04aa4",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Temperature drop below reference"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_7f3f7661",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Service life remaining in years"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_088dece1",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Depth below sea level measurement"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8cb1f52c",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Equipment age in years from one"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_a65e9790",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Component count in batch"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_1e9982d5",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Status register byte value"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_1aaea4a2",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Firmware revision number"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_1313336d",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Duration measurement in milliseconds"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_50f8ab86",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Protocol version identifier"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_34e950d0",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Technical documentation URL"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8a5e1bfe",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Base64 encoded certificate"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_1ad64576",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Machine is operational status indicator"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_53a24c1d",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Component manufacturing date"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_ae7ffc1d",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Day of month for maintenance"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_0b30a136",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Month of annual inspection"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_489d6425",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Monthly inspection day"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_16d2b44e",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Year of commissioning"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_0237792c",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Quarter and year of warranty expiration"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_5b5f9682",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Hexadecimal device fingerprint"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_f13e27f1",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Daily operation start time"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_8e5fde13",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "High-frequency temperature sensor measurement"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_bfa7e198",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "High-precision financial transaction amount with arbitrary decimal places"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_5e5132aa",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "Precise monetary value for accounting with exact decimal representation"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_0058a4c4",
+      "modelType": "ConceptDescription"
+    },
+    {
+      "description": [
+        {
+          "language": "en",
+          "text": "High-precision scientific measurement requiring double precision"
+        }
+      ],
+      "id": "urn:exampl.com:someConceptDescription_015bbbba",
+      "modelType": "ConceptDescription"
+    }
+  ]
+}
