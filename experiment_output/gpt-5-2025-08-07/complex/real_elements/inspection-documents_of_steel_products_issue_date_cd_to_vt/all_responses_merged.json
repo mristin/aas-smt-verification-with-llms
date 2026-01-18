@@ -1,0 +1,36 @@
+[
+// From: response_concept_description_to_description.txt
+{
+  "path": "IssueDate",
+  "explanation": "The property represents a calendar date (lexical representation CCYY-MM-DD, specified to the day) but its value type is xs:string. Semantically, the Concept Description for IssueDate denotes a date and should be captured with a date value type.",
+  "suggestion": "xs:date"
+}
+// From: response_concept_description_to_unit.txt
+,
+{
+  "path": "IssueDate",
+  "explanation": "IssueDate denotes a calendar date, which has no physical unit. Any unit assignment would not correspond to the definition. Additionally, the valueType is xs:string while the definition requires a date in CCYY-MM-DD format.",
+  "suggestion": "Do not assign any unit. Set valueType to xs:date (ISO 8601 date, e.g., 2024-05-17)."
+}
+// From: response_concept_description_to_value_type.txt
+,
+{
+  "path": "IssueDate",
+  "explanation": "The concept describes a calendar date (CCYY-MM-DD, specified to the day), but the value type is xs:string instead of a date-specific type.",
+  "suggestion": "xs:date"
+}
+// From: response_description_to_display_name.txt
+,
+{
+  "path": "IssueDate",
+  "explanation": "No mismatch: the description specifies a date format and day-level precision, which aligns with the display name 'IssueDate'.",
+  "suggestion": "No change needed."
+}
+// From: response_description_to_id_short.txt
+,
+{
+  "path": "IssueDate",
+  "explanation": "No mismatch between id-short 'IssueDate' and its description (both indicate a calendar date). However, the value type is xs:string while the description requires a date in CCYY-MM-DD format, which should be modeled as a date type for proper validation.",
+  "suggestion": "xs:date"
+}
+]

@@ -1,0 +1,71 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "appiled_force",
+          "displayName": [
+            {
+                "language": "en",
+                "text": "appiled power"
+            }
+          ],
+          "description": [
+              {
+                  "language": "en",
+                  "text": "The maximum applied force"
+              }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:some_id"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "id": "urn:exampl.com:some_id",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:example.com:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "appliedForce"
+              }
+            ],
+            "unit": "WH",
+            "definition": [
+              {
+                "language": "en",
+                "text": "Applied force on the mechanical component"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

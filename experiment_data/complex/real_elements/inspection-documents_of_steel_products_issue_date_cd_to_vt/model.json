@@ -1,0 +1,33 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+              {
+                "idShort": "IssueDate",
+                "description": [
+                  {
+                    "language": "en",
+                    "text": "Note: format by lexical representation: CCYY-MM-DD Note: to be specified to the day "
+                  }
+                ],
+                "semanticId": {
+                  "type": "ExternalReference",
+                  "keys": [
+                    {
+                      "type": "GlobalReference",
+                      "value": "https://admin-shell.io/zvei/nameplate/2/0/Nameplate/Markings/Marking/IssueDate"
+                    }
+                  ]
+                },
+                "valueType": "xs:string",
+                "modelType": "Property"
+              }
+            ]
+        }
+    ],
+    "conceptDescriptions": [
+      
+    ]
+}

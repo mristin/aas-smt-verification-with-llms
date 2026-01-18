@@ -1,0 +1,77 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "systemOperatingPressure",
+          "displayName": [
+            {
+                "language": "en",
+                "text": "pressure"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "pressure"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:string",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "id": "urn:exampl.com:someConceptDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Operating temperature of the motor in \u00b0C"
+        }
+      ],
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:example.com:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "operatingPressure"
+              }
+            ],
+            "unit": "Hz",
+            "definition": [
+              {
+                "language": "en",
+                "text": "System operating pressure"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

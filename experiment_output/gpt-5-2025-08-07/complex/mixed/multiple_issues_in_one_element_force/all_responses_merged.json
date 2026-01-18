@@ -1,0 +1,96 @@
+[
+// From: response_concept_description_to_description.txt
+{
+  "path": "urn:exampl.com:some_id",
+  "explanation": "Concept defines an applied force but uses the energy unit WH (watt\u2011hour); unit and definition are semantically inconsistent.",
+  "suggestion": "N"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "Value type is xs:string, but a force quantity should be numeric to align with the concept description.",
+  "suggestion": "xs:double"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "Display name 'appiled power' contradicts the concept (force, not power) and contains a typo.",
+  "suggestion": "Applied force"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "ID-short contains a typo ('appiled'); inconsistent naming can hinder semantic clarity.",
+  "suggestion": "applied_force"
+}
+// From: response_concept_description_to_unit.txt
+,
+{
+  "path": "urn:exampl.com:some_id",
+  "explanation": "Unit 'WH' (watt-hour) measures energy, but the definition states 'Applied force on the mechanical component', which is a force quantity.",
+  "suggestion": "N"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "Value type is xs:string, but a force should be represented as a numeric quantity.",
+  "suggestion": "xs:double"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "Display name 'appiled power' is misspelled and refers to power, while the property and definition are about force.",
+  "suggestion": "applied force"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "ID-short contains a typo ('appiled').",
+  "suggestion": "applied_force"
+}
+// From: response_concept_description_to_value_type.txt
+,
+{
+  "path": "appiled_force",
+  "explanation": "The value type xs:string does not correspond to the concept 'Applied force', which is a quantitative physical measurement; a numeric type is appropriate. Additionally, the associated unit 'WH' is inconsistent with force, but irrespective of unit, the value should be numeric.",
+  "suggestion": "xs:double"
+}
+// From: response_description_to_display_name.txt
+,
+{
+  "path": "appiled_force",
+  "explanation": "Description states 'The maximum applied force' while the display name is 'appiled power'. Force and power are different physical concepts, so the display name does not correspond to the description.",
+  "suggestion": "Rename the display name to 'applied force' (or 'maximum applied force') to align with the description and correct the typo."
+}
+// From: response_description_to_id_short.txt
+,
+{
+  "path": "appiled_force",
+  "explanation": "ID-short 'appiled_force' contains a typo ('appiled') and does not reflect that the property is a maximum, while the description says 'The maximum applied force'.",
+  "suggestion": "max_applied_force"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "Display name 'appiled power' conflicts with the described concept (force vs power) and contains a typo.",
+  "suggestion": "Maximum applied force"
+}
+,
+{
+  "path": "urn:exampl.com:some_id",
+  "explanation": "Semantic mismatch between the concept definition ('Applied force') and unit. 'WH' (watt-hour) is an energy unit; force should use newtons.",
+  "suggestion": "N"
+}
+,
+{
+  "path": "appiled_force",
+  "explanation": "Value type xs:string is inappropriate for a quantitative force value; a numeric type is required.",
+  "suggestion": "xs:double"
+}
+,
+{
+  "path": "urn:exampl.com:some_id",
+  "explanation": "The identifier appears to contain a typo in the domain ('exampl.com'); if the intended namespace is 'example.com', this should be corrected to avoid ambiguity.",
+  "suggestion": "urn:example.com:some_id"
+}
+]

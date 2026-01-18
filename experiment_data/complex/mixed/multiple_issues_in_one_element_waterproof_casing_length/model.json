@@ -1,0 +1,77 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "waterproofCasing",
+          "displayName": [
+            {
+                "language": "en",
+                "text": "waterpoof casing length"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "Non watertight casing length"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:negativeInteger",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "id": "urn:exampl.com:someConceptDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Waterproof enclosure length"
+        }
+      ],
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:example.com:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "casingLength"
+              }
+            ],
+            "unit": "km",
+            "definition": [
+              {
+                "language": "en",
+                "text": "casing length"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

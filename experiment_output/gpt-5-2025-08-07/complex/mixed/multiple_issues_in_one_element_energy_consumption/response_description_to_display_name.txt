@@ -1,0 +1,7 @@
+[
+  {
+    "path": "enCons",
+    "explanation": "Display name 'energyConsumption' is generic and does not reflect the description's specificity of 'average' and 'per hour'.",
+    "suggestion": "averageEnergyConsumptionPerHour"
+  }
+]

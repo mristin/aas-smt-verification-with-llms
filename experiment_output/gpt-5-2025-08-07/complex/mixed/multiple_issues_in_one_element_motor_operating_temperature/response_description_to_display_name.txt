@@ -1,0 +1,7 @@
+[
+  {
+    "path": "opTemp",
+    "explanation": "No semantic mismatch: both the description ('temperature during motor operation') and the display name refer to the same concept. However, the display name contains a spelling error ('moter') and could align more closely in phrasing.",
+    "suggestion": "motor operating temperature"
+  }
+]

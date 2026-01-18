@@ -1,0 +1,47 @@
+For which of the following elements does the ID-short DOES NOT correspond with its description?
+
+Note, that there are cases where there is no mismatch and return this as well.
+
+Output any possible semantic improvement following the JSON schema:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Improvement Suggestion",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["path", "explanation", "suggestion"],
+    "properties": {
+      "path": {
+        "type": "string",
+        "description": "ID-short path to the offending element",
+        "examples": [
+          "https://example.com/something",
+          "urn:example.com:something"
+        ]
+      },
+      "explanation": {
+        "type": "string",
+        "description": "Explanation of the semantic mismatch",
+        "examples": [
+          "Semantic mismatch between the concept description and unit. Length should be given in meters, while J (Joule) was indicated."
+        ]
+      },
+      "suggestion": {
+        "type": "string",
+        "description": "How the semantic mismatch can be fixed",
+        "examples": ["m"]
+      }
+    },
+    "additionalProperties": false
+  }
+}
+
+
+Here is the data to be analyzed:
+# Elements
+
+Property at path 'NotchImpactWorkMean' with ID-short 'NotchImpactWorkMean' with display name 'Notch Impact Work Mean' with value type xs:string and with concept description 'https://admin-shell.io/idta/InspectionDocumentsOfSteelProducts/NotchImpactWorkMean/1/0'
+
+# Concept descriptions
+
+Concept description 'https://admin-shell.io/idta/InspectionDocumentsOfSteelProducts/NotchImpactWorkMean/1/0' with unit J with definition 'The property NotchImpactWorkMean refers to the average value of the notch impact work obtained from multiple tests conducted on samples using a notch impact test. This value is the total energy required.'

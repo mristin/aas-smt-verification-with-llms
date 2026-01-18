@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "The definition refers to a casing length, but the unit is kilometers (km). While km is a length unit, it is not appropriate for typical casing dimensions and thus does not correspond to the intended scale of the definition.",
+    "suggestion": "m"
+  }
+]

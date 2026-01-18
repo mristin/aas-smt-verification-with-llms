@@ -1,0 +1,7 @@
+[
+  {
+    "path": "systemOperatingPressure",
+    "explanation": "No mismatch: description and display name are both 'pressure'.",
+    "suggestion": "No change needed."
+  }
+]

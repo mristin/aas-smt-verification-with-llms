@@ -4,7 +4,7 @@ import collections.abc
 import json
 import pathlib
 import sys
-from typing import Optional, Final, List, Sequence, Any
+from typing import Optional, Final, List, Sequence, Any, Tuple, Iterator
 
 from aas_core3 import (
     jsonization as aas_jsonization,
@@ -15,6 +15,7 @@ from icontract import require
 
 import aas_smt_verification_with_llms
 from aas_smt_verification_with_llms import argparsing, llm, aasing
+from aas_smt_verification_with_llms.common import Filenameable
 
 assert aas_smt_verification_with_llms.__doc__ == __doc__
 
@@ -23,10 +24,10 @@ class Prompt:
     """Define the prompt of a check."""
 
     format_str: Final[str]
-    name: Final[str]
+    name: Final[Filenameable]
 
     @require(lambda format_str: "{relevant_details}" in format_str)
-    def __init__(self, name: str, format_str: str) -> None:
+    def __init__(self, name: Filenameable, format_str: str) -> None:
         self.name = name
         self.format_str = format_str
 
@@ -75,7 +76,7 @@ def _list_prompts() -> List[Prompt]:
 
     return [
         Prompt(
-            name="concept_description_to_description",
+            name=Filenameable("concept_description_to_description"),
             format_str=(
                 "For which of the following elements does the description "
                 "DOES NOT correspond with its concept description? "
@@ -90,7 +91,7 @@ def _list_prompts() -> List[Prompt]:
             ),
         ),
         Prompt(
-            name="concept_description_to_unit",
+            name=Filenameable("concept_description_to_unit"),
             format_str=(
                 "For which of the following concept descriptions does the unit "
                 "DOES NOT correspond with its definition?\n\n"
@@ -101,7 +102,7 @@ def _list_prompts() -> List[Prompt]:
             ),
         ),
         Prompt(
-            name="concept_description_to_value_type",
+            name=Filenameable("concept_description_to_value_type"),
             format_str=(
                 "For which of the following elements does the XSD value type "
                 "DOES NOT correspond with its concept description?\n\n"
@@ -119,7 +120,7 @@ def _list_prompts() -> List[Prompt]:
             ),
         ),
         Prompt(
-            name="description_to_display_name",
+            name=Filenameable("description_to_display_name"),
             format_str=(
                 "For which of the following elements does its description "
                 "DOES NOT correspond with its display name?\n\n"
@@ -133,7 +134,7 @@ def _list_prompts() -> List[Prompt]:
             ),
         ),
         Prompt(
-            name="description_to_id_short",
+            name=Filenameable("description_to_id_short"),
             format_str=(
                 "For which of the following elements does the ID-short "
                 "DOES NOT correspond with its description?\n\n"
@@ -197,6 +198,102 @@ def _parse_response(response: Any) -> Optional[List[Suggestion]]:
     return result
 
 
+class PromptResponse:
+    """Represent an LLM prompt and its response."""
+
+    name: Final[Filenameable]
+    prompt: Final[str]
+    response: Final[str]
+
+    def __init__(self, name: Filenameable, prompt: str, response: str) -> None:
+        self.name = name
+        self.prompt = prompt
+        self.response = response
+
+
+def load_aas_environment(
+    path: pathlib.Path,
+) -> Tuple[Optional[aas_types.Environment], Optional[str]]:
+    """
+    Read the AAS environment from the file.
+
+    Return the parsed AAS environment, or an error, if any.
+    """
+    try:
+        text = path.read_text(encoding="utf-8")
+    except Exception as exception:
+        return None, str(exception)
+
+    if len(text) == 0:
+        return None, "Empty file"
+
+    text = text.strip()
+
+    environment: aas_types.Environment
+    if text[0] == "{":
+        try:
+            jsonable = json.loads(text)
+        except Exception as exception:
+            return None, f"Failed to parse the AAS environment as JSON: {exception}"
+
+        try:
+            environment = aas_jsonization.environment_from_jsonable(jsonable)
+        except Exception as exception:
+            return None, f"Failed to parse the AAS environment as JSON: {exception}"
+
+    elif text[0] == "<":
+        try:
+            environment = aas_xmlization.environment_from_str(text)
+        except Exception as exception:
+            return None, f"Failed to parse the AAS environment as XML: {exception}"
+    else:
+        return None, "Unrecognized format"
+
+    return environment, None
+
+
+def request_over_prompts(
+    client: llm.Client, environment: aas_types.Environment
+) -> Iterator[Tuple[Optional[PromptResponse], Optional[str]]]:
+    """
+    Run all the checks on the given environment.
+
+    Yield the inputs and outputs of the LLM, or an error, if any.
+
+    In case of error, the iterator will be closed and no further checks will be
+    performed.
+    """
+    relevant_details: Optional[str] = aasing.relevant_details(environment)
+    if relevant_details is None:
+        yield None, (
+            "There are no relevant details for the AAS environment, "
+            "so no request to LLM could be made."
+        )
+        return
+
+    for prompt in _PROMPTS:
+        try:
+            formatted_prompt = prompt.format_str.format(
+                relevant_details=relevant_details
+            )
+        except Exception as exception:
+            raise AssertionError(
+                f"Invalid format string for {prompt.name}:\n{prompt.format_str}"
+            ) from exception
+
+        try:
+            response = client.generate(formatted_prompt)
+        except Exception as exception:
+            yield None, (
+                f"Failed to make the request to the LLM for {prompt.name}: {exception}"
+            )
+            return
+
+        yield PromptResponse(
+            name=prompt.name, prompt=formatted_prompt, response=response
+        ), None
+
+
 def main(prog: str) -> int:
     """
     Execute the main routine.
@@ -228,83 +325,40 @@ def main(prog: str) -> int:
 
     client = llm.create(llm_args)
 
-    try:
-        text = aas_environment_path.read_text(encoding="utf-8")
-    except Exception as exception:
-        print(f"Failed to read --aas_environment_path: {exception}", file=sys.stderr)
-        return 1
-
-    if len(text) == 0:
-        print("Empty --aas_environment_path", file=sys.stderr)
-        return 1
-
-    text = text.strip()
-
-    environment: aas_types.Environment
-    if text[0] == "{":
-        try:
-            jsonable = json.loads(text)
-        except Exception as exception:
-            print(
-                f"Failed to parse --aas_environment_path as JSON: {exception}",
-                file=sys.stderr,
-            )
-            return 1
-
-        try:
-            environment = aas_jsonization.environment_from_jsonable(jsonable)
-        except Exception as exception:
-            print(
-                f"Failed to parse --aas_environment_path as JSON: {exception}",
-                file=sys.stderr,
-            )
-            return 1
-    elif text[0] == "<":
-        try:
-            environment = aas_xmlization.environment_from_str(text)
-        except Exception as exception:
-            print(
-                f"Failed to parse --aas_environment_path as XML: {exception}",
-                file=sys.stderr,
-            )
-            return 1
-    else:
-        print("Unrecognized format in --aas_environment_path", file=sys.stderr)
-        return 1
-
-    relevant_details: Optional[str] = aasing.relevant_details(environment)
-
-    if relevant_details is None:
+    environment, error = load_aas_environment(aas_environment_path)
+    if error is not None:
         print(
-            "There are no relevant details for --aas_environment_path, "
-            "so no request to LLM is made."
+            f"Failed to read and parse --aas_environment_path: {error}", file=sys.stderr
         )
-        return 0
+        return 1
+
+    assert environment is not None
 
     print("[")
 
     suggestion_count = 0
 
-    for prompt in _PROMPTS:
-        try:
-            formatted_prompt = prompt.format_str.format(
-                relevant_details=relevant_details
+    for prompt_response, error in request_over_prompts(client, environment):
+        if error is not None:
+            print(
+                f"The request failed: {error}",
+                file=sys.stderr,
             )
-        except Exception as exception:
-            raise AssertionError(
-                f"Invalid format string for prompt {prompt.name!r}:\n"
-                f"{prompt.format_str}"
-            ) from exception
+            return 1
 
-        response = client.generate(formatted_prompt)
+        assert prompt_response is not None
+
+        # NOTE (mristin):
+        # We separate the de-serialization logic from the request/receive function
+        # so that we can use the function in the experiments as well.
 
         try:
-            response_json = json.loads(response)
+            response_json = json.loads(prompt_response.response)
         except json.JSONDecodeError as exception:
             print(
-                f"Failed to parse the response from LLM as JSON "
-                f"for check {prompt.name}: {exception}; the response was:\n"
-                f"{response}\n\nThe prompt was:\n{formatted_prompt}",
+                f"Failed to parse the response from LLM as JSON :{exception}; "
+                f"the response was:\n{prompt_response.response}\n\n"
+                f"The prompt was:\n{prompt_response.prompt}",
                 file=sys.stderr,
             )
             continue
@@ -313,8 +367,9 @@ def main(prog: str) -> int:
         if maybe_suggestions is None:
             print(
                 f"Failed to parse the response from LLM as JSON array "
-                f"for check {prompt.name}; the response was:\n{response}\n\n"
-                f"The prompt was:\n{formatted_prompt}",
+                f"for check {prompt_response.name}; "
+                f"the response was:\n{prompt_response.response}\n\n"
+                f"The prompt was:\n{prompt_response.prompt}",
                 file=sys.stderr,
             )
             continue
@@ -322,7 +377,7 @@ def main(prog: str) -> int:
         for suggestion in maybe_suggestions:
             suggestion_json = collections.OrderedDict(
                 [
-                    ("check", prompt.name),
+                    ("check", prompt_response.name),
                     ("path", suggestion.path),
                     ("explanation", suggestion.explanation),
                     ("suggestion", suggestion.suggestion),

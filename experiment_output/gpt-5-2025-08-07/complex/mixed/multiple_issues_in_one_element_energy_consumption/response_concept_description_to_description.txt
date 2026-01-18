@@ -1,0 +1,12 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "The textual definition says 'in millijoules', but the unit provided is 'MJ', which stands for megajoules. 'millijoules' would be 'mJ'.",
+    "suggestion": "Align text and unit by updating the wording to 'Energy consumption during operation in megajoules (MJ)'."
+  },
+  {
+    "path": "enCons",
+    "explanation": "Property description states 'average energy consumption per hour' (an energy rate), while the linked concept describes total energy (not per time). This is a mismatch of physical quantity (energy vs energy/time).",
+    "suggestion": "Either remove 'per hour' so it reads 'average energy consumption during operation' (aligning to an energy quantity, e.g., MJ), or, if a rate is intended, link to a power/energy-rate concept and use an appropriate unit such as W or J/h."
+  }
+]

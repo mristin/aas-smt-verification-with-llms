@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Definition states 'in millijoules' but the unit is 'MJ', which denotes megajoules. The correct SI symbol for millijoules is 'mJ'.",
+    "suggestion": "mJ"
+  }
+]

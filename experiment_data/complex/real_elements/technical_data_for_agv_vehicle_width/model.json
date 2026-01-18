@@ -1,0 +1,89 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+              {
+                "idShort": "VehicleWidth",
+                "displayName": [
+                  {
+                    "language": "en",
+                    "text": "Vehicle width (max.)"
+                  },
+                  {
+                    "language": "de",
+                    "text": "Fahrzeugbreite (max.)"
+                  }
+                ],
+                "description": [
+                  {
+                    "language": "en",
+                    "text": "Maximum vehicle width"
+                  },
+                  {
+                    "language": "de",
+                    "text": "Maximale Fahrzeugbreite"
+                  }
+                ],
+                "semanticId": {
+                  "type": "ExternalReference",
+                  "keys": [
+                    {
+                      "type": "GlobalReference",
+                      "value": "0173-1#02-AAG933#004"
+                    }
+                  ]
+                },
+                "valueType": "xs:string",
+                "modelType": "Property"
+              }
+            ]
+        }
+    ],
+    "conceptDescriptions": [
+      {
+        "idShort": "VehicleWidth",
+        "description": [
+          {
+            "language": "en",
+            "text": "Maximum vehicle width"
+          },
+          {
+            "language": "de",
+            "text": "Maximale Fahrzeugbreite"
+          }
+        ],
+        "id": "0173-1#02-AAG933#004",
+        "embeddedDataSpecifications": [
+          {
+            "dataSpecification": {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/0"
+                }
+              ]
+            },
+            "dataSpecificationContent": {
+              "preferredName": [
+                {
+                  "language": "en",
+                  "text": "VehicleWidth"
+                }
+              ],
+              "definition": [
+                {
+                  "language": "en",
+                  "text": "Maximum vehicle width"
+                }
+              ],
+              "modelType": "DataSpecificationIec61360"
+            }
+          }
+        ],
+        "modelType": "ConceptDescription"
+      }
+    ]
+}

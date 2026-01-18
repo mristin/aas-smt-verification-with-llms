@@ -1,0 +1,7 @@
+[
+  {
+    "path": "IssueDate",
+    "explanation": "The concept describes a calendar date (CCYY-MM-DD, specified to the day), but the value type is xs:string instead of a date-specific type.",
+    "suggestion": "xs:date"
+  }
+]

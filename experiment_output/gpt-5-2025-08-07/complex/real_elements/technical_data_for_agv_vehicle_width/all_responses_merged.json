@@ -1,0 +1,48 @@
+[
+// From: response_concept_description_to_description.txt
+{
+  "path": "VehicleWidth",
+  "explanation": "The element\u2019s description matches the concept description (\u201cMaximum vehicle width\u201d), but its value type is xs:string. Width is a quantitative length and should be represented as a numeric measure with an appropriate unit.",
+  "suggestion": "Use a numeric value type (e.g., xs:decimal) and specify a length unit, e.g., mm."
+}
+// From: response_concept_description_to_unit.txt
+,
+{
+  "path": "VehicleWidth",
+  "explanation": "Concept '0173-1#02-AAG933#004' denotes a length (Maximum vehicle width), but the element is typed as xs:string with no unit specified; a length unit should be provided.",
+  "suggestion": "m"
+}
+// From: response_concept_description_to_value_type.txt
+,
+{
+  "path": "VehicleWidth",
+  "explanation": "Semantic mismatch: 'Maximum vehicle width' is a physical length that should be numeric, but the value type is xs:string. A numeric type enables validation, comparisons, and unit conversions.",
+  "suggestion": "xs:decimal"
+}
+// From: response_description_to_display_name.txt
+,
+{
+  "path": "VehicleWidth",
+  "explanation": "No semantic mismatch: the description 'Maximum vehicle width' and the display name 'Vehicle width (max.)' convey the same meaning. For consistency and clarity, avoid abbreviations and align phrasing.",
+  "suggestion": "Maximum vehicle width"
+}
+// From: response_description_to_id_short.txt
+,
+{
+  "path": "VehicleWidth",
+  "explanation": "ID-short 'VehicleWidth' does not reflect 'Maximum' as stated by the description and concept; it suggests generic width rather than maximum width.",
+  "suggestion": "MaxVehicleWidth"
+}
+,
+{
+  "path": "VehicleWidth",
+  "explanation": "Semantic mismatch between the quantitative concept 'Maximum vehicle width' and the value type. A width should be numeric, not xs:string.",
+  "suggestion": "xs:double"
+}
+,
+{
+  "path": "VehicleWidth",
+  "explanation": "Missing unit for a length quantity. Width should specify a length unit.",
+  "suggestion": "mm"
+}
+]

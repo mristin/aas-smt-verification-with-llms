@@ -167,14 +167,18 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
         Tuple[
             Union[
                 aas_types.Property,
-                aas_types.Range
+                aas_types.Range,
+                aas_types.MultiLanguageProperty
             ],
             Path
         ]
     ] = [
         (element, path)
         for element, path in over_elements(environment)
-        if isinstance(element, (aas_types.Property, aas_types.Range))
+        if isinstance(
+            element,
+            (aas_types.Property, aas_types.Range, aas_types.MultiLanguageProperty)
+        )
     ]
     # fmt: on
 
@@ -205,7 +209,8 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
             if display_name_in_en is not None:
                 element_parts.append(f" with display name {display_name_in_en!r}")
 
-            element_parts.append(f" with value type {element.value_type.value}")
+            if isinstance(element, (aas_types.Property, aas_types.Range)):
+                element_parts.append(f" with value type {element.value_type.value}")
 
             if element.semantic_id is not None:
                 semantic_id_as_text = reference_as_text(element.semantic_id)

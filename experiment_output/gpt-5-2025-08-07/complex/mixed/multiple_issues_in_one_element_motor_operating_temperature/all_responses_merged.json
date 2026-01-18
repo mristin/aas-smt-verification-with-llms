@@ -1,0 +1,84 @@
+[
+// From: response_concept_description_to_description.txt
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Concept description text states the operating temperature is given in \u00b0C, but the unit is specified as \u00b0F, which is contradictory.",
+  "suggestion": "\u00b0C"
+}
+,
+{
+  "path": "opTemp",
+  "explanation": "The value type xs:negativeInteger restricts values to negative whole numbers, which does not fit temperatures in \u00b0C that can be positive or negative and often require fractional values.",
+  "suggestion": "xs:decimal"
+}
+// From: response_concept_description_to_unit.txt
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Unit \u00b0F contradicts the definition/meaning that explicitly states temperatures in \u00b0C.",
+  "suggestion": "\u00b0C"
+}
+,
+{
+  "path": "opTemp",
+  "explanation": "Value type xs:negativeInteger disallows zero and positive temperatures and prevents decimal precision; operating temperature can be positive and fractional.",
+  "suggestion": "xs:decimal"
+}
+,
+{
+  "path": "opTemp",
+  "explanation": "Display name has a typo: 'moter' should be 'motor'.",
+  "suggestion": "motor operating temperature"
+}
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Concept description identifier likely has a typo in the domain ('exampl.com'); could cause broken references.",
+  "suggestion": "urn:example.com:someConceptDescription"
+}
+// From: response_concept_description_to_value_type.txt
+,
+{
+  "path": "opTemp",
+  "explanation": "xs:negativeInteger restricts values to whole negative numbers, while temperature readings (operating temperature in \u00b0C/\u00b0F) can be positive or negative and often include fractional values.",
+  "suggestion": "xs:double"
+}
+// From: response_description_to_display_name.txt
+,
+{
+  "path": "opTemp",
+  "explanation": "No semantic mismatch: both the description ('temperature during motor operation') and the display name refer to the same concept. However, the display name contains a spelling error ('moter') and could align more closely in phrasing.",
+  "suggestion": "motor operating temperature"
+}
+// From: response_description_to_id_short.txt
+,
+{
+  "path": "opTemp",
+  "explanation": "ID-short 'opTemp' corresponds to its description 'temperature during motor operation'; no mismatch.",
+  "suggestion": "keep"
+}
+,
+{
+  "path": "opTemp",
+  "explanation": "Value type xs:negativeInteger is semantically incorrect for temperatures; it excludes zero and positive values and forbids fractional temperatures.",
+  "suggestion": "xs:decimal"
+}
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Concept meaning/definition state the temperature is in \u00b0C, but the unit is set to \u00b0F.",
+  "suggestion": "\u00b0C"
+}
+,
+{
+  "path": "opTemp",
+  "explanation": "Display name contains a typo: 'moter' should be 'motor'.",
+  "suggestion": "motor operating temperature"
+}
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "The URN's domain appears misspelled ('exampl.com'); likely intended 'example.com'.",
+  "suggestion": "urn:example.com:someConceptDescription"
+}
+]

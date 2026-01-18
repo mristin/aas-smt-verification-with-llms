@@ -1,0 +1,60 @@
+[
+// From: response_concept_description_to_description.txt
+{
+  "path": "systemOperatingPressure",
+  "explanation": "Property describes pressure, but the linked concept description states operating temperature and uses unit Hz. The property\u2019s description does not correspond with its concept description.",
+  "suggestion": "Link this property to a pressure concept description (e.g., 'System operating pressure') with a pressure unit such as 'Pa'."
+}
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Concept description is internally inconsistent: the 'means' says 'Operating temperature of the motor in \u00b0C', the unit is 'Hz' (frequency), while the definition says 'System operating pressure'.",
+  "suggestion": "Align the concept to pressure: set means/definition to 'System operating pressure' and set unit to 'Pa'."
+}
+,
+{
+  "path": "systemOperatingPressure",
+  "explanation": "Pressure is a physical quantity but the value type is xs:string, which is unsuitable for numeric measurements.",
+  "suggestion": "Use a numeric value type, e.g., 'xs:double'."
+}
+// From: response_concept_description_to_unit.txt
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Unit 'Hz' (Hertz) denotes frequency and does not match the definition 'System operating pressure' (pressure). It also conflicts with the 'means' text mentioning temperature in \u00b0C.",
+  "suggestion": "Pa"
+}
+// From: response_concept_description_to_value_type.txt
+,
+{
+  "path": "systemOperatingPressure",
+  "explanation": "Value type is xs:string, but the linked concept describes a physical measurement (operating temperature in \u00b0C / system operating pressure), which should be numeric. The unit 'Hz' is also inconsistent with temperature/pressure, indicating semantic issues.",
+  "suggestion": "xs:double"
+}
+// From: response_description_to_display_name.txt
+,
+{
+  "path": "systemOperatingPressure",
+  "explanation": "No mismatch: description and display name are both 'pressure'.",
+  "suggestion": "No change needed."
+}
+// From: response_description_to_id_short.txt
+,
+{
+  "path": "systemOperatingPressure",
+  "explanation": "Value type xs:string is inconsistent with a pressure property, which should be numeric.",
+  "suggestion": "xs:double"
+}
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Unit 'Hz' (hertz) is a frequency unit and does not match either pressure or temperature.",
+  "suggestion": "Pa"
+}
+,
+{
+  "path": "urn:exampl.com:someConceptDescription",
+  "explanation": "Concept meaning says 'Operating temperature of the motor in \u00b0C' while the element ID-short and the concept definition point to operating pressure.",
+  "suggestion": "Operating pressure of the system"
+}
+]

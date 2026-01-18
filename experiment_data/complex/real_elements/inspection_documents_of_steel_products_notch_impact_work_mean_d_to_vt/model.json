@@ -1,0 +1,91 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+                {
+                    "idShort": "NotchImpactWorkMean",
+                    "displayName": [
+                      {
+                        "language": "en",
+                        "text": "Notch Impact Work Mean"
+                      },
+                      {
+                        "language": "de",
+                        "text": "Kerbschlagbiegearbeit Mittelwert"
+                      }
+                    ],
+                    "semanticId": {
+                      "type": "ExternalReference",
+                      "keys": [
+                        {
+                          "type": "GlobalReference",
+                          "value": "https://admin-shell.io/idta/InspectionDocumentsOfSteelProducts/NotchImpactWorkMean/1/0"
+                        }
+                      ]
+                    },
+                    "valueType": "xs:string",
+                    "modelType": "Property"
+                  }
+            ]
+        }
+    ],
+    "conceptDescriptions": [
+        {
+            "idShort": "NotchImpactWorkMean",
+            "administration": {
+              "version": "1",
+              "revision": "0",
+              "templateId": "https://admin-shell.io/idta/02032-1-0"
+            },
+            "id": "https://admin-shell.io/idta/InspectionDocumentsOfSteelProducts/NotchImpactWorkMean/1/0",
+            "embeddedDataSpecifications": [
+              {
+                "dataSpecification": {
+                  "type": "ExternalReference",
+                  "keys": [
+                    {
+                      "type": "GlobalReference",
+                      "value": "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                    }
+                  ]
+                },
+                "dataSpecificationContent": {
+                  "preferredName": [
+                    {
+                      "language": "en",
+                      "text": "NotchImpactWorkMean"
+                    }
+                  ],
+                  "shortName": [
+                    {
+                      "language": "en",
+                      "text": "joule"
+                    }
+                  ],
+                  "unit": "J",
+                  "unitId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "0112/2///62720#UAA172"
+                      }
+                    ]
+                  },
+                  "dataType": "REAL_MEASURE",
+                  "definition": [
+                    {
+                      "language": "en",
+                      "text": "The property NotchImpactWorkMean refers to the average value of the notch impact work obtained from multiple tests conducted on samples using a notch impact test. This value is the total energy required."
+                    }
+                  ],
+                  "modelType": "DataSpecificationIec61360"
+                }
+              }
+            ],
+            "modelType": "ConceptDescription"
+        }
+    ]
+}
