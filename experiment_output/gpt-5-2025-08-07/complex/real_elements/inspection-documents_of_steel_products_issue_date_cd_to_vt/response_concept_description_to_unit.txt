@@ -1,0 +1,7 @@
+[
+  {
+    "path": "IssueDate",
+    "explanation": "IssueDate denotes a calendar date, which has no physical unit. Any unit assignment would not correspond to the definition. Additionally, the valueType is xs:string while the definition requires a date in CCYY-MM-DD format.",
+    "suggestion": "Do not assign any unit. Set valueType to xs:date (ISO 8601 date, e.g., 2024-05-17)."
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "path": "enCons",
+    "explanation": "ID-short 'enCons' suggests a generic energy consumption quantity, while the description states 'average energy consumption per hour' (a rate). These refer to different kinds of quantity.",
+    "suggestion": "Rename the ID-short to 'avgEnergyConsumptionPerHour' to match the description."
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "The concept description text says 'millijoules' while the unit is 'MJ' (megajoules).",
+    "suggestion": "Change the unit to 'mJ' to match the wording."
+  },
+  {
+    "path": "enCons",
+    "explanation": "The element describes a per hour quantity but is linked to a concept with an energy unit (MJ), i.e., an amount of energy rather than a rate.",
+    "suggestion": "Use a concept for an energy rate and set the unit to 'MJ/h' (or use power in 'W'/'kW'), updating the concept description accordingly."
+  }
+]

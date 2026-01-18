@@ -1,0 +1,7 @@
+[
+  {
+    "path": "waterproofCasing",
+    "explanation": "The concept describes a length (unit: km), which must be non-negative and may require fractional values. The current type xs:negativeInteger only allows negative whole numbers, which is incompatible with a length measurement.",
+    "suggestion": "xs:decimal"
+  }
+]

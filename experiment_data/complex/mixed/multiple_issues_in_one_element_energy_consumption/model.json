@@ -1,0 +1,77 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "enCons",
+          "displayName": [
+            {
+                "language": "en",
+                "text": "energyConsumption"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "average energy consumption per hour"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "id": "urn:exampl.com:someConceptDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Energy consumption during operation in millijoules"
+        }
+      ],
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:example.com:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "operatingTemperature"
+              }
+            ],
+            "unit": "MJ",
+            "definition": [
+              {
+                "language": "en",
+                "text": "Energy consumption during operation in millijoules"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

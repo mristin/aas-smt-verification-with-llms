@@ -1,0 +1,92 @@
+{
+    "submodels": [
+        {
+            "modelType": "Submodel",
+            "id": "https://example.org/some_submodel",
+            "submodelElements": [
+              {
+                "category": "PARAMETER",
+                "idShort": "Date",
+                "displayName": [
+                  {
+                    "language": "en",
+                    "text": "Date"
+                  },
+                  {
+                    "language": "en",
+                    "text": "Datum"
+                  }
+                ],
+                "description": [
+                  {
+                    "language": "en",
+                    "text": "Date of revision of the PAM specification sheet."
+                  }
+                ],
+                "semanticId": {
+                  "type": "ExternalReference",
+                  "keys": [
+                    {
+                      "type": "GlobalReference",
+                      "value": "0173-1#02-AAR969#002"
+                    }
+                  ]
+                },
+                "valueType": "xs:string",
+                "value": "2024-05-17",
+                "valueId": {
+                  "type": "ExternalReference",
+                  "keys": [
+                    {
+                      "type": "GlobalReference",
+                      "value": "https://admin-shell.io/idta/prop/furtherinformationreference/1/0"
+                    }
+                  ]
+                },
+                "modelType": "Property"
+              }
+            ]
+        }
+    ],
+    "conceptDescriptions": [
+      {
+        "idShort": "Date",
+        "description": [
+          {
+            "language": "en",
+            "text": "Date of revision of the PAM specification sheet."
+          }
+        ],
+        "id": "0173-1#02-AAR969#002",
+        "embeddedDataSpecifications": [
+          {
+            "dataSpecification": {
+              "type": "ExternalReference",
+              "keys": [
+                {
+                  "type": "GlobalReference",
+                  "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0"
+                }
+              ]
+            },
+            "dataSpecificationContent": {
+              "preferredName": [
+                {
+                  "language": "en",
+                  "text": "Date"
+                }
+              ],
+              "definition": [
+                {
+                  "language": "en",
+                  "text": "Date of revision of the PAM specification sheet."
+                }
+              ],
+              "modelType": "DataSpecificationIec61360"
+            }
+          }
+        ],
+        "modelType": "ConceptDescription"
+      }
+    ]
+}

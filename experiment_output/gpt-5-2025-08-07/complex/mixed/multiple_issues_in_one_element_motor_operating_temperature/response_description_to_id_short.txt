@@ -1,0 +1,27 @@
+[
+  {
+    "path": "opTemp",
+    "explanation": "ID-short 'opTemp' corresponds to its description 'temperature during motor operation'; no mismatch.",
+    "suggestion": "keep"
+  },
+  {
+    "path": "opTemp",
+    "explanation": "Value type xs:negativeInteger is semantically incorrect for temperatures; it excludes zero and positive values and forbids fractional temperatures.",
+    "suggestion": "xs:decimal"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Concept meaning/definition state the temperature is in °C, but the unit is set to °F.",
+    "suggestion": "°C"
+  },
+  {
+    "path": "opTemp",
+    "explanation": "Display name contains a typo: 'moter' should be 'motor'.",
+    "suggestion": "motor operating temperature"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "The URN's domain appears misspelled ('exampl.com'); likely intended 'example.com'.",
+    "suggestion": "urn:example.com:someConceptDescription"
+  }
+]

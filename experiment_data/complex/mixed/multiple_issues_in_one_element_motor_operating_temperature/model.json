@@ -1,0 +1,77 @@
+{
+  "submodels": [
+    {
+      "id": "https://example.org/some_submodel",
+      "submodelElements": [
+        {
+          "idShort": "opTemp",
+          "displayName": [
+            {
+                "language": "en",
+                "text": "moter operating temperature"
+            }
+          ],
+          "description": [
+            {
+              "language": "en",
+              "text": "temperature during motor operation"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:exampl.com:someConceptDescription"
+              }
+            ]
+          },
+          "valueType": "xs:negativeInteger",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "id": "urn:exampl.com:someConceptDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Operating temperature of the motor in \u00b0C"
+        }
+      ],
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:example.com:someDataSpecification"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "operatingTemperature"
+              }
+            ],
+            "unit": "\u00b0F",
+            "definition": [
+              {
+                "language": "en",
+                "text": "Operating temperature of the motor in \u00b0C"
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

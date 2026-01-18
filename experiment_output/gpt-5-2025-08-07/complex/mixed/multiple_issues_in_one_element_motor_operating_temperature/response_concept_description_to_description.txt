@@ -1,0 +1,12 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Concept description text states the operating temperature is given in °C, but the unit is specified as °F, which is contradictory.",
+    "suggestion": "°C"
+  },
+  {
+    "path": "opTemp",
+    "explanation": "The value type xs:negativeInteger restricts values to negative whole numbers, which does not fit temperatures in °C that can be positive or negative and often require fractional values.",
+    "suggestion": "xs:decimal"
+  }
+]

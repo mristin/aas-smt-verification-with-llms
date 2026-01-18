@@ -1,0 +1,22 @@
+[
+  {
+    "path": "urn:exampl.com:some_id",
+    "explanation": "Unit 'WH' (watt-hour) measures energy, but the definition states 'Applied force on the mechanical component', which is a force quantity.",
+    "suggestion": "N"
+  },
+  {
+    "path": "appiled_force",
+    "explanation": "Value type is xs:string, but a force should be represented as a numeric quantity.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "appiled_force",
+    "explanation": "Display name 'appiled power' is misspelled and refers to power, while the property and definition are about force.",
+    "suggestion": "applied force"
+  },
+  {
+    "path": "appiled_force",
+    "explanation": "ID-short contains a typo ('appiled').",
+    "suggestion": "applied_force"
+  }
+]

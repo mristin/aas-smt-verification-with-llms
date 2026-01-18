@@ -1,0 +1,7 @@
+[
+  {
+    "path": "IssueDate",
+    "explanation": "No mismatch between id-short 'IssueDate' and its description (both indicate a calendar date). However, the value type is xs:string while the description requires a date in CCYY-MM-DD format, which should be modeled as a date type for proper validation.",
+    "suggestion": "xs:date"
+  }
+]

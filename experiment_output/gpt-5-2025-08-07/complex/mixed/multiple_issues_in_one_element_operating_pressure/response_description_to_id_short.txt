@@ -1,0 +1,17 @@
+[
+  {
+    "path": "systemOperatingPressure",
+    "explanation": "Value type xs:string is inconsistent with a pressure property, which should be numeric.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Unit 'Hz' (hertz) is a frequency unit and does not match either pressure or temperature.",
+    "suggestion": "Pa"
+  },
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Concept meaning says 'Operating temperature of the motor in °C' while the element ID-short and the concept definition point to operating pressure.",
+    "suggestion": "Operating pressure of the system"
+  }
+]

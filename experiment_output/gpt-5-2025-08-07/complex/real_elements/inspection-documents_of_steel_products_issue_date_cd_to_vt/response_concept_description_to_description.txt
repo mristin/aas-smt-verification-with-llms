@@ -1,0 +1,7 @@
+[
+  {
+    "path": "IssueDate",
+    "explanation": "The property represents a calendar date (lexical representation CCYY-MM-DD, specified to the day) but its value type is xs:string. Semantically, the Concept Description for IssueDate denotes a date and should be captured with a date value type.",
+    "suggestion": "xs:date"
+  }
+]

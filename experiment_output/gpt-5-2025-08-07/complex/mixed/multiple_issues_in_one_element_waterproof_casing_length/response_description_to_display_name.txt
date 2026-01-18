@@ -1,0 +1,7 @@
+[
+  {
+    "path": "waterproofCasing",
+    "explanation": "The description states 'Non watertight casing length' (not waterproof), while the display name reads 'waterpoof casing length' (likely intended 'waterproof'). These are semantically opposite, and the display name contains a typo.",
+    "suggestion": "Align both to the same meaning; for example, correct the display name to 'Waterproof casing length' and update the description to 'Waterproof casing length'."
+  }
+]

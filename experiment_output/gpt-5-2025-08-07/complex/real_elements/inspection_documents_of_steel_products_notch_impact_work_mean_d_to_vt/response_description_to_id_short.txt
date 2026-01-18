@@ -1,0 +1,17 @@
+[
+  {
+    "path": "NotchImpactWorkMean",
+    "explanation": "No mismatch: ID-short 'NotchImpactWorkMean' corresponds to the concept description of the mean notch impact work.",
+    "suggestion": "Keep the ID-short as 'NotchImpactWorkMean'."
+  },
+  {
+    "path": "NotchImpactWorkMean",
+    "explanation": "Value type is xs:string while the concept describes an energy quantity with unit J; quantitative energy values should be numeric.",
+    "suggestion": "Change value type to xs:double."
+  },
+  {
+    "path": "https://admin-shell.io/idta/InspectionDocumentsOfSteelProducts/NotchImpactWorkMean/1/0",
+    "explanation": "Definition mixes 'average value' with 'total energy required', which is inconsistent for a mean value.",
+    "suggestion": "Revise definition to: 'The mean energy absorbed during notch impact tests on samples, expressed in joules.'"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "path": "urn:exampl.com:someConceptDescription",
+    "explanation": "Unit 'Hz' (Hertz) denotes frequency and does not match the definition 'System operating pressure' (pressure). It also conflicts with the 'means' text mentioning temperature in °C.",
+    "suggestion": "Pa"
+  }
+]
