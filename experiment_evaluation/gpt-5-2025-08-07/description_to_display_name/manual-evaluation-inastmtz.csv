@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM makes a more specific, correct suggestion."
+expected,no ambiguity,no_ambiguity,yes,"The LLM makes a more specific, correct suggestion."
+expected,no contradiction,no_contradiction,yes,"The LLM makes a more specific, correct suggestion."
+expected,no negation mismatch,no_negation_mismatch,yes,"The LLM makes a more specific, correct suggestion."
+expected,no omission,no_omission,yes,"The LLM complains about the semantic difference -- range versus value -- 'operating temperature' versus 'operating temperature range'."
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,"The LLM makes a more specific, correct suggestion."
+expected,no partial overlap,no_partial_overlap,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+expected,no terminology mismatch,no_terminology_mismatch,no,"Faulty output: outputs 'no change required' instead of empty suggestion."
+expected,no uncommon phrasing,no_uncommon_phrasing,no,"Faulty output: 'no change required' instead of empty suggestion."
+expected,semantic inversion,semantic_inversion,yes,"The LLM makes a more specific, correct suggestion."
+expected,syntax,syntax,no,"Faulty output: 'no change required' instead of empty suggestion"
+unexpected,ambiguity,ambiguity,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM complains that the description is too vague, and provides a useful suggestion."
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,"The LLM complains that the description is too vague, and suggests to make the display name equal to the description."
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax,syntax,yes,
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,yes,

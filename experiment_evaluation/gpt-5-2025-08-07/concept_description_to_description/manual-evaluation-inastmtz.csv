@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,no ambiguity,no_ambiguity,yes,
+expected,no context words sense disambiguation,no_context_words_sense_disambiguation,yes,
+expected,no contradiction,no_contradiction,yes,"The LLM correctly suggests to use consistent wording (either waterproof or water-resistant)."
+expected,no negation mismatch,no_negation_mismatch,yes,"The LLM suggests an explicit unit."
+expected,no omission,no_omission,yes,
+expected,no partial overlap,no_partial_overlap,yes,
+expected,no semantic inversion,no_semantic_inversion,yes,
+expected,no syntax error,no_syntax_error,yes,
+expected,no terminology mismatch,no_terminology_mismatch,yes,
+expected,no uncommon phrasing,no_uncommon_phrasing,yes,
+expected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,ambiguity,ambiguity,yes,"The LLM correctly recommends using a more specific concept description."
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM complains that the element description is much broader ('flow rate') that the concept description ('hydraulic flow rate')."
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,no paraphrase synonymy,no_paraphrase_synonymy,yes,
+unexpected,omission,omission,yes,"The LLM correctly flags the concept description for being too generig."
+unexpected,partial overlap,partial_overlap,yes,"The LLM correctly detects the conceptual mismatch."
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax error,syntax_error,no,"The LLM does not flag the syntax error."
+unexpected,terminology mismatch,terminology_mismatch,no,"The suggestion is unclear."
+unexpected,uncommon phrasing,uncommon_phrasing,no,"The LLM does not suggest to improve the uncommon phrasing."
