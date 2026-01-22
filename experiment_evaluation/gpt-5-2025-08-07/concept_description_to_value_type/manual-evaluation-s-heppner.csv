@@ -16,7 +16,7 @@ expected,match,g_year_match,yes,
 expected,match,g_year_month_match,yes,
 expected,match,hex_binary_match,yes,
 expected,match,int_match,yes,"The LLM notices correctly that the temperature readings might be fractional, and suggests correctly xs:double."
-expected,match,integer_match,no,"S: The LLM did not notices that we are talking about the count of molecules, and wrongly suggests a fractional number as xs:double. It is correct in a practical sense that a sensor value might not actually be able to count molecules but approximates the number as a real value."
+expected,match,integer_match,no,"S: The LLM did not notice that we are talking about the count of molecules, and suggests a fractional number. It is correct in a practical sense that a sensor value might not actually be able to count molecules but approximates the number as a real value."
 expected,match,long_match,yes,"The LLM notices that nanoseconds since epoch as xs:long work only till year 2262."
 expected,match,negative_integer_match,yes,"The LLM suggests xs:duration since we describe countdown in milliseconds, but neglects the part of the description saying 'always negative'."
 expected,match,non_negative_integer_match,yes,"The LLM suggests xs:duration since we are talking about non-negative years of remaining service life -- but neglects the 'non-negative' in the description."
