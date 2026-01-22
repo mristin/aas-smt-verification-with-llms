@@ -1,18 +1,18 @@
 Expectation,Category,Case name,Correct,Remark
 expected,no semantic inversion,no_semantic_inversion,yes,
 expected,paraphrase synonymy,paraphrase_synonymy,yes,
-expected,no partial overlap,no_partial_overlap,no,"The LLM focused on the value type (xs:double) rather than accepting a specific steel grade instance, experiment data should be changed to ""steel grade number"" for clarity."
+expected,no partial overlap,no_partial_overlap,yes,
 expected,no contradiction,no_contradiction,no,The LLM treated 'water-resistant' vs 'waterproof' as a mismatch.
 expected,no ambiguity,no_ambiguity,yes,
 expected,no omission,no_omission,yes,
 expected,no context words sense disambiguation,no_context_words_sense_disambiguation,yes,
 expected,no syntax error,no_syntax_error,yes,
 expected,no terminology mismatch,no_terminology_mismatch,yes,
-expected,no negation mismatch,no_negation_mismatch,no,The LLM complained about missing unit though case is about matching constraint semantics.
+expected,no negation mismatch,no_negation_mismatch,no,The LLM complained about missing unit though the case is about matching constraint semantics.
 expected,no uncommon phrasing,no_uncommon_phrasing,yes,
 unexpected,semantic inversion,semantic_inversion,yes,The LLM correctly identified the upper vs lower inversion and suggested aligning.
 unexpected,no paraphrase synonymy,no_paraphrase_synonymy,yes,The LLM Correctly detected start vs end time mismatch and suggested changes.
-unexpected,partial overlap,partial_overlap,yes,"The LLM Correctly noted epoxy coating grade is not steel grade, suggested changes. But also suggested the value tyle mismatch. "
+unexpected,partial overlap,partial_overlap,yes,The LLM Correctly identified the difference between the concept description and the description. It further identified the unit differences in both texts.
 unexpected,contradiction,contradiction,yes,The LLM Correctly identified contradiction ('non watertight' vs 'waterproof').
 unexpected,ambiguity,ambiguity,yes,The LLM Correctly flagged generic 'Voltage' as missing rated/DC/input specifics.
 unexpected,omission,omission,yes,The LLM Correctly flagged missing 'ambient relative' and '25°C' condition.

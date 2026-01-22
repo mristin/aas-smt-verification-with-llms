@@ -1,0 +1,23 @@
+Expectation,Category,Case name,Correct,Remark
+expected,context words sense disambiguation,context_words_sense_disambiguation,yes,"The LLM suggested that the ide short should be more specific. However, the acceptance of the given id short depends on other ids in the env. The description actually narrows down the meaning in the id short, therefore it also possible to declare that the LLM was over-specific regarding the id short."
+expected,no ambiguity,no_ambiguity,yes,
+expected,no contradiction,no_contradiction,yes,The LLM suggested improvements considering the value type. 
+expected,no negation mismatch,no_negation_mismatch,yes,
+expected,no omission,no_omission,yes,"The LLM suggested an improvement to the id short based on the description (range vs single value). However, again However, the acceptance of this depends on other ids in the env."
+expected,no paraphrase synonymy,no_paraphrase_synonymy,yes,
+expected,no partial overlap,no_partial_overlap,no,The LLM failed to consider that fact that the description can be more specific compared to the id short. 
+expected,no terminology mismatch,no_terminology_mismatch,yes,The LLM suggested optional improvements.
+expected,no uncommon phrasing,no_uncommon_phrasing,yes,
+expected,semantic inversion,semantic_inversion,yes,
+expected,syntax,syntax,yes,
+unexpected,ambiguity,ambiguity,yes,
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,no,"The LLM fialed to recognize this, whereas it recognized earlier a smaller mismatch between the mechanical power and mechanical output power. "
+unexpected,contradiction,contradiction,yes,
+unexpected,negation mismatch,negation_mismatch,yes,
+unexpected,omission,omission,yes,
+unexpected,paraphrase synonymy,paraphrase_synonymy,yes,
+unexpected,partial overlap,partial_overlap,yes,
+unexpected,semantic inversion,semantic_inversion,yes,
+unexpected,syntax,syntax,yes,
+unexpected,terminology mismatch,terminology_mismatch,yes,
+unexpected,uncommon phrasing,uncommon_phrasing,yes,
