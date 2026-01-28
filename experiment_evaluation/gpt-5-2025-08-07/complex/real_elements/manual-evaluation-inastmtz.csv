@@ -1,0 +1,31 @@
+Category, Case name, experiment, Correct,Remark
+real-elements, data_model_for_asset_location_area_desciption, concept_description_to_description, yes, empty array
+real-elements, data_model_for_asset_location_area_desciption, concept_description_to_unit, yes, empty array
+real-elements, data_model_for_asset_location_area_desciption, concept_description_to_value_type, yes, empty array
+real-elements, data_model_for_asset_location_area_desciption, concept_description_to_display name,  yes, correct but redundant - should be empty array
+real-elements, data_model_for_asset_location_area_desciption, description_to_id_short, yes, correct
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, concept_description_to_description_1 yes, correct but wrong experiment (value type)
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, concept_description_to_description_2 yes, correct but wrong experiment (uni)
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, concept_description_to_unit, yes, empty array
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, concept_description_to_value_type, yes, Correct suggestion.
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, concept_description_to_display name,  yes, empty array
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, description_to_id_short_1, yes, correct but should be empty array
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, description_to_id_short_2, yes, correct but wrong experiment (value type)
+real-elements, inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt, description_to_id_short_3, yes, correct but wrong experiment (description)
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_description, yes, correct but wrong experiment (value type)
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_unit, yes, correct but wrong experiment (value type)
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_, yes, correct 
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_display_name, yes, correct but wordy and wrong experiment (description to display name)
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, description_to_id_short, yes, correct but wordy and additionally refers to the value type
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_description, yes, correct but wrong experiment (value type)
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_unit, yes, empty array
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_value_type, yes, correct
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_display_name, yes,good suggestion to be more specific
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_id_short_1, yes, good suggestion to be more specific
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_id_short_2, yes, correct but wrong experiment (value type)
+real-elements, technical_data_for_agv_vehicle_width, concept_description_to_description, yes, correct but wrong experiment (value type)
+real-elements, technical_data_for_agv_vehicle_width, concept_description_to_unit, yes,correct suggestion
+real-elements, technical_data_for_agv_vehicle_width, concept_description_to_value_type, yes, correct suggestion
+real-elements, technical_data_for_agv_vehicle_width, concept_description_to_display_name, yes, good suggestion to be more specific
+real-elements, technical_data_for_agv_vehicle_width, concept_description_to_id_short_1, yes, good suggestion for consistency
+real-elements, technical_data_for_agv_vehicle_width, concept_description_to_id_short_2, yes, correct suggestion

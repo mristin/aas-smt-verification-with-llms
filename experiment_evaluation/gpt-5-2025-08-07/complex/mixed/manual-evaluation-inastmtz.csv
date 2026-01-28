@@ -1,0 +1,60 @@
+Category, Case name, experiment, Correct,Remark
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_description_1, yes, The LLM suggests to adapt the description to fit the unit. This is correct, but not required in the experiment. 
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_description_2, yes, The LLM suggests reasonable alignments.
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_unit, yes, The LLM found the problem and suggested a correct solution.
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_value_type, yes, []
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_display_name, yes, Correct suggestion by the LLM.
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_id_short_1, yes, The LLM is more detailed.
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_id_short_2, yes, The LLM suggests to adapt the description to fit the unit. This is correct, but not required in the experiment. 
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_id_short_2, yes, The LLM suggests to adapt the description to fit the unit. This is correct, but not required in the experiment. 
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_1, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_2, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_3, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_4, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_4, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_1, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_2, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_3, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_4, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, concept_description_to_value_type, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_force, description_to_display_name, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_force, description_to_id_short_1, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, description_to_id_short_2, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, description_to_id_short_3, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, description_to_id_short_4, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_force, description_to_id_short_5, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_description_1, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_description_2, yes, Correct suggestion- different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, concept_description_to_unit_1, yes, Correct suggestion- different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, concept_description_to_unit_2, yes, Correct suggestion- different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, concept_description_to_unit_3, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, concept_description_to_unit_4, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, concep_description_to_value_type, yes, correct suggestion.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_display_name, yes, correct suggestion.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_id_short_1, yes, correctly identified, but did not provide an empty array as requested. 
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_id_short_2, yes,  Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_id_short_3, yes,  Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_id_short_4, yes,  Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_temperature, description_to_id_short_5, yes,  Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_description_1, yes,Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_description_2, yes, Correct suggestion - additionally takes the unit into account.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_description_3, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_unit, Correct suggestion.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_value_type, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_display_name, yes, Correct suggestion - but did not provide an empty array as requested. 
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_id_short_1,  yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_id_short_2, yes, Correct suggestion - different experiment.
+mixed, multiple_issues_in_one_element_operating_pressure, concept_description_to_id_short_3, yes, Correct suggestion - different experiment. Does not suggest a new idShort.
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_description_1, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_description_2, yes, Correct suggestion - different experiment (value type)
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_description_3, yes, Correct suggestion- different experiment (unit).
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_description_4, yes, Correct suggestion- different experiment (description_to_display_name).
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_unit, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_value_type, yes, Correct suggestion. Result only refers to the unit and does not consider other elements.
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_display_name, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_idShort_1, yes, Correct suggestion - but for adapting the description to the id short - not vice versa
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_idShort_2, yes, Correct suggestion.
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_idShort_3, yes, Correct suggestion - different experiment (value type)
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_idShort_4, yes, Correct suggestion- different experiment (unit)
+mixed, multiple_issues_in_one_element_waterproof_casing_length, concept_description_to_idShort_4, yes, Correct suggestion- different experiment (display name)
+
