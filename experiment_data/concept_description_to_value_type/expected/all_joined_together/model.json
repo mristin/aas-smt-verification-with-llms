@@ -1,7 +1,7 @@
 {
   "submodels": [
     {
-      "id": "https://example.org/some_submodel_9ac9f5ce",
+      "id": "urn:submodel_0_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -10,7 +10,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_11f48ebf"
+                "value": "urn:concept_description_0_0"
               }
             ]
           },
@@ -21,7 +21,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_3bb75207",
+      "id": "urn:submodel_1_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -30,7 +30,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_f51c2f2c"
+                "value": "urn:concept_description_1_0"
               }
             ]
           },
@@ -41,7 +41,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_2daeb7df",
+      "id": "urn:submodel_2_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -50,7 +50,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_53a24c1d"
+                "value": "urn:concept_description_2_0"
               }
             ]
           },
@@ -61,7 +61,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_efd3fd5a",
+      "id": "urn:submodel_3_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -70,7 +70,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_389c2a7b"
+                "value": "urn:concept_description_3_0"
               }
             ]
           },
@@ -81,7 +81,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_0620210a",
+      "id": "urn:submodel_4_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -90,7 +90,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_5de419fe"
+                "value": "urn:concept_description_4_0"
               }
             ]
           },
@@ -101,7 +101,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_f31ae107",
+      "id": "urn:submodel_5_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -110,7 +110,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_8848603b"
+                "value": "urn:concept_description_5_0"
               }
             ]
           },
@@ -121,7 +121,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_4862baf2",
+      "id": "urn:submodel_6_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -130,7 +130,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_c2984606"
+                "value": "urn:concept_description_6_0"
               }
             ]
           },
@@ -141,7 +141,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_815f1db9",
+      "id": "urn:submodel_7_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -150,7 +150,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_7f7db0e2"
+                "value": "urn:concept_description_7_0"
               }
             ]
           },
@@ -161,7 +161,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_7a2c10f2",
+      "id": "urn:submodel_8_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -170,7 +170,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_98d29bf3"
+                "value": "urn:concept_description_8_0"
               }
             ]
           },
@@ -181,7 +181,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_38aa352f",
+      "id": "urn:submodel_9_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -190,7 +190,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_99bfb9fe"
+                "value": "urn:concept_description_9_0"
               }
             ]
           },
@@ -201,7 +201,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_75108eea",
+      "id": "urn:submodel_10_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -210,7 +210,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_378b7a54"
+                "value": "urn:concept_description_10_0"
               }
             ]
           },
@@ -221,7 +221,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_d1e85e20",
+      "id": "urn:submodel_11_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -230,7 +230,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_16d2b44e"
+                "value": "urn:concept_description_11_0"
               }
             ]
           },
@@ -241,7 +241,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_ee7ba807",
+      "id": "urn:submodel_12_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -250,7 +250,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_489d6425"
+                "value": "urn:concept_description_12_0"
               }
             ]
           },
@@ -261,7 +261,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_ba5b2584",
+      "id": "urn:submodel_13_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -270,7 +270,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_479a33e8"
+                "value": "urn:concept_description_13_0"
               }
             ]
           },
@@ -281,7 +281,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_3c14a1f7",
+      "id": "urn:submodel_14_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -290,7 +290,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_6869bdb7"
+                "value": "urn:concept_description_14_0"
               }
             ]
           },
@@ -301,7 +301,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_0ad333d4",
+      "id": "urn:submodel_15_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -310,7 +310,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_aa68e65f"
+                "value": "urn:concept_description_15_0"
               }
             ]
           },
@@ -321,7 +321,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_2567b74e",
+      "id": "urn:submodel_16_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -330,7 +330,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_c01d29f1"
+                "value": "urn:concept_description_16_0"
               }
             ]
           },
@@ -341,7 +341,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_fa9ebea3",
+      "id": "urn:submodel_17_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -350,7 +350,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_61e879db"
+                "value": "urn:concept_description_17_0"
               }
             ]
           },
@@ -361,7 +361,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_e1ef9be7",
+      "id": "urn:submodel_18_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -370,7 +370,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_8e3715f4"
+                "value": "urn:concept_description_18_0"
               }
             ]
           },
@@ -381,7 +381,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_92d59899",
+      "id": "urn:submodel_19_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -390,7 +390,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_ebe9db0e"
+                "value": "urn:concept_description_19_0"
               }
             ]
           },
@@ -401,7 +401,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_d99be554",
+      "id": "urn:submodel_20_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -410,7 +410,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_10aea8e4"
+                "value": "urn:concept_description_20_0"
               }
             ]
           },
@@ -421,7 +421,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_024eb732",
+      "id": "urn:submodel_21_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -430,7 +430,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_e80af9f6"
+                "value": "urn:concept_description_21_0"
               }
             ]
           },
@@ -441,7 +441,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_46aed7b6",
+      "id": "urn:submodel_22_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -450,7 +450,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_6f6d5127"
+                "value": "urn:concept_description_22_0"
               }
             ]
           },
@@ -461,7 +461,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_b2bc5fce",
+      "id": "urn:submodel_23_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -470,7 +470,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_fb33c6c2"
+                "value": "urn:concept_description_23_0"
               }
             ]
           },
@@ -481,7 +481,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_bac43590",
+      "id": "urn:submodel_24_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -490,7 +490,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_e1e38a4d"
+                "value": "urn:concept_description_24_0"
               }
             ]
           },
@@ -501,7 +501,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_bfe041aa",
+      "id": "urn:submodel_25_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -510,7 +510,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_8e5fde13"
+                "value": "urn:concept_description_25_0"
               }
             ]
           },
@@ -521,7 +521,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_8dc10522",
+      "id": "urn:submodel_26_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -530,7 +530,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_8ad3d908"
+                "value": "urn:concept_description_26_0"
               }
             ]
           },
@@ -541,7 +541,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_00a54857",
+      "id": "urn:submodel_27_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -550,7 +550,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_4284db87"
+                "value": "urn:concept_description_27_0"
               }
             ]
           },
@@ -561,7 +561,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_b56647a7",
+      "id": "urn:submodel_28_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -570,7 +570,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_d65abc11"
+                "value": "urn:concept_description_28_0"
               }
             ]
           },
@@ -581,7 +581,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_1b5ef14f",
+      "id": "urn:submodel_29_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -590,7 +590,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_ed4a913a"
+                "value": "urn:concept_description_29_0"
               }
             ]
           },
@@ -609,7 +609,7 @@
           "text": "Reference URL to technical documentation"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_11f48ebf",
+      "id": "urn:concept_description_0_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -619,7 +619,7 @@
           "text": "Cryptographic certificate in base64 format"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_f51c2f2c",
+      "id": "urn:concept_description_1_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -629,7 +629,7 @@
           "text": "Machine is operational status indicator"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_53a24c1d",
+      "id": "urn:concept_description_2_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -639,7 +639,7 @@
           "text": "Error code value between -128 and 127"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_389c2a7b",
+      "id": "urn:concept_description_3_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -649,7 +649,7 @@
           "text": "Manufacturing date of the component"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_5de419fe",
+      "id": "urn:concept_description_4_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -659,7 +659,7 @@
           "text": "Last maintenance timestamp"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_8848603b",
+      "id": "urn:concept_description_5_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -669,7 +669,7 @@
           "text": "High-precision financial value with arbitrary decimal places"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_c2984606",
+      "id": "urn:concept_description_6_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -679,7 +679,7 @@
           "text": "Precision measurement of pressure in Pascal"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_7f7db0e2",
+      "id": "urn:concept_description_7_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -689,7 +689,7 @@
           "text": "Service interval duration"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_98d29bf3",
+      "id": "urn:concept_description_8_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -699,7 +699,7 @@
           "text": "Temperature measurement in degrees Celsius"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_99bfb9fe",
+      "id": "urn:concept_description_9_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -709,7 +709,7 @@
           "text": "Day of month for scheduled maintenance"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_378b7a54",
+      "id": "urn:concept_description_10_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -719,7 +719,7 @@
           "text": "Monthly inspection day"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_16d2b44e",
+      "id": "urn:concept_description_11_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -729,7 +729,7 @@
           "text": "Month of annual inspection"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_489d6425",
+      "id": "urn:concept_description_12_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -739,7 +739,7 @@
           "text": "Year of initial commissioning"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_479a33e8",
+      "id": "urn:concept_description_13_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -749,7 +749,7 @@
           "text": "Month and year of warranty expiration"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_6869bdb7",
+      "id": "urn:concept_description_14_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -759,7 +759,7 @@
           "text": "Device fingerprint as hexadecimal data"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_aa68e65f",
+      "id": "urn:concept_description_15_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -769,7 +769,7 @@
           "text": "Temperature reading in degrees Celsius"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_c01d29f1",
+      "id": "urn:concept_description_16_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -779,7 +779,7 @@
           "text": "Extremely large number of molecules in sample relative to expected value; the number can be negative."
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_61e879db",
+      "id": "urn:concept_description_17_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -789,7 +789,7 @@
           "text": "Nanoseconds since epoch timestamp"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_8e3715f4",
+      "id": "urn:concept_description_18_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -799,7 +799,7 @@
           "text": "Count down in milliseconds, always negative"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_ebe9db0e",
+      "id": "urn:concept_description_19_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -809,7 +809,7 @@
           "text": "Remaining service life in years"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_10aea8e4",
+      "id": "urn:concept_description_20_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -819,7 +819,7 @@
           "text": "Altitude below sea level"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_e80af9f6",
+      "id": "urn:concept_description_21_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -829,7 +829,7 @@
           "text": "Age of equipment in years, starting from one"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_6f6d5127",
+      "id": "urn:concept_description_22_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -839,7 +839,7 @@
           "text": "Component count in assembly; if there are too many defects, the number can be negative. There are not more than 1000 components."
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_fb33c6c2",
+      "id": "urn:concept_description_23_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -849,7 +849,7 @@
           "text": "Name of the product"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_e1e38a4d",
+      "id": "urn:concept_description_24_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -859,7 +859,7 @@
           "text": "Daily operation start time"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_8e5fde13",
+      "id": "urn:concept_description_25_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -869,7 +869,7 @@
           "text": "Status register byte"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_8ad3d908",
+      "id": "urn:concept_description_26_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -879,7 +879,7 @@
           "text": "Revision number of firmware"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_4284db87",
+      "id": "urn:concept_description_27_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -889,7 +889,7 @@
           "text": "Duration in milliseconds"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_d65abc11",
+      "id": "urn:concept_description_28_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -899,7 +899,7 @@
           "text": "Protocol version number"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_ed4a913a",
+      "id": "urn:concept_description_29_0",
       "modelType": "ConceptDescription"
     }
   ]

@@ -42,94 +42,172 @@ The property 'suggestion' should only indicate the more appropriate XSD data typ
 Here is the data to be analyzed:
 # Elements
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:exampl.com:someConceptDescription_c8d9a5a1'
+Property at path 'urn:submodel_0_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_0_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:exampl.com:someConceptDescription_11db621e'
+Property at path 'urn:submodel_1_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_1_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:decimal and with concept description 'urn:exampl.com:someConceptDescription_bfa7e198'
+Property at path 'urn:submodel_2_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_2_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_5e5132aa'
+Property at path 'urn:submodel_3_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_3_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:float and with concept description 'urn:exampl.com:someConceptDescription_0058a4c4'
+Property at path 'urn:submodel_4_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_4_0'
+
+Property at path 'urn:submodel_5_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_5_0'
+
+Property at path 'urn:submodel_6_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_6_0'
+
+Property at path 'urn:submodel_7_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_7_0'
+
+Property at path 'urn:submodel_8_0.some_id_short' with ID-short 'some_id_short' with value type xs:long and with concept description 'urn:concept_description_8_0'
+
+Property at path 'urn:submodel_9_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_9_0'
+
+Property at path 'urn:submodel_10_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_10_0'
+
+Property at path 'urn:submodel_11_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_11_0'
+
+Property at path 'urn:submodel_12_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_12_0'
+
+Property at path 'urn:submodel_13_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_13_0'
+
+Property at path 'urn:submodel_14_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_14_0'
+
+Property at path 'urn:submodel_15_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_15_0'
+
+Property at path 'urn:submodel_16_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_16_0'
+
+Property at path 'urn:submodel_17_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_17_0'
+
+Property at path 'urn:submodel_18_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_18_0'
+
+Property at path 'urn:submodel_19_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_19_0'
+
+Property at path 'urn:submodel_20_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_20_0'
+
+Property at path 'urn:submodel_21_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_21_0'
+
+Property at path 'urn:submodel_22_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_22_0'
+
+Property at path 'urn:submodel_23_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_23_0'
+
+Property at path 'urn:submodel_24_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_24_0'
+
+Property at path 'urn:submodel_25_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_25_0'
+
+Property at path 'urn:submodel_26_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_26_0'
+
+Property at path 'urn:submodel_27_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_27_0'
+
+Property at path 'urn:submodel_28_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_28_0'
+
+Property at path 'urn:submodel_29_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_29_0'
+
+Property at path 'urn:submodel_30_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_30_0'
+
+Property at path 'urn:submodel_31_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_31_0'
+
+Property at path 'urn:submodel_32_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_32_0'
+
+Property at path 'urn:submodel_33_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_33_0'
+
+Property at path 'urn:submodel_34_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_34_0'
+
+Property at path 'urn:submodel_35_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_35_0'
+
+Property at path 'urn:submodel_36_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_36_0'
+
+Property at path 'urn:submodel_37_0.some_id_short' with ID-short 'some_id_short' with value type xs:string and with concept description 'urn:concept_description_37_0'
+
+Property at path 'urn:submodel_38_0.some_id_short' with ID-short 'some_id_short' with value type xs:decimal and with concept description 'urn:concept_description_38_0'
+
+Property at path 'urn:submodel_39_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_39_0'
+
+Property at path 'urn:submodel_40_0.some_id_short' with ID-short 'some_id_short' with value type xs:float and with concept description 'urn:concept_description_40_0'
+
+Property at path 'urn:submodel_41_0.some_id_short' with ID-short 'some_id_short' with value type xs:float and with concept description 'urn:concept_description_41_0'
 
 # Concept descriptions
 
-Concept description 'urn:exampl.com:someConceptDescription_c8d9a5a1' means: 'Documentation reference URL'
+Concept description 'urn:concept_description_0_0' means: 'Documentation reference URL'
 
-Concept description 'urn:exampl.com:someConceptDescription_f51c2f2c' means: 'Cryptographic certificate in base64 format'
+Concept description 'urn:concept_description_1_0' means: 'Cryptographic certificate in base64 format'
 
-Concept description 'urn:exampl.com:someConceptDescription_138be5ad' means: 'System operational status indicator'
+Concept description 'urn:concept_description_2_0' means: 'System operational status indicator'
 
-Concept description 'urn:exampl.com:someConceptDescription_05138bdb' means: 'Manufacturing date of component'
+Concept description 'urn:concept_description_3_0' means: 'Manufacturing date of component'
 
-Concept description 'urn:exampl.com:someConceptDescription_8848603b' means: 'Last maintenance timestamp'
+Concept description 'urn:concept_description_4_0' means: 'Last maintenance timestamp'
 
-Concept description 'urn:exampl.com:someConceptDescription_98d29bf3' means: 'Service interval duration'
+Concept description 'urn:concept_description_5_0' means: 'Service interval duration'
 
-Concept description 'urn:exampl.com:someConceptDescription_aa68e65f' means: 'Device fingerprint as hexadecimal data'
+Concept description 'urn:concept_description_6_0' means: 'Device fingerprint as hexadecimal data'
 
-Concept description 'urn:exampl.com:someConceptDescription_425d4f48' means: 'Product name'
+Concept description 'urn:concept_description_7_0' means: 'Product name'
 
-Concept description 'urn:exampl.com:someConceptDescription_68943b54' means: 'Maintenance start time of day'
+Concept description 'urn:concept_description_8_0' means: 'Maintenance start time of day'
 
-Concept description 'urn:exampl.com:someConceptDescription_11db621e' means: 'Error code between -128 and 127'
+Concept description 'urn:concept_description_9_0' means: 'Error code between -128 and 127'
 
-Concept description 'urn:exampl.com:someConceptDescription_0aa5dc68' means: 'Financial amount with decimal precision'
+Concept description 'urn:concept_description_10_0' means: 'Financial amount with decimal precision'
 
-Concept description 'urn:exampl.com:someConceptDescription_85503145' means: 'Precision pressure measurement in Pascal'
+Concept description 'urn:concept_description_11_0' means: 'Precision pressure measurement in Pascal'
 
-Concept description 'urn:exampl.com:someConceptDescription_0bf91063' means: 'Temperature reading in Celsius'
+Concept description 'urn:concept_description_12_0' means: 'Temperature reading in Celsius'
 
-Concept description 'urn:exampl.com:someConceptDescription_4be0374c' means: 'Temperature measurement in degrees Celcius'
+Concept description 'urn:concept_description_13_0' means: 'Temperature measurement in degrees Celcius'
 
-Concept description 'urn:exampl.com:someConceptDescription_914cb907' means: 'Large molecular count value'
+Concept description 'urn:concept_description_14_0' means: 'Large molecular count value'
 
-Concept description 'urn:exampl.com:someConceptDescription_a0d04aa4' means: 'Timestamp in nanoseconds'
+Concept description 'urn:concept_description_15_0' means: 'Timestamp in nanoseconds'
 
-Concept description 'urn:exampl.com:someConceptDescription_7f3f7661' means: 'Temperature drop below reference'
+Concept description 'urn:concept_description_16_0' means: 'Temperature drop below reference'
 
-Concept description 'urn:exampl.com:someConceptDescription_088dece1' means: 'Service life remaining in years'
+Concept description 'urn:concept_description_17_0' means: 'Service life remaining in years'
 
-Concept description 'urn:exampl.com:someConceptDescription_8cb1f52c' means: 'Depth below sea level measurement'
+Concept description 'urn:concept_description_18_0' means: 'Depth below sea level measurement'
 
-Concept description 'urn:exampl.com:someConceptDescription_a65e9790' means: 'Equipment age in years from one'
+Concept description 'urn:concept_description_19_0' means: 'Equipment age in years from one'
 
-Concept description 'urn:exampl.com:someConceptDescription_1e9982d5' means: 'Component count in batch'
+Concept description 'urn:concept_description_20_0' means: 'Component count in batch'
 
-Concept description 'urn:exampl.com:someConceptDescription_1aaea4a2' means: 'Status register byte value'
+Concept description 'urn:concept_description_21_0' means: 'Status register byte value'
 
-Concept description 'urn:exampl.com:someConceptDescription_1313336d' means: 'Firmware revision number'
+Concept description 'urn:concept_description_22_0' means: 'Firmware revision number'
 
-Concept description 'urn:exampl.com:someConceptDescription_50f8ab86' means: 'Duration measurement in milliseconds'
+Concept description 'urn:concept_description_23_0' means: 'Duration measurement in milliseconds'
 
-Concept description 'urn:exampl.com:someConceptDescription_34e950d0' means: 'Protocol version identifier'
+Concept description 'urn:concept_description_24_0' means: 'Protocol version identifier'
 
-Concept description 'urn:exampl.com:someConceptDescription_8a5e1bfe' means: 'Technical documentation URL'
+Concept description 'urn:concept_description_25_0' means: 'Technical documentation URL'
 
-Concept description 'urn:exampl.com:someConceptDescription_1ad64576' means: 'Base64 encoded certificate'
+Concept description 'urn:concept_description_26_0' means: 'Base64 encoded certificate'
 
-Concept description 'urn:exampl.com:someConceptDescription_53a24c1d' means: 'Machine is operational status indicator'
+Concept description 'urn:concept_description_27_0' means: 'Machine is operational status indicator'
 
-Concept description 'urn:exampl.com:someConceptDescription_ae7ffc1d' means: 'Component manufacturing date'
+Concept description 'urn:concept_description_28_0' means: 'Component manufacturing date'
 
-Concept description 'urn:exampl.com:someConceptDescription_0b30a136' means: 'Day of month for maintenance'
+Concept description 'urn:concept_description_29_0' means: 'Last maintenance timestamp'
 
-Concept description 'urn:exampl.com:someConceptDescription_489d6425' means: 'Month of annual inspection'
+Concept description 'urn:concept_description_30_0' means: 'Service interval duration'
 
-Concept description 'urn:exampl.com:someConceptDescription_16d2b44e' means: 'Monthly inspection day'
+Concept description 'urn:concept_description_31_0' means: 'Day of month for maintenance'
 
-Concept description 'urn:exampl.com:someConceptDescription_0237792c' means: 'Year of commissioning'
+Concept description 'urn:concept_description_32_0' means: 'Month of annual inspection'
 
-Concept description 'urn:exampl.com:someConceptDescription_5b5f9682' means: 'Quarter and year of warranty expiration'
+Concept description 'urn:concept_description_33_0' means: 'Monthly inspection day'
 
-Concept description 'urn:exampl.com:someConceptDescription_f13e27f1' means: 'Hexadecimal device fingerprint'
+Concept description 'urn:concept_description_34_0' means: 'Year of commissioning'
 
-Concept description 'urn:exampl.com:someConceptDescription_8e5fde13' means: 'Daily operation start time'
+Concept description 'urn:concept_description_35_0' means: 'Quarter and year of warranty expiration'
 
-Concept description 'urn:exampl.com:someConceptDescription_bfa7e198' means: 'High-frequency temperature sensor measurement'
+Concept description 'urn:concept_description_36_0' means: 'Hexadecimal device fingerprint'
 
-Concept description 'urn:exampl.com:someConceptDescription_5e5132aa' means: 'High-precision financial transaction amount with arbitrary decimal places'
+Concept description 'urn:concept_description_37_0' means: 'Daily operation start time'
 
-Concept description 'urn:exampl.com:someConceptDescription_0058a4c4' means: 'Precise monetary value for accounting with exact decimal representation'
+Concept description 'urn:concept_description_38_0' means: 'High-frequency temperature sensor measurement'
 
-Concept description 'urn:exampl.com:someConceptDescription_015bbbba' means: 'High-precision scientific measurement requiring double precision'
+Concept description 'urn:concept_description_39_0' means: 'High-precision financial transaction amount with arbitrary decimal places'
+
+Concept description 'urn:concept_description_40_0' means: 'Precise monetary value for accounting with exact decimal representation'
+
+Concept description 'urn:concept_description_41_0' means: 'High-precision scientific measurement requiring double precision'

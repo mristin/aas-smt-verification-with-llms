@@ -41,24 +41,24 @@ Output any possible semantic improvement following the JSON schema:
 Here is the data to be analyzed:
 # Elements
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Power' with display name 'Rated power' with value type xs:double
+Property at path 'urn:submodel_0_0.some_id_short' with ID-short 'some_id_short' with description 'Power' with display name 'Rated power' with value type xs:double
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Mechanical Power' with display name 'Power' with value type xs:double
+Property at path 'urn:submodel_1_0.some_id_short' with ID-short 'some_id_short' with description 'Mechanical Power' with display name 'Power' with value type xs:double
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Suitable for indoor use' with display name 'For outdoor environments' with value type xs:boolean
+Property at path 'urn:submodel_2_0.some_id_short' with ID-short 'some_id_short' with description 'Suitable for indoor use' with display name 'For outdoor environments' with value type xs:boolean
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Do not operate in wet conditions' with display name 'Suitable for wet environments' with value type xs:boolean
+Property at path 'urn:submodel_3_0.some_id_short' with ID-short 'some_id_short' with description 'Do not operate in wet conditions' with display name 'Suitable for wet environments' with value type xs:boolean
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Operating temperature' with display name 'Temperature' with value type xs:double
+Property at path 'urn:submodel_4_0.some_id_short' with ID-short 'some_id_short' with description 'Operating temperature' with display name 'Temperature' with value type xs:double
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Start time' with display name 'End time' with value type xs:dateTime
+Property at path 'urn:submodel_5_0.some_id_short' with ID-short 'some_id_short' with description 'Start time' with display name 'End time' with value type xs:dateTime
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Surface coating (steel alloy)' with display name 'Material' with value type xs:string
+Property at path 'urn:submodel_6_0.some_id_short' with ID-short 'some_id_short' with description 'Surface coating (steel alloy)' with display name 'Material' with value type xs:string
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Permitted voltage' with display name 'Maximum voltage' with value type xs:double
+Property at path 'urn:submodel_7_0.some_id_short' with ID-short 'some_id_short' with description 'Permitted voltage' with display name 'Maximum voltage' with value type xs:double
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Nominalshaftspeed' with display name 'Nominal shaft speed' with value type xs:double
+Property at path 'urn:submodel_8_0.some_id_short' with ID-short 'some_id_short' with description 'Nominalshaftspeed' with display name 'Nominal shaft speed' with value type xs:double
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Shaft diameter' with display name 'Axle length' with value type xs:double
+Property at path 'urn:submodel_9_0.some_id_short' with ID-short 'some_id_short' with description 'Shaft diameter' with display name 'Axle length' with value type xs:double
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Weight heavy' with display name 'Heaviness' with value type xs:double
+Property at path 'urn:submodel_10_0.some_id_short' with ID-short 'some_id_short' with description 'Weight heavy' with display name 'Heaviness' with value type xs:double

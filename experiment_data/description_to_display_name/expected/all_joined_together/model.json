@@ -1,7 +1,7 @@
 {
   "submodels": [
     {
-      "id": "https://example.org/some_submodel_a175cc6e",
+      "id": "urn:submodel_0_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -24,7 +24,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_bf025f72",
+      "id": "urn:submodel_1_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -47,7 +47,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_faba31d7",
+      "id": "urn:submodel_2_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -70,7 +70,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_df552712",
+      "id": "urn:submodel_3_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -93,7 +93,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_52ee4cec",
+      "id": "urn:submodel_4_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -116,7 +116,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_80e7aeb5",
+      "id": "urn:submodel_5_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -139,7 +139,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_98402a4b",
+      "id": "urn:submodel_6_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -162,7 +162,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_02fdacdc",
+      "id": "urn:submodel_7_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -185,7 +185,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_da5a7d7e",
+      "id": "urn:submodel_8_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -208,7 +208,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_785d87ed",
+      "id": "urn:submodel_9_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -231,7 +231,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_03fb453a",
+      "id": "urn:submodel_10_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",

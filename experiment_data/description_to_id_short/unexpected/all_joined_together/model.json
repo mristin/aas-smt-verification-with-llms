@@ -1,7 +1,7 @@
 {
   "submodels": [
     {
-      "id": "https://example.org/some_submodel_fe9f6590",
+      "id": "urn:submodel_0_0",
       "submodelElements": [
         {
           "idShort": "rated_power",
@@ -18,7 +18,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_83e51ea5",
+      "id": "urn:submodel_1_0",
       "submodelElements": [
         {
           "idShort": "power",
@@ -35,7 +35,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_fb6afba6",
+      "id": "urn:submodel_2_0",
       "submodelElements": [
         {
           "idShort": "for_outdoor_environments",
@@ -52,7 +52,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_b502b484",
+      "id": "urn:submodel_3_0",
       "submodelElements": [
         {
           "idShort": "suitable_for_wet_environments",
@@ -69,7 +69,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_48bd2a38",
+      "id": "urn:submodel_4_0",
       "submodelElements": [
         {
           "idShort": "temperature",
@@ -86,7 +86,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_86c35ce8",
+      "id": "urn:submodel_5_0",
       "submodelElements": [
         {
           "idShort": "end_time",
@@ -103,7 +103,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_9d50d774",
+      "id": "urn:submodel_6_0",
       "submodelElements": [
         {
           "idShort": "material",
@@ -120,7 +120,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_f50ae1ef",
+      "id": "urn:submodel_7_0",
       "submodelElements": [
         {
           "idShort": "maximum_voltage",
@@ -137,7 +137,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_d6ae67bb",
+      "id": "urn:submodel_8_0",
       "submodelElements": [
         {
           "idShort": "nominal_shaft_speed",
@@ -154,7 +154,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_e3dd8f40",
+      "id": "urn:submodel_9_0",
       "submodelElements": [
         {
           "idShort": "axle_length",
@@ -171,7 +171,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_7901ec38",
+      "id": "urn:submodel_10_0",
       "submodelElements": [
         {
           "idShort": "heaviness",

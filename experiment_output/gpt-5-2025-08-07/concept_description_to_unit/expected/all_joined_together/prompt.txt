@@ -38,40 +38,72 @@ Output any possible semantic improvement following the JSON schema:
 Here is the data to be analyzed:
 # Elements
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_b4f3f6f1'
+Property at path 'urn:submodel_0_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_0_0'
+
+Property at path 'urn:submodel_1_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_1_0'
+
+Property at path 'urn:submodel_2_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_2_0'
+
+Property at path 'urn:submodel_3_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_3_0'
+
+Property at path 'urn:submodel_4_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_4_0'
+
+Property at path 'urn:submodel_5_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_5_0'
+
+Property at path 'urn:submodel_6_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_6_0'
+
+Property at path 'urn:submodel_7_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_7_0'
+
+Property at path 'urn:submodel_8_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_8_0'
+
+Property at path 'urn:submodel_9_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_9_0'
+
+Property at path 'urn:submodel_10_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_10_0'
+
+Property at path 'urn:submodel_11_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_11_0'
+
+Property at path 'urn:submodel_12_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_12_0'
+
+Property at path 'urn:submodel_13_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_13_0'
+
+Property at path 'urn:submodel_14_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_14_0'
+
+Property at path 'urn:submodel_15_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_15_0'
+
+Property at path 'urn:submodel_16_0.some_id_short' with ID-short 'some_id_short' with value type xs:double and with concept description 'urn:concept_description_16_0'
 
 # Concept descriptions
 
-Concept description 'urn:exampl.com:someConceptDescription_b4f3f6f1' with unit Wh with definition 'Energy consumption during operation'
+Concept description 'urn:concept_description_0_0' with unit Wh with definition 'Energy consumption during operation'
 
-Concept description 'urn:exampl.com:someConceptDescription_1a501102' with unit lbf with definition 'Applied force on the mechanical component'
+Concept description 'urn:concept_description_1_0' with unit lbf with definition 'Applied force on the mechanical component'
 
-Concept description 'urn:exampl.com:someConceptDescription_f0fc7c83' with unit hp with definition 'Electrical power consumption'
+Concept description 'urn:concept_description_2_0' with unit hp with definition 'Electrical power consumption'
 
-Concept description 'urn:exampl.com:someConceptDescription_303882bd' with unit psi with definition 'System operating pressure'
+Concept description 'urn:concept_description_3_0' with unit psi with definition 'System operating pressure'
 
-Concept description 'urn:exampl.com:someConceptDescription_8eb22457' with unit kJ with definition 'Energy consumption during operation'
+Concept description 'urn:concept_description_4_0' with unit kJ with definition 'Energy consumption during operation'
 
-Concept description 'urn:exampl.com:someConceptDescription_af9133b8' with unit mJ with definition 'Energy consumption during operation'
+Concept description 'urn:concept_description_5_0' with unit mJ with definition 'Energy consumption during operation'
 
-Concept description 'urn:exampl.com:someConceptDescription_bb7eea5b' with unit kN with definition 'Applied force on the mechanical component'
+Concept description 'urn:concept_description_6_0' with unit kN with definition 'Applied force on the mechanical component'
 
-Concept description 'urn:exampl.com:someConceptDescription_0940e364' with unit mN with definition 'Applied force on the mechanical component'
+Concept description 'urn:concept_description_7_0' with unit mN with definition 'Applied force on the mechanical component'
 
-Concept description 'urn:exampl.com:someConceptDescription_72c59594' with unit kW with definition 'Electrical power consumption'
+Concept description 'urn:concept_description_8_0' with unit kW with definition 'Electrical power consumption'
 
-Concept description 'urn:exampl.com:someConceptDescription_19aafcda' with unit mW with definition 'Electrical power consumption'
+Concept description 'urn:concept_description_9_0' with unit mW with definition 'Electrical power consumption'
 
-Concept description 'urn:exampl.com:someConceptDescription_5c4f3c37' with unit kPa with definition 'System operating pressure'
+Concept description 'urn:concept_description_10_0' with unit kPa with definition 'System operating pressure'
 
-Concept description 'urn:exampl.com:someConceptDescription_278ffd69' with unit °F with definition 'Operating temperature of the motor'
+Concept description 'urn:concept_description_11_0' with unit °F with definition 'Operating temperature of the motor'
 
-Concept description 'urn:exampl.com:someConceptDescription_5f4a8ecc' with unit J with definition 'Energy consumption during operation'
+Concept description 'urn:concept_description_12_0' with unit J with definition 'Energy consumption during operation'
 
-Concept description 'urn:exampl.com:someConceptDescription_7e3415cf' with unit N with definition 'Applied force on the mechanical component'
+Concept description 'urn:concept_description_13_0' with unit N with definition 'Applied force on the mechanical component'
 
-Concept description 'urn:exampl.com:someConceptDescription_60a70d65' with unit W with definition 'Electrical power consumption'
+Concept description 'urn:concept_description_14_0' with unit W with definition 'Electrical power consumption'
 
-Concept description 'urn:exampl.com:someConceptDescription_4faa2d58' with unit Pa with definition 'System operating pressure'
+Concept description 'urn:concept_description_15_0' with unit Pa with definition 'System operating pressure'
 
-Concept description 'urn:exampl.com:someConceptDescription_64d9779b' with unit °C with definition 'Operating temperature of the motor'
+Concept description 'urn:concept_description_16_0' with unit °C with definition 'Operating temperature of the motor'

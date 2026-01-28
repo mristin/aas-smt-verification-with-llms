@@ -1,7 +1,7 @@
 {
   "submodels": [
     {
-      "id": "https://example.org/some_submodel_2c10b104",
+      "id": "urn:submodel_0_0",
       "submodelElements": [
         {
           "idShort": "mechanical_power",
@@ -18,7 +18,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_253a2c9a",
+      "id": "urn:submodel_1_0",
       "submodelElements": [
         {
           "idShort": "power_consumption",
@@ -35,7 +35,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_7cfbde1d",
+      "id": "urn:submodel_2_0",
       "submodelElements": [
         {
           "idShort": "for_indoor_environments",
@@ -52,7 +52,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_7956ce59",
+      "id": "urn:submodel_3_0",
       "submodelElements": [
         {
           "idShort": "compatible_with_wet_environments",
@@ -69,7 +69,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_fc633a64",
+      "id": "urn:submodel_4_0",
       "submodelElements": [
         {
           "idShort": "operating_temperature",
@@ -86,7 +86,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_92f73a4f",
+      "id": "urn:submodel_5_0",
       "submodelElements": [
         {
           "idShort": "beginning_time",
@@ -103,7 +103,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_48a9ead4",
+      "id": "urn:submodel_6_0",
       "submodelElements": [
         {
           "idShort": "material",
@@ -120,7 +120,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_b55a9be3",
+      "id": "urn:submodel_7_0",
       "submodelElements": [
         {
           "idShort": "shaft_diameter",
@@ -137,7 +137,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_d1d305b3",
+      "id": "urn:submodel_8_0",
       "submodelElements": [
         {
           "idShort": "weight",
@@ -154,7 +154,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_93b6daf0",
+      "id": "urn:submodel_9_0",
       "submodelElements": [
         {
           "idShort": "allowed_voltage",
@@ -171,7 +171,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_cfd0da85",
+      "id": "urn:submodel_10_0",
       "submodelElements": [
         {
           "idShort": "nominal_shaft_speed",

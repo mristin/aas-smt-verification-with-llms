@@ -98,6 +98,7 @@ def _over_elements(
             if isinstance(element, _CollectionAsTuple):
                 yield from _over_elements(collection=element, prefix=path)
     else:
+        # noinspection PyTypeChecker
         assert_never(collection)
 
 
@@ -106,7 +107,7 @@ def over_elements(
 ) -> Iterator[Tuple[aas_types.SubmodelElement, Path]]:
     """Iterate over all the submodel elements contained in the environment."""
     for submodel in environment.over_submodels_or_empty():
-        prefix = Path(fragments=[])
+        prefix = Path(fragments=[submodel.id])
 
         yield from _over_elements(collection=submodel, prefix=prefix)
 
@@ -134,6 +135,7 @@ def reference_as_text(reference: aas_types.Reference) -> str:
         )
 
     else:
+        # noinspection PyTypeChecker
         assert_never(reference.type)
 
 

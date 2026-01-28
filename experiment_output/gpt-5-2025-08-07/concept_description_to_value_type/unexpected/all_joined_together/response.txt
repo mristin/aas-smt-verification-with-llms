@@ -1,27 +1,202 @@
 [
   {
-    "path": "some_id_short",
-    "explanation": "Concept is a documentation reference URL, but value type is xs:long (integer). URLs should use a URI type.",
+    "path": "urn:submodel_0_0.some_id_short",
+    "explanation": "Concept is a documentation reference URL, not a numeric value.",
     "suggestion": "xs:anyURI"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Concept is an error code constrained to -128..127, but value type is xs:string. The range matches a signed byte.",
+    "path": "urn:submodel_1_0.some_id_short",
+    "explanation": "Concept is a cryptographic certificate in base64 format, not an integer.",
+    "suggestion": "xs:base64Binary"
+  },
+  {
+    "path": "urn:submodel_2_0.some_id_short",
+    "explanation": "Concept is an operational status indicator (true/false), not an integer.",
+    "suggestion": "xs:boolean"
+  },
+  {
+    "path": "urn:submodel_3_0.some_id_short",
+    "explanation": "Concept is a manufacturing date, not an integer.",
+    "suggestion": "xs:date"
+  },
+  {
+    "path": "urn:submodel_4_0.some_id_short",
+    "explanation": "Concept is a timestamp (date and time), not an integer.",
+    "suggestion": "xs:dateTime"
+  },
+  {
+    "path": "urn:submodel_5_0.some_id_short",
+    "explanation": "Concept is a service interval duration, not an integer.",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "urn:submodel_6_0.some_id_short",
+    "explanation": "Concept is a hexadecimal device fingerprint, not an integer.",
+    "suggestion": "xs:hexBinary"
+  },
+  {
+    "path": "urn:submodel_7_0.some_id_short",
+    "explanation": "Concept is a product name (text), not an integer.",
+    "suggestion": "xs:string"
+  },
+  {
+    "path": "urn:submodel_8_0.some_id_short",
+    "explanation": "Concept is a time of day, not an integer.",
+    "suggestion": "xs:time"
+  },
+  {
+    "path": "urn:submodel_9_0.some_id_short",
+    "explanation": "Concept is an error code between -128 and 127, which fits a signed byte, not a string.",
     "suggestion": "xs:byte"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Concept is a high-frequency temperature sensor measurement, but value type is xs:decimal. Sensor data should use floating-point with sufficient precision.",
+    "path": "urn:submodel_10_0.some_id_short",
+    "explanation": "Concept is a financial amount requiring exact decimal precision, not a string.",
+    "suggestion": "xs:decimal"
+  },
+  {
+    "path": "urn:submodel_11_0.some_id_short",
+    "explanation": "Concept is a precise pressure measurement (sensor data), not a string.",
     "suggestion": "xs:double"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Concept is a high-precision financial transaction amount, but value type is xs:double. Financial amounts require exact decimal representation.",
+    "path": "urn:submodel_12_0.some_id_short",
+    "explanation": "Concept is a temperature reading (sensor data), not a string.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:submodel_13_0.some_id_short",
+    "explanation": "Concept is a temperature measurement (sensor data), not a string.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:submodel_14_0.some_id_short",
+    "explanation": "Concept is a large molecular count value (non-negative integer), not a string.",
+    "suggestion": "xs:nonNegativeInteger"
+  },
+  {
+    "path": "urn:submodel_15_0.some_id_short",
+    "explanation": "Concept is a timestamp (instant in time) with nanosecond precision, not a string.",
+    "suggestion": "xs:dateTime"
+  },
+  {
+    "path": "urn:submodel_16_0.some_id_short",
+    "explanation": "Concept is a temperature difference (may be negative, sensor data), not a string.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:submodel_17_0.some_id_short",
+    "explanation": "Concept is remaining service life (a duration), not a string.",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "urn:submodel_18_0.some_id_short",
+    "explanation": "Concept is a depth measurement (sensor data), not a string.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:submodel_19_0.some_id_short",
+    "explanation": "Concept is equipment age in years starting from one (positive integer), not a string.",
+    "suggestion": "xs:positiveInteger"
+  },
+  {
+    "path": "urn:submodel_20_0.some_id_short",
+    "explanation": "Concept is a component count (non-negative integer), not a string.",
+    "suggestion": "xs:nonNegativeInteger"
+  },
+  {
+    "path": "urn:submodel_21_0.some_id_short",
+    "explanation": "Concept is a status register byte (0–255), not a string.",
+    "suggestion": "xs:unsignedByte"
+  },
+  {
+    "path": "urn:submodel_23_0.some_id_short",
+    "explanation": "Concept is a duration in milliseconds, not a string.",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "urn:submodel_25_0.some_id_short",
+    "explanation": "Concept is a technical documentation URL, not a plain string.",
+    "suggestion": "xs:anyURI"
+  },
+  {
+    "path": "urn:submodel_26_0.some_id_short",
+    "explanation": "Concept is a base64 encoded certificate, not a plain string.",
+    "suggestion": "xs:base64Binary"
+  },
+  {
+    "path": "urn:submodel_27_0.some_id_short",
+    "explanation": "Concept is a machine operational status (true/false), not a string.",
+    "suggestion": "xs:boolean"
+  },
+  {
+    "path": "urn:submodel_28_0.some_id_short",
+    "explanation": "Concept is a manufacturing date, not a string.",
+    "suggestion": "xs:date"
+  },
+  {
+    "path": "urn:submodel_29_0.some_id_short",
+    "explanation": "Concept is a maintenance timestamp (date and time), not a string.",
+    "suggestion": "xs:dateTime"
+  },
+  {
+    "path": "urn:submodel_30_0.some_id_short",
+    "explanation": "Concept is a service interval duration, not a string.",
+    "suggestion": "xs:duration"
+  },
+  {
+    "path": "urn:submodel_31_0.some_id_short",
+    "explanation": "Concept is a day of month (recurring monthly), not a string.",
+    "suggestion": "xs:gDay"
+  },
+  {
+    "path": "urn:submodel_32_0.some_id_short",
+    "explanation": "Concept is a month of the year (recurring annually), not a string.",
+    "suggestion": "xs:gMonth"
+  },
+  {
+    "path": "urn:submodel_33_0.some_id_short",
+    "explanation": "Concept is the day within each month (recurring), not a string.",
+    "suggestion": "xs:gDay"
+  },
+  {
+    "path": "urn:submodel_34_0.some_id_short",
+    "explanation": "Concept is a year, not a string.",
+    "suggestion": "xs:gYear"
+  },
+  {
+    "path": "urn:submodel_35_0.some_id_short",
+    "explanation": "Concept is quarter and year; the closest XSD fit is year-month, not a generic string.",
+    "suggestion": "xs:gYearMonth"
+  },
+  {
+    "path": "urn:submodel_36_0.some_id_short",
+    "explanation": "Concept is a hexadecimal device fingerprint, not a plain string.",
+    "suggestion": "xs:hexBinary"
+  },
+  {
+    "path": "urn:submodel_37_0.some_id_short",
+    "explanation": "Concept is a daily start time, not a string.",
+    "suggestion": "xs:time"
+  },
+  {
+    "path": "urn:submodel_38_0.some_id_short",
+    "explanation": "Concept is a high-frequency temperature sensor measurement; floating-point is appropriate, not decimal.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:submodel_39_0.some_id_short",
+    "explanation": "Concept is a financial transaction amount requiring exact decimal representation; double is not exact.",
     "suggestion": "xs:decimal"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Concept is a precise monetary value for accounting, but value type is xs:float. Monetary values require exact decimal representation.",
+    "path": "urn:submodel_40_0.some_id_short",
+    "explanation": "Concept is a precise monetary value for accounting; float is not exact.",
     "suggestion": "xs:decimal"
+  },
+  {
+    "path": "urn:submodel_41_0.some_id_short",
+    "explanation": "Concept requires double precision for scientific measurement; float is insufficient.",
+    "suggestion": "xs:double"
   }
 ]

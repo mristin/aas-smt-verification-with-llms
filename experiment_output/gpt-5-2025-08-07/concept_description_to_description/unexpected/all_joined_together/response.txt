@@ -1,47 +1,32 @@
 [
   {
-    "path": "urn:exampl.com:someConceptDescription_f23cb0e3",
-    "explanation": "Property description is generic ('Voltage') while the concept is specific ('Rated DC input voltage' — rated, DC, input). The generic description does not guarantee those constraints.",
-    "suggestion": "Change property description to 'Rated DC input voltage'."
+    "path": "urn:submodel_2_0.some_id_short",
+    "explanation": "Property describes a non-watertight casing, while the concept describes a waterproof enclosure; these are opposite conditions.",
+    "suggestion": "Waterproof enclosure length"
   },
   {
-    "path": "urn:exampl.com:someConceptDescription_060c37c2",
-    "explanation": "Property description is generic ('Flow rate') but the concept is domain-specific ('Hydraulic flow rate').",
-    "suggestion": "Change property description to 'Hydraulic flow rate'."
-  },
-  {
-    "path": "urn:exampl.com:someConceptDescription_4b6098cc",
-    "explanation": "Property describes a non-watertight (not waterproof) casing, while the concept is explicitly 'Waterproof enclosure length'.",
-    "suggestion": "Change property description to 'Waterproof enclosure length'."
-  },
-  {
-    "path": "urn:exampl.com:someConceptDescription_781cc011",
+    "path": "urn:submodel_3_0.some_id_short",
     "explanation": "Property allows corrosion rate > 0.10 mm/year, but the concept restricts it to ≤ 0.10 mm/year.",
-    "suggestion": "Change property description to 'Maximum allowable corrosion rate (≤ 0.10 mm/year)'."
+    "suggestion": "Maximum allowable corrosion rate (≤ 0.10 mm/year)"
   },
   {
-    "path": "urn:exampl.com:someConceptDescription_546749ce",
-    "explanation": "Property is 'Product activation end time', whereas the concept is 'Product activation start time'.",
-    "suggestion": "Change property description to 'Product activation start time in seconds since 1970-01-01 UTC'."
+    "path": "urn:submodel_4_0.some_id_short",
+    "explanation": "Property refers to activation end time, while the concept refers to activation start time.",
+    "suggestion": "Product activation start time in seconds since 1970-01-01 UTC"
   },
   {
-    "path": "urn:exampl.com:someConceptDescription_a991168f",
-    "explanation": "Property is generic ('Max humidity'); the concept is specific to 'Maximum ambient relative humidity at 25°C'.",
-    "suggestion": "Change property description to 'Maximum ambient relative humidity at 25°C'."
+    "path": "urn:submodel_6_0.some_id_short",
+    "explanation": "Property is about tire pressure in PSI, while the concept is atmospheric pressure in hPa; both the domain and unit differ.",
+    "suggestion": "Atmospheric pressure sensor measurement in hectopascals (hPa)"
   },
   {
-    "path": "urn:exampl.com:someConceptDescription_5a43beaf",
-    "explanation": "Property measures tire pressure in PSI, while the concept is atmospheric pressure in hPa. Different phenomenon and units.",
-    "suggestion": "Use a concept for tire pressure measurement in PSI."
+    "path": "urn:submodel_7_0.some_id_short",
+    "explanation": "Property states a lower water pressure limit, whereas the concept states an upper water pressure limit.",
+    "suggestion": "Upper water pressure limit"
   },
   {
-    "path": "urn:exampl.com:someConceptDescription_b3746d3d",
-    "explanation": "Property describes a lower water pressure limit, while the concept is the upper water pressure limit.",
-    "suggestion": "Change property description to 'Upper water pressure limit'."
-  },
-  {
-    "path": "urn:exampl.com:someConceptDescription_6531af5e",
-    "explanation": "Property describes loaded battery voltage (with rated load), while the concept is EMF (open-circuit voltage).",
-    "suggestion": "Change property description to 'Battery EMF (open-circuit voltage) at 100% SOC at 25°C'."
+    "path": "urn:submodel_9_0.some_id_short",
+    "explanation": "Property specifies voltage under rated load, while the concept is EMF (open-circuit voltage) with no load; load condition mismatch.",
+    "suggestion": "Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25°C"
   }
 ]

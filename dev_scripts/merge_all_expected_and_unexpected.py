@@ -1,60 +1,18 @@
 """Merge all the expected and unexpected cases into one big test case."""
 
 import argparse
-import hashlib
 import itertools
 import json
 import os
 import pathlib
 import sys
-from typing import Iterator, List, MutableMapping, cast, Iterable, Set
+from typing import List, cast, Iterable
 
 from aas_core3 import (
     types as aas_types,
     jsonization as aas_jsonization,
     verification as aas_verification,
 )
-
-
-def _make_ids_unique_in_situ(environment: aas_types.Environment) -> None:
-    """
-    Make all the IDs unique in the given environment by adding a hash suffix.
-
-    We make sure that the references are updated as well.
-    """
-    old_to_new_id = dict()  # type: MutableMapping[str, str]
-
-    for identifiable in itertools.chain(
-        cast(Iterator[aas_types.Identifiable], environment.over_submodels_or_empty()),
-        environment.over_concept_descriptions_or_empty(),
-    ):
-        identifiable_hash = hashlib.md5(
-            json.dumps(aas_jsonization.to_jsonable(identifiable)).encode("utf-8")
-        ).hexdigest()
-
-        short_hash = identifiable_hash[:8]
-
-        old_id = identifiable.id
-        new_id = f"{identifiable.id}_{short_hash}"
-
-        old_to_new_id[old_id] = new_id
-        identifiable.id = new_id
-
-    for instance in environment.descend():
-        if not isinstance(instance, aas_types.Key):
-            continue
-
-        assert instance.type is aas_types.KeyTypes.GLOBAL_REFERENCE
-
-        if instance.value is not None:
-            maybe_new_id = old_to_new_id.get(instance.value, None)
-            if maybe_new_id is None:
-                # NOTE (mristin):
-                # There are some references outside the environment. For example,
-                # the reference to the external data specification.
-                continue
-
-            instance.value = maybe_new_id
 
 
 def main() -> int:
@@ -87,14 +45,13 @@ def main() -> int:
             submodels = []  # type: List[aas_types.Submodel]
             concept_descriptions = []  # type: List[aas_types.ConceptDescription]
 
-            set_of_observed_submodel_ids = set()  # type: Set[str]
-            set_of_observed_concept_description_ids = set()  # type: Set[str]
-
-            for model_pth in sorted(
+            model_paths = sorted(
                 pth
                 for pth in expectation_dir.glob("**/model.json")
                 if pth.parent.name != "all_joined_together"
-            ):
+            )
+
+            for model_i, model_pth in enumerate(model_paths):
                 try:
                     jsonable = json.loads(model_pth.read_text(encoding="utf-8"))
                     environment = aas_jsonization.environment_from_jsonable(jsonable)
@@ -105,36 +62,49 @@ def main() -> int:
                     )
                     return 1
 
-                try:
-                    _make_ids_unique_in_situ(environment)
-                except Exception as exception:
-                    raise AssertionError(
-                        f"Failed to make the IDs unique in {model_pth}"
-                    ) from exception
-
-                # NOTE (mristin):
-                # The ID of the submodels and concept descriptions will depend on their
-                # content due to the call to ``_make_ids_unique_in_situe``, so we can use
-                # the ID to de-duplicate them.
-
-                for submodel in environment.over_submodels_or_empty():
-                    if submodel.id in set_of_observed_submodel_ids:
-                        continue
-
-                    set_of_observed_submodel_ids.add(submodel.id)
+                for submodel_i, submodel in enumerate(
+                    environment.over_submodels_or_empty()
+                ):
+                    submodel.id = f"urn:submodel_{model_i}_{submodel_i}"
                     submodels.append(submodel)
 
-                for (
-                    concept_description
-                ) in environment.over_concept_descriptions_or_empty():
-                    if (
-                        concept_description.id
-                        in set_of_observed_concept_description_ids
-                    ):
-                        continue
+                for concept_description_i, concept_description in enumerate(
+                    environment.over_concept_descriptions_or_empty()
+                ):
+                    old_id = concept_description.id
+                    new_id = (
+                        f"urn:concept_description_{model_i}_{concept_description_i}"
+                    )
 
-                    set_of_observed_concept_description_ids.add(concept_description.id)
+                    concept_description.id = new_id
                     concept_descriptions.append(concept_description)
+
+                    # NOTE (mristin):
+                    # Now we update all the references to this ID as well.
+
+                    for reference in environment.descend():
+                        if not isinstance(reference, aas_types.Reference):
+                            continue
+
+                        if (
+                            reference.type
+                            is not aas_types.ReferenceTypes.EXTERNAL_REFERENCE
+                        ):
+                            raise NotImplementedError(
+                                f"We currently expect only external references in "
+                                f"experiment data, but we got: {reference.type}"
+                            )
+
+                        if len(reference.keys) != 1:
+                            raise NotImplementedError(
+                                f"We currently expect only external references "
+                                f"with a single key in experiment data, "
+                                f"but we got: {reference.keys}"
+                            )
+
+                        first_key = reference.keys[0]
+                        if first_key.value == old_id:
+                            first_key.value = concept_description.id
 
             ids = [
                 identifiable.id
