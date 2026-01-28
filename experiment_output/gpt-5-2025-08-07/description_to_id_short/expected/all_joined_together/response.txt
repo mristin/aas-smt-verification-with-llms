@@ -1,57 +1,57 @@
 [
   {
-    "path": "mechanical_power",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_0_0.mechanical_power",
+    "explanation": "No semantic mismatch: ID-short matches description ('Mechanical output power').",
+    "suggestion": "no change"
   },
   {
-    "path": "power_consumption",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_1_0.power_consumption",
+    "explanation": "No strict mismatch, but the description specifies electrical input. ID-short could be more explicit.",
+    "suggestion": "electrical_input_power"
   },
   {
-    "path": "for_indoor_environments",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_2_0.for_indoor_environments",
+    "explanation": "No mismatch. For boolean clarity and active phrasing, consider aligning ID-short with description.",
+    "suggestion": "suitable_for_indoor_use"
   },
   {
-    "path": "compatible_with_wet_environments",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_3_0.compatible_with_wet_environments",
+    "explanation": "No mismatch. Terminology can be aligned with description ('Suitable').",
+    "suggestion": "suitable_for_wet_environments"
   },
   {
-    "path": "operating_temperature",
-    "explanation": "Description states 'Operating temperature range' but the value type is a single xs:double; a single scalar cannot represent a range, and the ID-short does not indicate a range.",
-    "suggestion": "Use two properties: operating_temperature_min and operating_temperature_max"
+    "path": "urn:submodel_4_0.operating_temperature",
+    "explanation": "Mismatch: ID-short suggests a single value, while description says 'Operating temperature range'. Value type xs:double also implies a single value, not a range.",
+    "suggestion": "operating_temperature_min and operating_temperature_max (split into two xs:double properties)"
   },
   {
-    "path": "beginning_time",
-    "explanation": "No semantic mismatch; minor naming inconsistency between ID-short ('beginning_time') and description ('Start time').",
+    "path": "urn:submodel_5_0.beginning_time",
+    "explanation": "No mismatch. ID-short could be aligned more closely with the description wording.",
     "suggestion": "start_time"
   },
   {
-    "path": "material",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_6_0.material",
+    "explanation": "No semantic mismatch between ID-short and description.",
+    "suggestion": "no change"
   },
   {
-    "path": "shaft_diameter",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_7_0.shaft_diameter",
+    "explanation": "No semantic mismatch between ID-short and description.",
+    "suggestion": "no change"
   },
   {
-    "path": "weight",
-    "explanation": "Potential semantic mismatch: 'Weight' is a force (N), but specifications often provide mass (kg). The ID-short/description may be misleading if the value is mass.",
-    "suggestion": "mass"
+    "path": "urn:submodel_8_0.weight",
+    "explanation": "No mismatch between ID-short and description, but 'weight' (force) is often confused with 'mass' (kg).",
+    "suggestion": "mass (if measured in kg)"
   },
   {
-    "path": "allowed_voltage",
-    "explanation": "No definite mismatch; however, 'Permitted voltage' often implies a range rather than a single value.",
-    "suggestion": "allowed_voltage_min and allowed_voltage_max"
+    "path": "urn:submodel_9_0.allowed_voltage",
+    "explanation": "No mismatch. To mirror the description wording exactly, consider renaming.",
+    "suggestion": "permitted_voltage"
   },
   {
-    "path": "nominal_shaft_speed",
-    "explanation": "No mismatch detected between ID-short and description.",
-    "suggestion": "keep"
+    "path": "urn:submodel_10_0.nominal_shaft_speed",
+    "explanation": "No semantic mismatch between ID-short and description.",
+    "suggestion": "no change"
   }
 ]

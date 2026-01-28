@@ -1,37 +1,27 @@
 [
   {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_16d2b44e describes a monthly recurring day-of-month. xs:gMonthDay encodes a month+day pair (annual recurrence), not a monthly day-of-month.",
+    "path": "urn:submodel_9_0.some_id_short",
+    "explanation": "Temperature measurement is sensor data and often requires fractional values and higher precision; xs:float is unnecessarily imprecise.",
+    "suggestion": "xs:double"
+  },
+  {
+    "path": "urn:submodel_11_0.some_id_short",
+    "explanation": "A monthly inspection day is a day-of-month recurring every month; xs:gMonthDay encodes a month-and-day recurring annually.",
     "suggestion": "xs:gDay"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_c01d29f1 is a temperature reading that can be fractional. xs:int restricts to whole numbers.",
+    "path": "urn:submodel_16_0.some_id_short",
+    "explanation": "Temperature reading typically includes fractional values; xs:int disallows decimals.",
     "suggestion": "xs:double"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_10aea8e4 expresses a duration (remaining service life) in years. xs:nonNegativeInteger is a plain count and lacks temporal semantics.",
-    "suggestion": "xs:duration"
-  },
-  {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_e80af9f6 is altitude below sea level, which can be fractional. xs:nonPositiveInteger disallows fractional values.",
+    "path": "urn:submodel_21_0.some_id_short",
+    "explanation": "Altitude is a physical measurement that can be fractional; xs:nonPositiveInteger disallows decimals.",
     "suggestion": "xs:double"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_d65abc11 is a duration expressed in milliseconds. xs:unsignedLong is a plain number and does not convey temporal semantics (nor allow sign if needed).",
+    "path": "urn:submodel_28_0.some_id_short",
+    "explanation": "A duration is a temporal quantity; representing it as an integer (milliseconds) loses ISO 8601 duration semantics.",
     "suggestion": "xs:duration"
-  },
-  {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: Concept urn:exampl.com:someConceptDescription_ebe9db0e is a countdown duration in milliseconds (always negative). xs:negativeInteger is a plain number; xs:duration better represents (including negative) durations.",
-    "suggestion": "xs:duration"
-  },
-  {
-    "path": "some_id_short",
-    "explanation": "Possible precision improvement: Concept urn:exampl.com:someConceptDescription_99bfb9fe is sensor temperature data; xs:float may be insufficient for precise measurements.",
-    "suggestion": "xs:double"
   }
 ]

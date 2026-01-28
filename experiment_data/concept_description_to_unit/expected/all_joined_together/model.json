@@ -1,7 +1,7 @@
 {
   "submodels": [
     {
-      "id": "https://example.org/some_submodel_815f1db9",
+      "id": "urn:submodel_0_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -10,7 +10,327 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_b4f3f6f1"
+                "value": "urn:concept_description_0_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_1_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_1_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_2_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_2_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_3_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_3_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_4_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_4_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_5_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_5_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_6_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_6_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_7_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_7_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_8_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_8_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_9_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_9_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_10_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_10_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_11_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_11_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_12_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_12_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_13_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_13_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_14_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_14_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_15_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_15_0"
+              }
+            ]
+          },
+          "valueType": "xs:double",
+          "modelType": "Property"
+        }
+      ],
+      "modelType": "Submodel"
+    },
+    {
+      "id": "urn:submodel_16_0",
+      "submodelElements": [
+        {
+          "idShort": "some_id_short",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "urn:concept_description_16_0"
               }
             ]
           },
@@ -23,7 +343,7 @@
   ],
   "conceptDescriptions": [
     {
-      "id": "urn:exampl.com:someConceptDescription_b4f3f6f1",
+      "id": "urn:concept_description_0_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -56,7 +376,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_1a501102",
+      "id": "urn:concept_description_1_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -89,7 +409,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_f0fc7c83",
+      "id": "urn:concept_description_2_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -122,7 +442,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_303882bd",
+      "id": "urn:concept_description_3_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -155,7 +475,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_8eb22457",
+      "id": "urn:concept_description_4_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -188,7 +508,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_af9133b8",
+      "id": "urn:concept_description_5_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -221,7 +541,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_bb7eea5b",
+      "id": "urn:concept_description_6_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -254,7 +574,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_0940e364",
+      "id": "urn:concept_description_7_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -287,7 +607,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_72c59594",
+      "id": "urn:concept_description_8_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -320,7 +640,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_19aafcda",
+      "id": "urn:concept_description_9_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -353,7 +673,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_5c4f3c37",
+      "id": "urn:concept_description_10_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -386,7 +706,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_278ffd69",
+      "id": "urn:concept_description_11_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -419,7 +739,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_5f4a8ecc",
+      "id": "urn:concept_description_12_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -452,7 +772,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_7e3415cf",
+      "id": "urn:concept_description_13_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -485,7 +805,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_60a70d65",
+      "id": "urn:concept_description_14_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -518,7 +838,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_4faa2d58",
+      "id": "urn:concept_description_15_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {
@@ -551,7 +871,7 @@
       "modelType": "ConceptDescription"
     },
     {
-      "id": "urn:exampl.com:someConceptDescription_64d9779b",
+      "id": "urn:concept_description_16_0",
       "embeddedDataSpecifications": [
         {
           "dataSpecification": {

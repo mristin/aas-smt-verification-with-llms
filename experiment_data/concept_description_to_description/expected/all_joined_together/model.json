@@ -1,7 +1,7 @@
 {
   "submodels": [
     {
-      "id": "https://example.org/some_submodel_a9c17585",
+      "id": "urn:submodel_0_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -16,7 +16,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_f23cb0e3"
+                "value": "urn:concept_description_0_0"
               }
             ]
           },
@@ -27,7 +27,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_a769a819",
+      "id": "urn:submodel_1_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -42,7 +42,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_060c37c2"
+                "value": "urn:concept_description_1_0"
               }
             ]
           },
@@ -53,7 +53,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_6d929916",
+      "id": "urn:submodel_2_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -68,7 +68,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_4b6098cc"
+                "value": "urn:concept_description_2_0"
               }
             ]
           },
@@ -79,7 +79,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_a415c865",
+      "id": "urn:submodel_3_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -94,7 +94,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_781cc011"
+                "value": "urn:concept_description_3_0"
               }
             ]
           },
@@ -105,7 +105,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_52771ead",
+      "id": "urn:submodel_4_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -120,7 +120,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_a991168f"
+                "value": "urn:concept_description_4_0"
               }
             ]
           },
@@ -131,7 +131,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_b36be3b2",
+      "id": "urn:submodel_5_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -146,7 +146,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_b58efd10"
+                "value": "urn:concept_description_5_0"
               }
             ]
           },
@@ -157,7 +157,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_3046cd46",
+      "id": "urn:submodel_6_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -172,7 +172,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_b3746d3d"
+                "value": "urn:concept_description_6_0"
               }
             ]
           },
@@ -183,7 +183,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_a89e8f40",
+      "id": "urn:submodel_7_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -198,7 +198,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_1f68b869"
+                "value": "urn:concept_description_7_0"
               }
             ]
           },
@@ -209,7 +209,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_2447927c",
+      "id": "urn:submodel_8_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -224,7 +224,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_6531af5e"
+                "value": "urn:concept_description_8_0"
               }
             ]
           },
@@ -235,7 +235,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_31ce66d9",
+      "id": "urn:submodel_9_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -250,7 +250,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_fb86eea8"
+                "value": "urn:concept_description_9_0"
               }
             ]
           },
@@ -261,7 +261,7 @@
       "modelType": "Submodel"
     },
     {
-      "id": "https://example.org/some_submodel_d573f8ca",
+      "id": "urn:submodel_10_0",
       "submodelElements": [
         {
           "idShort": "some_id_short",
@@ -276,7 +276,7 @@
             "keys": [
               {
                 "type": "GlobalReference",
-                "value": "urn:exampl.com:someConceptDescription_546749ce"
+                "value": "urn:concept_description_10_0"
               }
             ]
           },
@@ -295,7 +295,7 @@
           "text": "Rated DC input voltage"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_f23cb0e3",
+      "id": "urn:concept_description_0_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -305,7 +305,7 @@
           "text": "Hydraulic flow rate"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_060c37c2",
+      "id": "urn:concept_description_1_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -315,7 +315,7 @@
           "text": "Waterproof enclosure length"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_4b6098cc",
+      "id": "urn:concept_description_2_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -325,7 +325,7 @@
           "text": "Maximum allowable corrosion rate; corrosion rate should be \u2264 0.10 mm/year"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_781cc011",
+      "id": "urn:concept_description_3_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -335,7 +335,7 @@
           "text": "Maximum ambient relative humidity at 25\u00b0C"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_a991168f",
+      "id": "urn:concept_description_4_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -345,7 +345,7 @@
           "text": "Fluid pressure sensor measurement in kilopascals (kPa)"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_b58efd10",
+      "id": "urn:concept_description_5_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -355,7 +355,7 @@
           "text": "Upper water pressure limit"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_b3746d3d",
+      "id": "urn:concept_description_6_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -365,7 +365,7 @@
           "text": "Maximum torque output"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_1f68b869",
+      "id": "urn:concept_description_7_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -375,7 +375,7 @@
           "text": "Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25\u00b0C"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_6531af5e",
+      "id": "urn:concept_description_8_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -385,7 +385,7 @@
           "text": "Nominal electric current"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_fb86eea8",
+      "id": "urn:concept_description_9_0",
       "modelType": "ConceptDescription"
     },
     {
@@ -395,7 +395,7 @@
           "text": "Product activation start time in seconds since 1970-01-01 UTC"
         }
       ],
-      "id": "urn:exampl.com:someConceptDescription_546749ce",
+      "id": "urn:concept_description_10_0",
       "modelType": "ConceptDescription"
     }
   ]

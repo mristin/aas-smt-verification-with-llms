@@ -40,24 +40,24 @@ Output any possible semantic improvement following the JSON schema:
 Here is the data to be analyzed:
 # Elements
 
-Property at path 'rated_power' with ID-short 'rated_power' with description 'Power' with value type xs:double
+Property at path 'urn:submodel_0_0.rated_power' with ID-short 'rated_power' with description 'Power' with value type xs:double
 
-Property at path 'power' with ID-short 'power' with description 'Mechanical Power' with value type xs:double
+Property at path 'urn:submodel_1_0.power' with ID-short 'power' with description 'Mechanical Power' with value type xs:double
 
-Property at path 'for_outdoor_environments' with ID-short 'for_outdoor_environments' with description 'Suitable for indoor use' with value type xs:boolean
+Property at path 'urn:submodel_2_0.for_outdoor_environments' with ID-short 'for_outdoor_environments' with description 'Suitable for indoor use' with value type xs:boolean
 
-Property at path 'suitable_for_wet_environments' with ID-short 'suitable_for_wet_environments' with description 'Do not operate in wet conditions' with value type xs:boolean
+Property at path 'urn:submodel_3_0.suitable_for_wet_environments' with ID-short 'suitable_for_wet_environments' with description 'Do not operate in wet conditions' with value type xs:boolean
 
-Property at path 'temperature' with ID-short 'temperature' with description 'Operating temperature' with value type xs:double
+Property at path 'urn:submodel_4_0.temperature' with ID-short 'temperature' with description 'Operating temperature' with value type xs:double
 
-Property at path 'end_time' with ID-short 'end_time' with description 'Start time' with value type xs:dateTime
+Property at path 'urn:submodel_5_0.end_time' with ID-short 'end_time' with description 'Start time' with value type xs:dateTime
 
-Property at path 'material' with ID-short 'material' with description 'Surface coating (steel alloy)' with value type xs:string
+Property at path 'urn:submodel_6_0.material' with ID-short 'material' with description 'Surface coating (steel alloy)' with value type xs:string
 
-Property at path 'maximum_voltage' with ID-short 'maximum_voltage' with description 'Permitted voltage' with value type xs:double
+Property at path 'urn:submodel_7_0.maximum_voltage' with ID-short 'maximum_voltage' with description 'Permitted voltage' with value type xs:double
 
-Property at path 'nominal_shaft_speed' with ID-short 'nominal_shaft_speed' with description 'Nominalshaftspeed' with value type xs:double
+Property at path 'urn:submodel_8_0.nominal_shaft_speed' with ID-short 'nominal_shaft_speed' with description 'Nominalshaftspeed' with value type xs:double
 
-Property at path 'axle_length' with ID-short 'axle_length' with description 'Shaft diameter' with value type xs:double
+Property at path 'urn:submodel_9_0.axle_length' with ID-short 'axle_length' with description 'Shaft diameter' with value type xs:double
 
-Property at path 'heaviness' with ID-short 'heaviness' with description 'Weight heavy' with value type xs:double
+Property at path 'urn:submodel_10_0.heaviness' with ID-short 'heaviness' with description 'Weight heavy' with value type xs:double

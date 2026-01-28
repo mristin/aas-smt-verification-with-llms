@@ -1,37 +1,57 @@
 [
   {
-    "path": "rated_power",
-    "explanation": "ID-short specifies rated power, but the description is generic ('Power') and omits the 'rated' qualifier.",
+    "path": "urn:submodel_0_0.rated_power",
+    "explanation": "ID-short implies rated (nominal) power, but the description is generic ('Power').",
     "suggestion": "Rated power"
   },
   {
-    "path": "for_outdoor_environments",
-    "explanation": "ID-short indicates suitability for outdoor use, while the description states 'Suitable for indoor use' (opposite meaning).",
+    "path": "urn:submodel_1_0.power",
+    "explanation": "No hard mismatch, but the description is specific ('Mechanical Power') while the ID-short is generic.",
+    "suggestion": "mechanical_power"
+  },
+  {
+    "path": "urn:submodel_2_0.for_outdoor_environments",
+    "explanation": "ID-short refers to outdoor suitability, but the description states 'Suitable for indoor use' (opposite meaning).",
     "suggestion": "Suitable for outdoor use"
   },
   {
-    "path": "suitable_for_wet_environments",
-    "explanation": "ID-short indicates suitability for wet environments, but the description says 'Do not operate in wet conditions' (contradictory).",
+    "path": "urn:submodel_3_0.suitable_for_wet_environments",
+    "explanation": "ID-short indicates suitability, but the description says 'Do not operate in wet conditions' (negated meaning).",
     "suggestion": "Suitable for wet environments"
   },
   {
-    "path": "end_time",
-    "explanation": "ID-short says 'end time' but the description says 'Start time'.",
+    "path": "urn:submodel_4_0.temperature",
+    "explanation": "No hard mismatch, but the description 'Operating temperature' is more specific than the generic ID-short.",
+    "suggestion": "operating_temperature"
+  },
+  {
+    "path": "urn:submodel_5_0.end_time",
+    "explanation": "ID-short says 'end_time' while the description says 'Start time' (opposite event).",
     "suggestion": "End time"
   },
   {
-    "path": "material",
-    "explanation": "ID-short refers to general material, whereas the description refers specifically to surface coating.",
-    "suggestion": "Material"
+    "path": "urn:submodel_6_0.material",
+    "explanation": "ID-short says 'material' (general), but the description refers to 'Surface coating', which is a different concept.",
+    "suggestion": "surface_coating"
   },
   {
-    "path": "axle_length",
-    "explanation": "ID-short refers to a length, but the description refers to a diameter (different quantity).",
+    "path": "urn:submodel_7_0.maximum_voltage",
+    "explanation": "Minor mismatch: ID-short states 'maximum', description says 'Permitted voltage' (which might be lower than absolute maximum).",
+    "suggestion": "Maximum permitted voltage"
+  },
+  {
+    "path": "urn:submodel_8_0.nominal_shaft_speed",
+    "explanation": "Semantics match, but the description contains a typo/word concatenation ('Nominalshaftspeed').",
+    "suggestion": "Nominal shaft speed"
+  },
+  {
+    "path": "urn:submodel_9_0.axle_length",
+    "explanation": "ID-short is 'axle_length' while the description states 'Shaft diameter' (different quantity and concept).",
     "suggestion": "Axle length"
   },
   {
-    "path": "heaviness",
-    "explanation": "ID-short uses a non-standard term ('heaviness') and the description ('Weight heavy') is unclear; standard term is 'weight'.",
-    "suggestion": "weight"
+    "path": "urn:submodel_10_0.heaviness",
+    "explanation": "ID-short 'heaviness' and description 'Weight heavy' are non-standard/unclear for a numeric property.",
+    "suggestion": "mass"
   }
 ]

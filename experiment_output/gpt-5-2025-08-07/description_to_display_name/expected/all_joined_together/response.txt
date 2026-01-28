@@ -1,57 +1,57 @@
 [
   {
-    "path": "some_id_short",
-    "explanation": "Mismatch: description specifies 'Mechanical output power' while display name is 'Mechanical power' (missing 'output').",
+    "path": "urn:submodel_0_0.some_id_short",
+    "explanation": "Display name omits the qualifier 'output' present in the description; 'Mechanical power' is broader than 'Mechanical output power'.",
     "suggestion": "Mechanical output power"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Electrical input power' and 'Power consumption' refer to the same concept.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_1_0.some_id_short",
+    "explanation": "No mismatch: 'Power consumption' corresponds to 'Electrical input power'.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Suitable for indoor use' aligns with 'For indoor environments'.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_2_0.some_id_short",
+    "explanation": "No mismatch: 'For indoor environments' corresponds to 'Suitable for indoor use'.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Suitable for wet environments' aligns with 'Compatible with wet environments'.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_3_0.some_id_short",
+    "explanation": "No mismatch: 'Compatible with wet environments' corresponds to 'Suitable for wet environments'.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Mismatch: description states 'Operating temperature range' while display name says 'Operating temperature' (range vs single value).",
+    "path": "urn:submodel_4_0.some_id_short",
+    "explanation": "Display name omits the 'range' qualifier present in the description; 'Operating temperature' vs 'Operating temperature range'.",
     "suggestion": "Operating temperature range"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Start time' and 'Beginning time' are synonymous.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_5_0.some_id_short",
+    "explanation": "No mismatch: 'Beginning time' corresponds to 'Start time'.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "Mismatch: description narrows to 'Material (steel alloy)' while display name is generic 'Material'.",
+    "path": "urn:submodel_6_0.some_id_short",
+    "explanation": "Display name is more generic; the description specifies '(steel alloy)'.",
     "suggestion": "Material (steel alloy)"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Shaft diameter' matches exactly.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_7_0.some_id_short",
+    "explanation": "No mismatch: exact match between description and display name.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Weight' matches exactly.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_8_0.some_id_short",
+    "explanation": "No mismatch: exact match between description and display name.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Permitted voltage' and 'Allowed voltage' are synonymous.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_9_0.some_id_short",
+    "explanation": "No mismatch: 'Allowed voltage' aligns with 'Permitted voltage'.",
+    "suggestion": "No change"
   },
   {
-    "path": "some_id_short",
-    "explanation": "No mismatch: 'Nominal shaft speed' matches exactly.",
-    "suggestion": "No change needed"
+    "path": "urn:submodel_10_0.some_id_short",
+    "explanation": "No mismatch: exact match between description and display name.",
+    "suggestion": "No change"
   }
 ]

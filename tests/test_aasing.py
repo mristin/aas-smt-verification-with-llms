@@ -62,7 +62,7 @@ class TestRelevantDetails(unittest.TestCase):
             """\
 # Elements
 
-Property at path 'something' with ID-short 'something' with value type xs:int""",
+Property at path 'someSubmodel.something' with ID-short 'something' with value type xs:int""",
             aas_smt_verification_with_llms.aasing.relevant_details(
                 environment=aas_types.Environment(
                     submodels=[
@@ -86,7 +86,7 @@ Property at path 'something' with ID-short 'something' with value type xs:int"""
             """\
 # Elements
 
-Property at path 'something' with ID-short 'something' with value type xs:double and with concept description 'someConcept'
+Property at path 'someSubmodel.something' with ID-short 'something' with value type xs:double and with concept description 'someConcept'
 
 # Concept descriptions
 

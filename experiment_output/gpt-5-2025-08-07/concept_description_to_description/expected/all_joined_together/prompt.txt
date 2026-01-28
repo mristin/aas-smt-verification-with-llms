@@ -38,48 +38,48 @@ Output any possible semantic improvement following the JSON schema:
 Here is the data to be analyzed:
 # Elements
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Direct current rated voltage input' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_f23cb0e3'
+Property at path 'urn:submodel_0_0.some_id_short' with ID-short 'some_id_short' with description 'Direct current rated voltage input' with value type xs:double and with concept description 'urn:concept_description_0_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Flow rate of the hydraulic fluid' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_060c37c2'
+Property at path 'urn:submodel_1_0.some_id_short' with ID-short 'some_id_short' with description 'Flow rate of the hydraulic fluid' with value type xs:double and with concept description 'urn:concept_description_1_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Water-resistant housing length' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_4b6098cc'
+Property at path 'urn:submodel_2_0.some_id_short' with ID-short 'some_id_short' with description 'Water-resistant housing length' with value type xs:double and with concept description 'urn:concept_description_2_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Max Corrosion rate (rates less than or equal 0.10 mm/year are allowed)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_781cc011'
+Property at path 'urn:submodel_3_0.some_id_short' with ID-short 'some_id_short' with description 'Max Corrosion rate (rates less than or equal 0.10 mm/year are allowed)' with value type xs:double and with concept description 'urn:concept_description_3_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Max relative humidity (25°C) of the near environment' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_a991168f'
+Property at path 'urn:submodel_4_0.some_id_short' with ID-short 'some_id_short' with description 'Max relative humidity (25°C) of the near environment' with value type xs:double and with concept description 'urn:concept_description_4_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Hydraulic oil line fluid pressure sensor measurement in kilopascals (kPa)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_b58efd10'
+Property at path 'urn:submodel_5_0.some_id_short' with ID-short 'some_id_short' with description 'Hydraulic oil line fluid pressure sensor measurement in kilopascals (kPa)' with value type xs:double and with concept description 'urn:concept_description_5_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Maximum water pressure limit' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_b3746d3d'
+Property at path 'urn:submodel_6_0.some_id_short' with ID-short 'some_id_short' with description 'Maximum water pressure limit' with value type xs:double and with concept description 'urn:concept_description_6_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Peak torque delivered' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_1f68b869'
+Property at path 'urn:submodel_7_0.some_id_short' with ID-short 'some_id_short' with description 'Peak torque delivered' with value type xs:double and with concept description 'urn:concept_description_7_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'EMF of the battery at 100 percent SOC (25°C)' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_6531af5e'
+Property at path 'urn:submodel_8_0.some_id_short' with ID-short 'some_id_short' with description 'EMF of the battery at 100 percent SOC (25°C)' with value type xs:double and with concept description 'urn:concept_description_8_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Nominal value for the electric current' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_fb86eea8'
+Property at path 'urn:submodel_9_0.some_id_short' with ID-short 'some_id_short' with description 'Nominal value for the electric current' with value type xs:double and with concept description 'urn:concept_description_9_0'
 
-Property at path 'some_id_short' with ID-short 'some_id_short' with description 'Product activation beginning time in seconds since 1970-01-01 UTC' with value type xs:double and with concept description 'urn:exampl.com:someConceptDescription_546749ce'
+Property at path 'urn:submodel_10_0.some_id_short' with ID-short 'some_id_short' with description 'Product activation beginning time in seconds since 1970-01-01 UTC' with value type xs:double and with concept description 'urn:concept_description_10_0'
 
 # Concept descriptions
 
-Concept description 'urn:exampl.com:someConceptDescription_f23cb0e3' means: 'Rated DC input voltage'
+Concept description 'urn:concept_description_0_0' means: 'Rated DC input voltage'
 
-Concept description 'urn:exampl.com:someConceptDescription_060c37c2' means: 'Hydraulic flow rate'
+Concept description 'urn:concept_description_1_0' means: 'Hydraulic flow rate'
 
-Concept description 'urn:exampl.com:someConceptDescription_4b6098cc' means: 'Waterproof enclosure length'
+Concept description 'urn:concept_description_2_0' means: 'Waterproof enclosure length'
 
-Concept description 'urn:exampl.com:someConceptDescription_781cc011' means: 'Maximum allowable corrosion rate; corrosion rate should be ≤ 0.10 mm/year'
+Concept description 'urn:concept_description_3_0' means: 'Maximum allowable corrosion rate; corrosion rate should be ≤ 0.10 mm/year'
 
-Concept description 'urn:exampl.com:someConceptDescription_a991168f' means: 'Maximum ambient relative humidity at 25°C'
+Concept description 'urn:concept_description_4_0' means: 'Maximum ambient relative humidity at 25°C'
 
-Concept description 'urn:exampl.com:someConceptDescription_b58efd10' means: 'Fluid pressure sensor measurement in kilopascals (kPa)'
+Concept description 'urn:concept_description_5_0' means: 'Fluid pressure sensor measurement in kilopascals (kPa)'
 
-Concept description 'urn:exampl.com:someConceptDescription_b3746d3d' means: 'Upper water pressure limit'
+Concept description 'urn:concept_description_6_0' means: 'Upper water pressure limit'
 
-Concept description 'urn:exampl.com:someConceptDescription_1f68b869' means: 'Maximum torque output'
+Concept description 'urn:concept_description_7_0' means: 'Maximum torque output'
 
-Concept description 'urn:exampl.com:someConceptDescription_6531af5e' means: 'Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25°C'
+Concept description 'urn:concept_description_8_0' means: 'Battery electromotive force (EMF) at 100 percent state of charge (SOC) at 25°C'
 
-Concept description 'urn:exampl.com:someConceptDescription_fb86eea8' means: 'Nominal electric current'
+Concept description 'urn:concept_description_9_0' means: 'Nominal electric current'
 
-Concept description 'urn:exampl.com:someConceptDescription_546749ce' means: 'Product activation start time in seconds since 1970-01-01 UTC'
+Concept description 'urn:concept_description_10_0' means: 'Product activation start time in seconds since 1970-01-01 UTC'
