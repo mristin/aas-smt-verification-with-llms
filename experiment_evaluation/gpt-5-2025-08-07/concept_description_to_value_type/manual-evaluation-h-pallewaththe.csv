@@ -1,0 +1,73 @@
+Expectation,Category,Case name,Correct,Remark
+expected,match,any_uri_match,yes,
+expected,match,base_64_binary_match,yes,
+expected,match,boolean_match,yes,
+expected,match,byte_match,yes,
+expected,match,date_match,yes,
+expected,match,date_time_match,yes,
+expected,match,decimal_match,yes,
+expected,match,double_match,yes,
+expected,match,duration_match,yes,
+expected,match,float_match,yes,"The LLM indicated that the type xs:float may be insufficient in precision, and suggested xs:double. "
+expected,match,g_day_match,yes,
+expected,match,g_month_day_match,yes,"The LLM explained that the chosen value type xs:gMonthDay represents a specific month-and-day recurring annually, that does not describe the concept description correctly. It also gave a correct suggestion. "
+expected,match,g_month_match,yes,
+expected,match,g_year_match,yes,
+expected,match,g_year_month_match,yes,
+expected,match,hex_binary_match,yes,
+expected,match,int_match,yes,"The LLM indicated that xs:int restricts values to whole numbers and suggests a better value type xs:double. However, xs:int should be accepted or not depending on a more specific description (for the element) and the given concept descript is fine."
+expected,match,integer_match,no,"The LLM considered the term ""relative to expected value"" in the concept description as a fraction, but it failed to properly consider the part ""the number can be negative"" which suggests indirectly this is not a fracion but a subtraction. "
+expected,match,long_match,yes,The LLM indicated that the type xs:long will only work till year 2262.
+expected,match,negative_integer_match,yes,"The LLM suggested a better value type considering the temporal semantics. However, the given value type should also be accepted considering the concept description."
+expected,match,non_negative_integer_match,yes,"The LLM suggested a better value type considering the temporal semantics, fractional years or finer granularity. "
+expected,match,non_positive_integer_match,yes,"The LLM suggested that the value can be a fraction and thus xs:double. However, xs:nonPositiveInteger should be accepted or not depending on a more specific description (for the element)."
+expected,match,positive_integer_match,yes,
+expected,match,short_match,yes,
+expected,match,string_match,yes,
+expected,match,time_match,yes,
+expected,match,unsigned_byte_match,yes,
+expected,match,unsigned_int_match,yes,"The LLM indicated that the revision number should be a string. However, again the give value type should be accepted or not depending on a more specific description (for the element) not only on the concept description and the given value type can be considered fine for the concept description."
+expected,match,unsigned_long_match,yes,The LLM correctly suggested xs:duration as a better value type.
+expected,match,unsigned_short_match,yes,"The LLM suggested xs:string. However, again this depends and should also be accepted. "
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_any_uri,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_base_64_binary,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_boolean,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_date,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_date_time,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_duration,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_hex_binary,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_string,yes,
+unexpected,domain mismatch,domain_mismatch_numeric_instead_of_time,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_byte,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_decimal,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_double,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_float,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_int,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_integer,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_long,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_negative_integer,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_negative_integer,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_positive_integer,yes,"The LLM correctly decribed the concept. This is a depth measurement, and term ""below sea level"" itself does not constraint it to be negative number, description should be more specific if this should be the case. "
+unexpected,domain mismatch,domain_mismatch_string_instead_of_positive_integer,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_short,yes,"The LLM gave an acceptavle suggestion. However, better suggestion would be xs:short."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_byte,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_int,yes,"Empty response, The LLM accepted the given value type. If we considerd the LLM's earlier responses for the ""Protocol revision number"" and ""Revision number of firmware"" were correct, this should also be consided as a correct response from the LLM."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_long,yes,
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_short,yes,"Empty response, The LLM accepted the given value type. "
+unexpected,imprecise string,imprecise_string_instead_of_any_uri,yes,
+unexpected,imprecise string,imprecise_string_instead_of_base_64_binary,yes,
+unexpected,imprecise string,imprecise_string_instead_of_boolean,yes,
+unexpected,imprecise string,imprecise_string_instead_of_date,yes,
+unexpected,imprecise string,imprecise_string_instead_of_date_time,yes,
+unexpected,imprecise string,imprecise_string_instead_of_duration,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_day,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_month,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_month_day,yes,xs:gMonthDay has a repetition period (one year). Therefore the LLM's suggestion is correct. 
+unexpected,imprecise string,imprecise_string_instead_of_g_year,yes,
+unexpected,imprecise string,imprecise_string_instead_of_g_year_month,yes,
+unexpected,imprecise string,imprecise_string_instead_of_hex_binary,yes,
+unexpected,imprecise string,imprecise_string_instead_of_time,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_decimal_instead_of_double,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_double_instead_of_decimal,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_float_instead_of_decimal,yes,
+unexpected,numeric precision mismatch,numeric_precision_mismatch_float_instead_of_double,yes,
