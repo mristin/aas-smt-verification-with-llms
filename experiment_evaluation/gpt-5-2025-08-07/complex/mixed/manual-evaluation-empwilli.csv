@@ -1,0 +1,58 @@
+Category, Case name, experiment, Correct,Remark
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_description_1, yes, "not tasked - unit mismatch in concept description"
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_description_2, yes,
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_unit, yes,
+mixed, multiple_issues_in_one_element_energy_consumption, concept_description_to_value_type,
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_display_name, yes,
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_id_short, yes_1,
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_id_short, yes_2, "not tasked - mismatch concept description description vs concept description unit"
+mixed, multiple_issues_in_one_element_energy_consumption, description_to_id_short, yes_3, "not tasked - mismatch in property description vs concept description unit"
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_1, yes, "not tasked - mismatch in concept description unit vs concept description description"
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_2, yes, "not tasked - mismatch in property value type vs concept description description"
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_3, yes, "not tasked - mismatch in property display name vs concept description description; typo in display name"
+mixed, multiple_issues_in_one_element_force, concept_description_to_description_4, yes, "not tasked - typo in display name"
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_1, yes,
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_2, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_3, yes, "not tasked - mismatch in property display name vs property description and concept description description; typo in display name"
+mixed, multiple_issues_in_one_element_force, concept_description_to_unit_4, yes, "not tasked - typo in id short"
+mixed, multiple_issues_in_one_element_force, concept_description_to_value_type, yes, "correctly identifies the concept description to value type mismatch, also includes analysis for mismatch of unit to description."
+mixed, multiple_issues_in_one_element_force, description_to_display_name, yes,
+mixed, multiple_issues_in_one_element_force, description_to_id_short_1, yes, "correctly identifies the mismatch; also identifies the typo in the id short"
+mixed, multiple_issues_in_one_element_force, description_to_id_short_2, yes, "not tasked - typo in display name"
+mixed, multiple_issues_in_one_element_force, description_to_id_short_3, yes, "not tasked - mismatch of concept description unit vs concept description description"
+mixed, multiple_issues_in_one_element_force, description_to_id_short_4, yes, "not tasked - mismatch of property value type and concept description description"
+mixed, multiple_issues_in_one_element_force, description_to_id_short_5, yes, "not tasked - typo in concept description id"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_description_1, yes, "not tasked - mismatch in concept description description vs concept description unit"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_description_2, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_unit_1, yes,
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_unit_2, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_unit_3, yes, "not tasked - typo in display name"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_unit_4, yes, "not tasked - typo in concept description id"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, concept_description_to_value_type, yes,
+mixed, multiple_issues_in_one_element_motor_operating_temperature, description_to_display_name, yes, "correctly assesses the properties as equivalent; identifies typo and suggests better naming"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, description_to_id_short_1, yes, "correctly assesses that there is no mismatch and suggests to keep the property as is"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, description_to_id_short_2, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, description_to_id_short_3, yes, "not tasked - mismatch in concept description description vs concept description unit"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, description_to_id_short_4, yes, "not tasked - typo in display name"
+mixed, multiple_issues_in_one_element_motor_operating_temperature, description_to_id_short_5, yes, "not tasked - typo in concept description id"
+mixed, multiple_issued_in_one_element_operating_pressure, concept_description_to_description_1, yes,
+mixed, multiple_issued_in_one_element_operating_pressure, concept_description_to_description_2, yes, "not tasked - mismatch in concept description description vs concept description unit vs concept description definition"
+mixed, multiple_issued_in_one_element_operating_pressure, concept_description_to_description_3, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issued_in_one_element_operating_pressure, concept_description_to_unit, yes,
+mixed, multiple_issued_in_one_element_operating_pressure, concept_description_to_value_type, yes,
+mixed, multiple_issued_in_one_element_operating_pressure, description_to_display_name, yes, "no mismatch deteched, no change suggested"
+mixed, multiple_issued_in_one_element_operating_pressure, description_to_id_short_1, yes, "not tasked - mismatch in property description vs property value type"
+mixed, multiple_issued_in_one_element_operating_pressure, description_to_id_short_2, yes, "not tasked - mismatch in concept description description/definition vs concept description unit"
+mixed, multiple_issued_in_one_element_operating_pressure, description_to_id_short_3, yes, "not tasked - mismatch in property id short vs concept description description"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, concept_description_to_description_1, yes,
+mixed, multiple_issued_in_one_element_waterproof_casing_length, concept_description_to_description_2, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, concept_description_to_description_3, yes, "not tasked - mismatch in concept description unit SI-prefix and concept description description"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, concept_description_to_description_4, yes, "not tasked - typo in property display name"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, concept_description_to_unit, yes,
+mixed, multiple_issued_in_one_element_waterproof_casing_length, concept_description_to_value_type, yes,
+mixed, multiple_issued_in_one_element_waterproof_casing_length, description_to_display_name, yes, "correctly identified the contraction; additionally identified typo"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, description_to_id_short_1, yes,
+mixed, multiple_issued_in_one_element_waterproof_casing_length, description_to_id_short_2, yes, 
+mixed, multiple_issued_in_one_element_waterproof_casing_length, description_to_id_short_3, yes, "not tasked - mismatch in property value type vs property description"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, description_to_id_short_4, yes, "not tasked - mismatch in concept description unit SI-prefix and concept description description"
+mixed, multiple_issued_in_one_element_waterproof_casing_length, description_to_id_short_5, yes, "not tasked - typo in display name"
