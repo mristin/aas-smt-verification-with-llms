@@ -11,7 +11,7 @@ expected,no uncommon phrasing,no_uncommon_phrasing,yes,
 expected,semantic inversion,semantic_inversion,yes,
 expected,syntax,syntax,yes,
 unexpected,ambiguity,ambiguity,yes,
-unexpected,context words sense disambiguation,context_words_sense_disambiguation,no,"The LLM fialed to recognize this, whereas it recognized earlier a smaller mismatch between the mechanical power and mechanical output power. "
+unexpected,context words sense disambiguation,context_words_sense_disambiguation,no,"The LLM failed to recognize this, whereas it recognized earlier a smaller mismatch between the mechanical power and mechanical output power. "
 unexpected,contradiction,contradiction,yes,
 unexpected,negation mismatch,negation_mismatch,yes,
 unexpected,omission,omission,yes,
