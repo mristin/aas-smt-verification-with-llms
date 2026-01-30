@@ -1,0 +1,32 @@
+Category, Case name, Experiment, Correct, Remark
+real-elements, data_model_for_asset_location_area_description, concept_description_to_description, yes, "empty array (no concept descriptions)"
+real-elements, data_model_for_asset_location_area_description, concept_description_to_unit, yes, "empty array (no concept descriptions)"
+real-elements, data_model_for_asset_location_area_description, concept_description_to_value_type, no, "not tasked - fails to recognize MultiLanguageProperty as valid option to model a textual representation"
+real-elements, data_model_for_asset_location_area_description, description_to_display_name, yes, "correctly identifies that the values are semantically equivalent"
+real-elements, data_model_for_asset_location_area_description, description_to_id_short, no, "fails to match description and id short"
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_description, yes, "not tasked - mismatch of property description/idshort vs property value type"
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_unit, yes, "correctly recognizes, that the property should not have a unit; check for unit not possible as no concept descriptions are provided; additionally recognizes mismatch in property value type vs proeprty idshort/description"
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, concept_description_to_value_type, no, "finds mismatch in concept description vs value type; however, there are no concept descriptions in the environment; could maybe be improved via more specific prompt"
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, description_to_display_name, no, "finds that display name and description are the same, however, the submodel element does not provide a display name"
+real-elements, inspection-documents_of_steel_products_issue_date_cd_to_vt, description_to_id_short, yes, "correctly finds that both values are semantically equivalent, suggests no change; finds a mismatch in value type and suggests change in value type"
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, concept_description_to_description_1, yes, "not tasked - mismatch property value type vs concept description description"
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, concept_description_to_description_2, no, "suggests to provide a unit for the property"
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, concept_description_to_unit, yes, "empty array"
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, concept_description_to_value_type, yes,
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, description_to_display_name, yes,
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, description_to_id_short_1, yes, "Note: compares id short to concept description description instead to non-present property description"
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, description_to_id_short_2, yes, "not tasked - mismatch in property value type vs concept description unit"
+real-elements, inspection_documents_of_steel_products_notch_impact_workd_mean_d_to_vt, description_to_id_short_3, no, "suggests improvement in wording of concept description definition"
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_description, yes, "not tasked - mismatch of property description vs property value type"
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_unit, yes, "empty list"
+real-elements, plant_asset_management_date_cd_to_vt, concept_description_to_value_type, yes,
+real-elements, plant_asset_management_date_cd_to_vt, description_to_display_name, yes,
+real-elements, plant_asset_management_date_cd_to_vt, description_to_id_short_1, yes,
+real-elements, plant_asset_management_date_cd_to_vt, description_to_id_short_2, yes, "not tasked - mismatch of property description vs property value type"
+real-elements, technical_dta_for_agv_vehicle_width, concept_description_to_description, yes, "correctly identifies a semantic match; however, discovered mismatch in property value type vs property description and suggests change"
+real-elements, technical_dta_for_agv_vehicle_width, concept_description_to_unit, yes,
+real-elements, technical_dta_for_agv_vehicle_width, concept_description_to_value_type, yes, "suggests use of xs:decimal, could maybe be improved with better prompt"
+real-elements, technical_dta_for_agv_vehicle_width, description_to_display_name, yes,
+real-elements, technical_dta_for_agv_vehicle_width, description_to_id_short_1, yes,
+real-elements, technical_dta_for_agv_vehicle_width, description_to_id_short_2, yes, "not tasked - mismatch of property description vs property value type"
+real-elements, technical_dta_for_agv_vehicle_width, description_to_id_short_3, yes, "not tasked - suggests adding a unit to concept description"
