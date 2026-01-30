@@ -1,0 +1,28 @@
+Category," Case name"," experiment"," Correct",Remark
+mixed," multiple_issues_in_one_element_energy_consumption"," concept_description_to_description"," yes"," The LLM identified the physical unit mismatch in the concept description (mJ and MJ) as well as the mismatch between the description (rate of change of energy) and the concept description (energy). "
+mixed," multiple_issues_in_one_element_energy_consumption"," concept_description_to_unit"," yes",The LLM identified the physical unit mismatch correctly and a gave correct suggestion. 
+mixed," multiple_issues_in_one_element_energy_consumption"," concept_description_to_value_type"," yes",The value type is acceptable for the concept description - therefore the LLM gave an empty response.
+mixed," multiple_issues_in_one_element_energy_consumption"," description_to_display_name"," yes",The LLM identified the mismatch and provided a better suggestion. 
+mixed," multiple_issues_in_one_element_energy_consumption"," description_to_id_short"," yes"," The LLM identified the mismatch between the id_short and the description and provided a correct suggestion. The LLM provided more responses for the mismatches in concept description and unit, description and concept description as well."
+mixed," multiple_issues_in_one_element_force"," concept_description_to_description"," yes*","The LLM identified many mismatches and provided correct suggestions. *However, the difference between the description and concept description (in this case/experiment) had not been identified by the LLM (max force and force)."
+mixed," multiple_issues_in_one_element_force"," concept_description_to_unit"," yes",Again the LLM identified many mismatches and provided correct responses for the related case/experiment as well as several other cases/experiments. (The LLM identified the case related concept description to unit mismatch and gave a correct suggestion as well.) 
+mixed," multiple_issues_in_one_element_force"," concept_description_to_value_type"," yes",
+mixed," multiple_issues_in_one_element_force"," description_to_display_name"," yes",
+mixed," multiple_issues_in_one_element_force"," description_to_id_short"," yes",Again the LLM identified many mismatches and provided correct responses for the related case/experiment as well as several other cases/experiments. 
+mixed," multiple_issues_in_one_element_operating_temperature",concept_description_to_description," yes*",The LLM identified many mismatches and provided correct responses for several other cases/experiments. *However the related case/experiment was not correctly detected - concept description specifies celsius where as description does not and thus the description should be more specific.
+mixed," multiple_issues_in_one_element_operating_temperature"," concept_description_to_unit_1"," yes"," Again the LLM identified many mismatches and provided correct responses for the related case/experiment as well as several other cases/experiments. "
+mixed," multiple_issues_in_one_element_operating_temperature"," concept_description_to_value_type"," yes",
+mixed," multiple_issues_in_one_element_operating_temperature"," description_to_display_name"," yes",
+mixed," multiple_issues_in_one_element_operating_temperature"," description_to_id_short"," No","The LLM failed to detect a possible mismatch between the id_short and description, since the description specifies the word 'motor operation'. Furthermore, the LLM gave a ""suggestion"": ""keep"" response instead of empty. The LLM identified many mismatches and provided correct responses for several other cases/experiments."
+mixed," multiple_issues_in_one_element_operating_pressure"," concept_description_to_description"," yes",The LLM identified the mismatch between the concept description and the description and gave correct suggestions. It also detected the mismatches within the concept description and mismatches for other cases/exp.
+mixed," multiple_issues_in_one_element_operating_pressure"," concept_description_to_unit"," yes*","Gave a correct suggestion to change the units. However, concept description's description text should also be modified."
+mixed," multiple_issues_in_one_element_operating_pressure"," concept_description_to_value_type"," yes",
+mixed," multiple_issues_in_one_element_operating_pressure",description_to_display_name," yes","But provided a non empty response with ""suggestion"": ""No change needed."""
+mixed," multiple_issues_in_one_element_operating_pressure",description_to_id_short,"  yes",Again the LLM identified many mismatches and provided correct responses for the related case/experiment as well as several other cases/experiments. 
+mixed," multiple_issues_in_one_element_waterproof_casing_length"," concept_description_to_description"," yes"," Again the LLM identified many mismatches and provided correct responses for the related case/experiment as well as several other cases/experiments. The value type suggestion is not a good suggestion."
+mixed," multiple_issues_in_one_element_waterproof_casing_length"," concept_description_to_unit"," yes",
+mixed," multiple_issues_in_one_element_waterproof_casing_length"," concept_description_to_value_type"," yes",
+mixed," multiple_issues_in_one_element_waterproof_casing_length",description_to_display_name," yes",
+mixed," multiple_issues_in_one_element_waterproof_casing_length",description_to_idShort," yes",Again the LLM identified many mismatches and provided correct responses for the related case/experiment as well as several other cases/experiments. 
+,,,,
+
