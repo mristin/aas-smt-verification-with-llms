@@ -15,8 +15,8 @@ expected,match,g_month_match,yes,
 expected,match,g_year_match,yes,
 expected,match,g_year_month_match,yes,
 expected,match,hex_binary_match,yes,
-expected,match,int_match,yes,"The LLM indicated that xs:int restricts values to whole numbers and suggests a better value type xs:double. However, xs:int should be accepted or not depending on a more specific description (for the element) and the given concept descript is fine."
-expected,match,integer_match,no,"The LLM considered the term ""relative to expected value"" in the concept description as a fraction, but it failed to properly consider the part ""the number can be negative"" which suggests indirectly this is not a fracion but a subtraction. "
+expected,match,int_match,yes,"The LLM indicated that xs:int restricts values to whole numbers and suggests a better value type xs:double. However, xs:int should be accepted or not depending on a more specific description (for the element) and the given concept description is fine."
+expected,match,integer_match,no,"The LLM considered the term ""relative to expected value"" in the concept description as a fraction, but it failed to properly consider the part ""the number can be negative"" which suggests indirectly this is not a fraction but a subtraction. "
 expected,match,long_match,yes,The LLM indicated that the type xs:long will only work till year 2262.
 expected,match,negative_integer_match,yes,"The LLM suggested a better value type considering the temporal semantics. However, the given value type should also be accepted considering the concept description."
 expected,match,non_negative_integer_match,yes,"The LLM suggested a better value type considering the temporal semantics, fractional years or finer granularity. "
@@ -47,11 +47,11 @@ unexpected,domain mismatch,domain_mismatch_string_instead_of_integer,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_long,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_negative_integer,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_non_negative_integer,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_non_positive_integer,yes,"The LLM correctly decribed the concept. This is a depth measurement, and term ""below sea level"" itself does not constraint it to be negative number, description should be more specific if this should be the case. "
+unexpected,domain mismatch,domain_mismatch_string_instead_of_non_positive_integer,yes,"The LLM correctly described the concept. This is a depth measurement, and term ""below sea level"" itself does not constraint it to be negative number, description should be more specific if this should be the case. "
 unexpected,domain mismatch,domain_mismatch_string_instead_of_positive_integer,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_short,yes,"The LLM gave an acceptavle suggestion. However, better suggestion would be xs:short."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_short,yes,"The LLM gave an acceptable suggestion. However, better suggestion would be xs:short."
 unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_byte,yes,
-unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_int,yes,"Empty response, The LLM accepted the given value type. If we considerd the LLM's earlier responses for the ""Protocol revision number"" and ""Revision number of firmware"" were correct, this should also be consided as a correct response from the LLM."
+unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_int,yes,"Empty response, The LLM accepted the given value type. If we considered the LLM's earlier responses for the ""Protocol revision number"" and ""Revision number of firmware"" were correct, this should also be considered as a correct response from the LLM."
 unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_long,yes,
 unexpected,domain mismatch,domain_mismatch_string_instead_of_unsigned_short,yes,"Empty response, The LLM accepted the given value type. "
 unexpected,imprecise string,imprecise_string_instead_of_any_uri,yes,
