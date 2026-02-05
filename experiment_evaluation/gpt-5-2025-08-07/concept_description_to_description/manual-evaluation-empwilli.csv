@@ -1,5 +1,5 @@
 Expectation,Case name,Correct,Remark
-expected,no_ambigiuity,yes,
+expected,no_ambiguity,yes,
 expected,no_context_words_sense_disambiguation,yes,
 expected,no_contradiction,yes,"The LLM suggests to homonogenize the wording to use the proper terminology for the description."
 expected,no_negation_mismatch,no,"The LLM suggests changes in other properties of the Property Submodel Element."
@@ -10,7 +10,7 @@ expected,no_syntax_error,yes,
 expected,no_terminology_mismatch,yes,
 expected,no_uncommon_phrasing,yes,
 expected,paraphrase_synonymy,yes,
-unexpected,ambigiuity,yes,
+unexpected,ambiguity,yes,
 unexpected,context_words_sense_disambiguation,yes,
 unexpected,contradiction,yes,
 unexpected,negation_mismatch,yes,
