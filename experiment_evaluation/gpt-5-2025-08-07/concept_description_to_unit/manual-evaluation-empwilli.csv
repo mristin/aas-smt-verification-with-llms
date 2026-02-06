@@ -12,7 +12,7 @@ expected,semantic match scale-invariant,semantic_match_scale_invariant_power_kil
 expected,semantic match scale-invariant,semantic_match_scale_invariant_power_milli,yes,
 expected,semantic match scale-invariant,semantic_match_scale_invariant_pressure_kilo,yes,
 expected,semantic match without unit in description,semantic_match_without_unit_in_description_energy,yes,
-expected,semantic match without unit in description,semantic_match_without_unit_in_escription_force,yes,
+expected,semantic match without unit in description,semantic_match_without_unit_in_description_force,yes,
 expected,semantic match without unit in description,semantic_match_without_unit_in_description_power,yes,
 expected,semantic match without unit in description,semantic_match_without_unit_in_description_pressure,yes,
 expected,semantic match without unit in description,semantic_match_without_unit_in_description_temperature,yes,
