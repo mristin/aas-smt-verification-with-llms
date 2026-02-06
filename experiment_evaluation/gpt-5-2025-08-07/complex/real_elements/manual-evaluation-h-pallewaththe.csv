@@ -1,0 +1,26 @@
+Category," Case name"," experiment"," Correct",Remark
+real-elements," data_model_for_asset_location_area_description"," concept_description_to_description"," yes","Correct, the conceptDescription is not embedded locally. But the semanticId gives a reference to an external entry. However did the LLM fetch this data?"
+real-elements," data_model_for_asset_location_area_description"," concept_description_to_unit"," yes",
+real-elements," data_model_for_asset_location_area_description"," concept_description_to_value_type"," yes","Value type is not given in the data(model.json), but the LLM suggested a reasonable value type xs:string for the concept. "
+real-elements," data_model_for_asset_location_area_description",description_to_display name,"  yes","No mismatch, the LLM also suggested a minor correction for uppercase first letter."
+real-elements," data_model_for_asset_location_area_description"," description_to_id_short"," yes",The LLM identified the errors and gave a correct suggestion. 
+real-elements," inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt"," concept_description_to_description"," yes*","The LLM provided suggestions (correct) for *wrong experiments or cases (units, value type) and not for the correct case concept description to description. "
+real-elements," inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt"," concept_description_to_unit"," yes",
+real-elements," inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt"," concept_description_to_value_type"," yes",The LLM correctly identified the mismatch and provided correct suggestions.
+real-elements," inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt",description_to_display name,"  yes",
+real-elements," inspection_documents_of_steel_products_notch_impact_work_mean_d_to_vt"," description_to_id_short"," yes*",The LLM gave a *suggestion: no change needed instead of an empty array. The LLM again provided suggestions (correct) for *wrong experiments.
+real-elements," inspection-documents_of_steel_products_issue_date_cd_to_vt"," concept_description_to_description"," yes*",The LLM provided suggestions (correct) for *wrong experiments.
+real-elements," inspection-documents_of_steel_products_issue_date_cd_to_vt"," concept_description_to_unit"," yes","Correct with some explanations regarding physical units, but this can also be an empty array. Additional info related to the value type is not needed here. "
+real-elements," inspection-documents_of_steel_products_issue_date_cd_to_vt"," concept_description_to_value_type"," yes",
+real-elements," inspection-documents_of_steel_products_issue_date_cd_to_vt",description_to_display_name," yes*","No change needed suggestion instead of an empty array. However, it should be noted that the display name is not given entirely in the data(model.json), therefore the LLM should suggest to include it."
+real-elements," inspection-documents_of_steel_products_issue_date_cd_to_vt"," description_to_id_short"," yes*",*No change needed suggestion instead of an empty array plus wrong experiment suggestion.
+real-elements," plant_asset_management_date_cd_to_vt"," concept_description_to_description"," yes*",The LLM provided suggestions (correct) for *wrong experiments.
+real-elements," plant_asset_management_date_cd_to_vt"," concept_description_to_unit"," yes",
+real-elements," plant_asset_management_date_cd_to_vt"," concept_description_to_value_type"," yes",
+real-elements," plant_asset_management_date_cd_to_vt",description_to_display_name," yes",
+real-elements," plant_asset_management_date_cd_to_vt",description_to_id_short," yes*","The LLM provided correct suggestion for the correct experiment, but *also provided suggestions (correct) for *wrong experiments."
+real-elements," technical_data_for_agv_vehicle_width"," concept_description_to_description"," yes*"," The LLM indicated no change needed for the current experiment (*instead of an empty array), but again *also provided suggestions (correct) for *wrong experiments."
+real-elements," technical_data_for_agv_vehicle_width"," concept_description_to_unit"," yes",
+real-elements," technical_data_for_agv_vehicle_width"," concept_description_to_value_type"," yes",
+real-elements," technical_data_for_agv_vehicle_width",description_to_display_name," yes",
+real-elements," technical_data_for_agv_vehicle_width",description_to_id_short," yes*","The LLM provided correct suggestion for the correct experiment, but *also provided suggestions (correct) for *wrong experiments."
