@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "The unit 'hp' (horsepower) is a non-SI unit typically used for mechanical power, not for electrical power consumption. Electrical power is conventionally expressed in watts (W) or kilowatts (kW), and consumption over time as kilowatt-hours (kWh).",
-    "suggestion": "W"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "The unit is MJ (megajoules) while the definition states millijoules; these differ by a factor of 10^9.",
-    "suggestion": "mJ"
-  }
-]

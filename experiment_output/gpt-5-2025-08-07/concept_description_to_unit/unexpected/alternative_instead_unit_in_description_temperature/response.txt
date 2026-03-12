@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "Semantic mismatch: the unit is °F, but the definition specifies the value is in °C.",
-    "suggestion": "°C"
-  }
-]

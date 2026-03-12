@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The description 'Max humidity' is too generic and does not align with the concept description 'Maximum ambient relative humidity at 25°C'. It omits that the humidity is relative and the 25°C condition, which could lead to misinterpretation (e.g., absolute humidity or unspecified conditions).",
-    "suggestion": "Update the description to 'Maximum ambient relative humidity at 25°C'."
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"The element description 'Max humidity' is too generic relative to the concept description 'Maximum ambient relative humidity at 25°C'. It omits 'relative', 'ambient', and the reference temperature (25°C), so the element’s wording does not clearly match the concept’s semantics.","suggestion":"Update the element description to explicitly state 'Maximum ambient relative humidity at 25°C' (or equivalent), or alternatively link the element to a broader concept description that represents generic 'maximum humidity' without specifying humidity type or temperature."}]}

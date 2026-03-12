@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Semantic mismatch: unit 'kg' (kilogram, a mass unit) does not match the definition 'Operating temperature of the motor', which is a temperature quantity.",
-    "suggestion": "K"
-  }
-]

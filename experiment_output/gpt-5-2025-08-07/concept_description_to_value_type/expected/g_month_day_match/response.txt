@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "xs:gMonthDay represents a specific month-and-day recurring annually (e.g., --12-25), while 'Monthly inspection day' denotes a day-of-month recurring every month, independent of month.",
-    "suggestion": "xs:gDay"
-  }
-]

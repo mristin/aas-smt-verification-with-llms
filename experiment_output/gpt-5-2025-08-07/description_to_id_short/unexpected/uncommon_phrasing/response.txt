@@ -1,7 +1,0 @@
-[
-  {
-    "path": "heaviness",
-    "explanation": "ID-short 'heaviness' and description 'Weight heavy' are inconsistent and ambiguous. The description suggests a qualitative label ('heavy') while the value type is numeric (xs:double). If the intended quantity is weight, both the ID-short and description should reflect that and include a suitable unit.",
-    "suggestion": "Rename ID-short to 'weight', change description to 'Weight', and define unit 'N' (newton); keep value type xs:double. If mass was intended instead, use ID-short 'mass', description 'Mass', and unit 'kg'."
-  }
-]

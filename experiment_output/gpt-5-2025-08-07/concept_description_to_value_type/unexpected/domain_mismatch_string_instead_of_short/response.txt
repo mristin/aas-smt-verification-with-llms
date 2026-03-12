@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a count of components that may be negative. Counts are integers, not free-text strings. The current value type xs:string does not represent signed integers.",
-    "suggestion": "xs:int"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "Unit 'hp' (horsepower) does not match the definition 'Electrical power consumption in W'; the definition specifies watts.",
-    "suggestion": "W"
-  }
-]

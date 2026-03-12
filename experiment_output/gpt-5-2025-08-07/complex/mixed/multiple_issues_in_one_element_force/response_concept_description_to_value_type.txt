@@ -1,7 +1,0 @@
-[
-  {
-    "path": "appiled_force",
-    "explanation": "The value type xs:string does not correspond to the concept 'Applied force', which is a quantitative physical measurement; a numeric type is appropriate. Additionally, the associated unit 'WH' is inconsistent with force, but irrespective of unit, the value should be numeric.",
-    "suggestion": "xs:double"
-  }
-]

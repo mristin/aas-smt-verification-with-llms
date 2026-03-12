@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Description states 'Shaft diameter' (a diameter of a shaft), while the display name is 'Axle length' (a length of an axle). These refer to different dimensions and different components.",
-    "suggestion": "Rename the display name to 'Shaft diameter' to align with the description."
-  }
-]

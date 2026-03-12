@@ -1,7 +1,7 @@
 [
   {
     "path": "urn:submodel_2_0.some_id_short",
-    "explanation": "Property says 'Water-resistant housing length' while the concept description says 'Waterproof enclosure length'. 'Water-resistant' and 'waterproof' imply different ingress protection levels, and 'housing' vs 'enclosure' are not guaranteed synonyms.",
-    "suggestion": "Water-resistant housing length"
+    "explanation": "Property says \u201cWater-resistant housing length\u201d while the concept is \u201cWaterproof enclosure length.\u201d Water-resistant \u2260 waterproof; the concept is stricter and does not semantically cover merely water-resistant housings (even though \u201chousing/enclosure\u201d are synonyms).",
+    "suggestion": "Align the water ingress qualifier: either change the property description to \u201cWaterproof enclosure length\u201d if it is indeed waterproof, or remap/create a concept such as \u201cWater-resistant housing length\u201d (or a more general \u201cEnclosure length\u201d without the waterproof qualifier) and link the property to that concept."
   }
 ]

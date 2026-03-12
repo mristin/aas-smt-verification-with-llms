@@ -1,7 +1,0 @@
-[
-  {
-    "path": "Date",
-    "explanation": "The description and concept description indicate a date, but the value type is xs:string, which does not enforce date semantics.",
-    "suggestion": "xs:date"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "power",
-    "explanation": "No mismatch: ID-short 'power' corresponds to the description 'Mechanical Power'. The value type xs:double is appropriate for a numeric power quantity.",
-    "suggestion": "No change needed."
-  }
-]

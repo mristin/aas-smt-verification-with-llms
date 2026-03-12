@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Display name 'Suitable for wet environments' contradicts the description 'Do not operate in wet conditions'.",
-    "suggestion": "Change the display name to 'Not suitable for wet environments' to align with the description."
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type xs:string does not match the numeric nature of a temperature measurement in degrees Celsius; sensor data should allow decimal and negative values.",
-    "suggestion": "xs:double"
-  }
-]

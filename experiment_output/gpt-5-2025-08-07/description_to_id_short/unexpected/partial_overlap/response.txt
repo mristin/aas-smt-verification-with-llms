@@ -1,7 +1,0 @@
-[
-  {
-    "path": "material",
-    "explanation": "ID-short 'material' implies base material, while the description states 'Surface coating (steel alloy)'. A surface coating is not typically a steel alloy; steel alloy denotes the base material. Thus, the ID-short and description refer to different concepts.",
-    "suggestion": "Rename ID-short to 'surfaceCoating' and update the description to 'Surface coating'; use appropriate coating values (e.g., zinc, chrome, paint) instead of 'steel alloy'. Alternatively, keep ID-short 'material' and change the description to 'Base material (steel alloy)'."
-  }
-]

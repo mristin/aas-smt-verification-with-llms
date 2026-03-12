@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Concept 'System operational status indicator' implies a binary state (operational vs not). Using xs:long allows arbitrary integers and does not match the boolean nature of an indicator.",
-    "suggestion": "xs:boolean"
-  }
-]

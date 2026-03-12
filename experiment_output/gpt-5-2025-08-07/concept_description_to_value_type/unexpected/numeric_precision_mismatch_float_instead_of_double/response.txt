@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Concept description requires double precision for a high-precision scientific measurement, but the element uses xs:float, which provides less precision.",
-    "suggestion": "xs:double"
-  }
-]

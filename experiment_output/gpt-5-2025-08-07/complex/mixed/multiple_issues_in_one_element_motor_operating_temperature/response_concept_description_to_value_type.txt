@@ -1,7 +1,0 @@
-[
-  {
-    "path": "opTemp",
-    "explanation": "xs:negativeInteger restricts values to whole negative numbers, while temperature readings (operating temperature in °C/°F) can be positive or negative and often include fractional values.",
-    "suggestion": "xs:double"
-  }
-]

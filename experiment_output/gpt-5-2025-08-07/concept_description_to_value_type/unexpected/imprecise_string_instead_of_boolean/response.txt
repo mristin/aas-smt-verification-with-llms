@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept 'Machine is operational status indicator' denotes a binary state (true/false). Using xs:string allows arbitrary text and does not enforce boolean semantics.",
-    "suggestion": "xs:boolean"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "VehicleWidth",
-    "explanation": "Concept '0173-1#02-AAG933#004' denotes a length (Maximum vehicle width), but the element is typed as xs:string with no unit specified; a length unit should be provided.",
-    "suggestion": "m"
-  }
-]

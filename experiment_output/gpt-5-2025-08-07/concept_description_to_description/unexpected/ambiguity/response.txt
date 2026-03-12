@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The element description 'Voltage' is too generic and does not correspond to the assigned concept description 'Rated DC input voltage', which specifies the rating, current type (DC), and context (input).",
-    "suggestion": "Rated DC input voltage"
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"Element description 'Voltage' is too generic and does not reflect the qualifiers in the linked concept description 'Rated DC input voltage' (rated value, DC, input).","suggestion":"Update the element description to 'Rated DC input voltage' (e.g., 'Input voltage (rated, DC)') to align with the concept, or link the element to a more general concept such as 'Voltage' if the property is intended to be generic."}]}

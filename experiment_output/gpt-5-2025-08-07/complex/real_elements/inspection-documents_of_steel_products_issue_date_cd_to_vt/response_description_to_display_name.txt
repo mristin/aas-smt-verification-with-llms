@@ -1,7 +1,0 @@
-[
-  {
-    "path": "IssueDate",
-    "explanation": "No mismatch: the description specifies a date format and day-level precision, which aligns with the display name 'IssueDate'.",
-    "suggestion": "No change needed."
-  }
-]

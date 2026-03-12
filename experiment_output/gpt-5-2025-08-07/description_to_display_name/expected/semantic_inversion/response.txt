@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "No semantic mismatch: 'Permitted voltage' and 'Allowed voltage' are synonymous and convey the same meaning.",
-    "suggestion": "No change needed; optionally standardize wording so both fields use the exact same term (e.g., 'Permitted voltage')."
-  }
-]

@@ -1,12 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Property description 'Non watertight casing length' contradicts the linked concept description 'Waterproof enclosure length'.",
-    "suggestion": "Change the property description to 'Waterproof enclosure length'."
-  },
-  {
-    "path": "some_id_short",
-    "explanation": "The property describes a non-watertight casing, while the linked concept denotes a waterproof enclosure.",
-    "suggestion": "Link the property to a concept that denotes 'Non-watertight casing length' (e.g., 'urn:exampl.com:NonWatertightCasingLength')."
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"The element description states “Non watertight casing length,” which denotes a casing that is not waterproof. The referenced concept description is “Waterproof enclosure length,” which denotes the opposite property. This is not a permissible specialization; it is a contradiction (non-watertight vs waterproof).","suggestion":"Align the semantics by either (a) changing the element description to “Waterproof enclosure length” if the concept is correct, or (b) linking the element to a concept description that explicitly denotes “Non‑watertight casing length” (and optionally update the ID-short/description to match)."}]}

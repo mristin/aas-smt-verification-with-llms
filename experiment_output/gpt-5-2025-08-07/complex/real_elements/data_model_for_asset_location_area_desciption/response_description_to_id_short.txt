@@ -1,7 +1,0 @@
-[
-  {
-    "path": "AreaDesciption",
-    "explanation": "ID-short is misspelled ('AreaDesciption') and does not correspond to the description 'Description of an area' and the concept description 'https://admin-shell.io/idta/mlp/areadescription/1/0'.",
-    "suggestion": "AreaDescription"
-  }
-]

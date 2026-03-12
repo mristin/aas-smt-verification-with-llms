@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Value type xs:string does not match a quantitative measurement (precision pressure in Pascal). Such sensor measurements are numeric and may require fractional values.",
-    "suggestion": "xs:double"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Declared as xs:string, but the concept describes a hexadecimal-encoded binary device fingerprint. A hex fingerprint represents binary data encoded as hex digits.",
-    "suggestion": "xs:hexBinary"
-  }
-]

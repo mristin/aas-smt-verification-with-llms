@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Concept description 'Product name' denotes textual data, but the element is typed as xs:long (an integer).",
-    "suggestion": "xs:string"
-  }
-]

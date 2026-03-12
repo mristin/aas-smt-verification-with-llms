@@ -1,5 +1,5 @@
 """Check if the LLM can infer that a element description corresponds to concept description."""
-
+import json
 import os
 import pathlib
 import sys
@@ -59,13 +59,14 @@ def main() -> int:
             f"specific information about a particular instance "
             f"that the concept description "
             f"should be able to capture semantically.\n\n"
-            f"Output any possible semantic improvement following the JSON schema:\n"
-            f"{experiments.common.JSONSCHEMA}\n\n"
             f"Here is the data to be analyzed:\n"
             f"{relevant_details}"
         )
 
-        response = client.generate(prompt)
+        response = client.generate(
+            prompt,
+            json_schema=json.loads(experiments.common.JSONSCHEMA)
+        )
 
         take.output_store.save_prompt_and_response(prompt=prompt, response=response)
 

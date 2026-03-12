@@ -1,7 +1,0 @@
-[
-  {
-    "path": "VehicleWidth",
-    "explanation": "No semantic mismatch: the description 'Maximum vehicle width' and the display name 'Vehicle width (max.)' convey the same meaning. For consistency and clarity, avoid abbreviations and align phrasing.",
-    "suggestion": "Maximum vehicle width"
-  }
-]

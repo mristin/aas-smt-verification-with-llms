@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type is xs:string, but the concept describes a numeric duration measurement in milliseconds. A string does not enforce numeric semantics, and xs:duration represents ISO 8601 durations rather than a millisecond value.",
-    "suggestion": "xs:double"
-  }
-]

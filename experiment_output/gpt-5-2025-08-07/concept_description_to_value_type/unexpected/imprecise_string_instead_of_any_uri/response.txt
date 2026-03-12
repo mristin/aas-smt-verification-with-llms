@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a Technical documentation URL, which should be represented as a URI rather than a generic string.",
-    "suggestion": "xs:anyURI"
-  }
-]

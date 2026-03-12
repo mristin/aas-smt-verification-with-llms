@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Display name 'Mechanical power' omits 'output' present in the description 'Mechanical output power', making the display name broader than the described concept.",
-    "suggestion": "Mechanical output power"
-  }
-]

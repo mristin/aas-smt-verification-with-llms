@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Temperature readings in degrees Celsius can be fractional; xs:int restricts values to whole numbers and loses precision for sensor data.",
-    "suggestion": "xs:double"
-  }
-]

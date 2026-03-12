@@ -1,7 +1,0 @@
-[
-  {
-    "path": "shaft_diameter",
-    "explanation": "No mismatch: ID-short 'shaft_diameter' corresponds to description 'Shaft diameter'.",
-    "suggestion": "Keep the ID-short. Optionally standardize casing to 'shaftDiameter' and specify a unit of measure such as 'mm' or 'm'."
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "AreaDesciption",
-    "explanation": "No semantic mismatch: the description 'Description of an area' corresponds to the display name 'area description'.",
-    "suggestion": "No change required. Optionally capitalize the display name to 'Area description' for consistency."
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "Date",
-    "explanation": "Display name 'Date' is too generic and does not reflect the specific meaning in the description ('Date of revision of the PAM specification sheet.').",
-    "suggestion": "Revision date of the PAM specification sheet"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:submodel_2_0.some_id_short",
-    "explanation": "Semantic mismatch between the concept description and unit. The definition is 'Electrical power consumption', which should typically be expressed in watts (W) or multiples; 'hp' (horsepower) is a non-SI unit commonly used for mechanical power and is atypical for electrical consumption.",
-    "suggestion": "W"
-  }
-]

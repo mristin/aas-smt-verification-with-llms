@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type is xs:string, but the concept description specifies a numeric error code constrained to -128 to 127, which aligns with the xs:byte range.",
-    "suggestion": "xs:byte"
-  }
-]

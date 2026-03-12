@@ -1,7 +1,0 @@
-[
-  {
-    "path": "Date",
-    "explanation": "The element denotes a calendar date (date of revision) but is typed as xs:string, which lacks date semantics and validation.",
-    "suggestion": "xs:date"
-  }
-]

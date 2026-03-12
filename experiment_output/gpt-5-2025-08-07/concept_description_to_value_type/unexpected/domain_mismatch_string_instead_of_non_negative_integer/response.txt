@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a remaining service life (a time duration) expressed in years. Using xs:string does not enforce temporal or numeric semantics.",
-    "suggestion": "xs:duration"
-  }
-]

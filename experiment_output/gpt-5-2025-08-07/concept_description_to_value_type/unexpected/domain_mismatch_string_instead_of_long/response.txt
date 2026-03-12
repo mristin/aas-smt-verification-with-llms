@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Concept describes a numeric timestamp measured in nanoseconds, but the value type is xs:string. This should be a whole-number type to represent nanosecond counts.",
-    "suggestion": "xs:long"
-  }
-]

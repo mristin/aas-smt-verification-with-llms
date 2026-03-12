@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Protocol version numbers often use dot-separated segments and/or qualifiers (e.g., 1.2, 2.0.1, 1.0-beta). The type xs:unsignedShort restricts values to whole numbers (0–65535) and cannot represent common version formats.",
-    "suggestion": "xs:string"
-  }
-]

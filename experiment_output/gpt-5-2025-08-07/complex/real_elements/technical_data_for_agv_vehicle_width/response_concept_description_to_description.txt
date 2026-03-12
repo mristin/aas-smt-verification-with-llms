@@ -1,7 +1,0 @@
-[
-  {
-    "path": "VehicleWidth",
-    "explanation": "The element’s description matches the concept description (“Maximum vehicle width”), but its value type is xs:string. Width is a quantitative length and should be represented as a numeric measure with an appropriate unit.",
-    "suggestion": "Use a numeric value type (e.g., xs:decimal) and specify a length unit, e.g., mm."
-  }
-]

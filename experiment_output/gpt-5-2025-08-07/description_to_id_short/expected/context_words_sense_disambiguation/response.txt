@@ -1,7 +1,0 @@
-[
-  {
-    "path": "mechanical_power",
-    "explanation": "ID-short 'mechanical_power' omits the qualifier 'output', while the description specifies 'Mechanical output power', which can cause ambiguity between input and output mechanical power.",
-    "suggestion": "mechanical_output_power"
-  }
-]

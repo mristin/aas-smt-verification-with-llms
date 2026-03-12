@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a depth measurement (a numeric physical quantity). Using xs:string prevents numeric validation and computations.",
-    "suggestion": "xs:double"
-  }
-]

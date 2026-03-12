@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type xs:nonPositiveInteger restricts values to whole numbers (and includes 0), while 'Altitude below sea level' is a continuous physical quantity that may require negative fractional values.",
-    "suggestion": "xs:double"
-  }
-]

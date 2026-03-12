@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The description specifies a material limited to steel alloys, while the display name is the generic 'Material', implying no restriction.",
-    "suggestion": "Change the display name to 'Material (steel alloy)' to align with the description."
-  }
-]

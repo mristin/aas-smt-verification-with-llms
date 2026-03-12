@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The description specifies 'Operating temperature', while the display name is 'Temperature', which is more general and omits the operating context.",
-    "suggestion": "Change the display name to 'Operating temperature' to align with the description."
-  }
-]

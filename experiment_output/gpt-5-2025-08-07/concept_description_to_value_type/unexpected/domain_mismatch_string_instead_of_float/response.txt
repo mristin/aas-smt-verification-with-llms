@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a temperature reading in Celsius, which is numeric sensor data, but the value type is xs:string.",
-    "suggestion": "xs:double"
-  }
-]

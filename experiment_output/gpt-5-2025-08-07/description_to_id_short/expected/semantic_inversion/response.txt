@@ -1,7 +1,0 @@
-[
-  {
-    "path": "allowed_voltage",
-    "explanation": "No semantic mismatch detected: the ID-short 'allowed_voltage' corresponds to the description 'Permitted voltage'. Minor wording inconsistency ('allowed' vs 'permitted') could be harmonized for clarity.",
-    "suggestion": "Change the description to 'Allowed voltage' (or alternatively change the ID-short to 'permitted_voltage') to keep terminology consistent."
-  }
-]

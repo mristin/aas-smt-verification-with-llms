@@ -1,7 +1,0 @@
-[
-  {
-    "path": "rated_power",
-    "explanation": "The ID-short 'rated_power' indicates a specific subtype ('rated power'), while the description is the general term 'Power'. This creates a semantic mismatch.",
-    "suggestion": "Change the description to 'Rated power' to align with the ID-short."
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "appiled_force",
-    "explanation": "Description states 'The maximum applied force' while the display name is 'appiled power'. Force and power are different physical concepts, so the display name does not correspond to the description.",
-    "suggestion": "Rename the display name to 'applied force' (or 'maximum applied force') to align with the description and correct the typo."
-  }
-]

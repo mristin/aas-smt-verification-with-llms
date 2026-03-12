@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a financial amount with decimal precision. Using xs:string does not capture numeric semantics and prevents precise numeric validation and operations.",
-    "suggestion": "xs:decimal"
-  }
-]

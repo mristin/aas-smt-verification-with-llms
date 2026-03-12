@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a temporal duration, while xs:unsignedLong models a unit-specific millisecond count. The canonical XSD type for durations is xs:duration, which semantically represents time intervals (with fractional seconds for millisecond precision).",
-    "suggestion": "xs:duration"
-  }
-]

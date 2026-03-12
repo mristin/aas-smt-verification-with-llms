@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept 'Monthly inspection day' denotes a recurring day-of-month value; xs:string is too generic and does not enforce the ---DD lexical form required for such recurring dates.",
-    "suggestion": "xs:gDay"
-  }
-]

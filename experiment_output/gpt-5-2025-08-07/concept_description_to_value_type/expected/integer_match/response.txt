@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a value 'relative to expected value' that can be negative. Such deviations from an expected value are typically real-valued (not restricted to whole numbers), while xs:integer disallows fractional values and could omit valid results.",
-    "suggestion": "xs:double"
-  }
-]

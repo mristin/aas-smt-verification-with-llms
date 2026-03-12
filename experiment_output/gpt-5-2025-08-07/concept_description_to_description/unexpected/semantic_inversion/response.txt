@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The property's description says 'Lower water pressure limit' while the linked concept description means 'Upper water pressure limit'; these are semantically opposite constraints.",
-    "suggestion": "Change the property's description to 'Upper water pressure limit' to align with the concept description."
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"Element description says 'Lower water pressure limit' but the linked concept description denotes 'Upper water pressure limit'. These are opposite semantics, not a permissible specialization.","suggestion":"Relink this element to a concept description for 'Lower water pressure limit', or change the element’s description (and related semantics) to 'Upper water pressure limit' to match the current concept description."}]}

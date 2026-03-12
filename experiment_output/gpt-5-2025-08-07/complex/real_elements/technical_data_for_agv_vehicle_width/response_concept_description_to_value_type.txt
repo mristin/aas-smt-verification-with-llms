@@ -1,7 +1,0 @@
-[
-  {
-    "path": "VehicleWidth",
-    "explanation": "Semantic mismatch: 'Maximum vehicle width' is a physical length that should be numeric, but the value type is xs:string. A numeric type enables validation, comparisons, and unit conversions.",
-    "suggestion": "xs:decimal"
-  }
-]

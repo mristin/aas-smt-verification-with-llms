@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type is xs:double, which is a floating-point type unsuitable for precise financial amounts. The concept describes a high-precision financial transaction amount with arbitrary decimal places, which requires an exact decimal representation.",
-    "suggestion": "xs:decimal"
-  }
-]

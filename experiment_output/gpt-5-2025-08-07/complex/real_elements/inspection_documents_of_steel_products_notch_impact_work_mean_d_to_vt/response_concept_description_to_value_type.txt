@@ -1,7 +1,0 @@
-[
-  {
-    "path": "NotchImpactWorkMean",
-    "explanation": "The concept describes an average energy value measured in Joules (J), which is numeric. Using xs:string prevents numeric interpretation, validation, and comparison.",
-    "suggestion": "xs:double"
-  }
-]

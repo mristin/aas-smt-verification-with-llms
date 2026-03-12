@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a temporal period (quarter and year). Using xs:string is too generic and lacks temporal validation or semantics.",
-    "suggestion": "xs:gYearMonth"
-  }
-]

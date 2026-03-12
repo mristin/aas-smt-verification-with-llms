@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The property describes a tire pressure measurement in PSI, but the attached concept description specifies atmospheric pressure in hPa. The measured phenomenon and the unit both differ.",
-    "suggestion": "Assign a concept description for 'Tire pressure sensor measurement in pounds per square inch (PSI)' to this property; alternatively, change the property's description and unit to 'Atmospheric pressure sensor measurement in hectopascals (hPa)' to match the current concept."
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"Element describes a tire pressure sensor measurement in PSI, while the linked concept description denotes atmospheric pressure measurement in hPa. The measurand (tire/contained gas vs ambient atmospheric pressure) and the unit (PSI vs hPa) both differ, so the element is not a specialization of the concept.","suggestion":"Assign a concept description that denotes tire pressure (preferably specifying PSI), or update the element to match the existing concept description by measuring atmospheric pressure in hPa (including unit conversion and adjusting the description)."}]}

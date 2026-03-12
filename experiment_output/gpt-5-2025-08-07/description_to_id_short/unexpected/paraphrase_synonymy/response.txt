@@ -1,7 +1,0 @@
-[
-  {
-    "path": "end_time",
-    "explanation": "ID-short 'end_time' indicates an end timestamp, but the description is 'Start time'; these are contradictory.",
-    "suggestion": "End time"
-  }
-]

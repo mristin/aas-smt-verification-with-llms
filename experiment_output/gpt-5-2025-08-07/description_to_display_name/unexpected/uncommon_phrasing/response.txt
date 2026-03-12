@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "No semantic mismatch: the description 'Weight heavy' and display name 'Heaviness' refer to the same concept. The description wording is awkward; align it with the display name for clarity.",
-    "suggestion": "Heaviness"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "No semantic mismatch: the description 'Nominalshaftspeed' and the display name 'Nominal shaft speed' denote the same concept; the description only lacks spaces.",
-    "suggestion": "Change the description to 'Nominal shaft speed' to match the display name."
-  }
-]

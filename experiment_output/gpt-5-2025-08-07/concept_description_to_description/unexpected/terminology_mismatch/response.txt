@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The property describes measured terminal voltage under rated load, whereas the concept description refers to EMF (open-circuit) at 100% SOC and 25°C. EMF excludes load and differs from loaded terminal voltage.",
-    "suggestion": "urn:example.com:cd:batteryTerminalVoltage.ratedLoad.SOC100.25C"
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"The concept description specifies battery EMF at 100% SOC and 25°C, which implies open-circuit (no-load) voltage. The element description states a measured voltage under rated load, i.e., terminal voltage under load. Load condition conflicts with EMF semantics.","suggestion":"Either (a) change the element to describe open-circuit voltage, e.g., \"Open-circuit voltage of the battery at 100% SOC (25°C)\", or (b) remap it to a concept for \"Battery terminal voltage under rated load at 100% SOC (25°C)\" and optionally include the rated load value as a qualifier."}]}

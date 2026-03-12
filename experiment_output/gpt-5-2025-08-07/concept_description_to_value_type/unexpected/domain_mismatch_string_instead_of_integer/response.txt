@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept description indicates a count of molecules, which is a non-negative integer. Using xs:string does not enforce numeric, integral, or non-negative semantics.",
-    "suggestion": "xs:nonNegativeInteger"
-  }
-]

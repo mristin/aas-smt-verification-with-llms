@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Value type xs:long is numeric, but the concept describes a calendar date (manufacturing date).",
-    "suggestion": "xs:date"
-  }
-]

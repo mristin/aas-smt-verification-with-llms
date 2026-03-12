@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "Semantic mismatch between the concept description and unit: the definition specifies pressure in Pa, but the unit is given as psi.",
-    "suggestion": "Pa"
-  }
-]

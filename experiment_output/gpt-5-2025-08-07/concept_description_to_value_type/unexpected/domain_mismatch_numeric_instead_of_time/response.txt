@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type xs:long encodes integers, but the concept describes a time of day. A time of day (without date) should be represented as an XML Schema time.",
-    "suggestion": "xs:time"
-  }
-]

@@ -1,7 +1,1 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The element description states that corrosion rates > 0.10 mm/year are allowed, while the concept description requires the maximum allowable corrosion rate to be ≤ 0.10 mm/year. These constraints contradict each other.",
-    "suggestion": "Align the element with the concept by changing its description to \"Maximum allowable corrosion rate (≤ 0.10 mm/year)\". If values > 0.10 mm/year should be allowed in some cases, generalize the concept to remove the fixed numeric limit (e.g., \"Maximum allowable corrosion rate (mm/year); limit specified per instance\")."
-  }
-]
+{"response":[{"path":"https://example.org/some_submodel.some_id_short","explanation":"Element description allows corrosion rates > 0.10 mm/year, which contradicts the concept description specifying a maximum allowable corrosion rate of ≤ 0.10 mm/year.","suggestion":"Align the element with the concept by changing the element description to state corrosion rate must be ≤ 0.10 mm/year. Alternatively, if > 0.10 mm/year should be allowed, link the element to a different concept description that reflects that allowance (e.g., an observed/measured corrosion rate without the ≤ 0.10 constraint or a different limit)."}]}

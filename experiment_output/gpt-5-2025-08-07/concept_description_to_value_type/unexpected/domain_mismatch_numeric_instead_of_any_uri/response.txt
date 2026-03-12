@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type is xs:long (integer), but the concept describes a documentation reference URL, which should be a URI.",
-    "suggestion": "xs:anyURI"
-  }
-]

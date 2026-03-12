@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept 'Last maintenance timestamp' denotes a specific date and time, but the current value type is xs:string, which allows arbitrary text and lacks temporal validation.",
-    "suggestion": "xs:dateTime"
-  }
-]

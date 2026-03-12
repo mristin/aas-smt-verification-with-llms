@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "No mismatch detected. The description 'Electrical input power' aligns with the display name 'Power consumption' as both denote the electrical power drawn by the device.",
-    "suggestion": "No change needed (optional: harmonize wording by using 'Electrical input power' as the display name for exact alignment)."
-  }
-]

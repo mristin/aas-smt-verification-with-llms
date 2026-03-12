@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type is xs:string, but the concept 'Component manufacturing date' denotes a calendar date.",
-    "suggestion": "xs:date"
-  }
-]

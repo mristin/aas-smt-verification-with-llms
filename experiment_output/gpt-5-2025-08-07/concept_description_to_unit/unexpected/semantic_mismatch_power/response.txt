@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "The unit 'V' (volt) measures electric potential (voltage), but the definition describes 'Electrical power consumption', which should be expressed as power (W) or energy (Wh/kWh).",
-    "suggestion": "W"
-  }
-]

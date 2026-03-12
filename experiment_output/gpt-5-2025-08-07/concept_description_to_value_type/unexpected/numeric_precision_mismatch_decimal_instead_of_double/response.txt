@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a high-frequency temperature sensor measurement, which is sensor data. xs:decimal is intended for exact values (e.g., financial), while sensor measurements are better represented with floating-point types that support scientific notation and typical sensor precision/behavior.",
-    "suggestion": "xs:double"
-  }
-]

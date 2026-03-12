@@ -1,7 +1,0 @@
-[
-  {
-    "path": "temperature",
-    "explanation": "The ID-short 'temperature' is generic, while the description specifies 'Operating temperature', which is a specific context. This can be confused with ambient or storage temperature. Additionally, no unit is indicated.",
-    "suggestion": "Rename ID-short to 'operatingTemperature' and specify a unit (e.g., °C or K); optionally include the permissible operating range (e.g., -10…60 °C)."
-  }
-]

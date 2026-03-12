@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a service interval duration. Using xs:string does not enforce ISO 8601 duration semantics or validation.",
-    "suggestion": "xs:duration"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The value type is xs:long (an integer), but the concept 'Last maintenance timestamp' denotes a point in time. A temporal instant should use a date/time datatype, not a numeric integer.",
-    "suggestion": "xs:dateTime"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "path": "AreaDesciption",
-    "explanation": "The concept 'area description' represents human-readable text and is modeled as a MultiLanguageProperty; its value should therefore be textual. Any non-string XSD type would be semantically incorrect for this concept.",
-    "suggestion": "xs:string"
-  }
-]

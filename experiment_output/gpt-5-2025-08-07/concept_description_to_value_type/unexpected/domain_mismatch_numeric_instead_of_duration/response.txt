@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a duration (service interval), which should be represented as an ISO 8601 duration. Using xs:long implies a unit-less integer and cannot express months/years or mixed time components.",
-    "suggestion": "xs:duration"
-  }
-]

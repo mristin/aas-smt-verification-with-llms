@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept requires an exact decimal representation for precise monetary/accounting values, but xs:float is an approximate binary floating-point type and can introduce rounding errors.",
-    "suggestion": "xs:decimal"
-  }
-]

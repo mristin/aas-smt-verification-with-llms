@@ -1,7 +1,0 @@
-[
-  {
-    "path": "urn:exampl.com:someConceptDescription",
-    "explanation": "Semantic mismatch: the definition describes applied force, but the unit is degrees Celsius (°C), which is a temperature unit. Force should be measured in newtons.",
-    "suggestion": "N"
-  }
-]

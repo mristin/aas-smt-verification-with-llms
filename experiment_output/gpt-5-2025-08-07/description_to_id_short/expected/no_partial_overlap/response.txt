@@ -1,7 +1,0 @@
-[
-  {
-    "path": "material",
-    "explanation": "The ID-short 'material' is generic, while the description restricts it to steel alloys ('Material (steel alloy)'), creating a scope mismatch.",
-    "suggestion": "Change the description to 'Material' to match the generic ID-short (or rename the ID-short to 'steelAlloy' if the scope is intended to be steel-only)."
-  }
-]

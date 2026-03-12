@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "Concept describes a daily operation start time (a recurrent time of day). Using xs:string loses semantics and validation.",
-    "suggestion": "xs:time"
-  }
-]

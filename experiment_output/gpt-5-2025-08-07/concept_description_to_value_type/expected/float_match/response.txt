@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a temperature measurement (sensor data). xs:float may be insufficient in precision and range for sensor readings, potentially causing rounding errors. A more precise numeric type is appropriate.",
-    "suggestion": "xs:double"
-  }
-]

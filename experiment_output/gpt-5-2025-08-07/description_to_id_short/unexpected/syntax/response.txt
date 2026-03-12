@@ -1,7 +1,0 @@
-[
-  {
-    "path": "nominal_shaft_speed",
-    "explanation": "No semantic mismatch: the ID-short 'nominal_shaft_speed' corresponds to the description 'Nominalshaftspeed'. Minor issues: the description lacks spaces for readability and no unit is indicated for rotational speed.",
-    "suggestion": "Use description 'Nominal shaft speed' and specify a unit such as 1/min (rpm) or rad/s."
-  }
-]

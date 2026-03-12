@@ -1,7 +1,0 @@
-[
-  {
-    "path": "systemOperatingPressure",
-    "explanation": "Value type is xs:string, but the linked concept describes a physical measurement (operating temperature in °C / system operating pressure), which should be numeric. The unit 'Hz' is also inconsistent with temperature/pressure, indicating semantic issues.",
-    "suggestion": "xs:double"
-  }
-]

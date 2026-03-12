@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a calendar month for a recurring annual inspection. Using xs:string is too generic and does not enforce valid month-of-year values.",
-    "suggestion": "xs:gMonth"
-  }
-]

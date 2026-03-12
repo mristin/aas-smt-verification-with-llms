@@ -1,7 +1,0 @@
-[
-  {
-    "path": "some_id_short",
-    "explanation": "The concept describes a calendar year. Using xs:string permits arbitrary text instead of a constrained year value.",
-    "suggestion": "xs:gYear"
-  }
-]
