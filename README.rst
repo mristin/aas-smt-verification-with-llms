@@ -77,4 +77,4 @@ For experiment set up, see `EXPERIMENTS.rst`_.
 
 The datasheet to the dataset is available at `DATASHEET.md`_.
 
-.. _DATASHEET.md: https://github.com/mristin/aas-smt-verification-with-llms/tree/main/DATASHEET.rst
+.. _DATASHEET.md: https://github.com/mristin/aas-smt-verification-with-llms/tree/main/DATASHEET.md
