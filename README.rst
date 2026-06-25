@@ -74,3 +74,7 @@ Experiments
 For experiment set up, see `EXPERIMENTS.rst`_.
 
 .. _EXPERIMENTS.rst: https://github.com/mristin/aas-smt-verification-with-llms/tree/main/EXPERIMENTS.rst
+
+The datasheet to the dataset is available at `DATASHEET.md`_.
+
+.. _DATASHEET.md: https://github.com/mristin/aas-smt-verification-with-llms/tree/main/DATASHEET.rst
