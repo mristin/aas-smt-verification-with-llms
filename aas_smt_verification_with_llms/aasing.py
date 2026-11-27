@@ -4,7 +4,7 @@
 
 """Iterate over AAS elements."""
 
-import json
+import itertools
 from typing import (
     Sequence,
     Union,
@@ -16,7 +16,7 @@ from typing import (
     Optional,
 )
 
-from aas_core3 import types as aas_types, jsonization as aas_jsonization
+from aas_core3 import types as aas_types
 
 from aas_smt_verification_with_llms.common import assert_never
 
@@ -121,6 +121,12 @@ def reference_as_text(reference: aas_types.Reference) -> str:
     Convert the AAS reference into a string identifier.
 
     This is necessary since the reference is given as a list of keys.
+
+    Model references are rendered in the same notation as :py:class:`Path`, *i.e.*,
+    the ID of the first (identifiable) key followed by ``.idShort`` for nested
+    elements and ``[index]`` for items of a submodel element list. A model
+    reference with a single key (*e.g.*, pointing to a concept description) is
+    thus simply rendered as the identifier of the referred identifiable.
     """
     assert len(reference.keys) > 0
 
@@ -129,14 +135,18 @@ def reference_as_text(reference: aas_types.Reference) -> str:
         return reference.keys[0].value
 
     elif reference.type is aas_types.ReferenceTypes.MODEL_REFERENCE:
-        jsonable = aas_jsonization.to_jsonable(reference)
-        jsonable_str = json.dumps(jsonable, indent=2)
+        fragments: List[Union[str, int]] = [reference.keys[0].value]
 
-        raise NotImplementedError(
-            f"We have not implemented the stringification of model references. "
-            f"If you need this feature, please contact the developers. "
-            f"The model reference was: {jsonable_str}"
-        )
+        for parent_key, key in itertools.pairwise(reference.keys):
+            if (
+                parent_key.type is aas_types.KeyTypes.SUBMODEL_ELEMENT_LIST
+                and key.value.isdigit()
+            ):
+                fragments.append(int(key.value))
+            else:
+                fragments.append(key.value)
+
+        return str(Path(fragments=fragments))
 
     else:
         # noinspection PyTypeChecker
