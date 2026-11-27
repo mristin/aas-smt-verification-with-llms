@@ -7,7 +7,7 @@
 import re
 from typing import cast, NoReturn
 
-from icontract import require
+from icontract import ensure, require
 
 
 class NonEmptyStr(str):
@@ -31,6 +31,32 @@ class Filenameable(str):
     @require(lambda value: FILENAMEABLE_RE.fullmatch(value) is not None)
     def __new__(cls, value: str) -> "Filenameable":
         return cast(Filenameable, value)
+
+
+@ensure(lambda result: FILENAMEABLE_RE.fullmatch(result) is not None)
+def escape_for_filename(text: str) -> Filenameable:
+    """
+    Escape the ``text`` so that it can be used as a filename.
+
+    We percent-encode only the characters forbidden in :py:class:`Filenameable`
+    and the percent sign itself, so that the escaping is reversible and
+    the common names remain unchanged.
+
+    >>> escape_for_filename("gpt-5-2025-08-07")
+    'gpt-5-2025-08-07'
+
+    >>> escape_for_filename("qwen3:1.7b")
+    'qwen3%3A1.7b'
+
+    >>> escape_for_filename("hf.co/org/model:Q4_K_M")
+    'hf.co%2Forg%2Fmodel%3AQ4_K_M'
+    """
+    return Filenameable(
+        text.replace("%", "%25")
+        .replace("/", "%2F")
+        .replace(";", "%3B")
+        .replace(":", "%3A")
+    )
 
 
 def assert_never(value: NoReturn) -> NoReturn:

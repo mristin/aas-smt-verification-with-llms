@@ -12,6 +12,7 @@ import tqdm
 
 import aas_smt_verification_with_llms.main
 from aas_smt_verification_with_llms import argparsing, llm
+from aas_smt_verification_with_llms.common import escape_for_filename
 
 
 def main() -> int:
@@ -39,7 +40,7 @@ def main() -> int:
         print(f"Processing {model_path} ...")
         target_dir = (
             experiment_output_dir
-            / client.model
+            / escape_for_filename(client.model)
             / (model_path.parent.relative_to(experiment_data_dir))
         )
 

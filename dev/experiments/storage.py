@@ -18,7 +18,7 @@ from aas_core3 import (
 )
 from icontract import require
 
-from aas_smt_verification_with_llms.common import Filenameable
+from aas_smt_verification_with_llms.common import Filenameable, escape_for_filename
 
 _REPO_ROOT = pathlib.Path(os.path.realpath(__file__)).parent.parent.parent
 
@@ -76,9 +76,9 @@ def _experiment_output_dir(
     experiment: Filenameable,
     category: Category,
     case: Filenameable,
-    model: Filenameable,
+    model: str,
 ) -> pathlib.Path:
-    return _REPO_ROOT / model / experiment / category.value / case
+    return _REPO_ROOT / escape_for_filename(model) / experiment / category.value / case
 
 
 class OutputStore:
@@ -87,14 +87,14 @@ class OutputStore:
     experiment: Final[Filenameable]
     category: Final[Category]
     case: Final[Filenameable]
-    model: Final[Filenameable]
+    model: Final[str]
 
     def __init__(
         self,
         experiment: Filenameable,
         category: Category,
         case: Filenameable,
-        model: Filenameable,
+        model: str,
     ) -> None:
         self.experiment = experiment
         self.category = category
@@ -104,7 +104,7 @@ class OutputStore:
         directory = (
             _REPO_ROOT
             / "experiment_output"
-            / model
+            / escape_for_filename(model)
             / experiment
             / category.value
             / case
@@ -169,7 +169,7 @@ class Take:
     experiment: Final[Filenameable]
     category: Final[Category]
     case: Final[Filenameable]
-    model: Final[Filenameable]
+    model: Final[str]
     output_store: Final[OutputStore]
 
     def __init__(
@@ -177,7 +177,7 @@ class Take:
         experiment: Filenameable,
         category: Category,
         case: Filenameable,
-        model: Filenameable,
+        model: str,
         output_store: OutputStore,
     ) -> None:
         self.experiment = experiment
@@ -189,7 +189,7 @@ class Take:
 
 def over_takes(
     experiment: Filenameable,
-    model: Filenameable,
+    model: str,
 ) -> Iterator[Take]:
     """Go over all the possible experiment takes for the given model."""
     for category in Category:
