@@ -5,23 +5,33 @@
 """Verify AAS Submodel Templates using Large Language Models."""
 
 import collections.abc
+import enum
 import json
 import pathlib
 import sys
-from typing import Optional, Final, List, Sequence, Any, Tuple, Iterator
+from typing import Optional, Final, List, Sequence, Any, Tuple, Iterator, Mapping
 
-from aas_core3 import (
-    jsonization as aas_jsonization,
-    types as aas_types,
-    xmlization as aas_xmlization,
-)
 from icontract import require
 
 import aas_smt_verification_with_llms
-from aas_smt_verification_with_llms import argparsing, llm, aasing
-from aas_smt_verification_with_llms.common import Filenameable
+import aas_smt_verification_with_llms.aasing_v3_0
+import aas_smt_verification_with_llms.aasing_v3_1
+import aas_smt_verification_with_llms.aasing_v3_2
+from aas_smt_verification_with_llms import argparsing, llm
+from aas_smt_verification_with_llms.common import Filenameable, assert_never
 
 assert aas_smt_verification_with_llms.__doc__ == __doc__
+
+
+class AasVersion(enum.Enum):
+    """Enumerate the supported versions of the AAS meta-model."""
+
+    V3_0 = "3.0"
+    V3_1 = "3.1"
+    V3_2 = "3.2"
+
+
+DEFAULT_AAS_VERSION = AasVersion.V3_1
 
 
 class Prompt:
@@ -36,8 +46,8 @@ class Prompt:
         self.format_str = format_str
 
 
-def _list_prompts() -> List[Prompt]:
-    """Generate the list of available prompts."""
+def _list_prompts(xsd_value_types: Sequence[str]) -> List[Prompt]:
+    """Generate the list of available prompts given the available XSD value types."""
     jsonschema = """\
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -73,8 +83,7 @@ def _list_prompts() -> List[Prompt]:
 }
 """
 
-    available_xsd_types = [data_type.value for data_type in aas_types.DataTypeDefXSD]
-    available_xsd_types_joined = ", ".join(available_xsd_types)
+    available_xsd_types_joined = ", ".join(xsd_value_types)
 
     escaped_jsonschema = jsonschema.replace("{", "{{").replace("}", "}}")
 
@@ -153,7 +162,22 @@ def _list_prompts() -> List[Prompt]:
     ]
 
 
-_PROMPTS: Final[Sequence[Prompt]] = _list_prompts()
+def _list_xsd_value_types(aas_version: AasVersion) -> List[str]:
+    """List the XSD value types available in the given version of the meta-model."""
+    if aas_version is AasVersion.V3_0:
+        return aas_smt_verification_with_llms.aasing_v3_0.list_xsd_value_types()
+    elif aas_version is AasVersion.V3_1:
+        return aas_smt_verification_with_llms.aasing_v3_1.list_xsd_value_types()
+    elif aas_version is AasVersion.V3_2:
+        return aas_smt_verification_with_llms.aasing_v3_2.list_xsd_value_types()
+    else:
+        assert_never(aas_version)
+
+
+_PROMPTS_BY_VERSION: Final[Mapping[AasVersion, Sequence[Prompt]]] = {
+    aas_version: _list_prompts(_list_xsd_value_types(aas_version))
+    for aas_version in AasVersion
+}
 
 
 class Suggestion:
@@ -215,67 +239,40 @@ class PromptResponse:
         self.response = response
 
 
-def load_aas_environment(
-    path: pathlib.Path,
-) -> Tuple[Optional[aas_types.Environment], Optional[str]]:
+def load_relevant_details(
+    path: pathlib.Path, aas_version: AasVersion
+) -> Tuple[Optional[str], Optional[str]]:
     """
-    Read the AAS environment from the file.
+    Load the AAS environment and translate it into the relevant details for the LLM.
 
-    Return the parsed AAS environment, or an error, if any.
+    The environment is parsed and translated with the SDK of ``aas_version``.
+
+    Return the relevant details, or an error, if any.
     """
-    try:
-        text = path.read_text(encoding="utf-8")
-    except Exception as exception:
-        return None, str(exception)
-
-    if len(text) == 0:
-        return None, "Empty file"
-
-    text = text.strip()
-
-    environment: aas_types.Environment
-    if text[0] == "{":
-        try:
-            jsonable = json.loads(text)
-        except Exception as exception:
-            return None, f"Failed to parse the AAS environment as JSON: {exception}"
-
-        try:
-            environment = aas_jsonization.environment_from_jsonable(jsonable)
-        except Exception as exception:
-            return None, f"Failed to parse the AAS environment as JSON: {exception}"
-
-    elif text[0] == "<":
-        try:
-            environment = aas_xmlization.environment_from_str(text)
-        except Exception as exception:
-            return None, f"Failed to parse the AAS environment as XML: {exception}"
+    if aas_version is AasVersion.V3_0:
+        return aas_smt_verification_with_llms.aasing_v3_0.load_relevant_details(path)
+    elif aas_version is AasVersion.V3_1:
+        return aas_smt_verification_with_llms.aasing_v3_1.load_relevant_details(path)
+    elif aas_version is AasVersion.V3_2:
+        return aas_smt_verification_with_llms.aasing_v3_2.load_relevant_details(path)
     else:
-        return None, "Unrecognized format"
-
-    return environment, None
+        assert_never(aas_version)
 
 
 def request_over_prompts(
-    client: llm.Client, environment: aas_types.Environment
+    client: llm.Client, relevant_details: str, aas_version: AasVersion
 ) -> Iterator[Tuple[Optional[PromptResponse], Optional[str]]]:
     """
-    Run all the checks on the given environment.
+    Run all the checks on the relevant details of an AAS environment.
+
+    The prompts are formulated for the given version of the AAS meta-model.
 
     Yield the inputs and outputs of the LLM, or an error, if any.
 
     In case of error, the iterator will be closed and no further checks will be
     performed.
     """
-    relevant_details: Optional[str] = aasing.relevant_details(environment)
-    if relevant_details is None:
-        yield None, (
-            "There are no relevant details for the AAS environment, "
-            "so no request to LLM could be made."
-        )
-        return
-
-    for prompt in _PROMPTS:
+    for prompt in _PROMPTS_BY_VERSION[aas_version]:
         try:
             formatted_prompt = prompt.format_str.format(
                 relevant_details=relevant_details
@@ -312,6 +309,18 @@ def main(prog: str) -> int:
         required=True,
     )
     parser.add_argument(
+        "--aas-version",
+        help=(
+            f"Version of the AAS meta-model of the AAS environment "
+            f"(default: {DEFAULT_AAS_VERSION.value}). "
+            f"XML files are checked to be in the namespace of this version, "
+            f"while JSON files do not indicate the version, so they are "
+            f"simply assumed to be of this version."
+        ),
+        choices=[aas_version.value for aas_version in AasVersion],
+        default=DEFAULT_AAS_VERSION.value,
+    )
+    parser.add_argument(
         "--version", help="show the current version and exit", action="store_true"
     )
 
@@ -324,25 +333,26 @@ def main(prog: str) -> int:
 
     args = parser.parse_args()
     aas_environment_path = pathlib.Path(args.aas_environment_path)
+    aas_version = AasVersion(args.aas_version)
 
     llm_args = argparsing.extract_llm_args(args)
 
     client = llm.create(llm_args)
 
-    environment, error = load_aas_environment(aas_environment_path)
+    relevant_details, error = load_relevant_details(aas_environment_path, aas_version)
     if error is not None:
-        print(
-            f"Failed to read and parse --aas_environment_path: {error}", file=sys.stderr
-        )
+        print(f"Failed to process --aas_environment_path: {error}", file=sys.stderr)
         return 1
 
-    assert environment is not None
+    assert relevant_details is not None
 
     print("[")
 
     suggestion_count = 0
 
-    for prompt_response, error in request_over_prompts(client, environment):
+    for prompt_response, error in request_over_prompts(
+        client, relevant_details, aas_version
+    ):
         if error is not None:
             print(
                 f"The request failed: {error}",

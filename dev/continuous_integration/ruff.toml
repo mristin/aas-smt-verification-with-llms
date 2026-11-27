@@ -38,7 +38,9 @@ extend-ignore-names = ["OLD"]
 # break them without changing the content.
 "aas_smt_verification_with_llms/main.py" = ["E501"]
 "dev/experiments/common.py" = ["E501"]
-"dev/tests/test_aasing.py" = ["E501"]
+"dev/tests/test_aasing_v3_0.py" = ["E501"]
+"dev/tests/test_aasing_v3_1.py" = ["E501"]
+"dev/tests/test_aasing_v3_2.py" = ["E501"]
 
 [lint.flake8-bugbear]
 extend-immutable-calls = ["aas_smt_verification_with_llms.common.Filenameable"]

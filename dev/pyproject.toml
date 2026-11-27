@@ -22,6 +22,9 @@ dependencies = [
     "tomli==2.5.0; python_version < '3.11'",
     "types-requests==2.32.4.20250913",
     "types-tqdm==4.67.0.20250809",
+    # NOTE (mristin):
+    # We pin asttokens below 3 to stay compatible with icontract.
+    "asttokens==2.4.1",
 ]
 
 [tool.setuptools]

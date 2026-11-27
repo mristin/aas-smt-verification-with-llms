@@ -4,8 +4,10 @@
 
 """Provide common data structures used both in the program and the experiments."""
 
+import io
 import re
-from typing import cast, NoReturn
+import xml.etree.ElementTree
+from typing import cast, NoReturn, Final, Sequence, Union, List, Optional
 
 from icontract import ensure, require
 
@@ -67,3 +69,66 @@ def assert_never(value: NoReturn) -> NoReturn:
     https://hakibenita.com/python-mypy-exhaustive-checking
     """
     raise AssertionError(f"Unhandled value: {value} ({type(value).__name__})")
+
+
+class Path:
+    """Represent an ID-short path."""
+
+    fragments: Final[Sequence[Union[str, int]]]
+
+    def __init__(self, fragments: Sequence[Union[str, int]]) -> None:
+        self.fragments = fragments
+
+    def __str__(self) -> str:
+        if len(self.fragments) == 0:
+            return ""
+
+        parts: List[str] = []
+
+        iterator = iter(self.fragments)
+
+        first = next(iterator)
+        assert first is not None
+
+        parts.append(str(first))
+
+        for fragment in iterator:
+            if isinstance(fragment, str):
+                parts.append(f".{fragment}")
+            elif isinstance(fragment, int):
+                parts.append(f"[{fragment}]")
+            else:
+                assert_never(fragment)
+
+        return "".join(parts)
+
+
+def sniff_xml_namespace(text: str) -> Optional[str]:
+    """
+    Determine the XML namespace of the root element in ``text``.
+
+    Return None if the root element has no namespace or ``text`` could not be parsed.
+    Only the beginning of ``text`` is parsed, up to the start of the root element.
+
+    >>> sniff_xml_namespace('<environment xmlns="https://admin-shell.io/aas/3/1"/>')
+    'https://admin-shell.io/aas/3/1'
+
+    >>> sniff_xml_namespace('<environment/>') is None
+    True
+
+    >>> sniff_xml_namespace('<broken') is None
+    True
+    """
+    try:
+        for _, element in xml.etree.ElementTree.iterparse(
+            io.StringIO(text), events=("start",)
+        ):
+            tag: str = element.tag
+            if tag.startswith("{"):
+                return tag[1 : tag.index("}")]
+
+            return None
+    except xml.etree.ElementTree.ParseError:
+        return None
+
+    return None

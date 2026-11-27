@@ -18,7 +18,7 @@ from aas_core3 import (
 )
 from aas_core3.types import EmbeddedDataSpecification
 
-from aas_smt_verification_with_llms import aasing
+from aas_smt_verification_with_llms import aasing_v3_0
 from aas_smt_verification_with_llms.common import Filenameable
 
 
@@ -139,13 +139,13 @@ def main() -> int:
         relevant_parts_by_definition_unit: Dict[Tuple[str, str], RelevantParts] = dict()
 
         for cd in environment.over_concept_descriptions_or_empty():
-            description_in_en = aasing.text_in_english(cd.description)
+            description_in_en = aasing_v3_0.text_in_english(cd.description)
 
             for eds in cd.over_embedded_data_specifications_or_empty():
                 content = eds.data_specification_content
                 if isinstance(content, aas_types.DataSpecificationIEC61360):
-                    preferred_name = aasing.text_in_english(content.preferred_name)
-                    definition_in_en = aasing.text_in_english(content.definition)
+                    preferred_name = aasing_v3_0.text_in_english(content.preferred_name)
+                    definition_in_en = aasing_v3_0.text_in_english(content.definition)
                     unit = content.unit
 
                     if (

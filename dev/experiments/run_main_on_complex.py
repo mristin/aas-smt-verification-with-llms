@@ -51,23 +51,29 @@ def main() -> int:
             print(f"The marker file {done_path} exists, skipping.")
             continue
 
-        environment, error = aas_smt_verification_with_llms.main.load_aas_environment(
-            model_path
+        # NOTE (mristin):
+        # The experiment data is given in V3.0 of the AAS meta-model.
+        relevant_details, error = (
+            aas_smt_verification_with_llms.main.load_relevant_details(
+                model_path, aas_smt_verification_with_llms.main.AasVersion.V3_0
+            )
         )
         if error is not None:
             print(
-                f"Failed to read and parse the model path {model_path}: {error}",
+                f"Failed to load the relevant details from {model_path}: {error}",
                 file=sys.stderr,
             )
             return 1
 
-        assert environment is not None
+        assert relevant_details is not None
 
         for (
             prompt_response,
             error,
         ) in aas_smt_verification_with_llms.main.request_over_prompts(
-            client, environment
+            client,
+            relevant_details,
+            aas_smt_verification_with_llms.main.AasVersion.V3_0,
         ):
             if error is not None:
                 print(f"The request on {model_path} failed: {error}", file=sys.stderr)
