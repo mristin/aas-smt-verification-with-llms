@@ -1,0 +1,40 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aas-smt-verification-with-llms-dev"
+version = "0.0.1"
+description = "Develop aas-smt-verification-with-llms."
+requires-python = ">=3.10"
+
+dependencies = [
+    "black==26.10.1",
+    "mypy==2.4.1",
+    "ruff==0.17.6",
+    "ssort==0.19.0",
+    "coverage==7.16.2",
+    "reuse==6.3.0",
+    "tomli==2.5.0; python_version < '3.11'",
+    "types-requests==2.32.4.20250913",
+    "types-tqdm==4.67.0.20250809",
+]
+
+[tool.setuptools]
+packages = [
+    "continuous_integration",
+    "dev_scripts",
+    "dev_scripts.evaluate_experiments",
+    "dev_scripts.generate_minimal_examples",
+    "experiments",
+    "tests",
+]
+
+# NOTE (mristin):
+# We put the configuration of mypy and ruff in separate files as it is a nightmare
+# to configure them with pyproject.toml not living in the current working directory
+# which is the repository root.

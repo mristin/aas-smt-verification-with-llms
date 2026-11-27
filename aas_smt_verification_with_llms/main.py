@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Verify AAS Submodel Templates using Large Language Models."""
 
 import collections.abc
@@ -173,7 +177,7 @@ def _parse_response(response: Any) -> Optional[List[Suggestion]]:
     if not isinstance(response, (list, tuple)):
         return None
 
-    result = []  # type: List[Suggestion]
+    result: List[Suggestion] = []
 
     for item in response:
         if not isinstance(item, collections.abc.Mapping):
@@ -318,7 +322,7 @@ def main(prog: str) -> int:
         print(aas_smt_verification_with_llms.__version__)
         return 0
 
-    args = parser.parse_args()  # pylint: disable=unused-variable
+    args = parser.parse_args()
     aas_environment_path = pathlib.Path(args.aas_environment_path)
 
     llm_args = argparsing.extract_llm_args(args)

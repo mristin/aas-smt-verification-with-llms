@@ -45,7 +45,8 @@ dependencies using ``pip``:
 
 .. code-block::
 
-    pip3 install --editable .[dev]
+    pip3 install --editable .
+    pip3 install --editable dev
 
 The `--editable <pip-editable_>`_ option is necessary so that all the changes
 made to the repository are automatically reflected in the virtual environment 
@@ -240,20 +241,44 @@ Pre-commit Checks
 We provide a battery of pre-commit checks to make the code uniform and consistent across the code base.
 
 We use `black`_ to format the code and use the default maximum line length of 88 characters.
+We sort the definitions in the modules with `ssort`_, check the types with `mypy`_ and lint the code with `ruff`_.
+The tests run with `coverage`_, and we check the licensing information with `reuse`_.
 
 .. _black: https://pypi.org/project/black/
+.. _ssort: https://pypi.org/project/ssort/
+.. _mypy: https://pypi.org/project/mypy/
+.. _ruff: https://pypi.org/project/ruff/
+.. _coverage: https://pypi.org/project/coverage/
+.. _reuse: https://pypi.org/project/reuse/
 
 To run all pre-commit checks, run from the root directory:
 
 .. code-block::
 
-    python continuous_integration/precommit.py
+    python dev/continuous_integration/precommit.py
 
 You can automatically re-format the code and fix certain files automatically with:
 
 .. code-block::
 
-    python continuous_integration/precommit.py --overwrite
+    python dev/continuous_integration/precommit.py --overwrite
+
+You can select or skip individual checks with ``--select`` and ``--skip``, respectively.
+For example, the fast checks are:
+
+.. code-block::
+
+    python dev/continuous_integration/precommit.py --select reformat ssort mypy ruff
+
+Add the SPDX header to every new source file:
+
+.. code-block::
+
+    # SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+    #
+    # SPDX-License-Identifier: MIT
+
+Data files which can not carry a comment are annotated in ``REUSE.toml``.
 
 The pre-commit script also runs as part of our continuous integration pipeline.
 
@@ -275,11 +300,17 @@ We follow Chris Beams' `guidelines on commit messages`_:
 If you are merging in a pull request, please squash before merging.
 We want to keep the Git history as simple as possible, and the commits during the development are rarely insightful later.
 
-Development Scripts
+Development Tooling
 ===================
-The scripts used to generate code or tests live in `dev_scripts/`_.
+The main package lives under ``aas_smt_verification_with_llms/``.
+The development tooling lives under `dev/`_:
+
+* ``dev/continuous_integration/`` -- the pre-commit checks and their configuration,
+* ``dev/dev_scripts/`` -- the scripts used to generate the test cases and evaluate the experiments,
+* ``dev/experiments/`` -- the scripts that run the experiments, and
+* ``dev/tests/`` -- the unit tests.
 
 The scripts are hopefully self-explaining.
 Please let us know if you need more information so that we can improve this documentation accordingly.
 
-.. _dev_scripts/: https://github.com/mristin/aas-smt-verification-with-llms/tree/main/dev_scripts
+.. _dev/: https://github.com/mristin/aas-smt-verification-with-llms/tree/main/dev

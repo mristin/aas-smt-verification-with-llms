@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Iterate over AAS elements."""
 
 import json
@@ -29,7 +33,7 @@ class Path:
         if len(self.fragments) == 0:
             return ""
 
-        parts = []  # type: List[str]
+        parts: List[str] = []
 
         iterator = iter(self.fragments)
 
@@ -190,15 +194,15 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
     ):
         return None
 
-    blocks = []  # type: List[str]
+    blocks: List[str] = []
 
     if len(elements_paths) > 0:
         blocks.append("# Elements")
 
         for element, path in elements_paths:
-            element_parts = [
+            element_parts: List[str] = [
                 f"{element.__class__.__name__} at path {str(path)!r}"
-            ]  # type: List[str]
+            ]
 
             if element.id_short is not None:
                 element_parts.append(f" with ID-short {element.id_short!r}")
@@ -238,9 +242,9 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
             if description_in_en is not None:
                 concept_description_parts.append(f" means: {description_in_en!r}")
 
-            unit_parts = []  # type: List[str]
+            unit_parts: List[str] = []
 
-            definition_parts = []  # type: List[str]
+            definition_parts: List[str] = []
 
             for (
                 data_specification

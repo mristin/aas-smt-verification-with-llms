@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Provide common parsers of command-line arguments."""
 
 import argparse
