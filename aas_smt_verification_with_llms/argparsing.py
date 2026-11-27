@@ -9,8 +9,6 @@ import os
 import pathlib
 from typing import Final, Union, Optional
 
-from aas_smt_verification_with_llms.common import Filenameable
-
 
 def build(
     prog: Optional[str] = None, description: Optional[str] = None
@@ -54,9 +52,9 @@ class OpenAIArgs:
     """Capture the arguments necessary for OpenAI client."""
 
     api_key_file: Final[pathlib.Path]
-    model: Final[Filenameable]
+    model: Final[str]
 
-    def __init__(self, api_key_file: pathlib.Path, model: Filenameable) -> None:
+    def __init__(self, api_key_file: pathlib.Path, model: str) -> None:
         self.api_key_file = api_key_file
         self.model = model
 
@@ -64,11 +62,11 @@ class OpenAIArgs:
 class OllamaArgs:
     """Capture the arguments necessary for Ollama client."""
 
-    model: Final[Filenameable]
+    model: Final[str]
     host: Final[str]
     timeout: Final[float]
 
-    def __init__(self, model: Filenameable, host: str, timeout: float) -> None:
+    def __init__(self, model: str, host: str, timeout: float) -> None:
         self.model = model
         self.host = host
         self.timeout = timeout
@@ -78,13 +76,11 @@ def extract_llm_args(args: argparse.Namespace) -> Union[OpenAIArgs, OllamaArgs]:
     """Extract the arguments from the parsed command-line arguments."""
     if args.llm == "openai":
         return OpenAIArgs(
-            api_key_file=pathlib.Path(args.api_key_file), model=Filenameable(args.model)
+            api_key_file=pathlib.Path(args.api_key_file), model=args.model
         )
 
     elif args.llm == "ollama":
-        return OllamaArgs(
-            model=Filenameable(args.model), host=args.host, timeout=float(args.timeout)
-        )
+        return OllamaArgs(model=args.model, host=args.host, timeout=float(args.timeout))
 
     else:
         raise NotImplementedError(f"Unhandled llm: {args.llm}")

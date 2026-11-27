@@ -14,6 +14,8 @@ import json
 from dataclasses import dataclass
 from typing import List, Any
 
+from aas_smt_verification_with_llms.common import escape_for_filename
+
 
 @dataclass
 class Stats:
@@ -117,7 +119,7 @@ def main() -> int:
     model: str = args.model
 
     repo_root = pathlib.Path(os.path.realpath(__file__)).parent.parent.parent
-    experiment_output_dir = repo_root / "experiment_output" / model
+    experiment_output_dir = repo_root / "experiment_output" / escape_for_filename(model)
     stats = Stats()
     for i in experiment_output_dir.iterdir():
         _evaluate(i, stats)

@@ -10,7 +10,7 @@ from typing import Final, Union
 import openai
 import requests
 
-from aas_smt_verification_with_llms.common import Filenameable, assert_never
+from aas_smt_verification_with_llms.common import assert_never
 from aas_smt_verification_with_llms import argparsing
 
 
@@ -18,10 +18,13 @@ class Client(abc.ABC):
     """Talk to an LLM."""
 
     # NOTE (mristin):
-    # The model names should be globally unique.
-    model: Final[Filenameable]
+    # The model names should be globally unique. They can contain any characters
+    # (e.g., Ollama models are named ``name:tag``), so use
+    # :py:func:`aas_smt_verification_with_llms.common.escape_for_filename` if you
+    # need them in a path.
+    model: Final[str]
 
-    def __init__(self, model: Filenameable) -> None:
+    def __init__(self, model: str) -> None:
         self.model = model
 
     @abc.abstractmethod
@@ -33,9 +36,7 @@ class Client(abc.ABC):
 class OpenAI(Client):
     """Talk to the OpenAI server."""
 
-    def __init__(
-        self, api_key: str, model: Filenameable = Filenameable("gpt-5-2025-08-07")
-    ) -> None:
+    def __init__(self, api_key: str, model: str = "gpt-5-2025-08-07") -> None:
         super().__init__(model)
 
         self._client = openai.OpenAI(api_key=api_key)
@@ -68,7 +69,7 @@ class Ollama(Client):
     def __init__(
         self,
         host: str = "http://localhost:11434",
-        model: Filenameable = Filenameable("llama3.1"),
+        model: str = "llama3.1",
         timeout: float = 60.0,
     ) -> None:
         super().__init__(model)
