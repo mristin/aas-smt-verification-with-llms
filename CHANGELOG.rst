@@ -3,6 +3,19 @@
     Please keep this file at 72 line width so that we can copy-paste
     the release logs directly into commit messages.
 
+1.0.0rc3 (2026-11-27)
+=====================
+* Check types against the running Python in mypy (#54)
+* Allow colons in model names (#55)
+
+We now accept model names with colons such as Ollama's ``name:tag``
+(*e.g.*, ``qwen3:1.7b``) on the command line. The model names are
+escaped reversibly wherever they are used in the paths of the
+experiments (#55).
+
+We also fix the type checks in CI on Python 3.11 and 3.12 by letting
+mypy check against the running Python (#54).
+
 1.0.0rc2 (2026-11-27)
 =====================
 * Move development tooling to dev/ and add checks (#51)
