@@ -2,13 +2,20 @@
 #
 # SPDX-License-Identifier: MIT
 
-"""Iterate over AAS elements."""
+"""
+Translate AAS environments into the input of the LLM for one version of the meta-model.
+
+The version of the meta-model is given by the imported aas-core SDK. The modules
+for the different versions are kept identical apart from the SDK imports and
+the explicitly listed exceptions, see ``dev/tests/test_version_modules_in_sync.py``.
+"""
 
 import itertools
+import json
+import pathlib
 from typing import (
     Sequence,
     Union,
-    Final,
     Iterator,
     Tuple,
     get_args,
@@ -16,41 +23,75 @@ from typing import (
     Optional,
 )
 
-from aas_core3 import types as aas_types
+from aas_core3_1 import (
+    jsonization as aas_jsonization,
+    types as aas_types,
+    xmlization as aas_xmlization,
+)
 
-from aas_smt_verification_with_llms.common import assert_never
+from aas_smt_verification_with_llms.common import (
+    assert_never,
+    Path,
+    sniff_xml_namespace,
+)
 
 
-class Path:
-    """Represent an ID-short path."""
+def load_aas_environment(
+    path: pathlib.Path,
+) -> Tuple[Optional[aas_types.Environment], Optional[str]]:
+    """
+    Read the AAS environment from the file.
 
-    fragments: Final[Sequence[Union[str, int]]]
+    Return the parsed AAS environment, or an error, if any.
+    """
+    try:
+        text = path.read_text(encoding="utf-8")
+    except Exception as exception:
+        return None, str(exception)
 
-    def __init__(self, fragments: Sequence[Union[str, int]]) -> None:
-        self.fragments = fragments
+    if len(text) == 0:
+        return None, "Empty file"
 
-    def __str__(self) -> str:
-        if len(self.fragments) == 0:
-            return ""
+    text = text.strip()
 
-        parts: List[str] = []
+    environment: aas_types.Environment
+    if text[0] == "{":
+        try:
+            jsonable = json.loads(text)
+        except Exception as exception:
+            return None, f"Failed to parse the AAS environment as JSON: {exception}"
 
-        iterator = iter(self.fragments)
+        try:
+            environment = aas_jsonization.environment_from_jsonable(jsonable)
+        except Exception as exception:
+            return None, f"Failed to parse the AAS environment as JSON: {exception}"
 
-        first = next(iterator)
-        assert first is not None
+    elif text[0] == "<":
+        # NOTE (mristin):
+        # The XML namespace tells us the version of the meta-model, so we can give
+        # a clear message instead of a confusing de-serialization error if the user
+        # selected the wrong version.
+        namespace = sniff_xml_namespace(text)
+        if namespace is not None and namespace != aas_xmlization.NAMESPACE:
+            return None, (
+                f"The root element is in the XML namespace {namespace!r}, "
+                f"but expected the namespace {aas_xmlization.NAMESPACE!r}; "
+                f"did you specify the correct AAS version?"
+            )
 
-        parts.append(str(first))
+        try:
+            environment = aas_xmlization.environment_from_str(text)
+        except Exception as exception:
+            return None, f"Failed to parse the AAS environment as XML: {exception}"
+    else:
+        return None, "Unrecognized format"
 
-        for fragment in iterator:
-            if isinstance(fragment, str):
-                parts.append(f".{fragment}")
-            elif isinstance(fragment, int):
-                parts.append(f"[{fragment}]")
-            else:
-                assert_never(fragment)
+    return environment, None
 
-        return "".join(parts)
+
+def list_xsd_value_types() -> List[str]:
+    """List the XSD value types available in this version of the meta-model."""
+    return [data_type.value for data_type in aas_types.DataTypeDefXSD]
 
 
 _Collection = Union[
@@ -295,3 +336,25 @@ def relevant_details(environment: aas_types.Environment) -> Optional[str]:
 
     text = "\n\n".join(blocks)
     return text
+
+
+def load_relevant_details(path: pathlib.Path) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Load the AAS environment and translate it into the relevant details for the LLM.
+
+    Return the relevant details, or an error, if any.
+    """
+    environment, error = load_aas_environment(path)
+    if error is not None:
+        return None, f"Failed to read and parse the AAS environment: {error}"
+
+    assert environment is not None
+
+    text = relevant_details(environment)
+    if text is None:
+        return None, (
+            "There are no relevant details for the AAS environment, "
+            "so no request to LLM could be made."
+        )
+
+    return text, None

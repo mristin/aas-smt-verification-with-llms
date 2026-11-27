@@ -14,7 +14,7 @@ from aas_core3 import types as aas_types
 
 import experiments.common
 import experiments.storage
-from aas_smt_verification_with_llms import argparsing, llm, aasing
+from aas_smt_verification_with_llms import argparsing, llm, aasing_v3_0
 from aas_smt_verification_with_llms.common import Filenameable
 
 
@@ -45,7 +45,7 @@ def main() -> int:
             experiment=experiment, category=take.category, case=take.case
         )
 
-        relevant_details: Optional[str] = aasing.relevant_details(environment)
+        relevant_details: Optional[str] = aasing_v3_0.relevant_details(environment)
 
         if relevant_details is None:
             raise RuntimeError(

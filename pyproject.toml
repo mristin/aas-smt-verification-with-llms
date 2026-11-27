@@ -35,6 +35,11 @@ dependencies = [
     # This version of requests must coincide with the type stubs below.
     "requests==2.32.4",
     "aas-core3.0>=1.1.2,<2",
+    "aas-core3.1>=1,<2",
+    # NOTE (mristin):
+    # Only release candidates of the SDK for V3.2 are available at the moment, and
+    # pip considers pre-releases only if the specifier mentions one explicitly.
+    "aas-core3.2>=1.0.0rc2,<2",
     # This version of tqdm must coincide with the type stubs below.
     "tqdm==4.67.0",
     "openai==2.9.0",

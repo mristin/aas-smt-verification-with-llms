@@ -235,6 +235,27 @@ Write unit tests for everything that can be obviously tested at the function/cla
 For many inter-dependent code regions, writing unit tests is too tedious or nigh impossible to later maintain.
 For such parts of the system, prefer integration tests with comparisons against initially recorded and reviewed golden data.
 
+Versions of the AAS Meta-model
+==============================
+
+We keep one copy of the code translating AAS environments into the input of the LLM per version of the AAS meta-model, so that each copy is fully typed against its own aas-core SDK:
+
+* ``aas_smt_verification_with_llms/aasing_v3_0.py`` uses ``aas_core3`` (AAS V3.0),
+* ``aas_smt_verification_with_llms/aasing_v3_1.py`` uses ``aas_core3_1`` (AAS V3.1), and
+* ``aas_smt_verification_with_llms/aasing_v3_2.py`` uses ``aas_core3_2`` (AAS V3.2).
+
+The same holds for their unit tests, ``dev/tests/test_aasing_v3_0.py``, ``dev/tests/test_aasing_v3_1.py`` and ``dev/tests/test_aasing_v3_2.py``.
+The code that does not depend on the meta-model lives in ``aas_smt_verification_with_llms/common.py``.
+
+The copies must be textually identical, comments included, except for the import statements, which may differ only in the package names.
+This is checked by ``dev/tests/test_version_modules_in_sync.py``.
+Usually, you change ``aasing_v3_1.py`` and copy the change over to ``aasing_v3_0.py`` and ``aasing_v3_2.py``.
+
+If a definition needs to differ between the versions on purpose, list it together with the reason in ``EXCEPTIONS`` of ``dev/tests/test_version_modules_in_sync.py``.
+The test also fails if a listed definition is identical in both copies, so that the exceptions do not go stale.
+
+The experiments run on data in AAS V3.0, so they use ``aasing_v3_0.py``.
+
 Pre-commit Checks
 =================
 

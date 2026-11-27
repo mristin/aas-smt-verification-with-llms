@@ -2,11 +2,13 @@
 #
 # SPDX-License-Identifier: MIT
 
+import pathlib
+import tempfile
 import unittest
 
-from aas_core3 import types as aas_types
+from aas_core3_1 import types as aas_types, xmlization as aas_xmlization
 
-import aas_smt_verification_with_llms.aasing
+from aas_smt_verification_with_llms import aasing_v3_1 as aasing
 
 
 # noinspection PyPep8Naming
@@ -21,7 +23,7 @@ class Test_reference_as_text(unittest.TestCase):
             ],
         )
 
-        text = aas_smt_verification_with_llms.aasing.reference_as_text(reference)
+        text = aasing.reference_as_text(reference)
 
         self.assertEqual("something", text)
 
@@ -35,7 +37,7 @@ class Test_reference_as_text(unittest.TestCase):
             ],
         )
 
-        text = aas_smt_verification_with_llms.aasing.reference_as_text(reference)
+        text = aasing.reference_as_text(reference)
 
         self.assertEqual("someConcept", text)
 
@@ -54,19 +56,19 @@ class Test_reference_as_text(unittest.TestCase):
             ],
         )
 
-        text = aas_smt_verification_with_llms.aasing.reference_as_text(reference)
+        text = aasing.reference_as_text(reference)
 
         self.assertEqual("someSubmodel.someList[2].something", text)
 
 
 class TestTextInEnglish(unittest.TestCase):
     def test_empty(self) -> None:
-        self.assertIsNone(aas_smt_verification_with_llms.aasing.text_in_english(None))
+        self.assertIsNone(aasing.text_in_english(None))
 
     def test_non_english(self) -> None:
         # noinspection SpellCheckingInspection
         self.assertIsNone(
-            aas_smt_verification_with_llms.aasing.text_in_english(
+            aasing.text_in_english(
                 [aas_types.LangStringTextType(language="de", text="Etwas")]
             )
         )
@@ -75,7 +77,7 @@ class TestTextInEnglish(unittest.TestCase):
         # noinspection SpellCheckingInspection
         self.assertEqual(
             "water pressure",
-            aas_smt_verification_with_llms.aasing.text_in_english(
+            aasing.text_in_english(
                 [
                     aas_types.LangStringTextType(language="en", text="water pressure"),
                     aas_types.LangStringTextType(language="de", text="Wasserdruck"),
@@ -86,11 +88,7 @@ class TestTextInEnglish(unittest.TestCase):
 
 class TestRelevantDetails(unittest.TestCase):
     def test_empty(self) -> None:
-        self.assertIsNone(
-            aas_smt_verification_with_llms.aasing.relevant_details(
-                environment=aas_types.Environment()
-            )
-        )
+        self.assertIsNone(aasing.relevant_details(environment=aas_types.Environment()))
 
     def test_minimal_property(self) -> None:
         self.assertEqual(
@@ -98,7 +96,7 @@ class TestRelevantDetails(unittest.TestCase):
 # Elements
 
 Property at path 'someSubmodel.something' with ID-short 'something' with value type xs:int""",
-            aas_smt_verification_with_llms.aasing.relevant_details(
+            aasing.relevant_details(
                 environment=aas_types.Environment(
                     submodels=[
                         aas_types.Submodel(
@@ -125,7 +123,7 @@ Property at path 'someSubmodel.something' with ID-short 'something' with value t
 # Concept descriptions
 
 Concept description 'someConcept' means: 'Water pressure'""",
-            aas_smt_verification_with_llms.aasing.relevant_details(
+            aasing.relevant_details(
                 aas_types.Environment(
                     submodels=[
                         aas_types.Submodel(
@@ -160,6 +158,59 @@ Concept description 'someConcept' means: 'Water pressure'""",
                 )
             ),
         )
+
+
+# noinspection PyPep8Naming
+class Test_load_aas_environment(unittest.TestCase):
+    def test_xml_in_own_namespace(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = pathlib.Path(tmp_dir) / "environment.xml"
+            path.write_text(
+                f'<environment xmlns="{aas_xmlization.NAMESPACE}"/>', encoding="utf-8"
+            )
+
+            environment, error = aasing.load_aas_environment(path)
+
+        self.assertIsNone(error)
+        self.assertIsInstance(environment, aas_types.Environment)
+
+    def test_xml_in_other_namespace(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = pathlib.Path(tmp_dir) / "environment.xml"
+            path.write_text(
+                '<environment xmlns="https://example.com/not-aas"/>', encoding="utf-8"
+            )
+
+            environment, error = aasing.load_aas_environment(path)
+
+        self.assertIsNone(environment)
+        assert error is not None
+        self.assertIn("in the XML namespace 'https://example.com/not-aas'", error)
+        self.assertIn("did you specify the correct AAS version?", error)
+
+    def test_json(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = pathlib.Path(tmp_dir) / "environment.json"
+            path.write_text("{}", encoding="utf-8")
+
+            environment, error = aasing.load_aas_environment(path)
+
+        self.assertIsNone(error)
+        self.assertIsInstance(environment, aas_types.Environment)
+
+
+# noinspection PyPep8Naming
+class Test_load_relevant_details(unittest.TestCase):
+    def test_empty_environment(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = pathlib.Path(tmp_dir) / "environment.json"
+            path.write_text("{}", encoding="utf-8")
+
+            relevant_details, error = aasing.load_relevant_details(path)
+
+        self.assertIsNone(relevant_details)
+        assert error is not None
+        self.assertIn("There are no relevant details", error)
 
 
 if __name__ == "__main__":

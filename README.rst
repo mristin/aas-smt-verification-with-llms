@@ -45,7 +45,9 @@ You can now run ``aas-smt-verification-with-llms`` (see ``--help`` section below
 .. code-block::
 
     usage: aas-smt-verification-with-llms [-h] --aas_environment_path
-                                          AAS_ENVIRONMENT_PATH [--version]
+                                          AAS_ENVIRONMENT_PATH
+                                          [--aas-version {3.0,3.1,3.2}]
+                                          [--version]
                                           {openai,ollama} ...
 
     Verify AAS Submodel Templates using Large Language Models.
@@ -59,6 +61,12 @@ You can now run ``aas-smt-verification-with-llms`` (see ``--help`` section below
       -h, --help            show this help message and exit
       --aas_environment_path AAS_ENVIRONMENT_PATH
                             Path to the AAS environment which should be verified
+      --aas-version {3.0,3.1,3.2}
+                            Version of the AAS meta-model of the AAS environment
+                            (default: 3.1). XML files are checked to be in the
+                            namespace of this version, while JSON files do not
+                            indicate the version, so they are simply assumed to be
+                            of this version.
       --version             show the current version and exit
 
 .. Help ends: aas-smt-verification-with-llms --help
