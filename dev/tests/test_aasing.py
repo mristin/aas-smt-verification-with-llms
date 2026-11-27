@@ -25,6 +25,39 @@ class Test_reference_as_text(unittest.TestCase):
 
         self.assertEqual("something", text)
 
+    def test_model_reference_to_concept_description(self) -> None:
+        reference = aas_types.Reference(
+            type=aas_types.ReferenceTypes.MODEL_REFERENCE,
+            keys=[
+                aas_types.Key(
+                    value="someConcept", type=aas_types.KeyTypes.CONCEPT_DESCRIPTION
+                )
+            ],
+        )
+
+        text = aas_smt_verification_with_llms.aasing.reference_as_text(reference)
+
+        self.assertEqual("someConcept", text)
+
+    def test_model_reference_to_nested_element(self) -> None:
+        reference = aas_types.Reference(
+            type=aas_types.ReferenceTypes.MODEL_REFERENCE,
+            keys=[
+                aas_types.Key(value="someSubmodel", type=aas_types.KeyTypes.SUBMODEL),
+                aas_types.Key(
+                    value="someList", type=aas_types.KeyTypes.SUBMODEL_ELEMENT_LIST
+                ),
+                aas_types.Key(
+                    value="2", type=aas_types.KeyTypes.SUBMODEL_ELEMENT_COLLECTION
+                ),
+                aas_types.Key(value="something", type=aas_types.KeyTypes.PROPERTY),
+            ],
+        )
+
+        text = aas_smt_verification_with_llms.aasing.reference_as_text(reference)
+
+        self.assertEqual("someSubmodel.someList[2].something", text)
+
 
 class TestTextInEnglish(unittest.TestCase):
     def test_empty(self) -> None:
