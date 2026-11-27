@@ -7,7 +7,7 @@ version = 1
 # Prose and metadata where a header would end up in the rendered output
 # (e.g., README shown on PyPI and GitHub).
 [[annotations]]
-path = ["AUTHORS", "README.rst", "CONTRIBUTING.rst", "EXPERIMENTS.rst", "DATASHEET.md"]
+path = ["AUTHORS", "README.rst", "CHANGELOG.rst", "CONTRIBUTING.rst", "EXPERIMENTS.rst", "DATASHEET.md"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 aas-smt-verification-with-llms AUTHORS"
 SPDX-License-Identifier = "MIT"

@@ -9,8 +9,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aas-smt-verification-with-llms"
 # NOTE (mristin):
-# Do not forget to sync with __init__.py!
-version = "1.0.0rc1"
+# Do not forget to update the CHANGELOG.rst and __init__.py!
+version = "1.0.0rc2"
 
 description = "Verify AAS Submodel Templates using Large Language Models."
 readme = "README.rst"
