@@ -1,0 +1,46 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# Prose and metadata where a header would end up in the rendered output
+# (e.g., README shown on PyPI and GitHub).
+[[annotations]]
+path = ["AUTHORS", "README.rst", "CONTRIBUTING.rst", "EXPERIMENTS.rst", "DATASHEET.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-smt-verification-with-llms AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The dataset: test cases, the recorded LLM outputs and their manual evaluation.
+# JSON and CSV can not carry a comment, and a header in the text files would
+# change the recorded prompts and responses.
+[[annotations]]
+path = ["experiment_data/**", "experiment_output/**", "experiment_evaluation/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-smt-verification-with-llms AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The URL list is the output of dev/dev_scripts/list_idta_submodel_templates.py,
+# so a header would be lost on the next update.
+[[annotations]]
+path = "dev/experiments/idta_submodel_templates/list.txt"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-smt-verification-with-llms AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# Third-party data: the IDTA submodel templates are downloaded verbatim
+# from https://github.com/admin-shell-io/submodel-templates, which is licensed
+# under CC-BY-4.0. JSON can not carry a comment.
+[[annotations]]
+path = "dev/experiments/idta_submodel_templates/templates/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Industrial Digital Twin Association e. V."
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# The archived code of the early experiments, kept as-is for reference.
+[[annotations]]
+path = "archive/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 aas-smt-verification-with-llms AUTHORS"
+SPDX-License-Identifier = "MIT"

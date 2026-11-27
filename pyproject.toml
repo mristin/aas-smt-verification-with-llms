@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
@@ -22,6 +26,7 @@ classifiers = [
 ]
 
 authors = [
+    { name = "Marko Ristin", email = "marko@ristin.ch" },
     { name = "Ina Steinmetz", email = "ina.steinmetz@iosb.fraunhofer.de" }
 ]
 
@@ -35,16 +40,6 @@ dependencies = [
     "openai==2.9.0",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "black==25.1.0",
-    "mypy==1.18.1",
-    "pylint==3.3.8",
-    "types-requests==2.32.4.20250913",
-    "types-tqdm==4.67.0.20250809",
-    "basyx-python-sdk==1.2.1",
-]
-
 [project.scripts]
 aas-smt-verification-with-llms = "aas_smt_verification_with_llms.main:entry_point"
 
@@ -53,30 +48,6 @@ repository = "https://github.com/mristin/aas-smt-verification-with-llms"
 
 [tool.setuptools.packages.find]
 include = ["aas_smt_verification_with_llms"]
-exclude = ["continuous_integration", "tests", "experiments"]
-
-# Development tooling
-[tool]
-[tool.black]
-line-length = 88
-
-[tool.pylint]
-disable = [
-    "unnecessary-lambda", "no-else-raise", "too-few-public-methods", "no-else-return",
-    "too-many-locals", "too-many-branches", "too-many-return-statements",
-    "duplicate-code", "broad-exception-caught", "unnecessary-comprehension",
-    "too-many-statements", "too-many-lines", "use-dict-literal", "invalid-name",
-    "too-many-arguments", "too-many-positional-arguments",
-    "too-many-instance-attributes", "unnecessary-negation",
-    "too-many-nested-blocks"
-]
-
-[tool.mypy]
-python_version = "3.10"
-strict = true
-
-[[tool.mypy.overrides]]
-module = [
-    "openai"
-]
-ignore_missing_imports = true
+# NOTE (mristin):
+# The ``exclude`` here refers to the module names, not filesystem paths!
+exclude = ["continuous_integration", "dev_scripts", "experiments", "tests"]

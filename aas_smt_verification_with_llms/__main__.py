@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Run aas-smt-verification-with-llms as Python module."""
 
 import aas_smt_verification_with_llms.main

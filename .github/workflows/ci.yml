@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 name: CI
 
 on:
@@ -22,11 +26,17 @@ jobs:
         with:
           python-version: ${{matrix.python-version}}
 
-      - name: Install dependencies
+      - name: Install the package with development dependencies
         run: |
           python3 -m pip install --upgrade pip
-          pip3 install -e .[dev]
+          pip3 install -e .
+          pip3 install -e dev
+
+      # NOTE (mristin):
+      # We run this command to detect nasty errors such as import cycles early.
+      - name: Run --help to check that the command works
+        run: aas-smt-verification-with-llms --help
 
       - name: Run precommit
         run: |
-          python3 continuous_integration/precommit.py
+          python3 dev/continuous_integration/precommit.py

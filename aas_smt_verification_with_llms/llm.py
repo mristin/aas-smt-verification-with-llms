@@ -1,9 +1,13 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Provide common interaction pattern with LLMs."""
 
 import abc
 from typing import Final, Union
 
-import openai  # pylint: disable=import-error
+import openai
 import requests
 
 from aas_smt_verification_with_llms.common import Filenameable, assert_never
@@ -17,13 +21,13 @@ class Client(abc.ABC):
     # The model names should be globally unique.
     model: Final[Filenameable]
 
+    def __init__(self, model: Filenameable) -> None:
+        self.model = model
+
     @abc.abstractmethod
     def generate(self, prompt: str) -> str:
         """Generate a response for the given prompt."""
-        raise NotImplementedError()
-
-    def __init__(self, model: Filenameable) -> None:
-        self.model = model
+        raise NotImplementedError
 
 
 class OpenAI(Client):

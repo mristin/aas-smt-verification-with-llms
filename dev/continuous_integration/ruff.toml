@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2025 aas-smt-verification-with-llms AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+target-version = "py310"
+line-length = 120
+
+[lint]
+select = [
+    "ASYNC", "B", "C4", "DTZ", "E", "EXE", "F", "FIX", "FLY", "FURB", "G",
+    "INT", "ISC", "LOG", "N", "PGH", "PIE", "PLC", "PLE", "PLW", "PTH", "PYI",
+    "RSE", "RUF", "SIM", "SLOT", "T10", "TD", "TID", "TRY", "UP", "W", "YTT",
+]
+
+# NOTE (mristin):
+# We ignore the rules which go against our style, such as the PEP 585 and
+# PEP 604 annotations, ``dict()`` instead of ``{}``, or the lambdas in
+# the contracts, which icontract needs to inspect the arguments. Ruff confuses
+# the deliberate special characters in our texts with the ambiguous ones.
+# We format the code with black, not ruff, so we ignore the formatter comments
+# which only ruff can not handle.
+ignore = [
+    "C408", "N801", "PGH003", "PIE790", "PLW0108",
+    "PYI034", "PYI041", "RUF001", "RUF002", "RUF003", "RUF005", "RUF028",
+    "SIM102", "SIM103", "SIM105", "SIM108", "SIM114", "TRY003", "TRY004", "UP006",
+    "UP007", "UP035", "UP045",
+]
+
+
+[lint.pep8-naming]
+# NOTE (mristin):
+# icontract passes the snapshots as ``OLD`` to the postconditions.
+extend-ignore-names = ["OLD"]
+
+[lint.per-file-ignores]
+# NOTE (mristin):
+# The long lines are part of the prompts and the expected texts, so we can not
+# break them without changing the content.
+"aas_smt_verification_with_llms/main.py" = ["E501"]
+"dev/experiments/common.py" = ["E501"]
+"dev/tests/test_aasing.py" = ["E501"]
+
+[lint.flake8-bugbear]
+extend-immutable-calls = ["aas_smt_verification_with_llms.common.Filenameable"]
