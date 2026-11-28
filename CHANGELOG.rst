@@ -3,6 +3,19 @@
     Please keep this file at 72 line width so that we can copy-paste
     the release logs directly into commit messages.
 
+1.0.0rc4 (2026-11-28)
+=====================
+* Support AAS versions 3.1 and 3.2 (#57)
+* Descend into entities, annotations and operations (#58)
+
+We add the command-line argument ``--aas-version`` so that the users
+can verify AAS environments against V3.0, V3.1 or V3.2 of the AAS
+meta-model. The default is V3.1, as in aas-smt-lint (#57).
+
+We now also descend into all the containers of submodel elements,
+including entities, annotated relationship elements and operations,
+which we previously silently skipped (#58).
+
 1.0.0rc3 (2026-11-27)
 =====================
 * Check types against the running Python in mypy (#54)
