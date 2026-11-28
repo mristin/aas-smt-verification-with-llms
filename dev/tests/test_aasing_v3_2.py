@@ -86,6 +86,92 @@ class TestTextInEnglish(unittest.TestCase):
         )
 
 
+# noinspection PyPep8Naming
+class Test_over_elements(unittest.TestCase):
+    def test_descends_into_all_kinds_of_containers(self) -> None:
+        def prop(id_short: str) -> aas_types.Property:
+            return aas_types.Property(
+                id_short=id_short, value_type=aas_types.DataTypeDefXSD.INT
+            )
+
+        reference = aas_types.Reference(
+            type=aas_types.ReferenceTypes.EXTERNAL_REFERENCE,
+            keys=[
+                aas_types.Key(
+                    type=aas_types.KeyTypes.GLOBAL_REFERENCE, value="something"
+                )
+            ],
+        )
+
+        environment = aas_types.Environment(
+            submodels=[
+                aas_types.Submodel(
+                    id="someSubmodel",
+                    submodel_elements=[
+                        aas_types.Entity(
+                            id_short="someEntity",
+                            entity_type=aas_types.EntityType.CO_MANAGED_ENTITY,
+                            statements=[
+                                prop("inEntity"),
+                                aas_types.SubmodelElementCollection(
+                                    id_short="someCollection",
+                                    value=[prop("inCollectionInEntity")],
+                                ),
+                            ],
+                        ),
+                        aas_types.AnnotatedRelationshipElement(
+                            id_short="someRelationship",
+                            first=reference,
+                            second=reference,
+                            annotations=[prop("inAnnotations")],
+                        ),
+                        aas_types.Operation(
+                            id_short="someOperation",
+                            input_variables=[
+                                aas_types.OperationVariable(value=prop("inInput"))
+                            ],
+                            output_variables=[
+                                aas_types.OperationVariable(value=prop("inOutput"))
+                            ],
+                            inoutput_variables=[
+                                aas_types.OperationVariable(value=prop("inInoutput"))
+                            ],
+                        ),
+                        aas_types.SubmodelElementList(
+                            id_short="someList",
+                            type_value_list_element=aas_types.AASSubmodelElements.ENTITY,
+                            value=[
+                                aas_types.Entity(
+                                    entity_type=aas_types.EntityType.CO_MANAGED_ENTITY,
+                                    statements=[prop("inEntityInList")],
+                                )
+                            ],
+                        ),
+                    ],
+                )
+            ]
+        )
+
+        self.assertListEqual(
+            [
+                "someSubmodel.someEntity",
+                "someSubmodel.someEntity.inEntity",
+                "someSubmodel.someEntity.someCollection",
+                "someSubmodel.someEntity.someCollection.inCollectionInEntity",
+                "someSubmodel.someRelationship",
+                "someSubmodel.someRelationship.inAnnotations",
+                "someSubmodel.someOperation",
+                "someSubmodel.someOperation.inInput",
+                "someSubmodel.someOperation.inOutput",
+                "someSubmodel.someOperation.inInoutput",
+                "someSubmodel.someList",
+                "someSubmodel.someList[0]",
+                "someSubmodel.someList[0].inEntityInList",
+            ],
+            [str(path) for _, path in aasing.over_elements(environment)],
+        )
+
+
 class TestRelevantDetails(unittest.TestCase):
     def test_empty(self) -> None:
         self.assertIsNone(aasing.relevant_details(environment=aas_types.Environment()))
