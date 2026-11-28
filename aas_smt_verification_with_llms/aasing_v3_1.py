@@ -16,9 +16,9 @@ import pathlib
 from typing import (
     Sequence,
     Union,
+    Iterable,
     Iterator,
     Tuple,
-    get_args,
     List,
     Optional,
 )
@@ -94,57 +94,59 @@ def list_xsd_value_types() -> List[str]:
     return [data_type.value for data_type in aas_types.DataTypeDefXSD]
 
 
-_Collection = Union[
-    aas_types.Submodel,
-    aas_types.SubmodelElementList,
-    aas_types.SubmodelElementCollection,
-]
+def _over_nested_elements(
+    container: Union[aas_types.Submodel, aas_types.SubmodelElement],
+) -> Iterator[Tuple[aas_types.SubmodelElement, Union[str, int]]]:
+    """
+    Iterate over the immediate children of the container with their path fragments.
 
-_CollectionAsTuple = (
-    aas_types.Submodel,
-    aas_types.SubmodelElementList,
-    aas_types.SubmodelElementCollection,
-)
+    Items of a submodel element list are identified by their index, all the other
+    children by their ID-short. Elements which can not contain other submodel
+    elements yield nothing.
+    """
+    if isinstance(container, aas_types.SubmodelElementList):
+        for i, item in enumerate(container.over_value_or_empty()):
+            yield item, i
+        return
 
-assert _CollectionAsTuple == get_args(_Collection)
-
-
-def _over_elements(
-    collection: _Collection, prefix: Path
-) -> Iterator[Tuple[aas_types.SubmodelElement, Path]]:
-    if isinstance(collection, aas_types.Submodel):
-        for element in collection.over_submodel_elements_or_empty():
-            assert (
-                element.id_short is not None
-            ), "All elements of a Submodel must have an ID-short."
-            path = Path(fragments=list(prefix.fragments) + [element.id_short])
-
-            yield element, path
-
-            if isinstance(element, _CollectionAsTuple):
-                yield from _over_elements(collection=element, prefix=path)
-    elif isinstance(collection, aas_types.SubmodelElementList):
-        for i, element in enumerate(collection.over_value_or_empty()):
-            path = Path(fragments=list(prefix.fragments) + [i])
-
-            yield element, path
-
-            if isinstance(element, _CollectionAsTuple):
-                yield from _over_elements(collection=element, prefix=path)
-    elif isinstance(collection, aas_types.SubmodelElementCollection):
-        for element in collection.over_value_or_empty():
-            assert (
-                element.id_short is not None
-            ), "All elements of a Submodel Element Collection must have an ID-short."
-            path = Path(fragments=list(prefix.fragments) + [element.id_short])
-
-            yield element, path
-
-            if isinstance(element, _CollectionAsTuple):
-                yield from _over_elements(collection=element, prefix=path)
+    children: Iterable[aas_types.SubmodelElement]
+    if isinstance(container, aas_types.Submodel):
+        children = container.over_submodel_elements_or_empty()
+    elif isinstance(container, aas_types.SubmodelElementCollection):
+        children = container.over_value_or_empty()
+    elif isinstance(container, aas_types.Entity):
+        children = container.over_statements_or_empty()
+    elif isinstance(container, aas_types.AnnotatedRelationshipElement):
+        children = container.over_annotations_or_empty()
+    elif isinstance(container, aas_types.Operation):
+        children = (
+            variable.value
+            for variable in itertools.chain(
+                container.over_input_variables_or_empty(),
+                container.over_output_variables_or_empty(),
+                container.over_inoutput_variables_or_empty(),
+            )
+        )
     else:
-        # noinspection PyTypeChecker
-        assert_never(collection)
+        return
+
+    for child in children:
+        assert child.id_short is not None, (
+            f"Expected all children of {container.__class__.__name__} "
+            f"to have an ID-short."
+        )
+        yield child, child.id_short
+
+
+def _over_nested_elements_recursively(
+    container: Union[aas_types.Submodel, aas_types.SubmodelElement], prefix: Path
+) -> Iterator[Tuple[aas_types.SubmodelElement, Path]]:
+    for element, fragment in _over_nested_elements(container):
+        path = Path(fragments=list(prefix.fragments) + [fragment])
+
+        yield element, path
+
+        yield from _over_nested_elements_recursively(container=element, prefix=path)
 
 
 def over_elements(
@@ -154,7 +156,7 @@ def over_elements(
     for submodel in environment.over_submodels_or_empty():
         prefix = Path(fragments=[submodel.id])
 
-        yield from _over_elements(collection=submodel, prefix=prefix)
+        yield from _over_nested_elements_recursively(container=submodel, prefix=prefix)
 
 
 def reference_as_text(reference: aas_types.Reference) -> str:
