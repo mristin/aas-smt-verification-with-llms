@@ -1,3 +1,5 @@
+**This repository is archived. The code now lives at** https://github.com/eclipse-aascw/aas-smt-verification-with-llms
+
 ******************************
 aas-smt-verification-with-llms
 ******************************
